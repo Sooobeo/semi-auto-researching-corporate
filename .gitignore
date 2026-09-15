@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+artifacts/p0/raw/
+artifacts/p0/blocks.jsonl
+artifacts/p0/table_registry.csv
+__pycache__/
+*.pyc

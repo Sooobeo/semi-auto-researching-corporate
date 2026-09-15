@@ -1,0 +1,43 @@
+﻿doc_id,format,parser,text_chars,pages,paragraphs,tables,keyword_hbm_found,status,image_only_pages,limitation
+SAM-2025-FY-DART,zip/xml,p01-blocks-v1,743369,0,1389,2711,True,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SKH-2025-FY-DART,zip/xml,p01-blocks-v1,510616,0,1516,2487,True,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SAM-2025Q4-IR,pdf,p01-blocks-v1,6277,15,282,0,True,full_text_layer_extracted,0,PDF tables retain text/geometry but not native cell grid
+SAM-2026Q1-IR,pdf,p01-blocks-v1,6565,16,373,0,True,full_text_layer_extracted,0,PDF tables retain text/geometry but not native cell grid
+SKH-2025Q4-IR-ALT,html,p01-blocks-v1,10040,0,30,2,True,full_text_layer_extracted,0,HTML article/main content extracted
+SKH-2026Q1-IR-ALT,html,p01-blocks-v1,9450,0,27,1,True,full_text_layer_extracted,0,HTML article/main content extracted
+SAM-2024Q1-DART,zip/xml,p01-blocks-v1,293783,0,296,1093,,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SAM-2024Q2-DART,zip/xml,p01-blocks-v1,436868,0,489,1402,,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SAM-2024Q3-DART,zip/xml,p01-blocks-v1,310737,0,290,1234,,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SAM-2024Q4-DART,zip/xml,p01-blocks-v1,685338,0,1272,2637,,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SAM-2025Q1-DART,zip/xml,p01-blocks-v1,291108,0,315,1282,,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SAM-2025Q2-DART,zip/xml,p01-blocks-v1,455338,0,524,1515,,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SAM-2025Q3-DART,zip/xml,p01-blocks-v1,323473,0,301,1331,,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SAM-2026Q1-DART,zip/xml,p01-blocks-v1,319140,0,360,1331,,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SAM-2026Q2-DART,zip/xml,p01-blocks-v1,518259,0,592,1605,,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SKH-2024Q1-DART,zip/xml,p01-blocks-v1,172390,0,355,1161,,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SKH-2024Q2-DART,zip/xml,p01-blocks-v1,261997,0,498,1445,,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SKH-2024Q3-DART,zip/xml,p01-blocks-v1,182853,0,259,1277,,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SKH-2024Q4-DART,zip/xml,p01-blocks-v1,505582,0,1541,2492,,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SKH-2025Q1-DART,zip/xml,p01-blocks-v1,174514,0,305,1324,,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SKH-2025Q2-DART,zip/xml,p01-blocks-v1,262985,0,471,1525,,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SKH-2025Q3-DART,zip/xml,p01-blocks-v1,185041,0,294,1328,,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SKH-2026Q1-DART,zip/xml,p01-blocks-v1,185658,0,310,1364,,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SKH-2026Q2-DART,zip/xml,p01-blocks-v1,298912,0,494,1590,,full_text_layer_extracted,0,DART XML parsed in recover mode; character coverage is against recovered DOM
+SAM-2024Q1-IR,pdf,p01-blocks-v1,6029,14,207,0,,full_text_layer_extracted,0,PDF tables retain text/geometry but not native cell grid
+SAM-2024Q2-IR,pdf,p01-blocks-v1,5239,14,223,0,,full_text_layer_extracted,0,PDF tables retain text/geometry but not native cell grid
+SAM-2024Q3-IR,pdf,p01-blocks-v1,5998,15,277,0,,full_text_layer_extracted,0,PDF tables retain text/geometry but not native cell grid
+SAM-2024Q4-IR,pdf,p01-blocks-v1,5776,15,260,0,,full_text_layer_extracted,0,PDF tables retain text/geometry but not native cell grid
+SAM-2025Q1-IR,pdf,p01-blocks-v1,5361,15,255,0,,full_text_layer_extracted,0,PDF tables retain text/geometry but not native cell grid
+SAM-2025Q2-IR,pdf,p01-blocks-v1,5009,15,237,0,,full_text_layer_extracted,0,PDF tables retain text/geometry but not native cell grid
+SAM-2025Q3-IR,pdf,p01-blocks-v1,5533,15,228,0,,full_text_layer_extracted,0,PDF tables retain text/geometry but not native cell grid
+SAM-2026Q2-IR,pdf,p01-blocks-v1,6699,16,366,0,,full_text_layer_extracted,0,PDF tables retain text/geometry but not native cell grid
+SKH-2024Q1-IR,pdf,p01-blocks-v1,8500,20,346,0,,full_text_layer_extracted,3,Image-only PDF pages have image markers but no OCR text
+SKH-2024Q2-IR,pdf,p01-blocks-v1,8087,19,315,0,,full_text_layer_extracted,3,Image-only PDF pages have image markers but no OCR text
+SKH-2024Q3-IR,pdf,p01-blocks-v1,7210,18,308,0,,full_text_layer_extracted,3,Image-only PDF pages have image markers but no OCR text
+SKH-2024Q4-IR,pdf,p01-blocks-v1,9030,23,383,0,,full_text_layer_extracted,4,Image-only PDF pages have image markers but no OCR text
+SKH-2025Q1-IR,pdf,p01-blocks-v1,6942,18,294,0,,full_text_layer_extracted,3,Image-only PDF pages have image markers but no OCR text
+SKH-2025Q2-IR,pdf,p01-blocks-v1,6750,18,285,0,,full_text_layer_extracted,3,Image-only PDF pages have image markers but no OCR text
+SKH-2025Q3-IR,pdf,p01-blocks-v1,7086,18,295,0,,full_text_layer_extracted,3,Image-only PDF pages have image markers but no OCR text
+SKH-2025Q4-IR,pdf,p01-blocks-v1,8559,21,351,0,True,full_text_layer_extracted,3,Image-only PDF pages have image markers but no OCR text
+SKH-2026Q1-IR,pdf,p01-blocks-v1,8822,19,322,0,True,full_text_layer_extracted,3,Image-only PDF pages have image markers but no OCR text
+SKH-2026Q2-IR,pdf,p01-blocks-v1,9493,19,323,0,,full_text_layer_extracted,3,Image-only PDF pages have image markers but no OCR text

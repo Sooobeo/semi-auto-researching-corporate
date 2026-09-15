@@ -1,0 +1,3 @@
+﻿company_id,corp_code,corp_name,corp_name_eng,stock_name,stock_code,corp_cls,ir_url,hm_url,acc_mt,source_endpoint,checked_at
+SAM,00126380,삼성전자(주),"SAMSUNG ELECTRONICS CO,.LTD",삼성전자,005930,Y,,www.samsung.com/sec,12,company.json,2026-09-15
+SKH,00164779,에스케이하이닉스(주),SK hynix Inc.,SK하이닉스,000660,Y,,www.skhynix.com,12,company.json,2026-09-15

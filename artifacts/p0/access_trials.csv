@@ -1,0 +1,43 @@
+﻿doc_id,source_id,source_url,status,reason,observed_at
+SAM-2025-FY-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002820,downloaded,ZIP entries=3,2026-09-15T07:40:48+00:00
+SKH-2025-FY-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000635,downloaded,ZIP entries=3,2026-09-15T07:40:48+00:00
+SAM-2025Q4-IR,SAMSUNG_IR,https://images.samsung.com/kdp/ir/events/2025/2025_4Q_conference_kor.pdf,downloaded,HTTP=200; MIME=application/pdf; signature_ok=True,2026-09-15T07:40:48+00:00
+SAM-2026Q1-IR,SAMSUNG_IR,https://images.samsung.com/kdp/ir/events/2026/2026_1Q_conference_kor.pdf,downloaded,HTTP=200; MIME=application/pdf; signature_ok=True,2026-09-15T07:40:48+00:00
+SKH-2025Q4-IR-ALT,SKH_NEWSROOM,https://news.skhynix.com/en/sk-hynix-announces-fy25-financial-results/,downloaded,HTTP=200; MIME=text/html; charset=UTF-8; signature_ok=True,2026-09-15T07:40:48+00:00
+SKH-2026Q1-IR-ALT,SKH_NEWSROOM,https://news.skhynix.com/en/q1-2026-business-results/,downloaded,HTTP=200; MIME=text/html; charset=UTF-8; signature_ok=True,2026-09-15T07:40:48+00:00
+SKH-2025Q4-IR,SKH_IR,https://mis-prod-koce-homepage-cdn-01-blob-ep.azureedge.net/web/attach/116964051831620258.pdf,downloaded,API seq=6180; HTTP=200; PDF pages=21,2026-09-15T07:47:24+00:00
+SKH-2026Q1-IR,SKH_IR,https://mis-prod-koce-homepage-cdn-01-blob-ep.azureedge.net/web/attach/18333727317328069.pdf,downloaded,API seq=6433; HTTP=200; PDF pages=19,2026-09-15T07:47:24+00:00
+SAM-2024Q1-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240516001421,downloaded,ZIP entries=1,2026-09-15T07:44:00+00:00
+SAM-2024Q2-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240814003284,downloaded,ZIP entries=1,2026-09-15T07:44:00+00:00
+SAM-2024Q3-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241114002642,downloaded,ZIP entries=1,2026-09-15T07:44:00+00:00
+SAM-2024Q4-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250311001085,downloaded,ZIP entries=3,2026-09-15T07:44:00+00:00
+SAM-2025Q1-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250515001922,downloaded,ZIP entries=1,2026-09-15T07:44:00+00:00
+SAM-2025Q2-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003156,downloaded,ZIP entries=1,2026-09-15T07:44:00+00:00
+SAM-2025Q3-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114002447,downloaded,ZIP entries=1,2026-09-15T07:44:00+00:00
+SAM-2026Q1-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002181,downloaded,ZIP entries=1,2026-09-15T07:44:00+00:00
+SAM-2026Q2-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003699,downloaded,ZIP entries=1,2026-09-15T07:44:00+00:00
+SKH-2024Q1-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240516001638,downloaded,ZIP entries=1,2026-09-15T07:44:00+00:00
+SKH-2024Q2-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240814001887,downloaded,ZIP entries=1,2026-09-15T07:44:00+00:00
+SKH-2024Q3-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241114001712,downloaded,ZIP entries=1,2026-09-15T07:44:00+00:00
+SKH-2024Q4-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250319000665,downloaded,ZIP entries=3,2026-09-15T07:44:00+00:00
+SKH-2025Q1-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250515002103,downloaded,ZIP entries=1,2026-09-15T07:44:00+00:00
+SKH-2025Q2-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003049,downloaded,ZIP entries=1,2026-09-15T07:44:00+00:00
+SKH-2025Q3-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114001805,downloaded,ZIP entries=1,2026-09-15T07:44:00+00:00
+SKH-2026Q1-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002287,downloaded,ZIP entries=1,2026-09-15T07:44:00+00:00
+SKH-2026Q2-DART,DART,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509,downloaded,ZIP entries=1,2026-09-15T07:44:00+00:00
+SAM-2024Q1-IR,SAMSUNG_IR,https://images.samsung.com/kdp/ir/events/2024/2024_1Q_conference_kor.pdf,downloaded,HTTP=200; PDF pages=14; cover matched,2026-09-15T07:45:11+00:00
+SAM-2024Q2-IR,SAMSUNG_IR,https://images.samsung.com/kdp/ir/events/2024/2024_2Q_conference_kor.pdf,downloaded,HTTP=200; PDF pages=14; cover matched,2026-09-15T07:45:11+00:00
+SAM-2024Q3-IR,SAMSUNG_IR,https://images.samsung.com/kdp/ir/events/2024/2024_3Q_conference_kor.pdf,downloaded,HTTP=200; PDF pages=15; cover matched,2026-09-15T07:45:11+00:00
+SAM-2024Q4-IR,SAMSUNG_IR,https://images.samsung.com/kdp/ir/events/2024/2024_4Q_conference_kor.pdf,downloaded,HTTP=200; PDF pages=15; cover matched,2026-09-15T07:45:11+00:00
+SAM-2025Q1-IR,SAMSUNG_IR,https://images.samsung.com/kdp/ir/events/2025/2025_1Q_conference_kor.pdf,downloaded,HTTP=200; PDF pages=15; cover matched,2026-09-15T07:45:11+00:00
+SAM-2025Q2-IR,SAMSUNG_IR,https://images.samsung.com/kdp/ir/events/2025/2025_2Q_conference_kor.pdf,downloaded,HTTP=200; PDF pages=15; cover matched,2026-09-15T07:45:11+00:00
+SAM-2025Q3-IR,SAMSUNG_IR,https://images.samsung.com/kdp/ir/events/2025/2025_3Q_conference_kor.pdf,downloaded,HTTP=200; PDF pages=15; cover matched,2026-09-15T07:45:11+00:00
+SAM-2026Q2-IR,SAMSUNG_IR,https://images.samsung.com/kdp/ir/events/2026/2026_2Q_conference_kor.pdf,downloaded,HTTP=200; PDF pages=16; cover matched,2026-09-15T07:45:11+00:00
+SKH-2024Q1-IR,SKH_IR,https://mis-prod-koce-homepage-cdn-01-blob-ep.azureedge.net/web/attach/61321621157035970.pdf,downloaded,API seq=5579; HTTP=200; PDF pages=20,2026-09-15T07:47:24+00:00
+SKH-2024Q2-IR,SKH_IR,https://mis-prod-koce-homepage-cdn-01-blob-ep.azureedge.net/web/attach/66003067237742062.pdf,downloaded,API seq=5612; HTTP=200; PDF pages=19,2026-09-15T07:47:24+00:00
+SKH-2024Q3-IR,SKH_IR,https://mis-prod-koce-homepage-cdn-01-blob-ep.azureedge.net/web/attach/77045741902433810.pdf,downloaded,API seq=5691; HTTP=200; PDF pages=18,2026-09-15T07:47:24+00:00
+SKH-2024Q4-IR,SKH_IR,https://mis-prod-koce-homepage-cdn-01-blob-ep.azureedge.net/web/attach/81727201766385339.pdf,downloaded,API seq=5712; HTTP=200; PDF pages=23,2026-09-15T07:47:24+00:00
+SKH-2025Q1-IR,SKH_IR,https://mis-prod-koce-homepage-cdn-01-blob-ep.azureedge.net/web/attach/5001632852769028.pdf,downloaded,API seq=5766; HTTP=200; PDF pages=18,2026-09-15T07:47:24+00:00
+SKH-2025Q2-IR,SKH_IR,https://mis-prod-koce-homepage-cdn-01-blob-ep.azureedge.net/web/attach/40103454849895488.pdf,downloaded,API seq=5797; HTTP=200; PDF pages=18,2026-09-15T07:47:24+00:00
+SKH-2025Q3-IR,SKH_IR,https://mis-prod-koce-homepage-cdn-01-blob-ep.azureedge.net/web/attach/3127648149034921.pdf,downloaded,API seq=5831; HTTP=200; PDF pages=18,2026-09-15T07:47:24+00:00
+SKH-2026Q2-IR,SKH_IR,https://mis-prod-koce-homepage-cdn-01-blob-ep.azureedge.net/web/attach/13571040283022005.pdf,downloaded,API seq=6850; HTTP=200; PDF pages=19,2026-09-15T07:47:24+00:00

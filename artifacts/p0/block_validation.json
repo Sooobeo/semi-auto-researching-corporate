@@ -1,0 +1,21 @@
+{
+  "documents": 42,
+  "primary_documents": 40,
+  "auxiliary_documents": 2,
+  "blocks": 743683,
+  "block_types": {
+    "heading": 2617,
+    "image_marker": 2746,
+    "inline_text": 317,
+    "page_break": 2550,
+    "paragraph": 11928,
+    "pdf_text_block": 5930,
+    "table_cell": 717595
+  },
+  "native_tables": 32137,
+  "sample_tables_passed": 40,
+  "quarter_reconciliations_within_rounding": 20,
+  "source_dom_or_pdf_text_coverage": "42/42 100%",
+  "validation_scope": "all JSONL records, IDs, positions, table references, source-text counts, sample audits",
+  "coverage_limit": "DART recovered DOM and PDF text layer; raster-only content requires OCR"
+}

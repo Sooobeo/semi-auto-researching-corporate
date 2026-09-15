@@ -1,0 +1,3 @@
+﻿company_id,legal_name,corpcode_name,corp_code,ticker,corp_eng_name,official_modify_date,evidence,scope_id
+SAM,삼성전자(주),삼성전자,00126380,005930,"SAMSUNG ELECTRONICS CO,.LTD",20251201,OpenDART corpCode.xml,SAM:memory/DS/company
+SKH,에스케이하이닉스(주),SK하이닉스,00164779,000660,SK hynix Inc.,20240328,OpenDART corpCode.xml,SKH:product/company
