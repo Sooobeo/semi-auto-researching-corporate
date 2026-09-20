@@ -18,4 +18,12 @@
 
 기본 40건의 API/HTTP 확보와 텍스트 레이어 추출, 문서별 표본 감사, 10분기 커버리지는 재현 가능했다. P01의 수치 사용 시 삼성 메모리·DS와 SK 전사 범위를 분리하고, 정기보고서 누적 기간을 분기 값으로 보정해야 한다. 이미지형 구분 페이지 제목이나 그림 속 새 수치가 필요하면 해당 페이지에 OCR과 원본 화면 검토를 추가한다. OpenDART와 공식 IR 자료의 재배포·공유 조건, 삼성 IR 목록 페이지의 자동 접근 차단, SK 공개 보드 엔드포인트의 안정성은 [source_registry.csv](source_registry.csv)에 미확인으로 남겼다.
 
-재실행 순서: `p01_collect.py` → 세 `p01_fetch_*.py` → `p01_inspect.py` → `p01_finalize.py` → `p01_extract_blocks.py` → `p01_audit_numbers.py` → `p01_verify.py` → `p01_verify_extraction.py` → `p01_complete.py`. API 키는 Git 제외 `.env`에서만 읽고 원본 및 전체 블록은 Git에서 제외했다.
+재실행 순서: `p01_collect.py` → 세 `p01_fetch_*.py` → `p01_inspect.py` → `p01_finalize.py` → `p01_extract_blocks.py` → `p01_audit_numbers.py` → `p01_verify.py` → `p01_verify_extraction.py` → `p01_news_probe.py` → `p01_complete.py`. API 키는 Git 제외 `.env`에서만 읽고 원본 및 전체 블록은 Git에서 제외했다.
+
+## 뉴스 접근성
+
+P01에서 뉴스는 사건의 최초 발표·재보도·후속 실행을 구별하기 위한 별도 코퍼스다. 삼성 공식 Newsroom 본문 2건과 SK 공식 발표 HTML 2건을 표본으로 확인했고, GDELT 과거 후보 API는 2024Q1 조회 성공 후 반복 요청에서 HTTP 429를 받았다. 따라서 뉴스 **전체 기간 수집은 아직 미완료**이며 후보 발견 API와 언론사 본문 접근을 분리한다. [news_feasibility.md](news_feasibility.md), [news_manifest.csv](news_manifest.csv), [news_source_trials.csv](news_source_trials.csv).
+
+## 뉴스 본문 수집 시범
+
+공식 발행사 HTML 4건에서 원본 위치가 확인되는 본문 블록 186개를 추출했다. 표 3개를 보존했고 날짜 검토 대상은 1건이다. 기사 후보 API와 발행사 본문 수집을 분리하는 방식은 [news_body_crawl_plan.md](news_body_crawl_plan.md), 개별 결과는 [news_body_manifest.csv](news_body_manifest.csv)에 기록했다.
