@@ -84,3 +84,21 @@
 
 A/B/C 모두 용어가 낯설면 사전학습을 먼저 읽고 P02 문헌 조사로 들어갑니다. 이 입문 자료의 설명과 최신 기업 선정·Phase 정의가 충돌하면 최신 본문과 결정 기록을 우선합니다. 첨부 안에 추가 논문·웹 자료가 있으면 P02-T01~T04에서 원출처를 열고 이 등록부에 추가합니다.
 
+## P01 국내 뉴스 선정·분류 설계 추가 근거 (2026-09-21)
+
+아래 자료는 [P01 기사 분류 설계](P01_news_article_classification_design.md)의 운영 라벨을 정할 때 사용했습니다. 논문 원문과 공식 문서의 관련 구간을 확인했으며, 국내 기업기사에 적용한 라벨·표본 크기·탐색 기간은 프로젝트의 검증 전 제안입니다.
+
+| ID | 자료 | 설계에 사용한 내용 | 한계 |
+| --- | --- | --- | --- |
+| NWS01 | [Fan et al. (2019), BASIL](https://aclanthology.org/D19-1664/) | 동일 사건의 매체별 기사 묶음; 어휘 표현과 정보·인용 선택 분리 | 미국 정치뉴스의 편향 라벨과 분포를 국내 기업뉴스에 일반화하지 않음 |
+| NWS02 | [Choubey et al. (2020), Discourse as a Function of Event](https://aclanthology.org/2020.acl-main.478/) | 기사 주사건에 대한 본문 문장 기능 8종과 화자 구분 | 제목 라벨이나 한국어 성능으로 직접 확대하지 않음 |
+| NWS03 | [Lee et al. (2025), K-News-Stance](https://aclanthology.org/2025.emnlp-main.778/) | 한국 뉴스 장르, 제목·리드·인용·결론 구분 | 사회 이슈 자료; 입장 주석은 분석·의견 기사에 적용 |
+| NWS04 | [Card et al. (2015), Media Frames Corpus](https://aclanthology.org/P15-2072/) | 프레임의 구간 주석 | 미국 정책 프레임을 반도체 기사에 그대로 적용하지 않음 |
+| NWS05 | [Kim et al. (1999), Retrieving Collocations From Korean Text](https://aclanthology.org/W99-0610/) | 한국어 형태소·비인접 결합 청크 | 현재 형태소 분석기 성능 근거는 아님 |
+| NWS06 | [Bugert & Gurevych (2021), Event Coreference Data](https://aclanthology.org/2021.emnlp-main.38/) | 기사 간 동일 사건 연결 후보 | 자동·약지도 링크는 수동 검증 필요 |
+| NWS07 | [Song et al. (2023), 뉴스 제목의 인용 맥락 변화 연구](https://aclanthology.org/2023.findings-eacl.52/) | 제목 인용과 화자/기자 서술 구분 | 기업기사 성능 근거는 아님 |
+| NWS08 | [IPTC Genre NewsCodes](https://cv.iptc.org/newscodes/genre/) | 분석·배경·인터뷰·의견·전재 등 장르 용어 | 개별 기사 API 응답값을 보증하지 않음 |
+| NWS09 | [NewsStore 검색 API](https://www.newstore.or.kr/store/prodct/license-news-search/license-api-list.do), [상세 API](https://www.newstore.or.kr/store/prodct/license-news-detail/license-api-list.do) | 원시 기사 메타데이터와 본문 접근 필드 | 계약 상품별 본문·AI 이용권 및 장르 결측 확인 필요 |
+| NWS10 | [BIGKinds 검색](https://www.bigkinds.or.kr/v2/news/index.do), [FAQ](https://www.bigkinds.or.kr/news/faqList.do?page=2) | 기사 발견·중복/사설 후보, 무료 본문 제한 | 검색 기능을 라이선스된 본문 확보로 간주하지 않음 |
+| NWS11 | [네이버 뉴스 검색 API](https://developers.naver.com/docs/serviceapi/search/news/news.md) | 제목·링크·요약 패시지 기반 후보 발견 | 공식 응답에 본문 필드 없음 |
+| NWS12 | [Wegmann & Nguyen (2021), STEL](https://aclanthology.org/2021.emnlp-main.569/) | 문체 비교에서 내용 통제의 필요성 | 영어 패러프레이즈 자료; 동일 사건 기사 비교의 직접 근거는 아님 |

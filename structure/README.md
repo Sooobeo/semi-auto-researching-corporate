@@ -31,6 +31,7 @@
 - [TASK_INDEX.md](TASK_INDEX.md): 103개 작업의 책임·선행·제출물과 실행 흐름.
 - [DATA_CONTRACTS.md](DATA_CONTRACTS.md): 공통 ID·값·단위·시점·근거·라벨·검색·계산·피드백 필드.
 - [REFERENCES.md](REFERENCES.md): 사용한 모든 참고자료의 링크·용도·확인 수준. 원문 미독·접근 실패도 표시.
+- [P01_news_article_classification_design.md](P01_news_article_classification_design.md): 국내 기업뉴스의 기사 선정, 장르·전재·사건 관계 분류, 동일 사건·동일 사실의 표현 비교 설계.
 - [DECISIONS.md](DECISIONS.md): 현재 실행 기준과 연구 후 정할 항목, 변경 기록 양식.
 
 ## 자료 범위
@@ -93,4 +94,3 @@
 ## 검토 순서
 
 먼저 DATA_CONTRACTS의 회사범위·시점·누락 규칙을 확인하고, 담당 Phase의 작업을 읽습니다. 단계가 끝날 때 산출물·원문·검증 결과를 연결해 다음 담당자가 재현할 수 있는지 확인합니다. 설계 변경은 DECISIONS에 기록하고 영향을 받는 Phase와 contract를 함께 업데이트합니다.
-
