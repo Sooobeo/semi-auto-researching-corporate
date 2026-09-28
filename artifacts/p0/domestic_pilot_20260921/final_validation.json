@@ -1,0 +1,330 @@
+{
+  "verified_at": "2026-09-21T12:41:14.057844+00:00",
+  "integrity_pass": true,
+  "errors": [],
+  "protected_inputs": [
+    {
+      "path": "AGENTS.md",
+      "unchanged": true,
+      "intentional_change": false
+    },
+    {
+      "path": ".gitignore",
+      "unchanged": false,
+      "intentional_change": true
+    },
+    {
+      "path": "artifacts/p0/source_registry.csv",
+      "unchanged": true,
+      "intentional_change": false
+    },
+    {
+      "path": "artifacts/p0/news_source_trials.csv",
+      "unchanged": true,
+      "intentional_change": false
+    },
+    {
+      "path": "artifacts/p0/news_manifest.csv",
+      "unchanged": true,
+      "intentional_change": false
+    },
+    {
+      "path": "artifacts/p0/news_body_manifest.csv",
+      "unchanged": true,
+      "intentional_change": false
+    },
+    {
+      "path": "artifacts/p0/news_body_blocks.jsonl",
+      "unchanged": true,
+      "intentional_change": false
+    },
+    {
+      "path": "artifacts/p0/document_manifest.csv",
+      "unchanged": true,
+      "intentional_change": false
+    },
+    {
+      "path": "artifacts/p0/data_feasibility.md",
+      "unchanged": true,
+      "intentional_change": false
+    },
+    {
+      "path": "artifacts/p0/news_feasibility.md",
+      "unchanged": true,
+      "intentional_change": false
+    },
+    {
+      "path": "scripts/p01_news_body_crawl.py",
+      "unchanged": true,
+      "intentional_change": false
+    },
+    {
+      "path": "scripts/p01_news_probe.py",
+      "unchanged": true,
+      "intentional_change": false
+    },
+    {
+      "path": "scripts/p01_finalize.py",
+      "unchanged": true,
+      "intentional_change": false
+    }
+  ],
+  "existing_raw_records_checked": 46,
+  "existing_raw_unique_doc_ids": 44,
+  "raw_hash_checks": [
+    {
+      "doc_id": "SAM-2025-FY-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2025-FY-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2025Q4-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2026Q1-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2025Q4-IR-ALT",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2026Q1-IR-ALT",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2024Q1-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2024Q2-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2024Q3-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2024Q4-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2025Q1-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2025Q2-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2025Q3-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2026Q1-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2026Q2-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2024Q1-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2024Q2-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2024Q3-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2024Q4-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2025Q1-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2025Q2-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2025Q3-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2026Q1-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2026Q2-DART",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2024Q1-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2024Q2-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2024Q3-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2024Q4-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2025Q1-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2025Q2-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2025Q3-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2026Q2-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2024Q1-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2024Q2-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2024Q3-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2024Q4-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2025Q1-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2025Q2-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2025Q3-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2025Q4-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2026Q1-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2026Q2-IR",
+      "manifest": "document_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2024Q1-NEWS-HBM3E",
+      "manifest": "news_body_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SAM-2026Q1-NEWS-HBM4",
+      "manifest": "news_body_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2025Q4-IR-ALT",
+      "manifest": "news_body_manifest.csv",
+      "matches_recorded_sha256": true
+    },
+    {
+      "doc_id": "SKH-2026Q1-IR-ALT",
+      "manifest": "news_body_manifest.csv",
+      "matches_recorded_sha256": true
+    }
+  ],
+  "new_counts": {
+    "anchors": 13,
+    "sampling_cells": 16,
+    "selected_urls": 39,
+    "primary_links": 39,
+    "returned_link_observations": 276,
+    "unique_returned_urls_including_nonarticles": 258,
+    "human_review_slots_pending": 40,
+    "source_registry_rows": 18,
+    "gate_held_rows": 39
+  },
+  "ignored_raw_paths": {
+    "artifacts/p0/domestic_pilot_20260921/raw/article.html": true,
+    "artifacts/p0/domestic_pilot_20260921/gate_001/raw/blocks.jsonl": true,
+    "artifacts/p0/domestic_pilot_20260921/collect_future/raw/provenance.json": true
+  },
+  "unit_test_report": {
+    "tests_passed": 24,
+    "result_source": "implementation_agent_final_run_report",
+    "network": "synthetic_only_no_live_requests",
+    "reproduce_command": "python -m unittest discover -s tests -p test_p01_domestic_pilot.py -v"
+  },
+  "ontology": "deferred",
+  "pilot_completion": "incomplete_rights_and_human_review_pending"
+}

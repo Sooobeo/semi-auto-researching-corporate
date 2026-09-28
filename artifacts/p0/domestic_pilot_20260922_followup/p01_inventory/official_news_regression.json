@@ -1,0 +1,18 @@
+{
+  "scope": "retained_official_news_pilot_only",
+  "p01_verify_news.py": {
+    "exit_code": 0,
+    "official_documents": 4,
+    "legacy_Samsung_paragraph_blocks": 22,
+    "GDELT_records": "200_and_429_preserved"
+  },
+  "p01_verify_news_body.py": {
+    "exit_code": 0,
+    "official_documents": 4,
+    "source_located_blocks": 186,
+    "table_cells": 85,
+    "date_conflicts": 1
+  },
+  "new_domestic_corpus_validation": false,
+  "new_human_review": false
+}

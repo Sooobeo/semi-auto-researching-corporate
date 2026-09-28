@@ -1,0 +1,37 @@
+{
+  "version": "p01-ir-image-ocr/0.1/comparative",
+  "completed_at": "2026-09-22T10:21:42.260485+00:00",
+  "script_sha256": "b940fb637465f40ac5877262cd56260638db2663dc71feac47be2ba1fa1fff82",
+  "baseline_output": "artifacts/p0/domestic_pilot_20260922_followup/ir_image_ocr_001",
+  "engine": "5.4.0.20240606",
+  "ocr_language": "eng",
+  "variants": [
+    "original_sparse",
+    "gray_half_sparse",
+    "red_orange_mask_half_sparse"
+  ],
+  "visual_sample_pages": 3,
+  "sample_all_title_and_period_matches": {
+    "original_sparse": 2,
+    "gray_half_sparse": 2,
+    "red_orange_mask_half_sparse": 3
+  },
+  "selected_fixed_variant": "red_orange_mask_half_sparse",
+  "selection_basis": "all_three_visual_sample_titles_and_period_tokens_must_match;prefer_color_isolation_if_both_new_variants_pass;not_max_confidence",
+  "pages_processed": 31,
+  "variant_page_records": 93,
+  "selected_variant_pages": 31,
+  "OCR_word_candidates": 275,
+  "below_80_confidence_words": 108,
+  "below_40_confidence_words": 66,
+  "original_PDFs_unchanged": true,
+  "human_verified_pages": 0,
+  "semantic_completeness": "not_established",
+  "limits": [
+    "Color isolation can delete non-red text, black labels and small Korean slogans; all variants are retained.",
+    "Three sample token checks do not establish exact transcription or correctness of all 31 pages.",
+    "Confidence is not a probability of correctness; numeric-looking tokens are not verified numerical evidence.",
+    "Only pages with zero native text were processed."
+  ],
+  "no_external_OCR_service": true
+}

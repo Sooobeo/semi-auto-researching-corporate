@@ -1,0 +1,50 @@
+{
+  "validator": "independent_p01_comparison_qa/0.1",
+  "validated_at": "2026-09-22T08:18:43.643658+00:00",
+  "network_requests": 0,
+  "source_text_emitted": false,
+  "result": "pass",
+  "checks": {
+    "expected_counts_22_9_48_6645": true,
+    "unique_document_sentence_and_chunk_ids": true,
+    "summary_input_hashes": true,
+    "canonical_bodies_match_body_audit_hashes": true,
+    "all_448_source_sentences_roundtrip": true,
+    "source_atoms_roundtrip": true,
+    "all_6645_eojeol_offsets_hashes_normalization_and_public_private_parity": true,
+    "eligibility_331_and_exclusions_117_recomputed": true,
+    "same_family_cross_source_9_pairs_recomputed": true,
+    "48_ranked_alignments_and_scores_recomputed": true,
+    "article_pair_similarity_and_count_metrics_recomputed": true,
+    "alignment_hash_offset_source_segment_url_and_private_card_parity": true,
+    "provisional_labels_do_not_assert_same_claim_or_style": true,
+    "22_article_metrics_recomputed_and_qualified": true,
+    "public_files_have_no_copied_text_fields": true,
+    "public_files_no_source_sentence_copy_ge40_codepoints": true,
+    "all_private_comparison_files_gitignored": true,
+    "synthetic_ngram_empty_unicode_and_jaccard_boundaries": true
+  },
+  "errors": [],
+  "counts": {
+    "documents": 22,
+    "source_sentence_candidates": 448,
+    "same_provisional_family_article_pairs": 9,
+    "ranked_sentence_pairs": 48,
+    "eojeol_candidates": 6645,
+    "public_files_scanned": 5,
+    "private_files_gitignored": 4,
+    "public_sentence_copy_hits": 0
+  },
+  "fundamental_code_errors_found": false,
+  "limitations": [
+    "Validation checks provenance, arithmetic, storage boundaries and provisional labels, not same-claim matching or article completeness.",
+    "Public leakage scan checks copied text fields and full source sentence strings of at least 40 codepoints; it does not assert a general data-loss-prevention guarantee.",
+    "Human completeness, source independence, claim/speaker/genre alignment and linguistic morphology remain unverified."
+  ],
+  "input_sha256": {
+    "comparison_script": "5fbe04785e26353ccefb5e3991858fe69164e6c61897c2bf0c50faa11023285c",
+    "comparison_summary": "0b1882bd8bd41e2c37e4259bcddda7d08c04b1cdf91be92299f38834f357509f",
+    "body_audit_summary": "a11e9996e05f9e3f735004e0e391ed3811ef82254ae37a826e8546a1cd64704b"
+  },
+  "git_ignore_check_method": "git check-ignore -z --stdin with NUL-delimited binary paths; avoids Windows CRLF transformation"
+}

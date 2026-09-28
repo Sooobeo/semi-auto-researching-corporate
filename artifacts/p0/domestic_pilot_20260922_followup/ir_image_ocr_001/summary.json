@@ -1,0 +1,38 @@
+{
+  "version": "p01-ir-image-ocr/0.1",
+  "completed_at": "2026-09-22T10:15:11.367222+00:00",
+  "script_sha256": "eee04fc09e6fcb9f5e6eb74dee714205cf322777d4afd3beb76d49f0e0f14a9c",
+  "engine": "5.4.0.20240606",
+  "engine_executable_sha256": "babb405f4366b480d02cd8ff2bac8d497170f6c1711ce6f3d5d8bf0fb7fa6ed9",
+  "ocr_language": "eng",
+  "available_languages": [
+    "eng",
+    "osd"
+  ],
+  "renderer": "PyMuPDF/1.28.0",
+  "python_wrapper": "pytesseract/0.3.13",
+  "dpi": 200,
+  "input_PDF_documents": 10,
+  "expected_image_only_pages": 31,
+  "discovered_no_text_pages": 31,
+  "OCR_attempted_pages": 31,
+  "pages_with_OCR_words": 31,
+  "pages_without_OCR_words": 0,
+  "failed_pages": 0,
+  "OCR_word_candidates": 409,
+  "original_PDFs_unchanged": true,
+  "human_transcription_verified_pages": 0,
+  "semantic_completeness": "not_established",
+  "no_external_document_transmission": true,
+  "installed_new_dependencies": false,
+  "limits": [
+    "English model may miss non-English labels, logos, small print or low-contrast text.",
+    "OCR confidence is uncalibrated and not a probability of transcription correctness.",
+    "Only pages with zero native text were processed; other pages may contain unexamined raster details.",
+    "Original PDF bytes and existing text blocks were not replaced."
+  ],
+  "documentation": [
+    "https://pymupdf.readthedocs.io/en/latest/recipes-images.html",
+    "https://tesseract-ocr.github.io/tessdoc/Command-Line-Usage.html"
+  ]
+}

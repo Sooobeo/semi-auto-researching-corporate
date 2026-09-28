@@ -1,0 +1,273 @@
+{
+  "schema_version": "p01-research-authorization-0.1",
+  "authorization_id": "USER-P01-NONCOMMERCIAL-20260922",
+  "authorization_date": "2026-09-22",
+  "execution_basis": "user_noncommercial_research",
+  "purpose": "noncommercial_research",
+  "max_candidates": 39,
+  "user_instruction": "그냥 그대로 진행해 상업적으로 쓰일거 아니라서 괜찮아",
+  "scope_notes": "Proceed with fixed public article pilot despite unresolved rights; no ontology. Source permissions remain unresolved; no verified license is asserted. Explicit denials/access blocks remain exclusions. No redistribution or training.",
+  "sources": [
+    {
+      "source_id": "HANKYUNG",
+      "domain": "www.hankyung.com",
+      "source_type": "direct_publisher_html"
+    },
+    {
+      "source_id": "ETNEWS",
+      "domain": "www.etnews.com",
+      "source_type": "direct_publisher_html"
+    },
+    {
+      "source_id": "ZDNET_KR",
+      "domain": "zdnet.co.kr",
+      "source_type": "direct_publisher_html"
+    },
+    {
+      "source_id": "NEWSPIM",
+      "domain": "www.newspim.com",
+      "source_type": "direct_publisher_html"
+    },
+    {
+      "source_id": "EDAILY",
+      "domain": "www.edaily.co.kr",
+      "source_type": "direct_publisher_html"
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "CAND-0b4858ec19856481",
+      "source_id": "HANKYUNG",
+      "source_url": "https://www.hankyung.com/article/202404306403g",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-2e6a4f94614f1e02",
+      "source_id": "ZDNET_KR",
+      "source_url": "https://zdnet.co.kr/view/?no=20240430110436",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-841fb4aaf6e16301",
+      "source_id": "ETNEWS",
+      "source_url": "https://www.etnews.com/20240430000247",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-717ce98282b8b961",
+      "source_id": "HANKYUNG",
+      "source_url": "https://www.hankyung.com/article/2026043095081",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-778b7f81a68f3e6b",
+      "source_id": "NEWSPIM",
+      "source_url": "https://www.newspim.com/news/view/20260430000195",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-c37bb7c373a1ce35",
+      "source_id": "ETNEWS",
+      "source_url": "https://www.etnews.com/20260430000211",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-e5956a719c2acb3d",
+      "source_id": "ZDNET_KR",
+      "source_url": "https://zdnet.co.kr/view/?no=20240227081348",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-101310c877eae582",
+      "source_id": "EDAILY",
+      "source_url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02066406638794784",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-a2f1fd61caf3173c",
+      "source_id": "NEWSPIM",
+      "source_url": "https://www.newspim.com/news/view/20240227000946",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-d1a4496b76951a01",
+      "source_id": "NEWSPIM",
+      "source_url": "https://www.newspim.com/news/view/20240423000527",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-17ed102897bd3a4d",
+      "source_id": "ETNEWS",
+      "source_url": "https://www.etnews.com/20240423000216",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-1cd2491b60d1efd6",
+      "source_id": "HANKYUNG",
+      "source_url": "https://www.hankyung.com/article/2024042313621",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-0f8bbd92ba887234",
+      "source_id": "HANKYUNG",
+      "source_url": "https://www.hankyung.com/article/2026021230741",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-f32eb7be816b4b0a",
+      "source_id": "ETNEWS",
+      "source_url": "https://www.etnews.com/20260212000339",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-c986008a83b8e863",
+      "source_id": "EDAILY",
+      "source_url": "https://www.edaily.co.kr/news/read?mediaCodeNo=257&newsId=05533366645349864",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-851942367c39ca23",
+      "source_id": "HANKYUNG",
+      "source_url": "https://www.hankyung.com/article/202603189896g",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-943c54423e0b510a",
+      "source_id": "ZDNET_KR",
+      "source_url": "https://zdnet.co.kr/view/?no=20260318160725",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-01464710478b6a50",
+      "source_id": "ETNEWS",
+      "source_url": "https://www.etnews.com/20260318000392",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-bbe2c737aa819064",
+      "source_id": "HANKYUNG",
+      "source_url": "https://www.hankyung.com/article/202404255282g",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-d6ef03257775547f",
+      "source_id": "ZDNET_KR",
+      "source_url": "https://zdnet.co.kr/view/?no=20240425080841",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-89b8828b3f4360af",
+      "source_id": "NEWSPIM",
+      "source_url": "https://www.newspim.com/news/view/20240425000055",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-a4ad35dfaa691933",
+      "source_id": "HANKYUNG",
+      "source_url": "https://www.hankyung.com/article/202604230373g",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-9ae9511bbde8e70f",
+      "source_id": "NEWSPIM",
+      "source_url": "https://www.newspim.com/news/view/20260423000055",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-2940d12737ff63ed",
+      "source_id": "EDAILY",
+      "source_url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02761766645419072",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-8f1980754b34ecbf",
+      "source_id": "HANKYUNG",
+      "source_url": "https://www.hankyung.com/article/202503193654g",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-e51cfe357b5ab59d",
+      "source_id": "ZDNET_KR",
+      "source_url": "https://zdnet.co.kr/view/?no=20250319094651",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-0339b616cc951dda",
+      "source_id": "ETNEWS",
+      "source_url": "https://www.etnews.com/20250319000122",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-8f7b59c78c5590e2",
+      "source_id": "ZDNET_KR",
+      "source_url": "https://zdnet.co.kr/view/?no=20250912083503",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-be71e3dc137fd53e",
+      "source_id": "ETNEWS",
+      "source_url": "https://www.etnews.com/20250912000042",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-abbfe2e6d3e45b54",
+      "source_id": "HANKYUNG",
+      "source_url": "https://www.hankyung.com/article/202509129356g",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-f8202e43579ac465",
+      "source_id": "NEWSPIM",
+      "source_url": "https://www.newspim.com/news/view/20240319000250",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-964d332319389cc2",
+      "source_id": "ZDNET_KR",
+      "source_url": "https://zdnet.co.kr/view/?no=20240319100451",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-0573f32d2a65b426",
+      "source_id": "ETNEWS",
+      "source_url": "https://www.etnews.com/20240319000111",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-20d200ccd155fa01",
+      "source_id": "NEWSPIM",
+      "source_url": "https://www.newspim.com/news/view/20250825000211",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-02e770544a5cabc5",
+      "source_id": "ETNEWS",
+      "source_url": "https://www.etnews.com/20250825000248",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-4777711726295645",
+      "source_id": "ZDNET_KR",
+      "source_url": "https://zdnet.co.kr/view/?no=20250825084636",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-9d019270b624e4aa",
+      "source_id": "ETNEWS",
+      "source_url": "https://www.etnews.com/20240403000404",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-5e4b131be1a6a865",
+      "source_id": "HANKYUNG",
+      "source_url": "https://www.hankyung.com/article/202404048651g",
+      "allowed_redirect_urls": []
+    },
+    {
+      "candidate_id": "CAND-93fb7f14e6aa58ee",
+      "source_id": "ZDNET_KR",
+      "source_url": "https://zdnet.co.kr/view/?no=20240404011839",
+      "allowed_redirect_urls": []
+    }
+  ]
+}

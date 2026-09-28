@@ -1,0 +1,3 @@
+﻿doc_id,related_doc_id,existing_relation_type,both_doc_ids_exist,different_file_hashes,semantic_relation_reaudited
+SKH-2025Q4-IR-ALT,SKH-2025Q4-IR,same_announcement_alternate_publication,True,True,False
+SKH-2026Q1-IR-ALT,SKH-2026Q1-IR,same_announcement_alternate_publication,True,True,False

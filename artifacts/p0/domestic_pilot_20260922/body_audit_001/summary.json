@@ -1,0 +1,47 @@
+{
+  "version": "p01-domestic-body-audit/0.1",
+  "completed_at": "2026-09-22T07:30:03.814450+00:00",
+  "script_sha256": "dd4a80317d64bd0442aa91932e3e7ece9fa4a6f79079adcf3c8352f74218eddc",
+  "candidate_sha256": "dd52b06538372a3d6895582ebe1735e6ac450ac68e535f18361fce161759d058",
+  "input_manifests": [
+    {
+      "path": "artifacts\\p0\\domestic_pilot_20260922\\collect_smoke\\manifest.csv",
+      "sha256": "513722b480cd7d683b61a968fffdf4d117999a2fb8a84c3188a5aad04b4012d3",
+      "rows": 5
+    },
+    {
+      "path": "artifacts\\p0\\domestic_pilot_20260922\\collect_remaining\\manifest.csv",
+      "sha256": "335b2e6dfe5631649864fffdb3be204cfbd397073de531e7d35eec34c286f20d",
+      "rows": 34
+    }
+  ],
+  "candidate_rows": 39,
+  "attempt_rows": 39,
+  "candidate_ids_not_in_manifests": [],
+  "processed_local_bodies": 12,
+  "source_body_counts": {
+    "EDAILY": 3,
+    "ETNEWS": 9
+  },
+  "statuses": {
+    "not_available": 17,
+    "local_audit_error": 10,
+    "local_diagnostics_pending_human": 12
+  },
+  "body_hash_unique_count": 12,
+  "location_offset_integrity_pass": 12,
+  "date_conflict_candidates": 12,
+  "sentence_candidates": 259,
+  "span_candidates": 643,
+  "human_audit_passed": 0,
+  "complete_bodies_verified": 0,
+  "independent_original_authorship_verified": 0,
+  "claim_matches_verified": 0,
+  "rights_inference": "none_source_rights_and_user_execution_authorization_separate",
+  "limitations": [
+    "Selected DOM accounting is not semantic recall or precision.",
+    "Rules can split abbreviations or miss cross-paragraph quotes; no linguistic gold.",
+    "Attribution and company mentions are candidates, not speaker or authorship decisions.",
+    "No morphology, lemmatization, ontology, new network request or rights approval."
+  ]
+}

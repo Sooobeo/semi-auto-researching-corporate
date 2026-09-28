@@ -1,0 +1,82 @@
+{
+  "status": "mechanical_review_queue_not_verified_extraction_errors",
+  "low_alternative_parser_coverage": [
+    {
+      "doc_id": "NEWS-c986008a83b8e863",
+      "source_id": "EDAILY",
+      "canonical_matched_fraction": 0.770764,
+      "action": "Inspect parser differences; missing captions or table/layout text may account for them."
+    },
+    {
+      "doc_id": "NEWS-943c54423e0b510a",
+      "source_id": "ZDNET_KR",
+      "canonical_matched_fraction": 0.82517,
+      "action": "Inspect parser differences; missing captions or table/layout text may account for them."
+    },
+    {
+      "doc_id": "NEWS-d6ef03257775547f",
+      "source_id": "ZDNET_KR",
+      "canonical_matched_fraction": 0.851064,
+      "action": "Inspect parser differences; missing captions or table/layout text may account for them."
+    }
+  ],
+  "long_alternative_only_runs": [
+    {
+      "doc_id": "NEWS-2e6a4f94614f1e02",
+      "longest_unmatched_chars": 172,
+      "action": "Inspect fallback-only text against local source; may be page widgets or metadata."
+    },
+    {
+      "doc_id": "NEWS-e5956a719c2acb3d",
+      "longest_unmatched_chars": 172,
+      "action": "Inspect fallback-only text against local source; may be page widgets or metadata."
+    },
+    {
+      "doc_id": "NEWS-e51cfe357b5ab59d",
+      "longest_unmatched_chars": 153,
+      "action": "Inspect fallback-only text against local source; may be page widgets or metadata."
+    },
+    {
+      "doc_id": "NEWS-8f7b59c78c5590e2",
+      "longest_unmatched_chars": 181,
+      "action": "Inspect fallback-only text against local source; may be page widgets or metadata."
+    },
+    {
+      "doc_id": "NEWS-964d332319389cc2",
+      "longest_unmatched_chars": 179,
+      "action": "Inspect fallback-only text against local source; may be page widgets or metadata."
+    },
+    {
+      "doc_id": "NEWS-4777711726295645",
+      "longest_unmatched_chars": 173,
+      "action": "Inspect fallback-only text against local source; may be page widgets or metadata."
+    },
+    {
+      "doc_id": "NEWS-93fb7f14e6aa58ee",
+      "longest_unmatched_chars": 165,
+      "action": "Inspect fallback-only text against local source; may be page widgets or metadata."
+    }
+  ],
+  "table_semantics_pending": [
+    {
+      "doc_id": "NEWS-101310c877eae582",
+      "table_elements": 2,
+      "header_cell_tables": 0,
+      "action": "Distinguish image/caption layout tables from numeric data tables in local rendered page."
+    },
+    {
+      "doc_id": "NEWS-c986008a83b8e863",
+      "table_elements": 4,
+      "header_cell_tables": 0,
+      "action": "Distinguish image/caption layout tables from numeric data tables in local rendered page."
+    },
+    {
+      "doc_id": "NEWS-2940d12737ff63ed",
+      "table_elements": 2,
+      "header_cell_tables": 0,
+      "action": "Distinguish image/caption layout tables from numeric data tables in local rendered page."
+    }
+  ],
+  "extractor_change_proposed": false,
+  "reason": "No definite source-location loss or body boundary defect detected by these mechanical checks; current bodies and offsets preserved."
+}

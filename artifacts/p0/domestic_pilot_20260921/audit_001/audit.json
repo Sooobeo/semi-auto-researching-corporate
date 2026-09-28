@@ -1,0 +1,61 @@
+{
+  "schema_version": "p01-domestic-pilot-0.1",
+  "integrity_pass": true,
+  "errors": [],
+  "candidate_rows": 39,
+  "candidate_unique_urls": 39,
+  "candidate_unique_doc_ids": 39,
+  "candidate_family_count": 13,
+  "stages": {
+    "body_attempt": {
+      "numerator": 0,
+      "denominator": 39,
+      "rate": 0.0,
+      "status": "measured"
+    },
+    "stored_response": {
+      "numerator": 0,
+      "denominator": 0,
+      "rate": null,
+      "status": "NA_zero_denominator"
+    },
+    "automatic_extraction": {
+      "numerator": 0,
+      "denominator": 0,
+      "rate": null,
+      "status": "NA_zero_denominator"
+    },
+    "complete_body": {
+      "numerator": 0,
+      "denominator": 0,
+      "rate": null,
+      "status": "NA_zero_denominator"
+    },
+    "scope_fit": {
+      "numerator": 0,
+      "denominator": 0,
+      "rate": null,
+      "status": "NA_zero_denominator"
+    },
+    "independent_origin": {
+      "numerator": 0,
+      "denominator": 0,
+      "rate": null,
+      "status": "NA_zero_denominator"
+    },
+    "claim_matching": {
+      "numerator": 0,
+      "denominator": 0,
+      "rate": null,
+      "status": "NA_zero_denominator"
+    }
+  },
+  "human_audit_complete_docs": 0,
+  "comparability_pairs": null,
+  "comparability_status": "not_assessed_requires_aligned_claim_speaker_position",
+  "fetch_statuses": {
+    "deferred_rights_rights_not_verified": 39
+  },
+  "complete_body_note": "HTTP 200, stored HTML, text length and XPath checks do not establish completeness",
+  "ontology_status": "deferred_out_of_scope"
+}

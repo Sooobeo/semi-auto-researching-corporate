@@ -1,0 +1,46 @@
+{
+  "validator": "independent_morphology_provenance_qa/0.1",
+  "validated_at": "2026-09-22T10:07:16.182705+00:00",
+  "result": "pass",
+  "checks": {
+    "counts_22_documents_433_sentences_14829_morphemes_200_queue": true,
+    "script_and_body_hashes": true,
+    "sentence_private_public_parity": true,
+    "token_private_public_parity": true,
+    "all_sentence_substrings_hashes_revisions": true,
+    "all_morpheme_substrings_hashes_sentence_bounds_and_flags": true,
+    "all_source_segments_reference_original_atoms": true,
+    "all_nonzero_nonspace_morphemes_have_source_segments": true,
+    "zero_width_and_form_differences_preserved": true,
+    "nonspace_coverage_zero_recomputed": true,
+    "448_vs433_boundary_disagreement_counts_recomputed": true,
+    "no_accuracy_or_human_gold_claim": true,
+    "review_queue_200_unique_covers22_documents": true,
+    "pos_counts_match_tokens": true,
+    "all_private_files_gitignored": true,
+    "public_outputs_no_source_sentence_ge40": true
+  },
+  "errors": [],
+  "counts": {
+    "documents": 22,
+    "kiwi_sentence_candidates": 433,
+    "rule_sentence_candidates": 448,
+    "morpheme_candidates": 14829,
+    "zero_width": 33,
+    "zero_width_without_atom_segments": 0,
+    "positive_nonspace_without_atom_segments": 0,
+    "model_form_differs_from_source": 1959,
+    "model_overlap_condition_count": 966,
+    "positive_width_overlap_with_previous_positive_width_token": 966,
+    "nonspace_uncovered": 0
+  },
+  "notes": [
+    "Zero-width alignments may have an empty source-segment list when they fall on atom boundaries; no original character is claimed for those tokens.",
+    "The overlap predicate is an alignment flag. In this output all 966 counted overlaps involve positive-width spans; zero-width candidates do not inflate that count.",
+    "433 model sentences versus 448 punctuation/newline rule candidates is a segmentation disagreement, not an error rate or accuracy score.",
+    "Model forms differing from the raw substring remain separately hashed and privately stored; no normalized form replaces source evidence."
+  ],
+  "network_requests": 0,
+  "source_text_emitted": false,
+  "model_inference_rerun": false
+}

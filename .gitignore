@@ -7,5 +7,9 @@ artifacts/p0/news_blocks.jsonl
 artifacts/p0/news_body_blocks.jsonl
 artifacts/p0/blocks.jsonl
 artifacts/p0/table_registry.csv
+artifacts/p0/domestic_pilot_*/**/raw/
+artifacts/p0/domestic_pilot_*/**/bodies/
+artifacts/p0/domestic_pilot_*/**/private/
+artifacts/p0/domestic_pilot_*/**/body_blocks.jsonl
 __pycache__/
 *.pyc

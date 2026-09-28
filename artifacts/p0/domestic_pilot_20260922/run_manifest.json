@@ -1,0 +1,111 @@
+{
+  "run_id": "P01-DOMESTIC-20260922-01",
+  "recorded_at": "2026-09-22T08:18:39.193327+00:00",
+  "execution_basis": "user_noncommercial_research",
+  "source_rights_status": "unresolved",
+  "previous_run": "artifacts/p0/domestic_pilot_20260921",
+  "reference_scope": "SAM memory / SKH; 2024Q1-2026Q2; per-article scopes remain unverified",
+  "ontology": "excluded_by_user",
+  "body_model_api_calls": 0,
+  "commands_executed": [
+    "python scripts/p01_domestic_pilot.py collect --input artifacts\\p0\\domestic_pilot_20260922\\smoke_candidates.csv --rights-registry artifacts\\p0\\domestic_pilot_20260922\\source_registry.csv --research-authorization artifacts\\p0\\domestic_pilot_20260922\\research_authorization.json --output-dir artifacts\\p0\\domestic_pilot_20260922\\collect_smoke --delay 3",
+    "python scripts/p01_domestic_pilot.py audit --input artifacts\\p0\\domestic_pilot_20260922\\smoke_candidates.csv --rights-registry artifacts\\p0\\domestic_pilot_20260922\\source_registry.csv --research-authorization artifacts\\p0\\domestic_pilot_20260922\\research_authorization.json --manifest artifacts\\p0\\domestic_pilot_20260922\\collect_smoke\\manifest.csv --output-dir artifacts\\p0\\domestic_pilot_20260922\\audit_smoke",
+    "python scripts/p01_domestic_pilot.py collect --input artifacts\\p0\\domestic_pilot_20260922\\remaining_candidates.csv --rights-registry artifacts\\p0\\domestic_pilot_20260922\\source_registry.csv --research-authorization artifacts\\p0\\domestic_pilot_20260922\\research_authorization.json --output-dir artifacts\\p0\\domestic_pilot_20260922\\collect_remaining --delay 3",
+    "python scripts/p01_domestic_pilot.py audit --input artifacts\\p0\\domestic_pilot_20260922\\remaining_candidates.csv --rights-registry artifacts\\p0\\domestic_pilot_20260922\\source_registry.csv --research-authorization artifacts\\p0\\domestic_pilot_20260922\\research_authorization.json --manifest artifacts\\p0\\domestic_pilot_20260922\\collect_remaining\\manifest.csv --output-dir artifacts\\p0\\domestic_pilot_20260922\\audit_remaining",
+    "python scripts/p01_domestic_body_audit.py --manifest artifacts\\p0\\domestic_pilot_20260922\\collect_smoke\\manifest.csv --manifest artifacts\\p0\\domestic_pilot_20260922\\collect_remaining\\manifest.csv --candidates artifacts\\p0\\domestic_pilot_20260922\\article_candidates.csv --output-dir artifacts\\p0\\domestic_pilot_20260922\\body_audit_003",
+    "python scripts/p01_domestic_classify.py --candidates artifacts\\p0\\domestic_pilot_20260922\\article_candidates.csv --body-audit-dir artifacts\\p0\\domestic_pilot_20260922\\body_audit_003 --output-dir artifacts\\p0\\domestic_pilot_20260922\\classification_001",
+    "python scripts/p01_domestic_compare.py --candidates artifacts\\p0\\domestic_pilot_20260922\\article_candidates.csv --body-audit-dir artifacts\\p0\\domestic_pilot_20260922\\body_audit_003 --output-dir artifacts\\p0\\domestic_pilot_20260922\\comparison_001"
+  ],
+  "replay_note": "Existing output directories are rejected. Replay into new directories, preserving revisions and failures.",
+  "final_outputs": {
+    "collection": [
+      "collect_smoke/manifest.csv",
+      "collect_remaining/manifest.csv"
+    ],
+    "collection_index": "collection_index.csv",
+    "body_audit": "body_audit_003",
+    "classification": "classification_001",
+    "comparison": "comparison_001",
+    "report": "execution_report.md"
+  },
+  "preserved_superseded_outputs": {
+    "body_audit_001": "HTML comment handling exceptions preserved",
+    "body_audit_002": "publication time precision differences falsely flagged; corrected in 003"
+  },
+  "counts": {
+    "candidate_doc_ids": 39,
+    "provisional_families": 13,
+    "candidate_outlets": 5,
+    "article_requests": 22,
+    "stored_html": 22,
+    "unrequested_explicit_source_denials": 17,
+    "downloaded_outlets": 3,
+    "located_bodies": 22,
+    "body_atoms": 669,
+    "body_characters": 33439,
+    "sentence_candidates": 448,
+    "rule_span_candidates": 1233,
+    "eojeol_candidates": 6645,
+    "same_family_article_pair_candidates": 9,
+    "ranked_sentence_pair_candidates": 48,
+    "verified_same_claim_pairs": 0,
+    "human_completed_slots": 0
+  },
+  "tests": {
+    "collector_offline_synthetic": {
+      "passed": 34,
+      "reported_by": "safe_pilot_tooling",
+      "result": "pass"
+    },
+    "new_python_scripts_compile": "pass",
+    "git_diff_check": "pass"
+  },
+  "scripts": [
+    {
+      "path": "scripts/p01_domestic_pilot.py",
+      "sha256": "fbe2df5c589ce93d7df7f09009637a145412b651b8b3e800dba271437919481b"
+    },
+    {
+      "path": "scripts/p01_domestic_body_audit.py",
+      "sha256": "69492702f57a3f754c2a4292c4a2e6f1c21e35c6ff120ce5023620163202ec00"
+    },
+    {
+      "path": "scripts/p01_domestic_classify.py",
+      "sha256": "6bc020eb6f6fd7183887c6777c9b7131bee8a6d847dc906f2109aa13a81c160a"
+    },
+    {
+      "path": "scripts/p01_domestic_compare.py",
+      "sha256": "5fbe04785e26353ccefb5e3991858fe69164e6c61897c2bf0c50faa11023285c"
+    },
+    {
+      "path": "tests/test_p01_domestic_pilot.py",
+      "sha256": "7154797aae99a2021cd86c9be31eecf23cd6367f821789eccd5152e63cc6c538"
+    }
+  ],
+  "frozen_inputs": [
+    {
+      "path": "artifacts\\p0\\domestic_pilot_20260922\\article_candidates.csv",
+      "sha256": "dd52b06538372a3d6895582ebe1735e6ac450ac68e535f18361fce161759d058"
+    },
+    {
+      "path": "artifacts\\p0\\domestic_pilot_20260922\\official_anchors.csv",
+      "sha256": "0727f3d6f92168c79158e503609b3b4faca53107233f8c7395763d973c40069d"
+    },
+    {
+      "path": "artifacts\\p0\\domestic_pilot_20260922\\source_registry.csv",
+      "sha256": "8d37b70514c1dfcd8ae34f2441609d17e28e529f850bd7a52e247549b587d78b"
+    },
+    {
+      "path": "artifacts\\p0\\domestic_pilot_20260922\\research_authorization.json",
+      "sha256": "2e717133036a93dd339f70b7bd665006c4940cd0430f5fce681913487ddb669e"
+    }
+  ],
+  "remaining_unverified": [
+    "human original-page audit",
+    "article scope and numeric semantics",
+    "independent authorship",
+    "reference claims and same-speaker claim alignment",
+    "genre and coverage stage",
+    "morphology and gold annotation"
+  ]
+}

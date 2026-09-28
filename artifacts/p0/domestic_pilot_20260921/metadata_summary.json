@@ -1,0 +1,28 @@
+{
+  "run_id": "P01-DOMESTIC-20260921-01",
+  "prepared_at": "2026-09-21T12:35:54+00:00",
+  "search_batches": 18,
+  "returned_link_occurrences": 276,
+  "unique_returned_urls_including_nonarticles": 258,
+  "selected_unique_candidate_urls": 39,
+  "candidate_doc_ids_identity_provisional": 39,
+  "primary_sampling_links": 39,
+  "selected_anchor_families_provisional": 13,
+  "outlet_candidate_counts": {
+    "HANKYUNG": 10,
+    "ZDNET_KR": 9,
+    "ETNEWS": 10,
+    "NEWSPIM": 7,
+    "EDAILY": 3
+  },
+  "publisher_body_access_attempts": 0,
+  "acquired_bodies": 0,
+  "verified_complete_bodies": 0,
+  "verified_independent_articles": 0,
+  "verified_claim_comparison_pairs": 0,
+  "human_review_candidate_queue": 20,
+  "human_review_slots_pending": 40,
+  "human_reviews_completed": 0,
+  "ontology_status": "deferred_by_user",
+  "label_status": "unverified_placeholders_only"
+}

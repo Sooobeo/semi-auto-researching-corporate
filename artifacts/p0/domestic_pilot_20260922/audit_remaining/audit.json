@@ -1,0 +1,69 @@
+{
+  "schema_version": "p01-domestic-pilot-0.2",
+  "integrity_pass": true,
+  "errors": [],
+  "candidate_rows": 34,
+  "candidate_unique_urls": 34,
+  "candidate_unique_doc_ids": 34,
+  "candidate_family_count": 12,
+  "stages": {
+    "body_attempt": {
+      "numerator": 19,
+      "denominator": 34,
+      "rate": 0.5588235294117647,
+      "status": "measured"
+    },
+    "stored_response": {
+      "numerator": 19,
+      "denominator": 19,
+      "rate": 1.0,
+      "status": "measured"
+    },
+    "automatic_extraction": {
+      "numerator": 19,
+      "denominator": 19,
+      "rate": 1.0,
+      "status": "measured"
+    },
+    "complete_body": {
+      "numerator": 0,
+      "denominator": 19,
+      "rate": 0.0,
+      "status": "measured"
+    },
+    "scope_fit": {
+      "numerator": 0,
+      "denominator": 0,
+      "rate": null,
+      "status": "NA_zero_denominator"
+    },
+    "independent_origin": {
+      "numerator": 0,
+      "denominator": 0,
+      "rate": null,
+      "status": "NA_zero_denominator"
+    },
+    "claim_matching": {
+      "numerator": 0,
+      "denominator": 0,
+      "rate": null,
+      "status": "NA_zero_denominator"
+    }
+  },
+  "human_audit_complete_docs": 0,
+  "comparability_pairs": null,
+  "comparability_status": "not_assessed_requires_aligned_claim_speaker_position",
+  "fetch_statuses": {
+    "deferred_rights_research_permission_explicitly_denied_automated_access": 15,
+    "downloaded_pending_audit": 19
+  },
+  "source_rights_statuses": {
+    "unresolved": 34
+  },
+  "execution_bases": {
+    "user_noncommercial_research": 34
+  },
+  "research_authorization_sha256": "2e717133036a93dd339f70b7bd665006c4940cd0430f5fce681913487ddb669e",
+  "complete_body_note": "HTTP 200, stored HTML, text length and XPath checks do not establish completeness",
+  "ontology_status": "deferred_out_of_scope"
+}

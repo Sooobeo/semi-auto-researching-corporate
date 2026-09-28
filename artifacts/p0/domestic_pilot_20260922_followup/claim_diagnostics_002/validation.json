@@ -1,0 +1,190 @@
+{
+  "result": "pass",
+  "checks": {
+    "product_digits_not_quantity": true,
+    "period_digits_not_quantity": true,
+    "bit_byte_units_distinct": true,
+    "simple_explicit_money_scale_matches": true,
+    "same_number_different_year_not_ready": true,
+    "relative_period_not_anchored": true,
+    "compound_not_simple": true,
+    "surface_prerequisites_never_semantic_approval": true,
+    "empty_evidence_not_ready": true,
+    "decimal_equivalent_values_match": true,
+    "duration_not_count": true,
+    "percentage_point_not_percent": true,
+    "invalid_calendar_not_anchored": true,
+    "all_signal_source_offsets_and_hashes": true,
+    "all_private_span_roundtrips": true,
+    "all_context_references_exist": true,
+    "expected_input_counts": true,
+    "no_semantic_approval": true,
+    "prior_inputs_unchanged": true,
+    "script_hash_matches": true,
+    "private_files_ignored_untracked": true,
+    "no_full_source_sentence_copy_ge40": true,
+    "no_public_raw_text_fields": true
+  },
+  "checks_passed": 23,
+  "checks_total": 23,
+  "counts": {
+    "documents": 22,
+    "sentences": 448,
+    "signals": 1686,
+    "pairs": 48,
+    "private_files_ignored": 2
+  },
+  "changes_from_001": {
+    "normalized_signals_changed": 7,
+    "pair_diagnostics_changed": 0,
+    "changes": [
+      {
+        "signal_id": "NEWS-c37bb7c373a1ce35:1a816d8032047c6db67637048db268fb8f1370b65faef24ebd31f6dbaeeb72f0:S00005:C0002",
+        "kind": "quantity",
+        "old_normalized": {
+          "value": "81.7",
+          "unit": "KRW",
+          "scale_multiplier": 1000000000000,
+          "compound_amount_component": false,
+          "base_value": "81700000000000.0",
+          "normalization_status": "simple_explicit_unit"
+        },
+        "new_normalized": {
+          "value": "81.7",
+          "unit": "KRW",
+          "scale_multiplier": 1000000000000,
+          "compound_amount_component": false,
+          "base_value": "81700000000000",
+          "normalization_status": "simple_explicit_unit"
+        }
+      },
+      {
+        "signal_id": "NEWS-c37bb7c373a1ce35:1a816d8032047c6db67637048db268fb8f1370b65faef24ebd31f6dbaeeb72f0:S00005:C0003",
+        "kind": "quantity",
+        "old_normalized": {
+          "value": "53.7",
+          "unit": "KRW",
+          "scale_multiplier": 1000000000000,
+          "compound_amount_component": false,
+          "base_value": "53700000000000.0",
+          "normalization_status": "simple_explicit_unit"
+        },
+        "new_normalized": {
+          "value": "53.7",
+          "unit": "KRW",
+          "scale_multiplier": 1000000000000,
+          "compound_amount_component": false,
+          "base_value": "53700000000000",
+          "normalization_status": "simple_explicit_unit"
+        }
+      },
+      {
+        "signal_id": "NEWS-c37bb7c373a1ce35:1a816d8032047c6db67637048db268fb8f1370b65faef24ebd31f6dbaeeb72f0:S00006:C0002",
+        "kind": "quantity",
+        "old_normalized": {
+          "value": "74.8",
+          "unit": "KRW",
+          "scale_multiplier": 1000000000000,
+          "compound_amount_component": false,
+          "base_value": "74800000000000.0",
+          "normalization_status": "simple_explicit_unit"
+        },
+        "new_normalized": {
+          "value": "74.8",
+          "unit": "KRW",
+          "scale_multiplier": 1000000000000,
+          "compound_amount_component": false,
+          "base_value": "74800000000000",
+          "normalization_status": "simple_explicit_unit"
+        }
+      },
+      {
+        "signal_id": "NEWS-17ed102897bd3a4d:2589a1ffcaf2dc60eb0b2cdf15f2c0bd30370afb5fa6c53f21f8159c26017535:S00011:C0008",
+        "kind": "quantity",
+        "old_normalized": {
+          "value": "5.0",
+          "unit": "unknown",
+          "scale_multiplier": 1,
+          "compound_amount_component": false,
+          "base_value": null,
+          "normalization_status": "unit_missing"
+        },
+        "new_normalized": {
+          "value": "5",
+          "unit": "unknown",
+          "scale_multiplier": 1,
+          "compound_amount_component": false,
+          "base_value": null,
+          "normalization_status": "unit_missing"
+        }
+      },
+      {
+        "signal_id": "NEWS-2940d12737ff63ed:e367b829c29bfbd471ef5a17ef1558bbe4f5faccaad4ea6b5487667c1c377ed3:S00011:C0005",
+        "kind": "quantity",
+        "old_normalized": {
+          "value": "14",
+          "unit": "percent",
+          "scale_multiplier": 1,
+          "compound_amount_component": false,
+          "base_value": "14",
+          "normalization_status": "simple_explicit_unit"
+        },
+        "new_normalized": {
+          "value": "14",
+          "unit": "percentage_point",
+          "scale_multiplier": 1,
+          "compound_amount_component": false,
+          "base_value": "14",
+          "normalization_status": "simple_explicit_unit"
+        }
+      },
+      {
+        "signal_id": "NEWS-964d332319389cc2:38d6c7a499fc7ed4c604169d56267dfbc70f873219f35789e76f1f2133e5a0d8:S00003:C0005",
+        "kind": "quantity",
+        "old_normalized": {
+          "value": "7",
+          "unit": "count",
+          "scale_multiplier": 1,
+          "compound_amount_component": false,
+          "base_value": "7",
+          "normalization_status": "simple_explicit_unit"
+        },
+        "new_normalized": {
+          "value": "7",
+          "unit": "month_duration",
+          "scale_multiplier": 1,
+          "compound_amount_component": false,
+          "base_value": "7",
+          "normalization_status": "simple_explicit_unit"
+        }
+      },
+      {
+        "signal_id": "NEWS-0573f32d2a65b426:d1b21ef914dec89554fbd4fb181adfc691c1e8da2d710f42b52b9de2fc27c257:S00005:C0006",
+        "kind": "quantity",
+        "old_normalized": {
+          "value": "7",
+          "unit": "count",
+          "scale_multiplier": 1,
+          "compound_amount_component": false,
+          "base_value": "7",
+          "normalization_status": "simple_explicit_unit"
+        },
+        "new_normalized": {
+          "value": "7",
+          "unit": "month_duration",
+          "scale_multiplier": 1,
+          "compound_amount_component": false,
+          "base_value": "7",
+          "normalization_status": "simple_explicit_unit"
+        }
+      }
+    ]
+  },
+  "network_requests": 0,
+  "article_text_emitted": false,
+  "limitations": [
+    "Mechanical offset/hash and synthetic boundary checks only; semantic precision/recall and article completeness not verified.",
+    "Zero pairs satisfying this conservative cooccurrence rule does not show that actual same-claim pairs are absent.",
+    "001 remains preserved as the initial run; its independent review identified the boundary cases corrected in 002."
+  ]
+}

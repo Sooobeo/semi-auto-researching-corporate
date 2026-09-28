@@ -1,0 +1,61 @@
+{
+  "version": "p01-followup-final-verifier/0.1",
+  "validated_at": "2026-09-22T10:24:49.551221+00:00",
+  "script_sha256": "2de75cd843939af2f3852b5ba3d7f65642f92cdcb2c0be46615a66f7fe2a6566",
+  "integrity_pass": true,
+  "checks": {
+    "previous_120_output_and_code_hashes_unchanged": true,
+    "run_script_hashes_match": true,
+    "official_evidence_integrity": true,
+    "both_company_quarter_coverage_and_numeric_pairs": true,
+    "22_document_pipeline_count_agreement": true,
+    "48_comparison_candidate_count_agreement": true,
+    "document_and_pair_ids_unique": true,
+    "all_pair_document_references_exist": true,
+    "integrated_boundary_difference_recomputed": true,
+    "no_automatic_claim_or_human_confirmation": true,
+    "morphology_body_nonspace_coverage": true,
+    "task_evidence_links_resolve": true,
+    "inventory_summary_points_to_inventory": true,
+    "briefing_handoff_links_resolve": true,
+    "all_followup_raw_gitignored": true,
+    "no_followup_raw_tracked": true,
+    "git_diff_check": true,
+    "final_component_validation_reports_pass": true
+  },
+  "details": {
+    "missing_task_evidence": [],
+    "missing_document_links": [],
+    "raw_files_gitchecked": 232,
+    "metadata_summary_sha256": "bb9a46eddefbe54a3a9c3a2e482af2234f8d9db6b64bae4be04a1a376a68b57e"
+  },
+  "component_validation_reports": {
+    "extraction_review_001/validation.json": {
+      "pass": true,
+      "sha256": "e36ff0a8c1d5a1e1304c999aa50253514a65833c0708435d9cca008964539833",
+      "recorded_status": "pass"
+    },
+    "claim_diagnostics_002/validation.json": {
+      "pass": true,
+      "sha256": "27c60127688b0aafbe91d5f37379a80e6d3f00b05a69c40c52bf453acc89f1a3",
+      "recorded_status": "pass"
+    },
+    "metadata_review_001/validation.json": {
+      "pass": true,
+      "sha256": "6aeef8ceed65d7c7f49d69366e01a4e5b6bc9730015c954a262bb799a85b71bf",
+      "recorded_status": "pass"
+    },
+    "morphology_001/validation.json": {
+      "pass": true,
+      "sha256": "55a0695902b681ead67b05a150f606571b4c5290b7c0733fb722a0377390858a",
+      "recorded_status": "pass"
+    },
+    "ir_image_ocr_002/validation.json": {
+      "pass": true,
+      "sha256": "88c55e21864a48e9f74b9162422fde284c1bb052cca3f81d9a76eb9dbd6fefc4",
+      "recorded_status": null
+    }
+  },
+  "scope": "provenance, count agreement, file references and preservation; no semantic accuracy or human-gold claim",
+  "new_network_requests": 0
+}

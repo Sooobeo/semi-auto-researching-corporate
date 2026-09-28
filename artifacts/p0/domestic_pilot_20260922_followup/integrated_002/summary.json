@@ -1,0 +1,16 @@
+{
+  "version": "p01-followup-index/0.2",
+  "completed_at": "2026-09-22T10:16:39.137480+00:00",
+  "script_sha256": "fc5303ca476383c3dfc6f84466e07ef44c302d27c07fa68ecef2c57e2a62a5c6",
+  "documents": 22,
+  "alignment_candidates": 48,
+  "alignment_candidates_with_boundary_disagreement": 3,
+  "documents_with_additional_review_flags": 18,
+  "task_status_counts": {
+    "done": 7,
+    "partial": 4
+  },
+  "claim_diagnostics_dir": "artifacts\\p0\\domestic_pilot_20260922_followup\\claim_diagnostics_002",
+  "human_reviews_completed": 0,
+  "status": "joined_provenance_and_review_priorities_not_human_gold"
+}

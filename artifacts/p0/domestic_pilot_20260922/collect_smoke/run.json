@@ -1,0 +1,13 @@
+{
+  "schema_version": "p01-domestic-pilot-0.2",
+  "mode": "collect",
+  "input_sha256": "0ede72604068af26ce3d26afb6948ebcda08dc6927af5c372f2ac2b42a455179",
+  "rights_registry_sha256": "8d37b70514c1dfcd8ae34f2441609d17e28e529f850bd7a52e247549b587d78b",
+  "script_sha256": "fbe2df5c589ce93d7df7f09009637a145412b651b8b3e800dba271437919481b",
+  "candidate_rows": 5,
+  "completed_at": "2026-09-22T07:23:10.518121+00:00",
+  "execution_basis": "user_noncommercial_research",
+  "research_authorization_sha256": "2e717133036a93dd339f70b7bd665006c4940cd0430f5fce681913487ddb669e",
+  "ai_calls": 0,
+  "network_body_requests": 3
+}

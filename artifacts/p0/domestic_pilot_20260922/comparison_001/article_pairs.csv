@@ -1,0 +1,10 @@
+﻿pair_id,event_family_id,left_doc_id,right_doc_id,left_source_id,right_source_id,body_character_trigram_jaccard,normalized_body_equal,shared_exact_normalized_sentence_candidates,ranked_sentence_pairs,content_relation,pair_status,style_comparison_eligible
+PAIR-6e3a74967fc8c43a,SAM-EARLY-DEV-HBM3E12H,NEWS-101310c877eae582,NEWS-e5956a719c2acb3d,EDAILY,ZDNET_KR,0.637043,False,5,8,uncertain,same_provisional_family_candidate,False
+PAIR-1019fd58384b445f,SAM-EARLY-EARN-2024Q1,NEWS-2e6a4f94614f1e02,NEWS-841fb4aaf6e16301,ZDNET_KR,ETNEWS,0.059361,False,0,0,uncertain,same_provisional_family_candidate,False
+PAIR-4bda977c934c83ce,SAM-LATE-INV-AMD,NEWS-01464710478b6a50,NEWS-943c54423e0b510a,ETNEWS,ZDNET_KR,0.168632,False,0,5,uncertain,same_provisional_family_candidate,False
+PAIR-85b4af1992dc0e49,SAM-LATE-PROD-HBM4,NEWS-c986008a83b8e863,NEWS-f32eb7be816b4b0a,EDAILY,ETNEWS,0.10596,False,0,5,uncertain,same_provisional_family_candidate,False
+PAIR-1cb5e8927d1002d9,SKH-EARLY-DEV-HBM4SAMPLE,NEWS-0339b616cc951dda,NEWS-e51cfe357b5ab59d,ETNEWS,ZDNET_KR,0.168394,False,0,3,uncertain,same_provisional_family_candidate,False
+PAIR-20eb78f1fe60632d,SKH-EARLY-INV-INDIANA,NEWS-93fb7f14e6aa58ee,NEWS-9d019270b624e4aa,ZDNET_KR,ETNEWS,0.372051,False,1,8,uncertain,same_provisional_family_candidate,False
+PAIR-dcc78a58c7c2f08f,SKH-EARLY-PROD-HBM3E,NEWS-0573f32d2a65b426,NEWS-964d332319389cc2,ETNEWS,ZDNET_KR,0.227813,False,0,6,uncertain,same_provisional_family_candidate,False
+PAIR-d8793e599153cc40,SKH-LATE-DEV-HBM4READY,NEWS-8f7b59c78c5590e2,NEWS-be71e3dc137fd53e,ZDNET_KR,ETNEWS,0.360851,False,0,7,uncertain,same_provisional_family_candidate,False
+PAIR-ca5145596469216a,SKH-LATE-PROD-QLC321,NEWS-02e770544a5cabc5,NEWS-4777711726295645,ETNEWS,ZDNET_KR,0.253046,False,0,6,uncertain,same_provisional_family_candidate,False

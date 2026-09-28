@@ -1,0 +1,11 @@
+{
+  "schema_version": "p01-domestic-pilot-0.1",
+  "mode": "gate",
+  "input_sha256": "dd52b06538372a3d6895582ebe1735e6ac450ac68e535f18361fce161759d058",
+  "rights_registry_sha256": "67154cfffff2630766cdd8f2666d0a69f7c3f52ae28f401ff69e27ac0f5ba114",
+  "script_sha256": "be0c47fe6ad54bad25ccfc79abbf8cccc66b1a4cc601941b078535fbff2f6289",
+  "candidate_rows": 39,
+  "completed_at": "2026-09-21T12:39:56.776071+00:00",
+  "ai_calls": 0,
+  "network_body_requests": 0
+}

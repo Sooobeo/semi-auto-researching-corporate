@@ -1,0 +1,4 @@
+doc_id,pdf_page_number,render_private_uri,ocr_private_uri,review_actor,review_scope,observed_page_kind,major_title_tokens_match,period_tokens_match,small_korean_slogan_ocr,review_status,human_transcription_status,semantic_completeness
+SKH-2024Q1-IR,3,raw/SKH-2024Q1-IR-p003.png,raw/SKH-2024Q1-IR-p003.ocr.json,AI_agent,representative_page_visual_sample,section_divider,true,true,not_recognized,partial_ocr_missing_small_print,pending,not_established
+SKH-2024Q4-IR,15,raw/SKH-2024Q4-IR-p015.png,raw/SKH-2024Q4-IR-p015.ocr.json,AI_agent,representative_page_visual_sample,section_divider,true,not_verified,not_recognized,partial_ocr_missing_small_print,pending,not_established
+SKH-2026Q2-IR,13,raw/SKH-2026Q2-IR-p013.png,raw/SKH-2026Q2-IR-p013.ocr.json,AI_agent,representative_page_visual_sample,section_divider,false,false,not_recognized,major_title_and_period_recognition_failed,pending,not_established

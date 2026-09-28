@@ -1,0 +1,56 @@
+{
+  "version": "p01-domestic-claim-diagnostics/0.1",
+  "completed_at": "2026-09-22T10:02:10.949091+00:00",
+  "script_sha256": "29146899f04bfa1d452296029e659823dacc925cdd4bdae600c970e7026c53e9",
+  "input_sha256": {
+    "artifacts\\p0\\domestic_pilot_20260922\\body_audit_003\\raw\\documents.jsonl": "24a31619c38811ce3366f7ca592e90ff7241757c7ca2bffdc8803df201454736",
+    "artifacts\\p0\\domestic_pilot_20260922\\body_audit_003\\raw\\sentences.jsonl": "8d43c865ce2aca5bbb7b9f6556a345995278e977d57cad2e8e1ba1aad7f6ad88",
+    "artifacts\\p0\\domestic_pilot_20260922\\body_audit_003\\raw\\atoms.jsonl": "0f037a71a144288523c2dbe81195d252cc4f2c1c5d79a5ca4f021cc76351f987",
+    "artifacts\\p0\\domestic_pilot_20260922\\comparison_001\\raw\\alignment_cards.jsonl": "32d9d8682459fedb9dcb77cab5176d279cd74720fef127a2a6de15bc59d32ff6"
+  },
+  "network_requests": 0,
+  "model_calls": 0,
+  "documents": 22,
+  "sentences": 448,
+  "signals": 1686,
+  "signals_by_kind": {
+    "scope": 245,
+    "period": 135,
+    "action": 249,
+    "quantity": 381,
+    "product": 345,
+    "attribution": 104,
+    "modality": 126,
+    "quote": 94,
+    "negation_or_uncertainty": 7
+  },
+  "alignment_candidates": 48,
+  "pairs_with_common_explicit_value_unit": 16,
+  "pairs_with_differing_quantity_surface_sets": 8,
+  "pairs_with_numeric_surface_prerequisites": 0,
+  "readiness_blocker_counts": {
+    "anchor_proposition_not_aligned": 48,
+    "numeric_argument_binding_unverified": 48,
+    "speaker_identity_unverified": 48,
+    "human_semantic_review_required": 48,
+    "no_common_explicit_value_unit": 32,
+    "no_common_explicit_anchored_period": 46,
+    "no_common_business_scope_signal": 46,
+    "no_common_action_signal": 26,
+    "unitless_or_compound_number_requires_review": 16,
+    "modality_surface_sets_differ": 7,
+    "relative_or_partial_period_requires_resolution": 5
+  },
+  "verified_claim_alignments": 0,
+  "verified_contradictions": 0,
+  "human_review": "pending",
+  "limitations": [
+    "Rules have not been measured for precision or recall; missed and false-positive signals are possible.",
+    "Sentence context links are co-occurrence, not argument binding; relative periods are not resolved from publication dates.",
+    "Company mention is not business scope. Product mentions do not establish the scope of a number.",
+    "Simple unit values only; compound amounts, range operators, comparisons and denominators need review.",
+    "An actual_reported cue is a reporting-language cue, not independent confirmation that an event occurred.",
+    "Quote and speaker-role cues do not identify the speaker; source article completeness remains unverified.",
+    "No semantic same-claim, contradiction, linguistic gold, ontology or new rights determination."
+  ]
+}

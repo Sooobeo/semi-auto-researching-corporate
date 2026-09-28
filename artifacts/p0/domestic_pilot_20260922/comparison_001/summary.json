@@ -1,0 +1,34 @@
+{
+  "version": "p01-domestic-compare/0.1",
+  "completed_at": "2026-09-22T08:14:30.769990+00:00",
+  "script_sha256": "5fbe04785e26353ccefb5e3991858fe69164e6c61897c2bf0c50faa11023285c",
+  "candidate_sha256": "dd52b06538372a3d6895582ebe1735e6ac450ac68e535f18361fce161759d058",
+  "body_audit_summary_sha256": "a11e9996e05f9e3f735004e0e391ed3811ef82254ae37a826e8546a1cd64704b",
+  "body_audit_dir": "artifacts\\p0\\domestic_pilot_20260922\\body_audit_003",
+  "articles": 22,
+  "families_with_body": 13,
+  "families_with_multiple_sources": 9,
+  "same_family_article_pair_candidates": 9,
+  "ranked_sentence_pair_candidates": 48,
+  "pairs_with_ranked_candidates": 8,
+  "verified_same_claim_pairs": 0,
+  "verified_independent_style_pairs": 0,
+  "sentence_candidates": 448,
+  "eligible_sentence_candidates": 331,
+  "excluded_sentence_candidates_by_reason": {
+    "short_segment": 108,
+    "caption_or_subheading": 9
+  },
+  "eojeol_candidates": 6645,
+  "sentence_and_eojeol_raw_offset_roundtrip": "pass",
+  "offset_unit": "unicode_codepoint",
+  "normalization": "NFKC only as a parallel token value; offsets always address original canonical body",
+  "method": "same provisional family, same rule position and speech category, trigram Jaccard >= 0.12, greedy non-reused top 8",
+  "method_validation": "heuristic_unvalidated_no_precision_or_recall_claim",
+  "limitations": [
+    "Anchor propositions not yet aligned; speaker, genre, scope, period, unit and origin require review.",
+    "First two eligible segments are lead candidates, not verified lead boundaries.",
+    "Whitespace units are eojeol candidates, not morphology or linguistic chunks.",
+    "Counts and similarities are descriptive and cannot establish outlet style or independence."
+  ]
+}

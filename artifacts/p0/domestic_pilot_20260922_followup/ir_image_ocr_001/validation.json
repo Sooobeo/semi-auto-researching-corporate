@@ -1,0 +1,36 @@
+{
+  "pages_verified": 31,
+  "errors": [],
+  "private_artifacts": 62,
+  "git_ignored_private_artifacts": 62,
+  "all_private_artifacts_git_ignored": true,
+  "all_word_bboxes_within_render": true,
+  "word_confidence_min": 0.0,
+  "word_confidence_max": 96.0,
+  "below_80_confidence_words": 304,
+  "below_40_confidence_words": 154,
+  "visual_sample_token_checks": [
+    {
+      "doc_id": "SKH-2024Q1-IR",
+      "pdf_page_number": 3,
+      "sample_major_title_tokens_present": true,
+      "hangul_character_count": 0
+    },
+    {
+      "doc_id": "SKH-2024Q4-IR",
+      "pdf_page_number": 15,
+      "sample_major_title_tokens_present": true,
+      "hangul_character_count": 0
+    },
+    {
+      "doc_id": "SKH-2026Q2-IR",
+      "pdf_page_number": 13,
+      "sample_major_title_tokens_present": false,
+      "hangul_character_count": 0
+    }
+  ],
+  "visual_sample_count": 3,
+  "visual_review_actor": "AI_agent_not_human",
+  "human_verified_pages": 0,
+  "semantic_completeness": "not_established"
+}

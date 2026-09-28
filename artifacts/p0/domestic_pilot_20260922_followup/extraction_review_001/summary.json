@@ -1,0 +1,45 @@
+{
+  "version": "p01-domestic-extraction-review/0.1",
+  "completed_at": "2026-09-22T10:01:28.335360+00:00",
+  "script_sha256": "872df9441740e5cd7fd899b4ea6a5ed87afd1f81d790efa9f0b3674ef4656903",
+  "body_audit_summary_sha256": "a11e9996e05f9e3f735004e0e391ed3811ef82254ae37a826e8546a1cd64704b",
+  "documents_reviewed": 22,
+  "source_counts": {
+    "ZDNET_KR": 9,
+    "ETNEWS": 10,
+    "EDAILY": 3
+  },
+  "xpath_diagnostic_pass": 22,
+  "xpath_atoms_checked": 669,
+  "jsonld_articleBody_documents": 0,
+  "jsonld_parse_error_documents": 3,
+  "independent_parser_comparisons": 22,
+  "alternative_dom_comparisons": 9,
+  "boundary_findings": {
+    "title_metadata_preserved": 14,
+    "subtitle_metadata_preserved": 9,
+    "header_metadata_candidate": 8,
+    "widget_or_byline_boundary_candidate": 22,
+    "outside_link_candidate": 12
+  },
+  "short_body_documents": [
+    {
+      "doc_id": "NEWS-d6ef03257775547f",
+      "chars": 346,
+      "assessment": "stored_dom_supports_short_article_pending_human",
+      "alternate_dom_exact": 1,
+      "outside_unclassified_nodes": 0
+    }
+  ],
+  "human_audit_performed": false,
+  "complete_bodies_verified": 0,
+  "network_requests": 0,
+  "llm_calls": 0,
+  "source_text_in_public_output": false,
+  "limitations": [
+    "Stored static HTML only; dynamic text, paywalls, images and rendered tables may require local human inspection.",
+    "Character matching between extraction methods is not semantic recall or precision.",
+    "Boundary signals include legitimate metadata and related links; they are review candidates, not proven contamination.",
+    "No existing extractor or source file was changed; no human two-reviewer audit was performed."
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "review_date": "2026-09-22",
+  "scope": "offline code and metadata/hash review; no article text displayed or model input; no network",
+  "integrity_pass": true,
+  "issues": [],
+  "registry_sha256": "8d37b70514c1dfcd8ae34f2441609d17e28e529f850bd7a52e247549b587d78b",
+  "research_authorization_sha256": "2e717133036a93dd339f70b7bd665006c4940cd0430f5fce681913487ddb669e",
+  "current_script_sha256": "fbe2df5c589ce93d7df7f09009637a145412b651b8b3e800dba271437919481b",
+  "runs": [
+    {
+      "run": "collect_smoke",
+      "rows": 5,
+      "requested": 3,
+      "downloaded": 3,
+      "run_script_sha256": "fbe2df5c589ce93d7df7f09009637a145412b651b8b3e800dba271437919481b",
+      "current_script_matches_run": true
+    },
+    {
+      "run": "collect_remaining",
+      "rows": 34,
+      "requested": 19,
+      "downloaded": 19,
+      "run_script_sha256": "fbe2df5c589ce93d7df7f09009637a145412b651b8b3e800dba271437919481b",
+      "current_script_matches_run": true
+    }
+  ],
+  "candidate_rows": 39,
+  "unique_candidate_ids": 39,
+  "unique_doc_ids": 39,
+  "authorization_candidate_limit": 39,
+  "candidate_outlets": {
+    "HANKYUNG": 10,
+    "ZDNET_KR": 9,
+    "ETNEWS": 10,
+    "NEWSPIM": 7,
+    "EDAILY": 3
+  },
+  "downloaded_by_outlet": {
+    "ZDNET_KR": 9,
+    "ETNEWS": 10,
+    "EDAILY": 3
+  },
+  "blocked_by_outlet": {
+    "HANKYUNG": 10,
+    "NEWSPIM": 7
+  },
+  "source_rights_statuses": {
+    "unresolved": 39
+  },
+  "execution_bases": {
+    "user_noncommercial_research": 39
+  },
+  "body_requests": 22,
+  "denied_publisher_body_requests": 0,
+  "raw_hashes_verified": 22,
+  "private_provenance_records_verified": 22,
+  "allowlisted_requested_hops_verified": 22,
+  "raw_directory_files_gitignored": 46,
+  "raw_directory_files_examined_for_git_status": 46,
+  "tracked_raw_files": 0,
+  "body_completeness": "not_reviewed; pending original comparison",
+  "ai_input": "none in this review; collector run metadata ai_calls=0",
+  "limitations": [
+    "This checks fixed candidate identities across both runs; it does not assert a persistent lifetime cap on repeated fetching of the same allowlisted candidates.",
+    "HTTP200/download/hash verification does not establish complete article text, original authorship, claim matching, or rights clearance."
+  ],
+  "gitignore_verification": "git check-ignore -z --stdin with NUL-delimited paths avoids Windows CRLF quoting; all 46 files ignored"
+}

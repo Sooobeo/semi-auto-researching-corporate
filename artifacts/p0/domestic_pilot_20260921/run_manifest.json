@@ -1,0 +1,42 @@
+{
+  "run_id": "P01-DOMESTIC-20260921-01",
+  "started_at": "2026-09-21T12:28:45.923925+00:00",
+  "completed_recording_at": "2026-09-21T12:42:35.700328+00:00",
+  "stage_status": "partial_execution_rights_pending",
+  "ontology_status": "deferred_by_user",
+  "code_revision": "422b2bd20fb7f034ca07630a90dcba7bbde908e8",
+  "code_files": {
+    "scripts/p01_prepare_domestic_metadata.py": "31c34b14ad5b8716b4a5962e127689604ce693ec20aeb460b6101e002b369165",
+    "scripts/p01_domestic_pilot.py": "be0c47fe6ad54bad25ccfc79abbf8cccc66b1a4cc601941b078535fbff2f6289",
+    "tests/test_p01_domestic_pilot.py": "9151132e7c0170ee5208ed01ccde1301b1365644967c7b3f7ab625195adb848b"
+  },
+  "input_hashes": {
+    "article_candidates.csv": "dd52b06538372a3d6895582ebe1735e6ac450ac68e535f18361fce161759d058",
+    "source_registry.csv": "67154cfffff2630766cdd8f2666d0a69f7c3f52ae28f401ff69e27ac0f5ba114",
+    "official_anchors.csv": "0727f3d6f92168c79158e503609b3b4faca53107233f8c7395763d973c40069d",
+    "discovery_metadata.json": "7dd1954edf77038225c2824a487a402a8ecad19511f6d08c2eebe649d3016ac2"
+  },
+  "dependencies": {
+    "python": "3.13.3",
+    "lxml": "6.1.3",
+    "trafilatura": "2.2.0"
+  },
+  "commands_executed": [
+    "python scripts/p01_prepare_domestic_metadata.py --run-dir artifacts/p0/domestic_pilot_20260921",
+    "python scripts/p01_domestic_pilot.py gate --input artifacts/p0/domestic_pilot_20260921/article_candidates.csv --rights-registry artifacts/p0/domestic_pilot_20260921/source_registry.csv --output-dir artifacts/p0/domestic_pilot_20260921/gate_001",
+    "python scripts/p01_domestic_pilot.py audit --input artifacts/p0/domestic_pilot_20260921/article_candidates.csv --rights-registry artifacts/p0/domestic_pilot_20260921/source_registry.csv --manifest artifacts/p0/domestic_pilot_20260921/gate_001/manifest.csv --output-dir artifacts/p0/domestic_pilot_20260921/audit_001"
+  ],
+  "validation": "final_validation.json",
+  "supplier_inquiry_status": "draft_not_sent",
+  "body_requests": 0,
+  "bodies_stored": 0,
+  "article_body_ai_calls": 0,
+  "human_reviews_completed": 0,
+  "time_policy": "source publication dates separate from reference quarters and UTC run timestamps; search discovery time date-only",
+  "remaining": [
+    "Verify actual contract and permitted processing environment",
+    "Acquire permitted full-body samples through contract adapter or authorized static pages",
+    "Audit source completeness and perform two-person review",
+    "Align claims and measure comparable expression pairs"
+  ]
+}

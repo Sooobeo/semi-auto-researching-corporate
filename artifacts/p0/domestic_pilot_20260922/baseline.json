@@ -1,0 +1,171 @@
+{
+  "started_at": "2026-09-22T07:17:28.190642+00:00",
+  "previous_run": "P01-DOMESTIC-20260921-01",
+  "protected_inputs": [
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/article_candidates.csv",
+      "sha256": "dd52b06538372a3d6895582ebe1735e6ac450ac68e535f18361fce161759d058",
+      "byte_size": 26971
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/article_classification.csv",
+      "sha256": "664109a87e514974e3e39b19a2b9159adc504a00a85bcc37886fd8ba813b1ebb",
+      "byte_size": 5920
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/article_event_links.csv",
+      "sha256": "622d0a4ca2be63bb9f73d36320e95dec42893b8b32ed1d2a312ab2bfca65bb06",
+      "byte_size": 7302
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/artifact_checksums.csv",
+      "sha256": "84ce27cd40bf8ee98bed214ed17cf182046fee87136c1e4bd1a6ff6669bc6328",
+      "byte_size": 4042
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/baseline.json",
+      "sha256": "79cb858631c540b0fa73df661e36530da74916d5ebbe8d1dea21aa4934828fc2",
+      "byte_size": 2980
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/body_audit.csv",
+      "sha256": "fecf10d43c2475e1dcb4628803e052ddef2146f2be3aa1fc48dffcd874dc4b01",
+      "byte_size": 5152
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/chunk_spans.csv",
+      "sha256": "16ca87ca7413b097851176e51004806011654e36b0ae5992f717de0dacc0bbae",
+      "byte_size": 100
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/claim_alignment.csv",
+      "sha256": "3b81112070331c581fb274352d581d1b8a0842e870aa8e6350948e95dde0ef04",
+      "byte_size": 103
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/discovered_links.csv",
+      "sha256": "142dd6a16b6bcaa1049b7092c009415a77ec1634d9273972f2d27e7e0ad5d3b4",
+      "byte_size": 96818
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/discovery_metadata.json",
+      "sha256": "7dd1954edf77038225c2824a487a402a8ecad19511f6d08c2eebe649d3016ac2",
+      "byte_size": 117237
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/execution_report.md",
+      "sha256": "3126225691d80346fc893dc0de8a73feab6ddfe2230d0e3b173e3811b3dd44a0",
+      "byte_size": 10458
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/final_validation.json",
+      "sha256": "ca3d81a68093607292a56cdcafd6f4ffaaf5d344f6dc1ed1e53f413904c118c1",
+      "byte_size": 8929
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/human_review_queue.csv",
+      "sha256": "bb14512c199560f651a4f25a49eda8e57184f44b513fb39c8144ced80700ca5d",
+      "byte_size": 5093
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/metadata_summary.json",
+      "sha256": "c62d614bd21af10dd4de63f0990efa0c54a1360d484ec585e4b6176d3742971b",
+      "byte_size": 892
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/news_source_trials.csv",
+      "sha256": "2a9a5669670c29b1c5ced7b7421eb2115be2b0567d27956da84b4fa85a04832c",
+      "byte_size": 11396
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/official_anchors.csv",
+      "sha256": "0727f3d6f92168c79158e503609b3b4faca53107233f8c7395763d973c40069d",
+      "byte_size": 18235
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/rights_review.md",
+      "sha256": "6115c8970c9e325d53c723eeafb68f21c856908d22683eef3c3e8ed36dda18de",
+      "byte_size": 11266
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/run_manifest.json",
+      "sha256": "aaa11860dba4b84976c9fc9b120da1ae7f3acb9274fb772de43d443a7b73e2bc",
+      "byte_size": 2556
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/sampling_matrix.csv",
+      "sha256": "00a654ee338a9905eb48162692cddec8d3bda2135fa2ab12d4ff6ed741cae40c",
+      "byte_size": 5602
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/sampling_protocol.md",
+      "sha256": "6ab0d5e7dd07f4801289c74667dc7cc77c150b5051eb3b254dbbc14dd68586e2",
+      "byte_size": 10821
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/sentence_spans.csv",
+      "sha256": "a7fef13472087b53f9fcc09e41acef116479cdc99d8c7720355523d0ffe4351e",
+      "byte_size": 119
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/source_registry.csv",
+      "sha256": "67154cfffff2630766cdd8f2666d0a69f7c3f52ae28f401ff69e27ac0f5ba114",
+      "byte_size": 21937
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/supplier_questions.md",
+      "sha256": "6b56445d28db837d42b4f4211b9ab6db78bfef52618d3d1181dee24eef4a2ecf",
+      "byte_size": 6292
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/technical_review.md",
+      "sha256": "322a084fb6ec4ff69e25c401de80f5582c08f4a529cb6011098db340c46918b2",
+      "byte_size": 1255
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/audit_001/audit.json",
+      "sha256": "5b97174ff34b8c6d87a727e3de33edd0d0bba0219e7bdbcc3c01f2362dac6efa",
+      "byte_size": 1601
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/gate_001/manifest.csv",
+      "sha256": "7b5655c06a11a6cb2e2989e3a21cbbd3f8cecaadb1ef8eb9fbf617edcde257fb",
+      "byte_size": 39625
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/gate_001/request_trace.jsonl",
+      "sha256": "991709cd04333e2abb0fd89a96a424b2eefc284e22eefbc9404a45e6feb02f5e",
+      "byte_size": 2145
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/gate_001/run.json",
+      "sha256": "ad2844c873fee6020a464cdcaae0a09b04f73df88271316bed5103368b4d2e28",
+      "byte_size": 470
+    },
+    {
+      "path": "artifacts/p0/domestic_pilot_20260921/gate_001/raw/blocks.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_size": 0
+    },
+    {
+      "path": "artifacts/p0/news_body_manifest.csv",
+      "sha256": "fa2609aa9dfeb3ac247ab695d6ef4330430673f06374fa25215d9ac95a653322",
+      "byte_size": 3198
+    },
+    {
+      "path": "artifacts/p0/news_body_blocks.jsonl",
+      "sha256": "eee85ee00c888072fedae9240cc248b571ff2b573ea4f2bb390696362d56893a",
+      "byte_size": 218763
+    },
+    {
+      "path": "artifacts/p0/document_manifest.csv",
+      "sha256": "56d04bcc532ef520e435551627a2bc230cfc51e82f62c2ebfb840987ff133fc2",
+      "byte_size": 18186
+    },
+    {
+      "path": "artifacts/p0/source_registry.csv",
+      "sha256": "e094a436e2e8000b4e768426d7ba2fa714954ec178835377658c833f8fc54e83",
+      "byte_size": 3279
+    }
+  ]
+}

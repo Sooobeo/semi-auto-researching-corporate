@@ -1,0 +1,93 @@
+{
+  "run_id": "P01-DOMESTIC-20260921-01",
+  "started_at": "2026-09-21T12:28:45.923925+00:00",
+  "authorization": "User approved P01 pilot execution; ontology work deferred",
+  "code_revision": "422b2bd20fb7f034ca07630a90dcba7bbde908e8",
+  "initial_git_status": "",
+  "protected_inputs": [
+    {
+      "path": "AGENTS.md",
+      "exists": true,
+      "sha256": "167c2e87cd6e931ad17f8e70d4b99771ed04836bffad928b59c7905c00401f6f",
+      "byte_size": 9523
+    },
+    {
+      "path": ".gitignore",
+      "exists": true,
+      "sha256": "a347901b12191b1e6be1652e49e555eee41aa60f7e7507c438cde6c4b8b2d9f5",
+      "byte_size": 211
+    },
+    {
+      "path": "artifacts/p0/source_registry.csv",
+      "exists": true,
+      "sha256": "e094a436e2e8000b4e768426d7ba2fa714954ec178835377658c833f8fc54e83",
+      "byte_size": 3279,
+      "data_rows": 7
+    },
+    {
+      "path": "artifacts/p0/news_source_trials.csv",
+      "exists": true,
+      "sha256": "9d47a1e5c60b0258f50945ce6566309e424581066c2ab169e1cf4363d809fb28",
+      "byte_size": 1601,
+      "data_rows": 6
+    },
+    {
+      "path": "artifacts/p0/news_manifest.csv",
+      "exists": true,
+      "sha256": "9deb03f66560a280c898e2c53d67e34d911feb9b32da11f5d72bd8a820493aff",
+      "byte_size": 2119,
+      "data_rows": 4
+    },
+    {
+      "path": "artifacts/p0/news_body_manifest.csv",
+      "exists": true,
+      "sha256": "fa2609aa9dfeb3ac247ab695d6ef4330430673f06374fa25215d9ac95a653322",
+      "byte_size": 3198,
+      "data_rows": 4
+    },
+    {
+      "path": "artifacts/p0/news_body_blocks.jsonl",
+      "exists": true,
+      "sha256": "eee85ee00c888072fedae9240cc248b571ff2b573ea4f2bb390696362d56893a",
+      "byte_size": 218763,
+      "data_rows": 186
+    },
+    {
+      "path": "artifacts/p0/document_manifest.csv",
+      "exists": true,
+      "sha256": "56d04bcc532ef520e435551627a2bc230cfc51e82f62c2ebfb840987ff133fc2",
+      "byte_size": 18186,
+      "data_rows": 42
+    },
+    {
+      "path": "artifacts/p0/data_feasibility.md",
+      "exists": true,
+      "sha256": "6babe1f7009c5fcd5a337e55369c8334e565ea1ba85ac551b504f033ec1f1476",
+      "byte_size": 5261
+    },
+    {
+      "path": "artifacts/p0/news_feasibility.md",
+      "exists": true,
+      "sha256": "1b7957658a17307ffa1c1e37fb18b14ea2dffb19a31cfd613c3702fd8339dbd8",
+      "byte_size": 3043
+    },
+    {
+      "path": "scripts/p01_news_body_crawl.py",
+      "exists": true,
+      "sha256": "c0aa5f9463436d54a79838fbd70c71da128cc443a9fc77f5da85dadceb814267",
+      "byte_size": 14801
+    },
+    {
+      "path": "scripts/p01_news_probe.py",
+      "exists": true,
+      "sha256": "e1f9b954e2fa2a1c959362c781951335ded9ccecd5e6a6015f46e1a509b339d2",
+      "byte_size": 15950
+    },
+    {
+      "path": "scripts/p01_finalize.py",
+      "exists": true,
+      "sha256": "03c44f6685c3e835da900d594b8f22dc55825830360d4239dcdb525423db52b0",
+      "byte_size": 13998
+    }
+  ]
+}

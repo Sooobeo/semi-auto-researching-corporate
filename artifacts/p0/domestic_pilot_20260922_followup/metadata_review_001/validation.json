@@ -1,0 +1,40 @@
+{
+  "result": "pass",
+  "checks": {
+    "expected22_documents": true,
+    "raw_and_manifest_inputs_unchanged": true,
+    "metadata_headers_dates_reproduced": true,
+    "all_public_private_date_parity": true,
+    "utc_only_with_explicit_offset": true,
+    "utc_conversion_independent": true,
+    "no_offset_not_inferred": true,
+    "date_only_no_midnight": true,
+    "minute_precision_preserved": true,
+    "invalid_clock_calendar_rejected": true,
+    "canonical_not_approval": true,
+    "private_all_ignored_untracked": true,
+    "public_no_copied_sentence_ge40": true,
+    "script_hash_matches": true
+  },
+  "checks_passed": 14,
+  "checks_total": 14,
+  "network_requests": 0,
+  "article_text_emitted": false,
+  "date_precision_counts": {
+    "second": 62,
+    "minute": 27,
+    "date_only": 15,
+    "unknown": 2
+  },
+  "published_timezones": {
+    "+09:00": 40,
+    "not_stated": 32
+  },
+  "private_files_ignored": 3,
+  "tracked_private_files": 0,
+  "limitations": [
+    "Parity reuses the existing extractor; this proves reproducibility, not independent interpretation accuracy.",
+    "Canonical and OG metadata do not establish independent original reporting; matching IDs are identity evidence candidates.",
+    "Exact source time candidates are retained without choosing one authoritative timestamp."
+  ]
+}

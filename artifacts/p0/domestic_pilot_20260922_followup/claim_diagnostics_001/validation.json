@@ -1,0 +1,37 @@
+{
+  "result": "pass",
+  "checks": {
+    "product_digits_not_quantity": true,
+    "period_digits_not_quantity": true,
+    "bit_byte_units_distinct": true,
+    "simple_explicit_money_scale_matches": true,
+    "same_number_different_year_not_ready": true,
+    "relative_period_not_anchored": true,
+    "compound_not_simple": true,
+    "surface_prerequisites_never_semantic_approval": true,
+    "empty_evidence_not_ready": true,
+    "all_signal_source_offsets_and_hashes": true,
+    "all_private_span_roundtrips": true,
+    "all_context_references_exist": true,
+    "expected_input_counts": true,
+    "no_semantic_approval": true,
+    "prior_inputs_unchanged": true,
+    "script_hash_matches": true,
+    "private_files_ignored_untracked": true,
+    "no_full_source_sentence_copy_ge40": true,
+    "no_public_raw_text_fields": true
+  },
+  "counts": {
+    "documents": 22,
+    "sentences": 448,
+    "signals": 1686,
+    "pairs": 48,
+    "private_files_ignored": 2
+  },
+  "network_requests": 0,
+  "article_text_emitted": false,
+  "limitations": [
+    "Mechanical offset/hash, boundary and synthetic counterexample checks only; semantic precision/recall and article completeness not verified.",
+    "Initial ad hoc PowerShell stdin test had Korean strings replaced by question marks; corrected tests use ASCII Unicode escape literals and all actual tests above ran on intended strings."
+  ]
+}

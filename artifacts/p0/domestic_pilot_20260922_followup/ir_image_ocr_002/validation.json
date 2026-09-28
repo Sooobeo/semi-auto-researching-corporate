@@ -1,0 +1,19 @@
+{
+  "variant_page_rows": 93,
+  "distinct_pages": 31,
+  "selected_variant_rows": 31,
+  "selected_nonempty_pages": 31,
+  "errors": [],
+  "private_artifacts": 156,
+  "git_ignored_private_artifacts": 156,
+  "all_private_artifacts_git_ignored": true,
+  "source_PDF_documents": 10,
+  "source_hashes_unchanged": true,
+  "selected_word_candidates": 275,
+  "selected_below_80_confidence_words": 108,
+  "selected_below_40_confidence_words": 66,
+  "visual_sample_title_period_matches": 3,
+  "visual_sample_pages": 3,
+  "human_verified_pages": 0,
+  "semantic_completeness": "not_established"
+}

@@ -1,0 +1,117 @@
+{
+  "run_id": "P01-DOMESTIC-20260922-FOLLOWUP-01",
+  "recorded_at": "2026-09-22T10:24:40.698772+00:00",
+  "user_scope": "Complete feasible P01 work; brief a first-time reader; ontology deferred",
+  "previous_run": "artifacts/p0/domestic_pilot_20260922",
+  "source_rights": "Unresolved permissions and explicit prohibitions preserved; no new license inference",
+  "article_body_network_requests": 0,
+  "external_body_LLM_calls": 0,
+  "ontology": "not_performed",
+  "model_training": "not_performed",
+  "new_tool_environment": "C:/Users/Insun/.cache/p01-research/kiwi-20260922",
+  "tool_downloads": "Kiwi and its local model/dependencies installed in a separate environment; existing Tesseract used for OCR",
+  "commands_executed_for_final_outputs": [
+    "python scripts/p01_existing_evidence_review.py --output-dir artifacts/p0/domestic_pilot_20260922_followup/p01_inventory",
+    "python scripts/p01_domestic_extraction_review.py --body-audit-dir artifacts/p0/domestic_pilot_20260922/body_audit_003 --output-dir artifacts/p0/domestic_pilot_20260922_followup/extraction_review_001",
+    "python scripts/p01_domestic_claim_diagnostics.py --audit-dir artifacts/p0/domestic_pilot_20260922/body_audit_003 --comparison-dir artifacts/p0/domestic_pilot_20260922/comparison_001 --output-dir artifacts/p0/domestic_pilot_20260922_followup/claim_diagnostics_002",
+    "python scripts/p01_domestic_metadata_review.py --audit-dir artifacts/p0/domestic_pilot_20260922/body_audit_003 --manifest artifacts/p0/domestic_pilot_20260922/collect_smoke/manifest.csv --manifest artifacts/p0/domestic_pilot_20260922/collect_remaining/manifest.csv --output-dir artifacts/p0/domestic_pilot_20260922_followup/metadata_review_001",
+    "& \"C:/Users/Insun/.cache/p01-research/kiwi-20260922/Scripts/python.exe\" scripts/p01_domestic_morphology.py --body-audit-dir artifacts/p0/domestic_pilot_20260922/body_audit_003 --candidates artifacts/p0/domestic_pilot_20260922/article_candidates.csv --output-dir artifacts/p0/domestic_pilot_20260922_followup/morphology_001",
+    "python scripts/p01_ir_image_ocr.py --output-dir artifacts/p0/domestic_pilot_20260922_followup/ir_image_ocr_001",
+    "python scripts/p01_ir_image_ocr.py --baseline-output artifacts/p0/domestic_pilot_20260922_followup/ir_image_ocr_001 --output-dir artifacts/p0/domestic_pilot_20260922_followup/ir_image_ocr_002",
+    "python scripts/p01_build_followup_index.py --prior-dir artifacts/p0/domestic_pilot_20260922 --followup-dir artifacts/p0/domestic_pilot_20260922_followup --claim-dir artifacts/p0/domestic_pilot_20260922_followup/claim_diagnostics_002 --output-dir artifacts/p0/domestic_pilot_20260922_followup/integrated_003 --ocr-dir artifacts/p0/domestic_pilot_20260922_followup/ir_image_ocr_002"
+  ],
+  "replay_rule": "Use NEW output directories; replace dependent paths consistently. Original evidence is immutable.",
+  "final_outputs": {
+    "inventory": "p01_inventory",
+    "extraction_review": "extraction_review_001",
+    "claim_diagnostics": "claim_diagnostics_002",
+    "metadata_review": "metadata_review_001",
+    "morphology": "morphology_001",
+    "image_ocr": "ir_image_ocr_002",
+    "integrated": "integrated_003",
+    "briefing": "briefing.md",
+    "handoff": "handoff_p0.md"
+  },
+  "validation_reports": [
+    "extraction_review_001/validation.json",
+    "claim_diagnostics_002/validation.json",
+    "metadata_review_001/validation.json",
+    "morphology_001/validation.json",
+    "ir_image_ocr_002/validation.json"
+  ],
+  "superseded_outputs": {
+    "claim_diagnostics_001": "numeric/unit/date boundary normalization improvements; preserved",
+    "ir_image_ocr_001": "baseline sparse OCR with background noise and missed headings; preserved",
+    "integrated_001": "data joins passed but evidence links invalid; preserved failed validation",
+    "integrated_002": "corrected links, before explicit final OCR output selection; superseded by003"
+  },
+  "counts": {
+    "primary_official_documents": 40,
+    "official_manifest_documents": 42,
+    "official_blocks_rechecked": 743683,
+    "numeric_pairs_recalculated": 20,
+    "domestic_articles": 22,
+    "same_family_article_pair_candidates": 9,
+    "sentence_pair_candidates": 48,
+    "rule_sentence_candidates": 448,
+    "kiwi_sentence_candidates": 433,
+    "morpheme_candidates": 14829,
+    "claim_signal_candidates": 1686,
+    "pairs_with_common_value_unit": 16,
+    "pairs_with_different_quantity_sets": 8,
+    "verified_same_claim_pairs": 0,
+    "image_only_pages_OCR": 31,
+    "OCR_variant_page_records": 93,
+    "selected_OCR_word_candidates": 275,
+    "OCR_words_below_score80": 108,
+    "human_reviews_completed": 0,
+    "P01_tasks_done": 7,
+    "P01_tasks_partial": 4
+  },
+  "scripts": [
+    {
+      "path": "scripts/p01_existing_evidence_review.py",
+      "sha256": "ce586684604b71fd9e852d4d5099563de9650d77d969ac1117379b468b172b17"
+    },
+    {
+      "path": "scripts/p01_domestic_extraction_review.py",
+      "sha256": "872df9441740e5cd7fd899b4ea6a5ed87afd1f81d790efa9f0b3674ef4656903"
+    },
+    {
+      "path": "scripts/p01_domestic_claim_diagnostics.py",
+      "sha256": "23cba75ba893a8e69f796e46a80be7e4cc7e77465f4585acbad94cd57a585b78"
+    },
+    {
+      "path": "scripts/p01_domestic_metadata_review.py",
+      "sha256": "956f5c1f51c293cfe03f2e0386418c645acd3edf5953307192c284d01d23eaac"
+    },
+    {
+      "path": "scripts/p01_domestic_morphology.py",
+      "sha256": "cc5e58369151dd98b61dc0904a43f14b91462fd64d90446b9fe56efdcf1d9bdb"
+    },
+    {
+      "path": "scripts/p01_ir_image_ocr.py",
+      "sha256": "b940fb637465f40ac5877262cd56260638db2663dc71feac47be2ba1fa1fff82"
+    },
+    {
+      "path": "scripts/p01_build_followup_index.py",
+      "sha256": "fc69baec09e6eaba966495491b0c19ca468b169f1775fcf886fa62e5e90370fe"
+    },
+    {
+      "path": "scripts/p01_verify_followup.py",
+      "sha256": "2de75cd843939af2f3852b5ba3d7f65642f92cdcb2c0be46615a66f7fe2a6566"
+    },
+    {
+      "path": "scripts/requirements-p01-local-nlp.txt",
+      "sha256": "83244862cce5d54c02b6ba57be2f4d3972835c7852e01b2a678e8c1500be3954"
+    }
+  ],
+  "metadata_only_outputs": "Public tables retain IDs, hashes, normalized numeric/date values and positions; original source text stays in Git-ignored raw directories.",
+  "remaining": [
+    "human cross-review and original-page semantic completeness",
+    "verified same-claim/speaker/genre/independence",
+    "full period event/Q&A coverage and follow-up/correction relations",
+    "image/OCR semantic validation and third-person reproduction"
+  ],
+  "final_verification_command": "python scripts/p01_verify_followup.py --run-dir artifacts/p0/domestic_pilot_20260922_followup --output artifacts/p0/domestic_pilot_20260922_followup/final_validation.json"
+}

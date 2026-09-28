@@ -1,0 +1,2511 @@
+{
+  "run_id": "P01-DOMESTIC-20260921-01",
+  "discovery_scope": "public search title/link metadata; article bodies not opened or stored",
+  "batches": [
+    {
+      "batch_id": "Q001",
+      "queries": [
+        "삼성전자 36GB HBM3E 12단 D램 개발 2024 2월 27일",
+        "삼성전자 HBM4 양산 출하 2026 2월 12일",
+        "SK하이닉스 2025년 실적 2026 1월 28일 영업이익",
+        "SK하이닉스 2026 1분기 실적 4월 23일"
+      ],
+      "results": [
+        {
+          "title": "삼성전자, 세계 첫 36GB 12단 HBM3E 개발...상반기 양산 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20240227081348",
+          "search_published_raw": "2.6 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0001"
+        },
+        {
+          "title": "삼성전자, HBM4 세계 최초 출하 | 한국경제",
+          "url": "https://www.hankyung.com/article/2026021230741",
+          "search_published_raw": "7 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0002"
+        },
+        {
+          "title": "SK하닉, 창사 이래 최대실적…영업이익률 72% 새 역사 썼다 | 한국경제",
+          "url": "https://www.hankyung.com/article/202604230373g",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0003"
+        },
+        {
+          "title": "SK하이닉스, 1분기 영업이익 37.6조…역대 최대 | 한국경제",
+          "url": "https://www.hankyung.com/article/202604230318g",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0004"
+        },
+        {
+          "title": "삼성전자, 세계 최초 HBM4 양산 출하 - 전자신문",
+          "url": "https://www.etnews.com/20260212000339",
+          "search_published_raw": "7 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0005"
+        },
+        {
+          "title": "[특징주] 삼성전자 '18만 전자' 달성…HBM4 최초 양산 출하",
+          "url": "https://www.newspim.com/news/view/20260213000306",
+          "search_published_raw": "7 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0006"
+        },
+        {
+          "title": "삼성전자, HBM4 세계 첫 출하…AI 메모리 '황제의 귀환' 신호탄",
+          "url": "https://www.edaily.co.kr/news/read?mediaCodeNo=257&newsId=05533366645349864",
+          "search_published_raw": "7 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0007"
+        },
+        {
+          "title": "앞서가는 SK하이닉스…12단 HBM3E 세계 첫 양산 | 한국경제",
+          "url": "https://www.hankyung.com/article/2024092605181",
+          "search_published_raw": "2.0 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0008"
+        },
+        {
+          "title": "HBM4 출하 앞둔 삼성·하이닉스 자신감…'선공'과 '물량' 전략 갈렸다",
+          "url": "https://search.newspim.com/news/view/20260211001283",
+          "search_published_raw": "7 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0009"
+        },
+        {
+          "title": "[주니어전자]삼성전자, 세계 최초 HBM4 양산 출하 성공 - 전자신문",
+          "url": "https://www.etnews.com/20260213000188",
+          "search_published_raw": "7 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0010"
+        },
+        {
+          "title": "판 뒤집는 승부수 될까…삼성전자, 세계 최초 HBM4 양산 출하 시작 | 한국경제",
+          "url": "https://www.hankyung.com/amp/202602122345g",
+          "search_published_raw": "7 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0011"
+        },
+        {
+          "title": "삼성이 샘플 돌렸대 깜짝 소식…하루 만에 300억 몰렸다 | 한국경제",
+          "url": "https://www.hankyung.com/article/2024022847896",
+          "search_published_raw": "2.6 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0012"
+        },
+        {
+          "title": "2. HBM 경쟁 구도, 삼성전자의 약진",
+          "url": "https://stock.mk.co.kr/uploads/20260225/1771985434_3b4da2366163be8020e7.pdf",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0013"
+        },
+        {
+          "title": "SK 하이닉스 (000660/KS)",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=647118",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0014"
+        },
+        {
+          "title": "2026년 01월 29일",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-01-f690229642a2b8bc66e9fbb05793266b",
+          "search_published_raw": "7 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0015"
+        },
+        {
+          "title": "2026-02-24",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=647116",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0016"
+        },
+        {
+          "title": "기업분석ㅣ2026.02.12",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=646911",
+          "search_published_raw": "7 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0017"
+        },
+        {
+          "title": "2026년 HBM 공급 협상이 지연되고 있다. 지",
+          "url": "https://stock.mk.co.kr/uploads/20250826/1756172615_c1d97206443b1114c27b.pdf",
+          "search_published_raw": "1.1 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0018"
+        }
+      ]
+    },
+    {
+      "batch_id": "Q002",
+      "family": "SAM-EARLY-DEV-HBM3E12H",
+      "q": "삼성전자 36GB HBM3E 12단 2024 2월 27일 개발",
+      "domains": [
+        "etnews.com",
+        "newspim.com",
+        "edaily.co.kr"
+      ],
+      "results": [
+        {
+          "title": "'SK하이닉스 게섯거라'…삼성·마이크론, 5세대 HBM 양산 '초읽기'",
+          "url": "https://www.newspim.com/news/view/20240227000946",
+          "search_published_raw": "2.6 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0019"
+        },
+        {
+          "title": "\"SK하이닉스보다 빨랐다\"…삼성, '업계 최대 용량' HBM3E 개발",
+          "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02066406638794784",
+          "search_published_raw": "2.6 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0020"
+        },
+        {
+          "title": "삼성, HBM 접합 소재 이원화 추진…LG화학과 차세대 NCF 개발 - 전자신문",
+          "url": "https://www.etnews.com/20240228000307",
+          "search_published_raw": "2.6 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0021"
+        },
+        {
+          "title": "SK하이닉스, HBM3E 12단 첫 양산…“연내 고객사 공급” - 전자신문",
+          "url": "https://www.etnews.com/20240926000127",
+          "search_published_raw": "2.0 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0022"
+        },
+        {
+          "title": "[특징주]SK하이닉스, ‘12단 HBM3E’ 양산 돌입 소식에 연일 강세",
+          "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01964726639024384",
+          "search_published_raw": "2.0 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0023"
+        },
+        {
+          "title": "삼성전자 \"맞춤형 HBM으로 주도권 확보...누적 매출 100억달러 전망\"",
+          "url": "https://ir.newspim.com/news/view/20240502000495",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0024"
+        },
+        {
+          "title": "불붙은 HBM3E 전쟁…SK하이닉스·삼성전자·마이크론 경쟁 돌입 - 전자신문",
+          "url": "https://m.etnews.com/20240227000323",
+          "search_published_raw": "2.6 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0025"
+        },
+        {
+          "title": "'반도체 겨울'은 멀었다...삼성전자도 곧 '희소식' 기대",
+          "url": "https://ir.newspim.com/news/view/20240927000904",
+          "search_published_raw": "2.0 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0026"
+        },
+        {
+          "title": "'반도체 겨울'은 멀었다...삼성전자도 곧 '희소식' 기대",
+          "url": "https://search.newspim.com/news/view/20240927000904",
+          "search_published_raw": "2.0 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0027"
+        },
+        {
+          "title": "\"AI 메모리 리더 입증\"…SK하이닉스 '12단 적층 HBM3E' 양산 돌입",
+          "url": "https://www.newspim.com/news/view/20240926000295",
+          "search_published_raw": "2.0 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0028"
+        },
+        {
+          "title": "삼성전자 \"맞춤형 HBM으로 주도권 확보...누적 매출 100억달러 전망\"",
+          "url": "https://search.newspim.com/news/view/20240502000495",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0029"
+        },
+        {
+          "title": "\"삼성전자 HBM3E, 주류시장 대체…내년 HBM4 16H 개발\"",
+          "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02974966638857432",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0030"
+        }
+      ]
+    },
+    {
+      "batch_id": "Q003",
+      "family": "SAM-EARLY-PROD-VNAND9",
+      "q": "삼성전자 9세대 V낸드 양산 2024 4월 23일",
+      "domains": [
+        "etnews.com",
+        "hankyung.com",
+        "zdnet.co.kr",
+        "newspim.com"
+      ],
+      "results": [
+        {
+          "title": "삼성전자, 업계 최초 '9세대 V낸드' 양산…'채널 홀 에칭' 기술로 생산성↑",
+          "url": "https://www.newspim.com/news/view/20240423000527",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0031"
+        },
+        {
+          "title": "삼성전자, 200대 후반 '9세대 V낸드' 양산 - 전자신문",
+          "url": "https://www.etnews.com/20240423000216",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0032"
+        },
+        {
+          "title": "삼성, 메모리 초격차 굳힌다…286단 V낸드 세계 첫 양산 | 한국경제",
+          "url": "https://www.hankyung.com/article/2024042313621",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0033"
+        },
+        {
+          "title": "삼성전자, 업계 최고 성능∙최대 용량 PC용 SSD PM9E1 양산",
+          "url": "https://www.newspim.com/news/view/20241004000102",
+          "search_published_raw": "2.0 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0034"
+        },
+        {
+          "title": "삼성전자, 세계 첫 QLC 9세대 낸드 양산 | 한국경제",
+          "url": "https://www.hankyung.com/article/2024091262241",
+          "search_published_raw": "2.0 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0035"
+        },
+        {
+          "title": "삼성전자, AI 시장 겨냥한 'QLC 9세대 V낸드' 업계 최초 양산 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20240912080749",
+          "search_published_raw": "2.0 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0036"
+        },
+        {
+          "title": "AI시대 '귀한몸' 낸드플래시...삼성전자 '초격차' 유지",
+          "url": "https://search.newspim.com/news/view/20240912000137",
+          "search_published_raw": "2.0 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0037"
+        },
+        {
+          "title": "'미래기술·특허 확보하자'…삼성·LG전자, 상반기 R&D 투자 늘렸다",
+          "url": "https://www.newspim.com/news/view/20240830000565",
+          "search_published_raw": "2.1 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0038"
+        },
+        {
+          "title": "AI 열풍에 '귀한몸' 낸드 시장 커진다...삼성·SK 신제품 경쟁",
+          "url": "https://www.newspim.com/news/view/20240918000002",
+          "search_published_raw": "2.0 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0039"
+        },
+        {
+          "title": "AI 열기에 낸드도 '불티'…삼성·SK, 차세대 제품 개발 경쟁",
+          "url": "https://m.newspim.com/news/view/20240527000847",
+          "search_published_raw": "2.3 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0040"
+        },
+        {
+          "title": "삼성전자, 버팀목 '반도체' 자존심 지켰다",
+          "url": "https://www.newspim.com/news/view/20160428000045",
+          "search_published_raw": "10.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0041"
+        },
+        {
+          "title": "증권경제 최신뉴스 섹션 | 한국경제TV",
+          "url": "https://wowtv.hankyung.com/NewsCenter/News/NewsList?StartDate=2024-04-23&currentIndex=680&menuSeq=459&selDateIndex=0&subMenu=latest",
+          "search_published_raw": "",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0042"
+        },
+        {
+          "title": "2026년 3월 24일",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=647798",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0043"
+        },
+        {
+          "title": "Ce",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=647122",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0044"
+        },
+        {
+          "title": "Company Report  2024.05.02",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=630684",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0045"
+        }
+      ]
+    },
+    {
+      "batch_id": "Q004",
+      "family": "SAM-LATE-INV-AMD",
+      "q": "삼성전자 AMD 전략 협력 MOU HBM4 2026 3월",
+      "domains": [
+        "etnews.com",
+        "hankyung.com",
+        "edaily.co.kr",
+        "zdnet.co.kr"
+      ],
+      "results": [
+        {
+          "title": "삼성전자, AMD와 메모리 협력 MOU…HBM4 우선 공급업체 지정 | 한국경제",
+          "url": "https://www.hankyung.com/article/202603189896g",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0046"
+        },
+        {
+          "title": "삼성전자·AMD, HBM4에서 파운드리까지 협력 확대 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20260318160725",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0047"
+        },
+        {
+          "title": "삼성전자, 오픈AI도 뚫었다…HBM4 단독 공급 | 한국경제",
+          "url": "https://www.hankyung.com/article/2026031933581",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0048"
+        },
+        {
+          "title": "20년 깐부 삼성-AMD, HBM 이어 파운드리도 손잡을 듯 | 한국경제",
+          "url": "https://www.hankyung.com/article/2026031805251",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0049"
+        },
+        {
+          "title": "삼성전자 AMD에 HBM4 우선 공급…파운드리·패키징까지 협력 확대 │ 한경매거진&북",
+          "url": "https://magazine.hankyung.com/business/article/202603189955b",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0050"
+        },
+        {
+          "title": "AMD, AI 가속기에 삼성 HBM4 탑재…네이버와 AI 인프라 협력 확대 - 전자신문",
+          "url": "https://www.etnews.com/20260318000392",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0051"
+        },
+        {
+          "title": "삼성·SK HBM, 올해도 잘 팔린다...양사 도합 300억Gb 달할 듯 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20260327105032",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0052"
+        },
+        {
+          "title": "PowerPoint 프레젠테이션",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-03-3d6410ab8b3b856c463940fc8799b841",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0053"
+        },
+        {
+          "title": "삼성전자, GTC서 'HBM4E' 최초 공개…엔비디아와 AI 동맹 강화 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20260316181857",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0054"
+        },
+        {
+          "title": "삼성전자 AMD에 HBM4 우선 공급…파운드리·패키징까지 협력 확대│ 한경매거진&북",
+          "url": "https://magazine.hankyung.com/business/amp/202603189955b",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0055"
+        },
+        {
+          "title": "삼성전자 메모리 물량 70% 장기계약…2028년까지 공급 부족 | 한국경제",
+          "url": "https://www.hankyung.com/article/2026073064401",
+          "search_published_raw": "last month",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0056"
+        },
+        {
+          "title": "HBM 치고나가는 삼성전자…'큰손' AMD에 6세대 제품 우선 공급",
+          "url": "https://tv.edaily.co.kr/News/NewsRead?Kind=257&NewsId=04952806645384632",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0057"
+        },
+        {
+          "title": "삼성 전영현 \"엔비디아와 HBM4E·HBM5 등 장기 협력 논의\"",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=04975766645479752",
+          "search_published_raw": "3 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0058"
+        },
+        {
+          "title": "Overwe",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-02-34d49a54955aca08ef9b21d3b35c3810",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0059"
+        },
+        {
+          "title": "PowerPoint 프레젠테이션",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-04-6d6ec97abeb1d1c87dff87f14d97e15d",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0060"
+        }
+      ]
+    },
+    {
+      "batch_id": "Q005",
+      "family": "SAM-EARLY-EARN-2024Q1",
+      "q": "삼성전자 2024 1분기 실적 메모리 4월 30일",
+      "domains": [
+        "etnews.com",
+        "hankyung.com",
+        "zdnet.co.kr",
+        "edaily.co.kr"
+      ],
+      "results": [
+        {
+          "title": "AI 특수에 실적회복 나선 삼성전자, 감산조정 언제쯤?",
+          "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01262806638763296",
+          "search_published_raw": "2.6 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0061"
+        },
+        {
+          "title": "[스페셜리포트]반등 신호탄 쏜 삼성전자…반도체·모바일 성장 이끈 'AI' - 전자신문",
+          "url": "https://m.etnews.com/20240131000276",
+          "search_published_raw": "2.6 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0062"
+        },
+        {
+          "title": "[ZD브리핑]삼성전자 ‘메모리 슈퍼사이클’ 최대 실적...2분기 전략도 주목 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20260426123711",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0063"
+        },
+        {
+          "title": "Company Report  2024.05.02",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=630684",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0064"
+        },
+        {
+          "title": "삼성전자/SK하이닉스: 흔들리지 않는 편안함",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-01-cb657b9ee5c5bed4a631d2151441f0a7",
+          "search_published_raw": "7 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0065"
+        },
+        {
+          "title": "'메모리 한파' 삼성전자…\"상반기 D램 반등 어렵다\"",
+          "url": "https://plus.hankyung.com/apps/newsinside.view?aid=2025010843521&category=NEWSPAPER",
+          "search_published_raw": "1.7 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0066"
+        },
+        {
+          "title": "반도체 겨울 지났다…삼성전자 1분기 매출 70조 복귀 유력 | 한국경제",
+          "url": "https://www.hankyung.com/article/202404010455g",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0067"
+        },
+        {
+          "title": "숫자로 읽는 경제 실적은 엔비디아급…시총은 5분의 1 | 생글생글",
+          "url": "https://sgsg.hankyung.com/article/2026041015491",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0068"
+        },
+        {
+          "title": "삼성전자의 시간이 오고 있다",
+          "url": "https://plus.hankyung.com/apps/newsinside.view?aid=202501095485b&category=&sns=y",
+          "search_published_raw": "1.7 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0069"
+        },
+        {
+          "title": "삼성전자 영업익 1년만에 '10배 껑충'…반도체 살아나고 갤S24 호조 [종합]",
+          "url": "https://plus.hankyung.com/apps/newsinside.view?aid=202404051703g&category=&sns=y",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0070"
+        },
+        {
+          "title": "3분기 실적 휘청인 삼성·LG전자, 4분기는 '인내의 시간' - 전자신문",
+          "url": "https://m.etnews.com/20241009000059",
+          "search_published_raw": "2.0 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0071"
+        },
+        {
+          "title": "2026.04.06",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-04-6012b637d143ca89fbd44751e5d6491b",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0072"
+        },
+        {
+          "title": "실적은 엔비디아급, 시총은 5분의 1…\"30만전자 간다\"",
+          "url": "https://plus.hankyung.com/apps/newsinside.view?aid=2026040751781&category=&sns=y",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0073"
+        },
+        {
+          "title": "삼성전자, 메모리 호조 분기 기준 '역대 최대 실적' …“하반기도 메모리 숏티지” - 전자신문",
+          "url": "https://m.etnews.com/20260730000257?obj=Tzo4OiJzdGRDbGFzcyI6Mjp7czo3OiJyZWZlcmVyIjtOO3M6NzoiZm9yd2FyZCI7czoxMzoid2ViIHRvIG1vYmlsZSI7fQ%3D%3D",
+          "search_published_raw": "last month",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0074"
+        },
+        {
+          "title": "[뉴스줌인] '반도체 한파' 맞은 삼성…1분기도 난항 우려 - 전자신문",
+          "url": "https://m.etnews.com/20250108000252",
+          "search_published_raw": "1.7 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0075"
+        },
+        {
+          "title": "2026년 1월 29일",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-01-ef0b5963d509331bb6b685856dc51f22",
+          "search_published_raw": "7 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0076"
+        },
+        {
+          "title": "2026년 4월 8일",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=648207",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0077"
+        },
+        {
+          "title": "2026년 04월 8일 수요일",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=648194",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0078"
+        }
+      ]
+    },
+    {
+      "batch_id": "Q006",
+      "family": "SAM-LATE-EARN-2026Q1",
+      "q": "삼성전자 2026 1분기 실적 메모리 4월 30일",
+      "domains": [
+        "etnews.com",
+        "hankyung.com",
+        "zdnet.co.kr",
+        "edaily.co.kr"
+      ],
+      "results": [
+        {
+          "title": "삼성전자, 오늘 1분기 실적 발표…반도체 성적표 주목",
+          "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01764646645421368",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0079"
+        },
+        {
+          "title": "[ZD브리핑]삼성전자 ‘메모리 슈퍼사이클’ 최대 실적...2분기 전략도 주목 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20260426123711",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0080"
+        },
+        {
+          "title": "경제.금융 > 산업/통상 - 이데일리",
+          "url": "https://www.edaily.co.kr/articles/economy/trade/20260430",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0081"
+        },
+        {
+          "title": "삼성전자/SK하이닉스: 흔들리지 않는 편안함",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-01-cb657b9ee5c5bed4a631d2151441f0a7",
+          "search_published_raw": "7 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0082"
+        },
+        {
+          "title": "SK하닉, 4Q 실적 발표…연간 영업익 삼성 넘어서나",
+          "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03991766645319360",
+          "search_published_raw": "8 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0083"
+        },
+        {
+          "title": "News",
+          "url": "https://www.edaily.co.kr/search/news/?Page=298&keyword=%EC%82%BC%EC%84%B1",
+          "search_published_raw": "",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0084"
+        },
+        {
+          "title": "삼성전자, 메모리 호조 분기 기준 '역대 최대 실적' …“하반기도 메모리 숏티지” - 전자신문",
+          "url": "https://m.etnews.com/20260730000257?obj=Tzo4OiJzdGRDbGFzcyI6Mjp7czo3OiJyZWZlcmVyIjtOO3M6NzoiZm9yd2FyZCI7czoxMzoid2ViIHRvIG1vYmlsZSI7fQ%3D%3D",
+          "search_published_raw": "last month",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0085"
+        },
+        {
+          "title": "2026-04-30 (목)",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=648958",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0086"
+        },
+        {
+          "title": "2026-01-05",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-01-68d1395c7f0701b3b70a1b6422735e07",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0087"
+        },
+        {
+          "title": "삼성전자, 충당금 빼면 2분기 영업익 100조↑…대기록 또 썼다(종합)",
+          "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02666646645512224",
+          "search_published_raw": "2 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0088"
+        },
+        {
+          "title": "2026년 4월 8일",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=648207",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0089"
+        },
+        {
+          "title": "2026.04.08",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=648169",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0090"
+        },
+        {
+          "title": "숫자로 읽는 경제 실적은 엔비디아급…시총은 5분의 1 | 생글생글",
+          "url": "https://sgsg.hankyung.com/article/2026041015491",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0091"
+        },
+        {
+          "title": "삼전 영업익 89조…엔비디아 넘어섰다 - 전자신문",
+          "url": "https://m.etnews.com/20260707000353",
+          "search_published_raw": "2 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0092"
+        },
+        {
+          "title": "AI 훈풍 탄 마이크론, 분기 매출 400억달러 첫 돌파…K-반도체 투톱도 '장밋빛'",
+          "url": "https://ftest.edaily.co.kr/article/view/scp202606250004",
+          "search_published_raw": "2 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0093"
+        },
+        {
+          "title": "`반도체비전2030` 1년…삼성전자, 1분기 非메모리 매출 사상 최대",
+          "url": "https://m.edaily.co.kr/news/Read?mediaCodeNo=257&newsId=02109046625741040",
+          "search_published_raw": "6.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0094"
+        },
+        {
+          "title": "[이슈플러스]삼성전자, 고부가 제품 중심 실적 개선 폭 더 커진다 - 전자신문",
+          "url": "https://m.etnews.com/20260707000314",
+          "search_published_raw": "2 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0095"
+        }
+      ]
+    },
+    {
+      "batch_id": "Q007",
+      "family": "SKH-EARLY-EARN-2024Q1",
+      "q": "SK하이닉스 2024 1분기 실적 4월 25일",
+      "domains": [
+        "etnews.com",
+        "hankyung.com",
+        "zdnet.co.kr",
+        "newspim.com"
+      ],
+      "results": [
+        {
+          "title": "SK하이닉스, 1년만에 분기 흑자전환…작년 4Q 영업익 3460억",
+          "url": "https://www.newspim.com/news/view/20240125000063",
+          "search_published_raw": "2.7 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0096"
+        },
+        {
+          "title": "SK하이닉스, 작년 4Q 영업익 3460억...흑자전환",
+          "url": "https://www.newspim.com/news/view/20240125000046",
+          "search_published_raw": "2.7 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0097"
+        },
+        {
+          "title": "SK하이닉스, 예상보다 더 벌었다…1분기 영업익 2.9조원 | 한국경제",
+          "url": "https://www.hankyung.com/article/202404255282g",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0098"
+        },
+        {
+          "title": "[잠정실적]SK하이닉스 1Q, 매출 12조4296억 전년동기 대비 144% 증가 (연결)",
+          "url": "https://www.newspim.com/news/view/20240425000190",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0099"
+        },
+        {
+          "title": "SK하이닉스, 1분기 영업익 2.9조원…매출 12.4조원 | 한국경제",
+          "url": "https://www.hankyung.com/article/202404255147g",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0100"
+        },
+        {
+          "title": "SK하이닉스, 지난해 4분기 흑자전환…영업이익 3460억 | 한국경제",
+          "url": "https://www.hankyung.com/article/202401259399g",
+          "search_published_raw": "2.7 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0101"
+        },
+        {
+          "title": "[1보] SK하이닉스, 1분기 영업익 2.8조…흑자전환 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20240425080841",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0102"
+        },
+        {
+          "title": "SK하이닉스, 1년만에 흑자전환…4분기 영업익 3460억원 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20240125082007",
+          "search_published_raw": "2.7 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0103"
+        },
+        {
+          "title": "SK하이닉스, 1분기 영업이익 2조8800억…어닝서프라이즈 | 한국경제",
+          "url": "https://www.hankyung.com/article/202404255264i",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0104"
+        },
+        {
+          "title": "SK하이닉스, 1분기 영업익 2조8860억원…흑자 전환 달성",
+          "url": "https://www.newspim.com/news/view/20240425000055",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0105"
+        },
+        {
+          "title": "[종합] 반도체 훈풍 시작됐다...SK하이닉스 1분기 사상 최대 매출",
+          "url": "https://m.newspim.com/news/view/20240425000118",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0106"
+        },
+        {
+          "title": "'깜짝 실적' SK하이닉스, 통큰 보너스 '200만원+자사주 15주'",
+          "url": "https://www.newspim.com/news/view/20240125000530",
+          "search_published_raw": "2.7 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0107"
+        },
+        {
+          "title": "2026-06-01",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-06-6d15681e475ea28f7dccdce3f55b0ba7",
+          "search_published_raw": "3 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0108"
+        },
+        {
+          "title": "2025-05-08",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2025-05-e2af8143b2f0e3132051a0abee243a2f",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0109"
+        },
+        {
+          "title": "Sector Report  2025.03.24",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2025-03-e22874c76cf078be72654c78bb192341",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0110"
+        },
+        {
+          "title": "SK 하이닉스 (000660/KS)",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=647118",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0111"
+        },
+        {
+          "title": "2025-04-18",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2025-04-6c48bf87b4a9fdd4310b8be8453910b3",
+          "search_published_raw": "1.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0112"
+        },
+        {
+          "title": "<tabl",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-05-46f43509197587ed96aedc2ddb49d2e7",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0113"
+        }
+      ]
+    },
+    {
+      "batch_id": "Q008",
+      "family": "SKH-LATE-EARN-2026Q1",
+      "q": "SK하이닉스 2026 1분기 실적 4월 23일",
+      "domains": [
+        "etnews.com",
+        "zdnet.co.kr",
+        "newspim.com",
+        "edaily.co.kr"
+      ],
+      "results": [
+        {
+          "title": "SK하이닉스 '1Q 영업익 37조'...창사 이래 최대 실적 달성",
+          "url": "https://www.newspim.com/news/view/20260423000055",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0114"
+        },
+        {
+          "title": "\"SK하닉, 40조 돌파할까\"…역대급 실적 예고 떴다",
+          "url": "https://www.edaily.co.kr/news/read?mediaCodeNo=257&newsId=01656406645419072",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0115"
+        },
+        {
+          "title": "[특징주] SK하이닉스, 1분기 '역대급 실적'…프리마켓 주가는 관망세",
+          "url": "https://search.newspim.com/news/view/20260423000141",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0116"
+        },
+        {
+          "title": "SK하닉 ‘영업이익률 72%’ 날았다…반도체 새 역사(상보)",
+          "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02761766645419072",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0117"
+        },
+        {
+          "title": "1분기 실적 발표 앞둔 SK하이닉스",
+          "url": "https://www.newspim.com/news/view/20260415001072",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0118"
+        },
+        {
+          "title": "실적 발표 앞둔 SK하이닉스",
+          "url": "https://ir.newspim.com/news/view/20260415001074",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0119"
+        },
+        {
+          "title": "1분기 실적 발표 앞두고 110만원 돌파한 SK하이닉스",
+          "url": "https://www.newspim.com/news/view/20260415001078",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0120"
+        },
+        {
+          "title": "SK하이닉스, 1Q '역대급 실적' 예고…HBM·D램 효과에 이익률 70%대 전망",
+          "url": "https://search.newspim.com/news/view/20260420001045",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0121"
+        },
+        {
+          "title": "[모닝 리포트] \"반도체·조선·방산 순환 반등…실적 장세 당분간 지속\"",
+          "url": "https://www.newspim.com/news/view/20260423000088",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0122"
+        },
+        {
+          "title": "실적 기대 속 상승 마감한 SK하이닉스",
+          "url": "https://www.newspim.com/news/view/20260415001080",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0123"
+        },
+        {
+          "title": "실적 기대 속 상승 마감한 SK하이닉스",
+          "url": "https://ir.newspim.com/news/view/20260415001080",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0124"
+        },
+        {
+          "title": "SK하이닉스, 지난해 사상 최대 실적 달성...4Q 영업익 8조 넘어",
+          "url": "https://www.newspim.com/news/view/20250123000051",
+          "search_published_raw": "1.7 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0125"
+        }
+      ]
+    },
+    {
+      "batch_id": "Q009",
+      "family": "SAM-EARLY-EARN-2024Q1",
+      "q": "삼성전자 \"2024.04.30\" \"실적\"",
+      "domains": [
+        "hankyung.com",
+        "zdnet.co.kr",
+        "newspim.com",
+        "edaily.co.kr"
+      ],
+      "results": [
+        {
+          "title": "깜짝 실적 삼성전자 주가 게걸음…왜 안 오르는거야 | 한국경제",
+          "url": "https://www.hankyung.com/article/2024043061936",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0126"
+        },
+        {
+          "title": "삼성전자, 반도체서 1.9조원 벌었다…HBM3E 12단 2분기 내 양산(종합) | 한국경제",
+          "url": "https://www.hankyung.com/article/202404306348Y",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0127"
+        },
+        {
+          "title": "삼성전자, 1분기 반도체 영업익 1조9100억…흑자전환 | 한국경제",
+          "url": "https://www.hankyung.com/article/202404305862g",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0128"
+        },
+        {
+          "title": "반도체 흑자전환 삼성전자 영업익, 1분기만에 작년 실적 넘었다…매출 70조 회복 | 한국경제",
+          "url": "https://www.hankyung.com/article/202404305879g",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0129"
+        },
+        {
+          "title": "증권가, 삼성전기 목표가 줄상향…올해 2분기까지 견조 | 한국경제",
+          "url": "https://www.hankyung.com/article/2024043059536",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0130"
+        },
+        {
+          "title": "작년 적자 15조 삼성 반도체에 봄 왔다…HBM3E 12단 2분기 양산 | 한국경제",
+          "url": "https://www.hankyung.com/article/202404306403g",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0131"
+        },
+        {
+          "title": "삼성SDI, 1분기 영업이익 2674억원…전년 대비 29%↓ | 한국경제",
+          "url": "https://www.hankyung.com/article/202404306365g",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0132"
+        },
+        {
+          "title": "깜짝 실적 삼성전자 주가 게걸음…왜 안 오르는거야 | 한국경제",
+          "url": "https://www.hankyung.com/amp/2024043061936",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0133"
+        },
+        {
+          "title": "삼성전자 오늘 1분기 실적 발표…반도체 영업익 2조 넘을까 | 한국경제",
+          "url": "https://www.hankyung.com/amp/202404305685Y",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0134"
+        },
+        {
+          "title": "K-배터리, 씁쓸한 1분기 실적…전기차 캐즘 영향 뚜렷 | 한국경제",
+          "url": "https://www.hankyung.com/article/202404306979Y",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0135"
+        },
+        {
+          "title": "SK아이이테크놀로지, 캡티브 출하 부진 극대화…투자의견·목표가↓-삼성 | 한국경제",
+          "url": "https://www.hankyung.com/article/2024043059376",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0136"
+        },
+        {
+          "title": "대형 건설사, 1분기 성적표 희비 | 한국경제",
+          "url": "https://www.hankyung.com/article/2024043082281",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0137"
+        },
+        {
+          "title": "Company Report  2024.04.30",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=630564",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0138"
+        }
+      ]
+    },
+    {
+      "batch_id": "Q010",
+      "family": "SAM-LATE-EARN-2026Q1",
+      "q": "삼성전자 \"2026.04.30\" \"영업이익\"",
+      "domains": [
+        "hankyung.com",
+        "zdnet.co.kr",
+        "newspim.com",
+        "edaily.co.kr"
+      ],
+      "results": [
+        {
+          "title": "삼성전자, 1분기 영업익 57.2조원…전년 대비 756%↑ | 한국경제",
+          "url": "https://www.hankyung.com/article/202604307117g",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0139"
+        },
+        {
+          "title": "삼성전자, 1분기 영업이익 사상 최대 57조2328억원 | 한국경제",
+          "url": "https://www.hankyung.com/article/202604307101i",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0140"
+        },
+        {
+          "title": "1분기 영업익 57조 확정 삼성전자, 장 초반 23만전자로 | 한국경제",
+          "url": "https://www.hankyung.com/article/2026043074536",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0141"
+        },
+        {
+          "title": "반도체로만 54조 벌었다…엔비디아 영업이익률 뛰어넘은 삼성전자 │ 한경매거진&북",
+          "url": "https://magazine.hankyung.com/business/article/202604307484b",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0142"
+        },
+        {
+          "title": "삼성전자 1분기 반도체 부문 영업이익 53.7조 | 한국경제",
+          "url": "https://www.hankyung.com/article/202604307276Y",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0143"
+        },
+        {
+          "title": "범용 D램·HBM까지 완판…삼성, 반도체로만 54조원 벌었다 | 한국경제",
+          "url": "https://www.hankyung.com/article/2026043095081",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0144"
+        },
+        {
+          "title": "삼성, 반도체로만 53조 벌었다…40만전자 전망까지 | 한국경제",
+          "url": "https://www.hankyung.com/article/202604307313g",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0145"
+        },
+        {
+          "title": "삼성전자, 1분기 영업익 57.2조원…전년 대비 756%↑ | 한국경제",
+          "url": "https://www.hankyung.com/amp/202604307117g",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0146"
+        },
+        {
+          "title": "2분기 실적 추가 개선 기대…메모리 가격 지켜봐야 | 한국경제",
+          "url": "https://www.hankyung.com/article/202604308081i",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0147"
+        },
+        {
+          "title": "삼성전자 1분기 어닝 서프라이즈…영업익 756 급증 │ 한경매거진&북",
+          "url": "https://magazine.hankyung.com/money/article/202604307802c",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0148"
+        },
+        {
+          "title": "1분기 영업익 57조 확정 삼성전자, 장 초반 23만전자로 | 한국경제",
+          "url": "https://www.hankyung.com/amp/2026043074536",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0149"
+        },
+        {
+          "title": "이재명 대통령 노조의 과도한 요구, 다른 노동자도 피해 | 한국경제",
+          "url": "https://www.hankyung.com/article/2026043096111",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0150"
+        },
+        {
+          "title": "Company Report  2026.04.30",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=648953",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0151"
+        },
+        {
+          "title": "Company Report  2026.04.30",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=648952",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0152"
+        },
+        {
+          "title": "Company Report  2026.04.30",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=648957",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0153"
+        },
+        {
+          "title": "Company Report  2026.04.30",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=648956",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0154"
+        },
+        {
+          "title": "2026-04-30 (목)",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=648958",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0155"
+        }
+      ]
+    },
+    {
+      "batch_id": "Q011",
+      "family": "SKH-EARLY-DEV-HBM4SAMPLE",
+      "q": "SK하이닉스 HBM4 12단 샘플 2025 3월 19일",
+      "domains": [
+        "etnews.com",
+        "hankyung.com",
+        "zdnet.co.kr",
+        "newspim.com"
+      ],
+      "results": [
+        {
+          "title": "SK하이닉스, 'GTC 2025'에서 HBM4 12단 모형 공개",
+          "url": "https://www.newspim.com/news/view/20250318000910",
+          "search_published_raw": "1.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0156"
+        },
+        {
+          "title": "SK하이닉스, HBM4도 1등으로…세계 최초 12단 샘플 공급",
+          "url": "https://search.newspim.com/news/view/20250319000451",
+          "search_published_raw": "1.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0157"
+        },
+        {
+          "title": "SK하이닉스, 엔비디아에 세계 첫 HBM4 12단 샘플 공급 | 한국경제",
+          "url": "https://www.hankyung.com/article/202503194463i",
+          "search_published_raw": "1.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0158"
+        },
+        {
+          "title": "SK하이닉스, 또 일냈다…세계최초 HBM4 12단 샘플 공급 | 한국경제",
+          "url": "https://www.hankyung.com/article/202503193654g",
+          "search_published_raw": "1.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0159"
+        },
+        {
+          "title": "SK하이닉스, 세계 최초 'HBM4' 12단 샘플 공급 시작 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20250319094651",
+          "search_published_raw": "1.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0160"
+        },
+        {
+          "title": "세계 첫 HBM4 샘플…하이닉스, 고객사 전달 | 한국경제",
+          "url": "https://www.hankyung.com/article/2025031952761",
+          "search_published_raw": "1.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0161"
+        },
+        {
+          "title": "SK하이닉스, 'GTC 2025'에서 HBM4 12단 모형 공개",
+          "url": "https://m.newspim.com/news/view//20250318000910",
+          "search_published_raw": "1.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0162"
+        },
+        {
+          "title": "초기대응 늦었다 사과한 삼성, 세계최초 HBM4 내놓은 SK하이닉스 | 한국경제",
+          "url": "https://www.hankyung.com/article/202503194941g",
+          "search_published_raw": "1.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0163"
+        },
+        {
+          "title": "엔비디아 차세대 칩 발표날…SK하이닉스, HBM4 내놨다 - 전자신문",
+          "url": "https://www.etnews.com/20250319000122",
+          "search_published_raw": "1.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0164"
+        },
+        {
+          "title": "SK하이닉스, 엔비디아 개발자회의서 HBM4·첨단 메모리 대거 쏟아낸다 | 한국경제",
+          "url": "https://www.hankyung.com/article/2025031824311",
+          "search_published_raw": "1.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0165"
+        },
+        {
+          "title": "SK하이닉스, 엔비디아 GTC 참가…AI 메모리 솔루션 전시 - 전자신문",
+          "url": "https://www.etnews.com/20250318000435",
+          "search_published_raw": "1.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0166"
+        },
+        {
+          "title": "\"과오 반복하지 않겠다\"...'HBM 전쟁' 2라운드 열렸다",
+          "url": "https://ir.newspim.com/news/view/20250320000620",
+          "search_published_raw": "1.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0167"
+        },
+        {
+          "title": "Research Center ㅣ2026.01.13",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-01-4301caf23dadf4769cef49dcd7207a55",
+          "search_published_raw": "7 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0168"
+        },
+        {
+          "title": "PowerPoint 프레젠테이션",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2025-03-375d707e847c3d261937243b11cb7c41",
+          "search_published_raw": "1.6 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0169"
+        },
+        {
+          "title": "PowerPoint 프레젠테이션",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-03-3d6410ab8b3b856c463940fc8799b841",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0170"
+        },
+        {
+          "title": "PowerPoint 프레젠테이션",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2025-10-b71f6b6eb41c4a58e80239586abe5bf2",
+          "search_published_raw": "last year",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0171"
+        },
+        {
+          "title": "2025-08-11",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2025-08-8468771eaa1de7fdf66812e06c8492f7",
+          "search_published_raw": "1.1 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0172"
+        }
+      ]
+    },
+    {
+      "batch_id": "Q012",
+      "family": "SKH-LATE-DEV-HBM4READY",
+      "q": "SK하이닉스 HBM4 개발 완료 양산 준비 2025 9월 12일",
+      "domains": [
+        "etnews.com",
+        "hankyung.com",
+        "zdnet.co.kr",
+        "newspim.com"
+      ],
+      "results": [
+        {
+          "title": "SK하이닉스, 세계 최초 HBM4 양산 체제 구축",
+          "url": "https://ir.newspim.com/news/view/20250912000314",
+          "search_published_raw": "last year",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0173"
+        },
+        {
+          "title": "9거래일 연속 상승 SK하이닉스, HBM4 개발완료 소식에 또 최고가 | 한국경제",
+          "url": "https://www.hankyung.com/article/2025091295466",
+          "search_published_raw": "last year",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0174"
+        },
+        {
+          "title": "SK하이닉스, 세계 최초 HBM4’ 개발 완료하고 양산 체제 구축 | 한국경제",
+          "url": "https://www.hankyung.com/article/202509129347P",
+          "search_published_raw": "last year",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0175"
+        },
+        {
+          "title": "HBM4 성능 우려 일축한 SK하이닉스…고객 승인 받으면 바로 양산 가능 | 한국경제",
+          "url": "https://www.hankyung.com/article/202509129492i",
+          "search_published_raw": "last year",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0176"
+        },
+        {
+          "title": "SK하이닉스, HBM4 개발 완료…'세계 최초' 양산 체제 구축 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20250912083503",
+          "search_published_raw": "last year",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0177"
+        },
+        {
+          "title": "SK HBM4 양산 체제 구축…삼성, 최신 공정으로 승부수 | 한국경제",
+          "url": "https://www.hankyung.com/article/2025091209601",
+          "search_published_raw": "last year",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0178"
+        },
+        {
+          "title": "SK하이닉스 “HBM4 개발 완료, 양산 체계 구축” - 전자신문",
+          "url": "https://www.etnews.com/20250912000042",
+          "search_published_raw": "last year",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0179"
+        },
+        {
+          "title": "1인당 1억 쏘더니…SK하이닉스, 세계 최초 HBM4 양산 체제 구축 | 한국경제",
+          "url": "https://www.hankyung.com/article/202509129356g",
+          "search_published_raw": "last year",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0180"
+        },
+        {
+          "title": "SK하이닉스 또 일냈다…세계 최초 HBM4로 주가 폭등 │ 한경매거진&북",
+          "url": "https://magazine.hankyung.com/business/article/202509120215b",
+          "search_published_raw": "last year",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0181"
+        },
+        {
+          "title": "SK, HBM4 동작속도 10Gbps 이상 구현...마이크론 발등에 불? - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20250912092900",
+          "search_published_raw": "last year",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0182"
+        },
+        {
+          "title": "1등 지위 굳건…8일째 상승 SK하이닉스, 최고가 행진 비결 | 한국경제",
+          "url": "https://www.hankyung.com/article/2025091292296",
+          "search_published_raw": "last year",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0183"
+        },
+        {
+          "title": "HBM4 시대…삼성전자·SK하이닉스 엔비디아 공급 각축전 | 한국경제",
+          "url": "https://www.hankyung.com/article/2025091536861",
+          "search_published_raw": "last year",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0184"
+        },
+        {
+          "title": "PowerPoint 프레젠테이션",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2025-10-b71f6b6eb41c4a58e80239586abe5bf2",
+          "search_published_raw": "last year",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0185"
+        },
+        {
+          "title": "2025-08-11",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2025-08-8468771eaa1de7fdf66812e06c8492f7",
+          "search_published_raw": "1.1 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0186"
+        },
+        {
+          "title": "Overwe",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-01-838716e8da74f729bbba52a76baa35c9",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0187"
+        },
+        {
+          "title": "1",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2025-11-2da72cd6c4db11180eaac1a5db36ba83",
+          "search_published_raw": "7 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0188"
+        },
+        {
+          "title": "Overwe",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-02-34d49a54955aca08ef9b21d3b35c3810",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0189"
+        }
+      ]
+    },
+    {
+      "batch_id": "Q013",
+      "family": "SKH-EARLY-PROD-HBM3E",
+      "q": "SK하이닉스 HBM3E 양산 2024 3월 19일",
+      "domains": [
+        "etnews.com",
+        "hankyung.com",
+        "zdnet.co.kr",
+        "newspim.com"
+      ],
+      "results": [
+        {
+          "title": "SK하이닉스, 'HBM3E' 세계 최초 양산…이달 말 고객 납품 시작",
+          "url": "https://www.newspim.com/news/view/20240319000250",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0190"
+        },
+        {
+          "title": "SK하이닉스, HBM3E 세계 최초 대량 양산…엔비디아에 납품 시작(종합) | 한국경제",
+          "url": "https://www.hankyung.com/article/202403190332Y",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0191"
+        },
+        {
+          "title": "SK하이닉스, 'HBM3E' 세계 최초 양산…이달 말 고객 납품 시작",
+          "url": "https://m.newspim.com/news/view/20240319000250",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0192"
+        },
+        {
+          "title": "HBM3E 경쟁 가열…하이닉스 \"세계 첫 양산\" vs 삼성 '12단' 실물공개",
+          "url": "https://www.newspim.com/news/view/20240319001056",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0193"
+        },
+        {
+          "title": "SK하이닉스 세계 최초 5세대 HBM 대량 양산…이달 엔비디아에 납품 | 한국경제",
+          "url": "https://www.hankyung.com/article/2024031917651",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0194"
+        },
+        {
+          "title": "SK하이닉스, 세계 최초 'HBM3E' 본격 양산 …고객사 납품 시작 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20240319100451",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0195"
+        },
+        {
+          "title": "독주하는 SK하이닉스…세계 최초 HBM3E 대규모 양산 | 한국경제",
+          "url": "https://www.hankyung.com/article/202403199945g",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0196"
+        },
+        {
+          "title": "문 열린 HBM3E 시장…글로벌 3사 양산경쟁 본격화 | 한국경제",
+          "url": "https://www.hankyung.com/article/202403191146Y",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0197"
+        },
+        {
+          "title": "SK하이닉스 HBM3E 양산 개시...엔비디아에 공급 - 전자신문",
+          "url": "https://www.etnews.com/20240319000111",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0198"
+        },
+        {
+          "title": "삼성·SK하이닉스, '12단 HBM3E' 경쟁 가열...美GTC서 실물 공개 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20240319142112",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0199"
+        },
+        {
+          "title": "[르포] HBM 전장된 엔비디아 GTC…삼성·SK·마이크론 HBM3E로 출격 - 전자신문",
+          "url": "https://www.etnews.com/20240319000309",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0200"
+        },
+        {
+          "title": "SK하이닉스, HBM3E 힘입어 실적 개선…목표가 21만원-상상인 | 한국경제",
+          "url": "https://www.hankyung.com/article/2024031863956",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0201"
+        },
+        {
+          "title": "PowerPoint 프레젠테이션",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2025-03-375d707e847c3d261937243b11cb7c41",
+          "search_published_raw": "1.6 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0202"
+        },
+        {
+          "title": "Company Report  2024.07.26",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=633239",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0203"
+        },
+        {
+          "title": "PowerPoint 프레젠테이션",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2025-10-b71f6b6eb41c4a58e80239586abe5bf2",
+          "search_published_raw": "last year",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0204"
+        },
+        {
+          "title": "2025-08-11",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2025-08-8468771eaa1de7fdf66812e06c8492f7",
+          "search_published_raw": "1.1 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0205"
+        },
+        {
+          "title": "PowerPoint 프레젠테이션",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-03-3d6410ab8b3b856c463940fc8799b841",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0206"
+        },
+        {
+          "title": "Neutra",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2025-07-5832a0bfa67d00123e64ab775280c66b",
+          "search_published_raw": "6 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0207"
+        }
+      ]
+    },
+    {
+      "batch_id": "Q014",
+      "family": "SKH-LATE-PROD-QLC321",
+      "q": "SK하이닉스 321단 QLC 양산 2025 8월 25일",
+      "domains": [
+        "etnews.com",
+        "hankyung.com",
+        "zdnet.co.kr",
+        "newspim.com"
+      ],
+      "results": [
+        {
+          "title": "SK하이닉스, 세계 최고 321단 낸드 양산 | 한국경제",
+          "url": "https://www.hankyung.com/article/2025082507431",
+          "search_published_raw": "1.1 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0208"
+        },
+        {
+          "title": "반도체 벽 넘은 SK하이닉스…세계 첫 321단 QLC 낸드 양산",
+          "url": "https://www.newspim.com/news/view/20250825000211",
+          "search_published_raw": "1.1 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0209"
+        },
+        {
+          "title": "SK하이닉스, 321단 QLC 낸드 양산 개시 | 한국경제",
+          "url": "https://www.hankyung.com/article/202508258962P",
+          "search_published_raw": "1.1 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0210"
+        },
+        {
+          "title": "SK하이닉스, 현존 최고 집적도 321단 QLC 낸드 양산 개시 | 한국경제",
+          "url": "https://www.hankyung.com/article/202508250289i",
+          "search_published_raw": "1.1 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0211"
+        },
+        {
+          "title": "SK하이닉스, 321단 QLC 낸드 첫 양산 - 전자신문",
+          "url": "https://www.etnews.com/20250825000248",
+          "search_published_raw": "1.1 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0212"
+        },
+        {
+          "title": "현존 최고 SK하이닉스 신제품 양산…AI 서버용 시장 공략 | 한국경제",
+          "url": "https://www.hankyung.com/article/202508258991g",
+          "search_published_raw": "1.1 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0213"
+        },
+        {
+          "title": "SK하이닉스, 321단 QLC 낸드 양산 돌입…\"내년 상반기 본격 출시\" - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20250825084636",
+          "search_published_raw": "1.1 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0214"
+        },
+        {
+          "title": "반도체·전자 뉴스 140 페이지 | 한국경제",
+          "url": "https://www.hankyung.com/industry/1064?page=140",
+          "search_published_raw": "",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0215"
+        },
+        {
+          "title": "sunw",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2025-08-87b8273620175b83a8b161a7cee1f414",
+          "search_published_raw": "1.1 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0216"
+        },
+        {
+          "title": "증권경제 최신뉴스 섹션 | 한국경제TV",
+          "url": "https://wowtv.hankyung.com/NewsCenter/News/NewsList?StartDate=2025-08-25&currentIndex=560&menuSeq=459&selDateIndex=-6&subMenu=latest",
+          "search_published_raw": "1.1 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0217"
+        },
+        {
+          "title": "반도체·전자 뉴스 139 페이지 | 한국경제",
+          "url": "https://www.hankyung.com/industry/1064?page=139",
+          "search_published_raw": "",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0218"
+        },
+        {
+          "title": "SK하이닉스, 3Q 영업익 11.4조원 '사상 첫 10조 클럽'…창사 이래 최대 실적",
+          "url": "https://www.newspim.com/news/view/20251029000036",
+          "search_published_raw": "10 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0219"
+        },
+        {
+          "title": "SK하이닉스, 2Q 영업익 9.2조 '역대 최대'…AI 메모리 덕봤다",
+          "url": "https://www.newspim.com/news/view/20250724000037",
+          "search_published_raw": "1.2 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0220"
+        },
+        {
+          "title": "Check Point",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=643527",
+          "search_published_raw": "last year",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0221"
+        },
+        {
+          "title": "삼성전자/SK하이닉스: 흔들리지 않는 편안함",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-01-cb657b9ee5c5bed4a631d2151441f0a7",
+          "search_published_raw": "7 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0222"
+        },
+        {
+          "title": "Sector Issue Brief / 반도체 / 2025. 09. 19",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2025-09-c48b1314ed8f8a2dc0adccba58a6f1de",
+          "search_published_raw": "last year",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0223"
+        },
+        {
+          "title": "PowerPoint 프레젠테이션",
+          "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2025-03-375d707e847c3d261937243b11cb7c41",
+          "search_published_raw": "1.6 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0224"
+        }
+      ]
+    },
+    {
+      "batch_id": "Q015",
+      "family": "SKH-EARLY-INV-INDIANA",
+      "q": "SK하이닉스 인디애나 패키징 투자 2024 4월 4일",
+      "domains": [
+        "etnews.com",
+        "hankyung.com",
+        "zdnet.co.kr",
+        "newspim.com"
+      ],
+      "results": [
+        {
+          "title": "SK하이닉스, 美 인디애나에 5.2조 투자…뉴욕증시 혼조 | 한국경제",
+          "url": "https://www.hankyung.com/article/2024040486277",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0225"
+        },
+        {
+          "title": "SK하이닉스, 美 인디애나 주 내 HBM 공장 투자 | 한국경제",
+          "url": "https://www.hankyung.com/article/202404049123O",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0226"
+        },
+        {
+          "title": "SK하이닉스, 美인디애나주 첨단후공정에 5조2천억 투자",
+          "url": "https://m.newspim.com/news/view//20240403001095",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0227"
+        },
+        {
+          "title": "SK하이닉스, 5.2조 투입해 美 인디애나주에 첨단 반도체 패키징 거점 마련 - 전자신문",
+          "url": "https://www.etnews.com/20240403000404",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0228"
+        },
+        {
+          "title": "SK하이닉스, 美 인디애나에 5.2조 규모 HBM 공장 건설 | 한국경제",
+          "url": "https://www.hankyung.com/article/202404048651g",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0229"
+        },
+        {
+          "title": "SK하이닉스 \"美에 5.2조원 HBM 공장 건설\"...엔비디아·TSMC와 시너지 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20240404011839",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0230"
+        },
+        {
+          "title": "SK하이닉스, 美 인디애나 팹 착공…AI 메모리 패키징 거점 구축 | 한국경제",
+          "url": "https://www.hankyung.com/article/2026082777291",
+          "search_published_raw": "3 weeks ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0231"
+        },
+        {
+          "title": "증권경제 최신뉴스 섹션 | 한국경제TV",
+          "url": "https://wowtv.hankyung.com/NewsCenter/News/NewsList?StartDate=2024-04-04&currentIndex=160&menuSeq=459&searchComp=WO&selDateIndex=-3&subMenu=latest",
+          "search_published_raw": "",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0232"
+        },
+        {
+          "title": "산업IT 뉴스 섹션 | 한국경제TV",
+          "url": "https://wowtv.hankyung.com/NewsCenter/News/NewsList?StartDate=2024-04-04&currentIndex=100&menuSeq=902&selDateIndex=0&subMenu=init",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0233"
+        },
+        {
+          "title": "산업IT 뉴스 섹션 | 한국경제TV",
+          "url": "https://wowtv.hankyung.com/NewsCenter/News/NewsList?StartDate=2024-04-04&currentIndex=100&menuSeq=902&selDateIndex=-2&subMenu=init",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0234"
+        },
+        {
+          "title": "산업IT 뉴스 섹션 | 한국경제TV",
+          "url": "https://wowtv.hankyung.com/NewsCenter/News/NewsList?StartDate=2024-04-04&currentIndex=20&menuSeq=902&searchComp=WO&selDateIndex=-2&subMenu=init",
+          "search_published_raw": "",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0235"
+        },
+        {
+          "title": "SK하이닉스, 미국산 HBM 생산 박차…美인디애나팹 착공 | 한국경제",
+          "url": "https://www.hankyung.com/article/2026082881467",
+          "search_published_raw": "3 weeks ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0236"
+        },
+        {
+          "title": "2024년 07월 26일",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=633254",
+          "search_published_raw": "2.2 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0237"
+        },
+        {
+          "title": "2024-10-04",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=635220",
+          "search_published_raw": "2.0 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0238"
+        },
+        {
+          "title": "꺼진 Bull도 다시 보자",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=649616",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0239"
+        },
+        {
+          "title": "Strategy 2026.04.29",
+          "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=648895",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0240"
+        }
+      ]
+    },
+    {
+      "batch_id": "Q016",
+      "family": "SAM-EARLY-EARN-2024Q1",
+      "q": "삼성전자 1분기 2024 4월 30일 흑자전환",
+      "domains": [
+        "zdnet.co.kr",
+        "newspim.com"
+      ],
+      "results": [
+        {
+          "title": "삼성전자, 1분기 영업익 6조6060억원…전년비 931.9%↑",
+          "url": "https://www.newspim.com/news/view/20240430000112",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0241"
+        },
+        {
+          "title": "삼성전자, 1분기 영업익 6조6060억원…전년비 931.9%↑",
+          "url": "https://web3.newspim.com/news/view/20240430000112",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0242"
+        },
+        {
+          "title": "[종합] 반도체가 견인한 삼성전자 1분기 실적...반도체의 봄 시작",
+          "url": "https://web3.newspim.com/news/view/20240430000275",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0243"
+        },
+        {
+          "title": "[1보] 삼성전자, 1분기 영업익 6.6조원…전년比 932% 증가 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20240430084307",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0244"
+        },
+        {
+          "title": "호텔신라, 한 분기만에 흑자전환...\"호텔, 비수기에도 선방\"",
+          "url": "https://www.newspim.com/news/view/20240430001235",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0245"
+        },
+        {
+          "title": "삼성전자, 보통주·우선주 주당 361원 현금배당…총 2.45조원 규모 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20240430093436",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0246"
+        },
+        {
+          "title": "[리포트 브리핑]삼성전자, '얘들아, 형이야' 목표가 120,000원 - 한국투자증권",
+          "url": "https://www.newspim.com/news/view/20240405000793",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0247"
+        },
+        {
+          "title": "삼성전자 반도체 반등시작 \"1Q 메모리흑자\"...\"HBM4 2026년 양산\"",
+          "url": "https://www.newspim.com/news/view/20240131000910",
+          "search_published_raw": "2.6 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0248"
+        },
+        {
+          "title": "삼성중공업, 1분기 영업익 779억원…전년比 4배 증가",
+          "url": "https://ir.newspim.com/news/view/20240426000982",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0249"
+        },
+        {
+          "title": "삼성중공업, 1분기 영업익 779억원…전년比 4배 증가",
+          "url": "https://www.newspim.com/news/view/20240426000982",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0250"
+        },
+        {
+          "title": "[리포트 브리핑]삼성전자, '실적 정상 궤도 진입' 목표가 110,000원 - KB증권",
+          "url": "https://www.newspim.com/news/view/20240404000067",
+          "search_published_raw": "2.5 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0251"
+        },
+        {
+          "title": "삼성 파운드리, 엔비디아 '그록3' 양산…흑자전환 힘 받는다",
+          "url": "https://www.newspim.com/news/view/20260825000984",
+          "search_published_raw": "3 weeks ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0252"
+        }
+      ]
+    },
+    {
+      "batch_id": "Q017",
+      "family": "SAM-LATE-EARN-2026Q1",
+      "q": "삼성전자 1분기 57조 2026 4월 30일",
+      "domains": [
+        "newspim.com",
+        "zdnet.co.kr",
+        "etnews.com"
+      ],
+      "results": [
+        {
+          "title": "삼성전자 1분기 돈 쓸어담았다...분기 영업익 57조 '사상 최대'",
+          "url": "https://www.newspim.com/news/view/20260430000195",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0253"
+        },
+        {
+          "title": "[특징주] 삼성전자, 영업익 57조 '사상 최대'…주가도 23만원 근접",
+          "url": "https://www.newspim.com/news/view/20260430000304",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0254"
+        },
+        {
+          "title": "[종합] 삼성전자, 1Q 영업익 57.2조 '사상 최대'…반도체만 53.7조 벌었다",
+          "url": "https://mobile2.newspim.com/news/view/20260430000235",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0255"
+        },
+        {
+          "title": "삼성전자 1분기 돈 쓸어담았다...분기 영업익 57조 '사상 최대'",
+          "url": "https://mobile2.newspim.com/news/view/20260430000195",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0256"
+        },
+        {
+          "title": "'역대급 실적' 뒤 커진 DX·DS 온도차…삼성전자 노노 '냉기류'",
+          "url": "https://mobile2.newspim.com/news/view/20260430001208",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0257"
+        },
+        {
+          "title": "전자 - 전자신문",
+          "url": "https://www.etnews.com/news/section.html?id1=06&page=85",
+          "search_published_raw": "",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0258"
+        },
+        {
+          "title": "삼성전자, 1분기 영업이익 57조2000억원…사상 최대",
+          "url": "https://www.newspim.com/news/view/20260407000483",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0259"
+        },
+        {
+          "title": "삼성전자, 1분기 영업이익 57조 2000억 원 기록",
+          "url": "https://www.newspim.com/news/view/20260407000572",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0260"
+        },
+        {
+          "title": "전자 - 전자신문",
+          "url": "https://www.etnews.com/news/section.html?id1=06&id2=063&page=117",
+          "search_published_raw": "",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0261"
+        },
+        {
+          "title": "삼성전자, 올 1분기 영업이익 57조2000억 돌파",
+          "url": "https://www.newspim.com/news/view/20260407000685",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0262"
+        },
+        {
+          "title": "뉴스핌",
+          "url": "https://www.newspim.com/news/lists?page=20&series_cd=061690",
+          "search_published_raw": "last month",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0263"
+        },
+        {
+          "title": "삼성전자, 1분기 영업이익 57조 2000억 원 기록",
+          "url": "https://search.newspim.com/news/view/20260407000572",
+          "search_published_raw": "5 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0264"
+        }
+      ]
+    },
+    {
+      "batch_id": "Q018",
+      "family": "SAM-EARLY-EARN-2024Q1",
+      "q": "삼성전자 2024 4월 30일 메모리 HBM 실적",
+      "domains": [
+        "etnews.com",
+        "zdnet.co.kr"
+      ],
+      "results": [
+        {
+          "title": "방향 튼 삼성전자, 올해 AI 메모리·폰·가전 성장 가속화 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20240430135820",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0265"
+        },
+        {
+          "title": "삼성전자 \"HBM3E 8단, 2분기 말부터 매출 발생\" - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20240430110436",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0266"
+        },
+        {
+          "title": "반도체 호황 올라탄 삼성전자 “HBM 3배 늘린다” - 전자신문",
+          "url": "https://www.etnews.com/20240430000247",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0267"
+        },
+        {
+          "title": "삼성전자 \"2분기, HBM3E 12단 양산...2나노 설계 인프라 개발 완료\" - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20240430092746",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0268"
+        },
+        {
+          "title": "[이슈플러스] 삼성 반도체, 1년 만에 적자탈출…낸드 수요도 급증 - 전자신문",
+          "url": "https://www.etnews.com/20240430000267",
+          "search_published_raw": "2.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0269"
+        },
+        {
+          "title": "57.2조 축포 쏜 삼성전자, DX 재편·노조 파업 불확실성 직면 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20260430132003",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0270"
+        },
+        {
+          "title": "삼성전자, 내년 커스텀 HBM4 상용화 목표…\"복수 고객사 협의\" - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20250430094510",
+          "search_published_raw": "1.4 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0271"
+        },
+        {
+          "title": "삼성전자 “HBM4, 3분기 메모리 매출 과반 예상” - 전자신문",
+          "url": "https://www.etnews.com/20260430000211",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0272"
+        },
+        {
+          "title": "삼성전자 HBM3E '공급 난항설'…좀더 지켜봐야 하는 이유 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20240524085849",
+          "search_published_raw": "2.3 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0273"
+        },
+        {
+          "title": "삼성전자, 올해 HBM 공급량 전년 대비 '2배 성장' 목표 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20250131104946",
+          "search_published_raw": "1.6 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0274"
+        },
+        {
+          "title": "삼성전자, HBM 사업 본궤도 오른다...하반기에 매출 3.5배 확대 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20240731120837",
+          "search_published_raw": "2.1 years ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0275"
+        },
+        {
+          "title": "삼성전자, HBM4E 첫 샘플 2분기 공급 예정 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20260430102822",
+          "search_published_raw": "4 months ago",
+          "discovery_method": "public_web_search_metadata_only",
+          "body_access_status": "not_requested",
+          "result_id": "RESULT-0276"
+        }
+      ]
+    }
+  ],
+  "selections": {
+    "SAM-EARLY-EARN-2024Q1": [
+      "RESULT-0131",
+      "RESULT-0266",
+      "RESULT-0267"
+    ],
+    "SAM-LATE-EARN-2026Q1": [
+      "RESULT-0144",
+      "RESULT-0253",
+      "RESULT-0272"
+    ],
+    "SAM-EARLY-DEV-HBM3E12H": [
+      "RESULT-0001",
+      "RESULT-0020",
+      "RESULT-0019"
+    ],
+    "SAM-EARLY-PROD-VNAND9": [
+      "RESULT-0031",
+      "RESULT-0032",
+      "RESULT-0033"
+    ],
+    "SAM-LATE-PROD-HBM4": [
+      "RESULT-0002",
+      "RESULT-0005",
+      "RESULT-0007"
+    ],
+    "SAM-LATE-INV-AMD": [
+      "RESULT-0046",
+      "RESULT-0047",
+      "RESULT-0051"
+    ],
+    "SKH-EARLY-EARN-2024Q1": [
+      "RESULT-0098",
+      "RESULT-0102",
+      "RESULT-0105"
+    ],
+    "SKH-LATE-EARN-2026Q1": [
+      "RESULT-0003",
+      "RESULT-0114",
+      "RESULT-0117"
+    ],
+    "SKH-EARLY-DEV-HBM4SAMPLE": [
+      "RESULT-0159",
+      "RESULT-0160",
+      "RESULT-0164"
+    ],
+    "SKH-LATE-DEV-HBM4READY": [
+      "RESULT-0177",
+      "RESULT-0179",
+      "RESULT-0180"
+    ],
+    "SKH-EARLY-PROD-HBM3E": [
+      "RESULT-0190",
+      "RESULT-0195",
+      "RESULT-0198"
+    ],
+    "SKH-LATE-PROD-QLC321": [
+      "RESULT-0209",
+      "RESULT-0212",
+      "RESULT-0214"
+    ],
+    "SKH-EARLY-INV-INDIANA": [
+      "RESULT-0228",
+      "RESULT-0229",
+      "RESULT-0230"
+    ]
+  },
+  "selection_status": "frozen_before_rights_gate",
+  "date_policy": "Relative search dates are raw discovery metadata, never publisher timestamps. URL digits are not verified dates.",
+  "discovery_date": "2026-09-21",
+  "discovery_time_precision": "date"
+}

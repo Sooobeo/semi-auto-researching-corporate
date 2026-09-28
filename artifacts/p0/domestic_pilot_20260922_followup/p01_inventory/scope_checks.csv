@@ -1,0 +1,41 @@
+﻿doc_id,company_id,source_scope,metric,table_location,value_block_id,existing_sample_status,metadata_scope_and_evidence_link_check,new_manual_semantic_audit,two_person_review_evidence
+SAM-2025-FY-DART,SAM,SAM_DS_segment_including_nonmemory,DS_revenue,20260310002820.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[2]/TABLE[2],SAM-2025-FY-DART:20260310002820.xml:B0001800,passed_sample,pass,not_performed,not_recorded
+SKH-2025-FY-DART,SKH,SKH_consolidated_semiconductor_segment,company_revenue,20260317000635.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[7]/TABLE[6],SKH-2025-FY-DART:20260317000635.xml:B0002337,passed_sample,pass,not_performed,not_recorded
+SAM-2025Q4-IR,SAM,SAM_memory_revenue_only,memory_revenue,PDF page 7,,passed_sample,pass,not_performed,not_recorded
+SAM-2026Q1-IR,SAM,SAM_memory_revenue_only,memory_revenue,PDF page 13,,passed_sample,pass,not_performed,not_recorded
+SAM-2024Q1-DART,SAM,SAM_DS_segment_including_nonmemory,DS_revenue,20240516001421.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[2]/TABLE[2],SAM-2024Q1-DART:20240516001421.xml:B0000235,passed_sample,pass,not_performed,not_recorded
+SAM-2024Q2-DART,SAM,SAM_DS_segment_including_nonmemory,DS_revenue,20240814003284.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[2]/TABLE[2],SAM-2024Q2-DART:20240814003284.xml:B0000763,passed_sample,pass,not_performed,not_recorded
+SAM-2024Q3-DART,SAM,SAM_DS_segment_including_nonmemory,DS_revenue,20241114002642.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[2]/TABLE[2],SAM-2024Q3-DART:20241114002642.xml:B0000076,passed_sample,pass,not_performed,not_recorded
+SAM-2024Q4-DART,SAM,SAM_DS_segment_including_nonmemory,DS_revenue,20250311001085.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[2]/TABLE[2],SAM-2024Q4-DART:20250311001085.xml:B0001297,passed_sample,pass,not_performed,not_recorded
+SAM-2025Q1-DART,SAM,SAM_DS_segment_including_nonmemory,DS_revenue,20250515001922.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[2]/TABLE[2],SAM-2025Q1-DART:20250515001922.xml:B0000075,passed_sample,pass,not_performed,not_recorded
+SAM-2025Q2-DART,SAM,SAM_DS_segment_including_nonmemory,DS_revenue,20250814003156.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[2]/TABLE[2],SAM-2025Q2-DART:20250814003156.xml:B0000784,passed_sample,pass,not_performed,not_recorded
+SAM-2025Q3-DART,SAM,SAM_DS_segment_including_nonmemory,DS_revenue,20251114002447.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[2]/TABLE[2],SAM-2025Q3-DART:20251114002447.xml:B0000075,passed_sample,pass,not_performed,not_recorded
+SAM-2026Q1-DART,SAM,SAM_DS_segment_including_nonmemory,DS_revenue,20260515002181.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[2]/TABLE[2],SAM-2026Q1-DART:20260515002181.xml:B0000077,passed_sample,pass,not_performed,not_recorded
+SAM-2026Q2-DART,SAM,SAM_DS_segment_including_nonmemory,DS_revenue,20260814003699.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[2]/TABLE[2],SAM-2026Q2-DART:20260814003699.xml:B0001034,passed_sample,pass,not_performed,not_recorded
+SKH-2024Q1-DART,SKH,SKH_consolidated_semiconductor_segment,company_revenue,20240516001638.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[7]/TABLE[6],SKH-2024Q1-DART:20240516001638.xml:B0000856,passed_sample,pass,not_performed,not_recorded
+SKH-2024Q2-DART,SKH,SKH_consolidated_semiconductor_segment,company_revenue,20240814001887.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[7]/TABLE[6],SKH-2024Q2-DART:20240814001887.xml:B0001909,passed_sample,pass,not_performed,not_recorded
+SKH-2024Q3-DART,SKH,SKH_consolidated_semiconductor_segment,company_revenue,20241114001712.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[7]/TABLE[6],SKH-2024Q3-DART:20241114001712.xml:B0001165,passed_sample,pass,not_performed,not_recorded
+SKH-2024Q4-DART,SKH,SKH_consolidated_semiconductor_segment,company_revenue,20250319000665.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[7]/TABLE[6],SKH-2024Q4-DART:20250319000665.xml:B0002052,passed_sample,pass,not_performed,not_recorded
+SKH-2025Q1-DART,SKH,SKH_consolidated_semiconductor_segment,company_revenue,20250515002103.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[7]/TABLE[6],SKH-2025Q1-DART:20250515002103.xml:B0001119,passed_sample,pass,not_performed,not_recorded
+SKH-2025Q2-DART,SKH,SKH_consolidated_semiconductor_segment,company_revenue,20250814003049.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[7]/TABLE[6],SKH-2025Q2-DART:20250814003049.xml:B0001953,passed_sample,pass,not_performed,not_recorded
+SKH-2025Q3-DART,SKH,SKH_consolidated_semiconductor_segment,company_revenue,20251114001805.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[7]/TABLE[6],SKH-2025Q3-DART:20251114001805.xml:B0001198,passed_sample,pass,not_performed,not_recorded
+SKH-2026Q1-DART,SKH,SKH_consolidated_semiconductor_segment,company_revenue,20260515002287.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[7]/TABLE[6],SKH-2026Q1-DART:20260515002287.xml:B0001423,passed_sample,pass,not_performed,not_recorded
+SKH-2026Q2-DART,SKH,SKH_consolidated_semiconductor_segment,company_revenue,20260814003509.xml:/DOCUMENT/BODY/SECTION-1[3]/LIBRARY/SECTION-2[7]/TABLE[6],SKH-2026Q2-DART:20260814003509.xml:B0002149,passed_sample,pass,not_performed,not_recorded
+SAM-2024Q1-IR,SAM,SAM_memory_revenue_only,memory_revenue,PDF page 6,,passed_sample,pass,not_performed,not_recorded
+SAM-2024Q2-IR,SAM,SAM_memory_revenue_only,memory_revenue,PDF page 6,,passed_sample,pass,not_performed,not_recorded
+SAM-2024Q3-IR,SAM,SAM_memory_revenue_only,memory_revenue,PDF page 6,,passed_sample,pass,not_performed,not_recorded
+SAM-2024Q4-IR,SAM,SAM_memory_revenue_only,memory_revenue,PDF page 7,,passed_sample,pass,not_performed,not_recorded
+SAM-2025Q1-IR,SAM,SAM_memory_revenue_only,memory_revenue,PDF page 7,,passed_sample,pass,not_performed,not_recorded
+SAM-2025Q2-IR,SAM,SAM_memory_revenue_only,memory_revenue,PDF page 7,,passed_sample,pass,not_performed,not_recorded
+SAM-2025Q3-IR,SAM,SAM_memory_revenue_only,memory_revenue,PDF page 7,,passed_sample,pass,not_performed,not_recorded
+SAM-2026Q2-IR,SAM,SAM_memory_revenue_only,memory_revenue,PDF page 13,,passed_sample,pass,not_performed,not_recorded
+SKH-2024Q1-IR,SKH,SKH_consolidated_company_total,company_revenue,PDF page 20,,passed_sample,pass,not_performed,not_recorded
+SKH-2024Q2-IR,SKH,SKH_consolidated_company_total,company_revenue,PDF page 19,,passed_sample,pass,not_performed,not_recorded
+SKH-2024Q3-IR,SKH,SKH_consolidated_company_total,company_revenue,PDF page 18,,passed_sample,pass,not_performed,not_recorded
+SKH-2024Q4-IR,SKH,SKH_consolidated_company_total,company_revenue,PDF page 23,,passed_sample,pass,not_performed,not_recorded
+SKH-2025Q1-IR,SKH,SKH_consolidated_company_total,company_revenue,PDF page 18,,passed_sample,pass,not_performed,not_recorded
+SKH-2025Q2-IR,SKH,SKH_consolidated_company_total,company_revenue,PDF page 18,,passed_sample,pass,not_performed,not_recorded
+SKH-2025Q3-IR,SKH,SKH_consolidated_company_total,company_revenue,PDF page 18,,passed_sample,pass,not_performed,not_recorded
+SKH-2025Q4-IR,SKH,SKH_consolidated_company_total,company_revenue,PDF page 21,,passed_sample,pass,not_performed,not_recorded
+SKH-2026Q1-IR,SKH,SKH_consolidated_company_total,company_revenue,PDF page 19,,passed_sample,pass,not_performed,not_recorded
+SKH-2026Q2-IR,SKH,SKH_consolidated_company_total,company_revenue,PDF page 19,,passed_sample,pass,not_performed,not_recorded

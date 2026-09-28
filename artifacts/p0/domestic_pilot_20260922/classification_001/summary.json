@@ -1,0 +1,39 @@
+{
+  "version": "p01-domestic-classify/0.1",
+  "completed_at": "2026-09-22T08:14:46.230723+00:00",
+  "candidate_rows": 39,
+  "article_classification_rows": 39,
+  "provisional_article_event_links": 39,
+  "rule_signal_rows": 39,
+  "local_body_documents": 22,
+  "body_unavailable_documents": 17,
+  "review_target_documents": 20,
+  "review_selected_documents": 20,
+  "review_slot_rows": 40,
+  "review_family_count": 13,
+  "review_source_counts": {
+    "ZDNET_KR": 8,
+    "ETNEWS": 9,
+    "EDAILY": 3
+  },
+  "review_short_body_documents": 1,
+  "human_completed_slots": 0,
+  "genre_assessments_confirmed": 0,
+  "origin_assessments_confirmed": 0,
+  "article_scope_assessments_confirmed": 0,
+  "claim_alignments_confirmed": 0,
+  "input_hashes": {
+    "artifacts\\p0\\domestic_pilot_20260922\\article_candidates.csv": "dd52b06538372a3d6895582ebe1735e6ac450ac68e535f18361fce161759d058",
+    "artifacts\\p0\\domestic_pilot_20260922\\body_audit_003\\body_audit.csv": "151f717a0b0f062a7cec0cd19e50c490a05c1fda1f201fef01701d293266263f",
+    "artifacts\\p0\\domestic_pilot_20260922\\body_audit_003\\raw\\documents.jsonl": "24a31619c38811ce3366f7ca592e90ff7241757c7ca2bffdc8803df201454736",
+    "artifacts\\p0\\domestic_pilot_20260922\\body_audit_003\\raw\\sentences.jsonl": "8d43c865ce2aca5bbb7b9f6556a345995278e977d57cad2e8e1ba1aad7f6ad88",
+    "artifacts\\p0\\domestic_pilot_20260922\\body_audit_003\\raw\\spans.jsonl": "8b34ad646f92459c47341121d6bdeee20bd852cd3a35166a29d0219b29b524d8"
+  },
+  "script_sha256": "6bc020eb6f6fd7183887c6777c9b7131bee8a6d847dc906f2109aa13a81c160a",
+  "limitations": [
+    "Title markers and body rule counts never confirm genre, origin, first report or business scope.",
+    "One retained provisional family link per original candidate does not establish event or claim identity.",
+    "Human slots are unassigned and pending; agent work is not two-person review.",
+    "No original text in these outputs, no ontology and no network requests."
+  ]
+}

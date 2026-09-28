@@ -1,0 +1,11 @@
+﻿doc_id,total_pdf_pages,existing_image_only_page_count,current_no_text_page_count,page_numbers,count_agrees_with_existing_record
+SKH-2024Q1-IR,20,3,3,3|8|14,True
+SKH-2024Q2-IR,19,3,3,3|8|13,True
+SKH-2024Q3-IR,18,3,3,3|8|12,True
+SKH-2024Q4-IR,23,4,4,3|11|15|17,True
+SKH-2025Q1-IR,18,3,3,3|8|12,True
+SKH-2025Q2-IR,18,3,3,3|8|12,True
+SKH-2025Q3-IR,18,3,3,3|8|12,True
+SKH-2025Q4-IR,21,3,3,3|10|15,True
+SKH-2026Q1-IR,19,3,3,3|8|13,True
+SKH-2026Q2-IR,19,3,3,3|8|13,True

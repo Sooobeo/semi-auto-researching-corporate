@@ -1,0 +1,22 @@
+{
+  "validated_at": "2026-09-22T10:03:05.612873+00:00",
+  "result": "pass",
+  "checks": {
+    "22_documents_and_669_xpath_atoms": true,
+    "script_hash_matches": true,
+    "human_audit_never_claimed": true,
+    "synthetic_whitespace_only_comparison": true,
+    "synthetic_hidden_child_tail_remains_visible": true,
+    "synthetic_permissive_jsonld_is_explicitly_marked": true,
+    "no_source_sentence_ge40_in_public_outputs": true,
+    "all_referenced_html_hashes_match": true,
+    "short_article_has_matching_alternate_dom_and_paragraph": true
+  },
+  "source_text_emitted": false,
+  "network_requests": 0,
+  "llm_calls": 0,
+  "limitations": [
+    "Full sentence leakage check is limited to source sentences >=40 codepoints.",
+    "Synthetic and provenance checks do not establish semantic completeness or two-person human audit."
+  ]
+}

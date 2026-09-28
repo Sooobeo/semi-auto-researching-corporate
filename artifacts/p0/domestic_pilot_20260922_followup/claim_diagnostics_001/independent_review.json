@@ -1,0 +1,32 @@
+{
+  "result": "provenance_pass_with_rule_boundary_issues",
+  "checks": {
+    "counts": true,
+    "offset_hash_roundtrip": true,
+    "private_public_shared_field_parity": true,
+    "no_claim_or_contradiction_assertion": true,
+    "private_files_gitignored": true,
+    "no_source_sentence_ge40_in_public": true
+  },
+  "issues": [
+    {
+      "id": "numeric_decimal_lexical_equality",
+      "severity": "normalization_candidate_accuracy",
+      "finding": "1GB and 1.0GB get different quantity_key strings despite equal Decimal values."
+    },
+    {
+      "id": "unit_prefix_boundary",
+      "severity": "normalization_candidate_accuracy",
+      "finding": "Synthetic 3 months is parsed as 3 count from the unit-prefix match; percentage-point spelling using percent symbol plus Korean points is parsed as percent."
+    },
+    {
+      "id": "explicit_date_validation",
+      "severity": "normalization_candidate_accuracy",
+      "finding": "Synthetic invalid calendar date is marked anchored without calendar validation."
+    }
+  ],
+  "actual_corpus_impact": "not_measured_in_this_bounded_review",
+  "claim_conclusions_remain_unverified": true,
+  "network_requests": 0,
+  "source_text_emitted": false
+}

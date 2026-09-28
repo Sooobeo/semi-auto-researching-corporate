@@ -1,0 +1,44 @@
+{
+  "version": "p01-domestic-morphology/0.1",
+  "completed_at": "2026-09-22T10:03:15.745721+00:00",
+  "script_sha256": "cc5e58369151dd98b61dc0904a43f14b91462fd64d90446b9fe56efdcf1d9bdb",
+  "python": "3.13.3",
+  "packages": {
+    "kiwipiepy": "0.23.1",
+    "kiwipiepy_model": "0.23.0",
+    "numpy": "2.5.3"
+  },
+  "model_configuration": "Kiwi(num_workers=1); package defaults; no custom lexicon or training",
+  "docs_reference": "https://bab2min.github.io/kiwipiepy/v0.23.1/kr/",
+  "input_body_file_sha256": "24a31619c38811ce3366f7ca592e90ff7241757c7ca2bffdc8803df201454736",
+  "input_body_audit": "artifacts\\p0\\domestic_pilot_20260922\\body_audit_003",
+  "documents": 22,
+  "rule_sentence_candidates": 448,
+  "kiwi_sentence_candidates": 433,
+  "morpheme_candidates": 14829,
+  "zero_width_tokens": 33,
+  "model_forms_different_from_raw_surface": 1959,
+  "tokens_overlapping_previous": 966,
+  "uncovered_nonspace_characters": 0,
+  "common_end_boundaries": 430,
+  "rule_only_end_boundaries": 18,
+  "kiwi_only_end_boundaries": 3,
+  "review_sentences": 200,
+  "review_documents": 22,
+  "human_reviewed_sentences": 0,
+  "synthetic_checks": {
+    "authored_fixtures": 7,
+    "sentence_substring_roundtrip": "pass",
+    "token_bounds": "pass",
+    "emoji_python_codepoint_offset": "pass",
+    "linguistic_accuracy_evaluated": false
+  },
+  "model_api_calls": 0,
+  "ontology": "not_performed",
+  "status": "model_candidates_offsets_checked_semantic_accuracy_unmeasured",
+  "limitations": [
+    "Kiwi form is an analysis, not necessarily the original substring; zero-width/overlapping spans are retained.",
+    "Sentence boundaries disagreeing with punctuation rules are review targets, not errors or measured F1.",
+    "Morphology and aggregate POS counts do not prove shared claims, authorship or outlet style."
+  ]
+}

@@ -1,0 +1,2 @@
+﻿before_doc_id,after_doc_id,product_marker,before_location_candidates,after_location_candidates,relation_candidate,status,same_file_duplicate,claim_scope_modality_conditions_review,publication_order_verified,reason
+SAM-2025Q4-IR,SAM-2026Q1-IR,HBM4,SAM-2025Q4-IR:SAM-2025Q4-IR.pdf:B0000184|SAM-2025Q4-IR:SAM-2025Q4-IR.pdf:B0000191,SAM-2026Q1-IR:SAM-2026Q1-IR.pdf:B0000152,plan_to_execution_candidate,unverified_not_gold,False,pending_original_context,False,Different preserved IR documents and local product/stage cue locations only; no full proposition identity inferred.

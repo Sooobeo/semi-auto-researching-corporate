@@ -1,0 +1,31 @@
+{
+  "validated_at": "2026-09-22T08:21:51.228533+00:00",
+  "integrity_pass": true,
+  "checks": {
+    "protected_33_inputs_unchanged": true,
+    "fixed_39_candidate_set_preserved": true,
+    "collector_independent_review": true,
+    "comparison_independent_review": true,
+    "collection_smoke_audit": true,
+    "collection_remaining_audit": true,
+    "body_22_all_located": true,
+    "expected_comparison_counts": true,
+    "classification_39_and_review_20x2": true,
+    "all_processed_script_hashes_match": true,
+    "all_raw_files_gitignored": true,
+    "tracked_raw_files_zero": true,
+    "git_diff_format": true,
+    "existing_report_links_resolve": true
+  },
+  "protected_inputs": 33,
+  "raw_files_checked": 65,
+  "tracked_raw_files": 0,
+  "missing_existing_report_links": [],
+  "scope": "input identity, hash, file provenance, numeric counts, output links, Git exclusions; not human completeness or semantic classification",
+  "remaining_assessments": "human audit, independent authorship, genre/scope, same claim/speaker, numeric meaning",
+  "collector_tests": {
+    "offline_synthetic_passed": 34,
+    "source": "safe_pilot_tooling execution report"
+  },
+  "python_compile": "pass"
+}

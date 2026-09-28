@@ -1,0 +1,144 @@
+{
+  "validator": "independent_followup_integration_qa/0.1",
+  "validated_at": "2026-09-22T10:15:18.041461+00:00",
+  "result": "join_pass_evidence_links_need_fix",
+  "checks": {
+    "22_document_keys_unique_and_source_sets_equal": true,
+    "48_alignment_keys_unique_and_source_sets_equal": true,
+    "document_hash_revision_scope_source_and_counts": true,
+    "review_flag_counts_18_and_scores_recomputed": true,
+    "pair_ids_old_sentence_hashes_and_kiwi_crossrefs": true,
+    "boundary_disagreement_3_of_48_pair_candidates": true,
+    "all_semantic_labels_remain_unreviewed": true,
+    "7_done_4_partial_tasks_unique": true,
+    "partial_tasks_distinct_7_8_9_11": true,
+    "T10_done_is_measurement_reporting_not_human_gold": true,
+    "script_hash_matches": false,
+    "evidence_links_resolve_to_intended_evidence": false
+  },
+  "issues": [
+    {
+      "severity": "evidence_link_integrity",
+      "missing_links": [
+        {
+          "task_id": "P01-T01",
+          "evidence": "coverage_review.csv",
+          "exists_in_inventory": true
+        },
+        {
+          "task_id": "P01-T02",
+          "evidence": "entity_review.csv",
+          "exists_in_inventory": true
+        },
+        {
+          "task_id": "P01-T02",
+          "evidence": "scope_checks.csv",
+          "exists_in_inventory": true
+        },
+        {
+          "task_id": "P01-T03",
+          "evidence": "source_registry_review.csv",
+          "exists_in_inventory": true
+        },
+        {
+          "task_id": "P01-T04",
+          "evidence": "additional_checks.json",
+          "exists_in_inventory": true
+        },
+        {
+          "task_id": "P01-T04",
+          "evidence": "document_integrity.csv",
+          "exists_in_inventory": true
+        },
+        {
+          "task_id": "P01-T05",
+          "evidence": "document_integrity.csv",
+          "exists_in_inventory": true
+        },
+        {
+          "task_id": "P01-T05",
+          "evidence": "missing_metadata.csv",
+          "exists_in_inventory": true
+        },
+        {
+          "task_id": "P01-T05",
+          "evidence": "publication_metadata_crosswalk.csv",
+          "exists_in_inventory": true
+        },
+        {
+          "task_id": "P01-T06",
+          "evidence": "block_review.csv",
+          "exists_in_inventory": true
+        },
+        {
+          "task_id": "P01-T06",
+          "evidence": "official_news_regression.json",
+          "exists_in_inventory": true
+        },
+        {
+          "task_id": "P01-T07",
+          "evidence": "numeric_recheck.csv",
+          "exists_in_inventory": true
+        },
+        {
+          "task_id": "P01-T07",
+          "evidence": "scope_checks.csv",
+          "exists_in_inventory": true
+        },
+        {
+          "task_id": "P01-T08",
+          "evidence": "relation_review.csv",
+          "exists_in_inventory": true
+        },
+        {
+          "task_id": "P01-T08",
+          "evidence": "plan_execution_location_candidates.csv",
+          "exists_in_inventory": true
+        },
+        {
+          "task_id": "P01-T08",
+          "evidence": "additional_checks.json",
+          "exists_in_inventory": true
+        },
+        {
+          "task_id": "P01-T09",
+          "evidence": "coverage_review.csv",
+          "exists_in_inventory": true
+        },
+        {
+          "task_id": "P01-T11",
+          "evidence": "additional_checks.json",
+          "exists_in_inventory": true
+        }
+      ],
+      "ambiguous_wrong_target_links": [
+        {
+          "task_id": "P01-T06",
+          "evidence": "summary.json",
+          "issue": "bare filename resolves to integrated output instead of intended inventory file"
+        }
+      ],
+      "recommendation": "Rebase inventory evidence to ../p01_inventory/<filename>, repository-root artifacts references explicitly, and handoff to ../handoff_p0.md."
+    }
+  ],
+  "counts": {
+    "documents": 22,
+    "alignment_candidates": 48,
+    "boundary_disagreement_pairs": 3,
+    "flagged_documents": 18,
+    "done_tasks": 7,
+    "partial_tasks": 4
+  },
+  "T10_assessment": "Recording measurements/source decisions can be done while human review and semantic completeness remain pending; this does not mark all P01 work complete. Report/handoff files are being finalized separately.",
+  "pending_report_links_not_counted_as_defects": [
+    "briefing.md",
+    "final_validation.json",
+    "handoff_p0.md",
+    "run_manifest.json"
+  ],
+  "scope": "integrated_001 captured extraction/morphology/claim diagnostics; later metadata/OCR outputs are outside this snapshot",
+  "source_text_emitted": false,
+  "network_requests": 0,
+  "script_hash_mismatch_context": "Parent confirmed the integration script was edited during this read-only QA to generate integrated_002; integrated_001 remains a preserved earlier-code snapshot.",
+  "next_revision": "Parent will regenerate integrated_002 and validate corrected evidence links there; no integrated_001 inputs or outputs were modified by this reviewer except this new validation record."
+}
