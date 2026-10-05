@@ -1,40 +1,46 @@
 # P07 · Phase 6 — Prior-state 검색·변화 탐지·정량 시나리오 엔진
 
-> 문서 상태: 실행 설계 v1.0 / 기준일 2026-09-15. 설계와 작업 정의이며 연구 수행·구현·성능 달성 결과가 아닙니다.
+> 문서 상태: 방향성 반영 실행 설계 v1.2 / 기준일 2026-10-05. [미국 기업 방향성 제안](../docs/project_direction/us_equity_research_proposal.md)을 반영한 작업 기준이며 팀 전체의 변경 합의나 수행·구현·성능 달성 결과를 뜻하지 않습니다. 기업·기간·표본·목표·담당자 배정은 미확정입니다.
 
-[전체 목차](README.md) · [공통 데이터 규약](DATA_CONTRACTS.md) · [레퍼런스](REFERENCES.md) · [작업 인덱스](TASK_INDEX.md)
+[전체 목차](README.md) · [공통 데이터 규약](DATA_CONTRACTS.md) · [레퍼런스](REFERENCES.md) · [작업 인덱스](TASK_INDEX.md) · [공통 목표·리서치 적용](GOALS_AND_RESEARCH_WORKFLOW.md)
 
 ## 1. 이 단계에서 답할 질문
 
-발표 직전까지 알려진 상태를 근거와 함께 찾고, 비교 가능한 변화만 계산하며, 필요한 가정이 없을 때 계산을 멈출 수 있는가?
+소수 미국 기업의 발표 직전까지 알려진 상태와 필요한 사업 관계를 근거와 함께 찾고, 비교 가능한 변화만 계산하며, 필요한 가정이 없을 때 계산을 멈출 수 있는가?
 
-- **책임 역할:** B 검색·event store, A 단위·변화·수식, C 시점·통합 검증
-- **착수 조건:** P2 registry·비교 규칙, P3 검색용 사례, P4 EventCandidate. P5 최종 순위 모델 없이도 검색·변화 엔진은 개발 가능.
-- **범위:** event store·historical snapshot·hybrid retrieval·delta·조건부 scenario. 미래 정보를 포함한 최신 요약을 과거 상태로 대체하지 않는다.
-- **연결 에픽:** [KAN-10](https://qyurimoon.atlassian.net/browse/KAN-10). 실명·기한은 팀이 배정하며 여기서는 역할 기준으로 작성합니다.
+- **책임 역할 후보:** B 검색·event store, A 단위·변화·수식, C 시점·통합 검증. A/B/C는 미배정 역할 자리이며 기업별 담당이나 인원 수를 확정하지 않습니다.
+- **착수 조건:** 미국 자료로 새로 구성한 P2 registry·비교 규칙, P3 검색용 사례, P4 EventCandidate. P5 최종 순위 모델 없이도 검색·변화 엔진은 개발 가능.
+- **범위:** event store·historical snapshot·hybrid retrieval·delta·조건부 scenario. 제품·고객·경쟁·공급·산업 관계는 실제 질문에 필요한 근거 있는 관계부터 추가한다. 미래 정보를 포함한 최신 요약을 과거 상태로 대체하지 않는다.
+- **연결 에픽:** [KAN-10](https://qyurimoon.atlassian.net/browse/KAN-10)은 기존 작업 연결 참고입니다. 새 대상의 담당·기한 배정은 별도 결정합니다.
 
 ## 2. 반드시 남길 산출물
 
-- `event_store schema / asof_queries.sql`
+- `event_store schema / asof_queries.sql` 및 필요한 `business_relations.jsonl`의 검색 연결
 - `retrieval_qrels.csv / retrieval_benchmark.md`
 - `change_records.jsonl / calculation_registry.csv`
 - `scenario_runs.jsonl / reproducibility_report.md`
 
-산출물 경로는 저장소 루트의 `artifacts/p6/` 기준 제안입니다. 이 설계서 작성만으로 해당 데이터·코드가 생성된 것은 아닙니다. 원문·비공개 데이터는 P0에서 정한 보관 위치를 사용합니다.
+산출물 경로는 저장소 루트의 `artifacts/us_equity/p6/` 기준 제안입니다. 기존 한국 기업 자료·결과는 현행 작업에서 폐기하며 store·검색 정답·계산 입력·검증을 미국 자료로 새로 구성합니다. 이 설계서 작성만으로 파일이 삭제되거나 새 데이터·코드가 생성된 것은 아닙니다. 원문·비공개 데이터는 P0에서 새로 정한 보관 위치를 사용합니다.
+
+선정 재무 적용에는 `financial_reconciliations.jsonl / research_assumptions.jsonl`을 기존 계산·scenario와 연결합니다.
 
 ## 3. 상세 설계와 판단 규칙
 
 ### 저장 모델과 시점
 
-raw document, claim/event mention, event relation, metric registry, prior-state candidate, change record, scenario run을 별도 테이블로 둔다. 각 claim은 published_at(공개), effective_period(적용), observed_at(시스템 수집), revision 관계를 갖는다. 현재 수정된 행 한 개만 보관하면 과거 상태를 복원할 수 없으므로 append-only revision을 권장한다.
+raw document, claim/event mention, event relation, metric registry, 근거가 있는 business relation, prior-state candidate, change record, scenario run을 별도 테이블로 둔다. 각 claim과 관계는 published_at(공개), effective_period(적용), observed_at(시스템 수집), revision 관계를 갖는다. 현재 수정된 행 한 개만 보관하면 과거 상태를 복원할 수 없으므로 append-only revision을 권장한다.
+
+영문 원문을 기준으로 회사·제품·고객 등 식별자와 방향성을 대조한다. 한국어 검토 요약·번역은 원문 위치와 연결한 별도 표현이며 검색 정답 근거를 대체하지 않는다. 미국 기업의 회계연도·회계분기와 달력 기간을 따로 기록하고 실제 시작·종료일로 비교한다. 출처 시간대·UTC offset·DST 및 시각 정밀도를 보존하며 날짜만 있는 값을 정확 시각으로 만들지 않는다.
 
 백테스트에는 historical-public 모드와 observed-live 모드를 구분한다. historical-public은 당시 공개된 원문을 뒤늦게 수집했어도 사용할 수 있으나 공개시점 근거가 필요하다. observed-live는 실제 시스템 관측시점도 cutoff 이하여야 한다. 날짜만 있고 시각이 불명확하면 같은 날짜 문서를 순서가 확인된 과거 근거로 쓰지 않거나 보수적 정책을 적용한다. 정책 이름을 run manifest에 적는다.
 
 ### Retrieval 파이프라인
 
-기업·scope·metric·기간·공개시점 필터 → BM25 희소 검색 → embedding 검색 → 후보 합치기 → 재순위화 → 호환성 검사 순서의 후보 설계다. 희소 검색과 dense 검색 각각을 baseline으로 평가한다. [T05](REFERENCES.md)의 FTS5는 후보 구현이며 한국어 토큰화·수치 표현을 검증해야 한다. 단순 유사도 최고 문서가 prior-state 정답은 아니다.
+기업·scope·metric·기간·공개시점 필터 → BM25 희소 검색 → embedding 검색 → 후보 합치기 → 재순위화 → 호환성 검사 순서의 후보 설계다. 희소 검색과 dense 검색 각각을 baseline으로 평가한다. [T05](REFERENCES.md)의 FTS5는 후보 구현이며 영문 회사명·제품명·수치 표현을 새 표본에서 검증해야 한다. 단순 유사도 최고 문서가 prior-state 정답은 아니다.
 
 query는 새 사건, qrels는 그 이전에 공개된 비교 가능한 주장과 근거 위치다. 정답 없음도 포함한다. 같은 문서 내 ‘전년 수치’는 신규 발표에서 회고한 값이지 독립적으로 당시 알려졌음을 보장하는 자료가 아니다. backtest prior에는 이전 공개 원문 또는 당시 version evidence를 요구한다.
+
+필요한 관계를 검색 맥락으로 사용할 때는 관계 ID·주체/대상·제품/사업 범위·유효기간·근거를 함께 가져온다. ‘A가 B에 공급한다’는 원문 주장과 ‘따라서 A의 실적이 감소한다’는 영향 해석을 분리한다. 검색한 경쟁·공급·산업 관계는 prior의 비교 적합성을 보증하지 않으며, 여러 관계를 연결했다는 이유만으로 다단계 인과나 실적 영향을 확정하지 않는다.
 
 ### Change 종류와 abstention
 
@@ -42,26 +48,36 @@ new_information, repeated, numeric_revision, certainty_transition, effective_dat
 
 동일 정의·범위·기간의 v_old와 v_new만 delta=v_new-v_old를 계산한다. relative delta=delta/abs(v_old)는 분모 정의를 명시하고 0이면 unavailable 처리한다. % 비중의 차는 percentage points로 보존한다. 음수 기준값은 해석을 따로 명시하고 손실→이익을 단순 성장률로 과장하지 않는다. 누적→분기 값은 기간·회계범위·정정본이 호환될 때만 차분한다.
 
+FY/Q 표기가 같아도 실제 기간, 전사/segment, GAAP/non-GAAP 정의, 계속영업 범위가 다르면 비교 조건을 검토한다. 통화는 USD로 추정하지 않고 원문 값·통화·scale을 보존한다. 환산이 필요하면 환율 출처·기준일·변환 정책을 명시하고 환산 차이와 회사가 발표한 변화량을 구분한다. 관계 변화는 계약 상태·상대·범위·시점의 변화로 기록하며 수치 근거 없이 매출 delta로 전환하지 않는다.
+
 ### Scenario 식과 한계
 
 검증 가능한 수식 ID만 실행한다. 출하량×ASP=매출은 제품·기간·통화·단위 일치가 필요하다. 생산능력×가동률은 생산량 후보이며 출하량 계산에는 수율·재고·제품 mix 가정이 추가될 수 있다. 입력이 없으면 공식/시나리오만 표시하고 숫자 결과를 생성하지 않는다.
 
 시나리오의 low/base/high 입력은 분석 가정이며 통계적 신뢰구간과 다르다. 입력 출처·관측/가정·버전·환율·반올림을 기록하고 [T06](REFERENCES.md)의 Decimal 같은 명시적 계산으로 재현한다. LLM은 산술의 권위가 되지 않는다. 계산 결과를 실제 회사 전망으로 표현하지 않는다.
 
+무료 자료와 보유 컴퓨팅 자원을 출발 조건으로 두고, 검색 규모·모델·처리시간은 실제 미국 표본으로 측정한 뒤 정한다. 외부 API·embedding·LLM은 저장·AI 입력·외부 전송 권리와 비용을 확인한 선택 경로다. 사업 관계 존재만으로 수식을 실행하지 않으며 계산 가능한 공개 입력과 명시적 가정을 요구한다.
+
+### 선정 재무 계산·대사와 전망 가정 갱신
+
+[공통 목표·리서치 적용 흐름](GOALS_AND_RESEARCH_WORKFLOW.md)에 따라 기존 계산 엔진에 선정 재무 공식·대사를 등록하고 `financial_reconciliations.jsonl`과 `research_assumptions.jsonl`을 연결한다. 발생주의 이익→CFO와 GAAP→회사 조정지표 등 실제 입력이 확보된 대사를 수행한다. 잔차·반올림 허용 오차의 근거와 누락 항목을 남기고 incomplete를 성공으로 처리하지 않는다.
+
+회사 가이던스·사람 가정·파생 전망은 발표 실적과 구별한다. 동일 미래 대상 기간의 기존/새 가정을 비교하고 유지/수정/보류·근거·반대 근거·작성자·검토자를 버전으로 보존한다. 과거 시점의 계산에는 당시 이용 가능했던 입력만 쓴다. 전면적인 재무 전망 모델·DCF를 필수로 추가하지 않고 선정 질문의 계산·시나리오부터 실행한다. 숫자가 없는 관계 변화의 prior/change도 유지한다.
+
 ## 4. 실행 작업 — 순서와 완료 기준
 
 아래 번호는 설계서 내부 ID입니다. 예: `P07-T01`은 Phase 6의 첫 작업입니다. `P0-T01`처럼 Phase로 쓴 의존성은 해당 Phase 설계서의 T01을 뜻합니다. 한 작업이 담당자 기준 1~2일보다 커지면 기업·자료형·사건유형 단위로 하위 작업을 나누고 같은 완료 조건을 적용합니다.
 
-### P07-T01 · store 스키마·키 정의
+### P07-T01 · 사건·사업 관계 store 스키마·키 정의
 
 - **책임·검토:** B, C 검토
 - **선행:** P2-T12,P4-T11
 - **입력·참고:** DATA_CONTRACTS,O03
 
-1. 문서·claim·revision·relation 테이블을 정의한다.
+1. 미국 문서·claim·revision·event relation과 필요한 business relation 테이블을 새로 정의한다.
 2. stable ID와 unique 제약을 정한다.
-3. 공개/적용/관측 시점을 나눈다.
-4. 외래키·원문 위치를 검사하는 마이그레이션을 설계한다.
+3. 공개/적용/관측 시점과 관계 사실·영향 assessment·derived 결과를 나눈다.
+4. 외래키·영문 원문 위치·관계 방향·유효기간을 검사하는 스키마 검증을 설계한다.
 
 - **제출:** `event_store_schema.sql`
 - **완료 확인:** 과거 claim이 새 정정으로 덮어써지지 않음.
@@ -75,8 +91,8 @@ new_information, repeated, numeric_revision, certainty_transition, effective_dat
 
 1. historical-public/observed-live 정책을 구현한다.
 2. cutoff보다 늦은 문서를 제외한다.
-3. 날짜만 있는 같은 날 자료 정책을 적용한다.
-4. 정정 전후 snapshot을 재현한다.
+3. 출처 시간대·DST와 날짜만 있는 같은 날 자료 정책을 적용한다.
+4. 주장·사업 관계의 정정 전후 snapshot을 재현한다.
 
 - **제출:** `asof_queries.sql`
 - **완료 확인:** 미래 자료 추가 후 과거 query 결과가 변하지 않음.
@@ -90,7 +106,7 @@ new_information, repeated, numeric_revision, certainty_transition, effective_dat
 
 1. 새 사건별 이전 근거 후보를 찾는다.
 2. 정답/부분 관련/부적합/정답 없음 기준을 작성한다.
-3. 기업·기간·scope 불일치 hard negative를 넣는다.
+3. 기업·실제 회계기간·scope·관계 방향 불일치 hard negative를 넣는다.
 4. train/dev/test query family를 분리한다.
 
 - **제출:** `retrieval_qrels.csv`
@@ -105,7 +121,7 @@ new_information, repeated, numeric_revision, certainty_transition, effective_dat
 
 1. block 단위 인덱스를 만든다.
 2. 기업·시점 필터를 적용한다.
-3. 한국어·숫자·단위 토큰화를 비교한다.
+3. 영문 기업/제품 별칭·숫자·단위 토큰화를 비교한다.
 4. BM25 topk와 latency를 저장한다.
 
 - **제출:** `bm25_results.jsonl`
@@ -133,9 +149,9 @@ new_information, repeated, numeric_revision, certainty_transition, effective_dat
 - **선행:** T05
 - **입력·참고:** P2 comparability
 
-1. scope·제품·기간·정의·unit을 검사한다.
+1. scope·제품·실제 회계기간·GAAP/non-GAAP 정의·unit·currency를 검사한다.
 2. 부적합 후보에 이유를 붙인다.
-3. 복수 적합 주장과 최신 공개순을 보존한다.
+3. 복수 적합 주장과 최신 공개순을 보존하고 관계 맥락은 별도 연결한다.
 4. 정답 근거 없으면 abstain한다.
 
 - **제출:** `prior_state_records.jsonl`
@@ -157,7 +173,7 @@ new_information, repeated, numeric_revision, certainty_transition, effective_dat
 - **완료 확인:** 모든 계산에 입력 두 값·단위·기간·공식 추적.
 - **실패·미해결 처리:** 실패 입력/원문 위치·시도·원인·다음 확인 역할을 결과 기록에 남깁니다. 누락을 임의 값으로 채워 완료 처리하지 않습니다.
 
-### P07-T08 · 정성·revision change 구현
+### P07-T08 · 정성·관계·revision change 구현
 
 - **책임·검토:** B, A 검토
 - **선행:** T06
@@ -165,8 +181,8 @@ new_information, repeated, numeric_revision, certainty_transition, effective_dat
 
 1. 계획/실행·시점 변경·부인·정정을 분류한다.
 2. 같은 발표 반복과 새로운 상태를 구별한다.
-3. 출하/판매를 원문 동작으로 보존한다.
-4. 충돌은 contradiction candidate로 남긴다.
+3. 계약·제품·고객·공급 관계의 상대/범위/상태 변화와 출하/판매를 원문 동작으로 보존한다.
+4. 충돌은 contradiction candidate로 남기고 관계 변화의 실적 영향은 별도 검토 질문으로 둔다.
 
 - **제출:** `qualitative_changes.jsonl`
 - **완료 확인:** 근거 없는 확정·상향·동일 사건 병합 없음.
@@ -176,12 +192,14 @@ new_information, repeated, numeric_revision, certainty_transition, effective_dat
 
 - **책임·검토:** A, C 검토
 - **선행:** T07,P2-T08
-- **입력·참고:** driver_edges·T06
+- **입력·참고:** driver_edges·T06; [공통 목표·리서치 적용](GOALS_AND_RESEARCH_WORKFLOW.md), 선정 사례만 적용
 
-1. 계산 가능한 edge만 formula로 선택한다.
+1. 공개 입력과 수식 조건을 충족한 driver edge만 formula로 선택하고 사업 관계와 구분한다.
 2. 입력 단위·기간·허용범위·추가가정을 정의한다.
 3. missing input 시 중단 정책을 작성한다.
 4. 관측값과 분석가 가정 필드를 분리한다.
+
+5. 선정 재무 계산·대사 공식의 필수 입력·범위·부호·허용 오차 근거와 회사/프로젝트 정의를 등록하고 수작업 기준과 검토한다.
 
 - **제출:** `calculation_registry.csv`
 - **완료 확인:** 생산능력 증가율을 매출 증가율로 바로 사용하지 않음.
@@ -193,10 +211,10 @@ new_information, repeated, numeric_revision, certainty_transition, effective_dat
 - **선행:** T07,T08
 - **입력·참고:** qrels·gold change 사례
 
-1. change 종류별 정확도·abstention을 계산한다.
+1. 수치·정성·관계 change 종류별 정확도·abstention을 계산한다.
 2. prior 검색 오차와 change 오차를 분리한다.
 3. P5용 feature의 available_at을 점검한다.
-4. 고정 interface와 버전을 전달한다.
+4. 고정 interface와 버전, review_readiness=supported / needs_review / not_comparable와 이유를 전달하고 evidence_status와 구별한다.
 
 - **제출:** `change_benchmark.md, change_schema.json`
 - **완료 확인:** P5-T10에 미래 정보 없는 변화 feature 제공.
@@ -206,15 +224,17 @@ new_information, repeated, numeric_revision, certainty_transition, effective_dat
 
 - **책임·검토:** A, B 검토
 - **선행:** T09,T10
-- **입력·참고:** 공식·입력·가정
+- **입력·참고:** 공식·입력·가정; [공통 목표·리서치 적용](GOALS_AND_RESEARCH_WORKFLOW.md), 선정 사례만 적용
 
 1. base/low/high 입력 세트를 만든다.
 2. Decimal·통화·반올림 정책으로 실행한다.
 3. 입력/공식/hash로 결과를 재실행한다.
 4. 가정 민감도와 계산 불가 사례를 저장한다.
 
-- **제출:** `scenario_runs.jsonl`
-- **완료 확인:** 동일 입력·버전 재실행에서 같은 결과.
+5. financial_reconciliations.jsonl에 완전성·잔차·누락을 기록하고 research_assumptions.jsonl에 같은 미래 기간의 가이던스/사람 가정 유지·수정·보류를 연결한다.
+
+- **제출:** `scenario_runs.jsonl`, `financial_reconciliations.jsonl, research_assumptions.jsonl`
+- **완료 확인:** 동일 입력·버전 재실행에서 같은 결과. 재무 대사 입력·잔차/허용 오차·불완전 상태와 가정/파생 전망의 시점·버전이 추적됨.
 - **실패·미해결 처리:** 실패 입력/원문 위치·시도·원인·다음 확인 역할을 결과 기록에 남깁니다. 누락을 임의 값으로 채워 완료 처리하지 않습니다.
 
 ### P07-T12 · 전체 엔진 검증·인계
@@ -223,8 +243,8 @@ new_information, repeated, numeric_revision, certainty_transition, effective_dat
 - **선행:** T11
 - **입력·참고:** store·검색·change·scenario
 
-1. 미래문서·정정·미상시각·0분모 반례를 실행한다.
-2. 카드용 prior/new evidence를 묶는다.
+1. 미래문서·관계 정정·미상시각·DST·상이한 회계기간·0분모 반례를 실행한다.
+2. 카드용 prior/new 영문 evidence와 필요한 사업 관계 근거를 묶는다.
 3. 필수 입력 누락시 표시할 이유를 확정한다.
 4. 성능·실패·재현 결과를 정리한다.
 
@@ -235,33 +255,39 @@ new_information, repeated, numeric_revision, certainty_transition, effective_dat
 
 ## 5. 필수 검증 시나리오
 
+- [ ] 선정 재무 대사는 입력 완전성·잔차·반올림 허용 오차 근거를 확인하고 누락은 incomplete로 남긴다.
+- [ ] 회사 FCF/가이던스, 프로젝트 계산, 사람 가정·파생 전망이 분리되며 같은 미래 대상 기간·scope끼리 비교한다.
+- [ ] 과거 자료로 사후 작성한 가정은 실제 작성 시점을 보존하고 당시의 전망으로 표현하지 않는다.
+
 - [ ] cutoff 이후 정정본을 넣어도 이전 시점 결과는 유지된다.
 - [ ] 같은 지표명이어도 scope·period가 다르면 계산을 거부한다.
 - [ ] 0분모·통화 불일치·단위 미상은 숫자 결과를 반환하지 않는다.
 - [ ] 계획→실행을 수치 증가로 변환하지 않는다.
 - [ ] 생산능력만 있는 입력에서 출하·매출을 확정 계산하지 않는다.
+- [ ] 관계 존재만 있는 입력에서 매출 변화나 다단계 인과를 생성하지 않는다.
+- [ ] 회계분기 이름이 같아도 실제 기간·scope·GAAP/non-GAAP 정의가 다르면 비교를 보류한다.
+- [ ] 한국어 검토 요약이 영어 근거의 modality·수치·관계 방향을 바꾸지 않는다.
 
 ## 6. 단계 종료와 다음 단계 전달
 
 **종료 기준:** time-safe prior retrieval과 근거 연결 change가 재현되며 계산 가능한 경우만 수식·가정과 함께 결과를 낸다. 검색 정확도·정답 없음·불가율·계산 오류를 함께 보고한다.
 
-**인계:** P5 후속 특성 비교에 change를 전달하고 P7에 prior/new evidence·변화·계산·불확실성 인터페이스를 전달한다.
+**인계:** P5 후속 특성 비교에 change를 전달하고 P7에 prior/new evidence·필요한 사업 관계 맥락·변화·계산·불확실성 인터페이스를 전달한다. 원문 근거 확인 상태는 원문 밖의 진실 보장을 뜻하지 않는다.
 
 결과 기록에는 완료 작업 ID, 산출물 경로·버전·hash, 실제 건수, 검증 결과, 검토 역할, 남은 문제와 후속 작업을 남깁니다. 미실행 검증을 통과로 표시하지 않습니다. 성능 목표·예산·표본 수 변경은 [결정 기록](DECISIONS.md)에 남깁니다.
 
 ## 7. 이 단계의 레퍼런스
 
-- **N01 · [최신 Notion 프로젝트](https://app.notion.com/p/3d00589711408057948dc5666ae044e3)** — 개요 및 설명의 RQ1~5, 모듈7.1~7.11, Phase0~8, 기업 선정. 확인 수준: 2026-09-15 본문 확인; 보관 초안보다 우선.
+- **DIR01 · [미국 기업 방향성 제안](../docs/project_direction/us_equity_research_proposal.md)** — 대상 전환, 필요한 사업 관계 확장, 기존 질문·검토 카드·배치 로컬 MVP 유지. 개인 제안과 팀 합의를 구별하며 기존 한국 자료·결과의 폐기는 2026-10-05 사용자 지시를 따른다.
+- **N01 · [기존 Notion 프로젝트](https://app.notion.com/p/3d00589711408057948dc5666ae044e3)** — 기존 파이프라인·Phase 구성의 배경 참고. 과거 기업 선정·배정·결과를 현행 미국 작업의 근거로 사용하지 않는다.
 - **R06 · [Reimers & Gurevych (2019), Sentence-BERT](https://aclanthology.org/D19-1410/)** — 문장 임베딩 후보·유사도 검색의 역할. 확인 수준: 서지·초록 확인; 유사도는 같은 사건의 증거가 아님.
 - **R07 · [Thakur et al. (2021), BEIR](https://arxiv.org/abs/2104.08663)** — 희소/밀집 검색 비교와 다른 도메인 평가 설계. 확인 수준: 서지·초록 확인; 우리 금융 prior-state 검색을 따로 평가.
 - **R08 · [Chen et al. (2021), FinQA](https://aclanthology.org/2021.emnlp-main.300/)** — 표·문장 근거와 계산 프로그램 연결 방식. 확인 수준: 서지·초록 확인; 데이터셋 전체 재배포 권한은 별도 확인.
 - **O03 · [W3C PROV-O](https://www.w3.org/TR/prov-o/)** — 원문→추출→수정→계산의 출처·행위·작성 주체 연결. 확인 수준: 공식 표준 확인; v1은 관계형 기록으로 구현 가능.
-- **T04 · [Sentence Transformers STS](https://www.sbert.net/docs/sentence_transformer/usage/semantic_textual_similarity.html)** — 임베딩·유사도 구현 후보. 확인 수준: 공식 문서 확인; 한국어·금융 적합성은 자체 평가.
-- **T05 · [SQLite FTS5](https://www.sqlite.org/fts5.html)** — 희소 검색·BM25·인덱스·토큰화 설계. 확인 수준: 공식 문서 확인; 한국어 토큰화 별도 검증.
+- **T04 · [Sentence Transformers STS](https://www.sbert.net/docs/sentence_transformer/usage/semantic_textual_similarity.html)** — 임베딩·유사도 구현 후보. 미국 영문 기업 자료 적합성은 새 표본으로 자체 평가한다.
+- **T05 · [SQLite FTS5](https://www.sqlite.org/fts5.html)** — 희소 검색·BM25·인덱스·토큰화 설계. 영문 별칭·숫자·단위 토큰화는 별도 검증한다.
 - **T06 · [Python decimal](https://docs.python.org/3/library/decimal.html)** — 금액·비율 계산의 정밀도와 반올림 규칙. 확인 수준: 공식 문서 확인; 입력 문자열·정밀도·반올림 설정 보존.
 - **T07 · [Pydantic Models](https://pydantic.dev/docs/validation/latest/concepts/models/)** — 입출력 스키마·누락·타입 오류 검증 후보. 확인 수준: 공식 문서 확인; 강제 형변환과 엄격 검증을 구별.
-- **C01 · [삼성 2025Q4 IR](https://images.samsung.com/kdp/ir/events/2025/2025_4Q_conference_kor.pdf)** — 메모리 전망·HBM4 양산 출하 계획, 메모리 매출/DS 이익 범위 구분. 확인 수준: PDF 본문 확인.
-- **C02 · [삼성 2026Q1 IR](https://images.samsung.com/kdp/ir/events/2026/2026_1Q_conference_kor.pdf)** — HBM4 양산 판매 개시, 이전 계획과 후속 실행 연결. 확인 수준: PDF 본문 확인.
 
 문헌·API를 실제 작업에 사용한 뒤 읽은 절·페이지·버전·실행일을 기록합니다. 확인한 개요와 아직 정독하지 않은 본문을 구별합니다.
 

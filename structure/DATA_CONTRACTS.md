@@ -1,6 +1,8 @@
 # 공통 데이터 규약 및 산출물 계약
 
-기준일: 2026-09-15 / 제안 버전 v1.0. 각 Phase가 독립적으로 다른 필드를 만들지 않도록 사용하는 공통 설계입니다. 실제 스키마·코드는 해당 Phase에서 구현하고 사례 검증 후 버전을 고정합니다.
+기준일: 2026-10-05 / 제안 버전 v1.2. [미국 기업 방향성](../docs/project_direction/us_equity_research_proposal.md)과 사용자 폐기 지시에 따라 미국 자료로 새로 작성할 공통 규약입니다. 기존 한국기업 데이터·등록부·gold·모델·검증 결과는 입력으로 승계하지 않습니다. 실제 스키마·저장 방식은 각 Phase에서 구현하고 새 사례 검증 후 고정합니다. 신규 산출물 경로는 `artifacts/us_equity/p0/`~`p8/` 제안이며 아직 생성된 결과가 아닙니다.
+
+[공통 목표·개인 리서치 적용](GOALS_AND_RESEARCH_WORKFLOW.md)에 따라 기존 사건·사업 관계·검토 카드 계약을 유지하면서 선정 재무 개념·계산·가정·메모·기여 기록을 연결합니다. 아래 추가 계약은 최초 사례에서 구현·검증할 제안이며 모든 기업·참여자에게 재무 분석 산출물을 요구하지 않습니다.
 
 ## 1. 기록 원칙
 
@@ -11,6 +13,8 @@
 5. 값 0과 미상(null), 해당 없음, 미공개, 추출 실패는 다릅니다. numeric_value는 숫자 또는 null이고 missing_reason으로 사유를 구별합니다.
 6. ID는 안정적인 문자열입니다. 회사코드·문서번호를 임의로 추측하지 않으며 공식 확인 값과 내부 ID를 분리합니다.
 7. CSV는 UTF-8, JSONL은 줄마다 유효한 JSON 객체로 저장합니다. 숫자 원표현은 문자열, 정밀 계산용 값은 Decimal로 읽을 문자열을 권장합니다. CSV의 빈칸 의미는 해당 schema에서 정합니다.
+8. 영문 원문을 추출·근거의 기준으로 둡니다. 한국어 검토 설명·번역은 원문 span과 별도로 연결하며 번역문 offset으로 원문 위치를 대신하지 않습니다.
+9. 사업 관계의 원문 주장과 실적 영향 해석을 분리합니다. 관계가 있다는 것만으로 인과·매출 의존도·영향 규모를 생성하지 않습니다.
 
 ## 2. 회사·사업 범위
 
@@ -18,21 +22,27 @@
 | --- | --- | --- |
 | company_id | 내부 안정 ID | 필수 |
 | legal_name | 공식 회사명 | 공식 출처 연결 |
-| ticker / corp_code | 거래소 종목코드 / DART 고유번호 | 미확인 null; 다른 코드로 대체 금지 |
+| external_identifiers[] | `namespace, value, exchange, valid_from/to, evidence_refs` 외부 ID 매핑 | 미국 법인·공시 주체의 CIK, 거래소별 ticker 등 공식 확인값만 사용; 내부 ID와 구별 |
 | scope_id | 전사/사업부/제품군 구분 | 사실마다 필수; 미상은 명시 |
-| scope_name / parent_scope_id | 범위 이름과 상위 범위 | 메모리·DS·삼성 전체를 분리 |
+| scope_name / parent_scope_id | 범위 이름과 상위 범위 | 전사·법인·사업부·지역·제품/서비스 범위를 분리 |
 | consolidation | consolidated / separate / segment / unknown | 비교 조건에 사용 |
 | alias / language / evidence | 이름 변형과 근거 | alias 적용범위·유효기간 기록 |
 
-삼성 메모리 매출과 DS 영업이익은 동일 scope가 아닙니다. SK하이닉스 연결 수치를 특정 제품군 수치로 바꾸지 않습니다. 리노공업 전사 수치에는 다른 사업이 포함될 수 있으므로 소켓/핀/의료기기 범위를 구분합니다.
+종목과 공시 법인, 모회사와 자회사, 전사와 제품 범위는 다릅니다. ticker 변경이나 복수 상장을 새 회사로 자동 분리하지 않습니다. 특정 고객 또는 제품 매출을 전사 수치에서 임의로 도출하지 않습니다. 회계기준과 GAAP/non-GAAP의 정의·조정 내역은 사실/metric의 비교 조건으로 기록합니다.
+
+### entity_catalog.csv
+
+`entity_id, entity_type, canonical_name, aliases, language, company_id, parent_entity_id, scope_id, external_identifiers, definition, evidence_refs, valid_from, valid_to, mapping_status, registry_version`
+
+entity_type 후보는 company / product / service / industry입니다. customer·supplier·competitor는 관계에서의 **역할**이며 같은 기업이 여러 역할을 가질 수 있습니다. 공개되지 않은 고객을 추측해 ID로 만들지 않습니다. 이름을 일치시킨 것과 관계를 확인한 것은 별도 판정입니다.
 
 ## 3. 출처와 문서
 
 ### source_registry.csv
 
-`source_id, provider, source_type, landing_url, terms_url, checked_at, authentication, manual_read, automated_access, storage_policy, sharing_policy, redistribution_policy, rate_limit_evidence, status, unresolved_reason`
+`source_id, provider, source_type, landing_url, terms_url, terms_version, checked_at, accessible_period, authentication, manual_read, automated_access, storage_policy, internal_analysis_policy, ai_input_policy, ai_training_policy, external_transfer_policy, sharing_policy, redistribution_policy, rate_limit_evidence, status, unresolved_reason`
 
-저장/공유/재배포 가능은 각각 확인합니다. API 호출 제한 수치는 실행일의 공식 가이드에서 확인한 값만 넣습니다. 원문 공개와 재배포 허용은 동일하지 않습니다.
+조회·자동 접근·저장·내부 분석·AI 입력/학습·외부 전송·공유·재배포를 각각 확인합니다. `allowed / prohibited / conditional / unresolved`와 조건 근거를 남기고 무료 공개·robots 허용·HTTP 200으로 이용권을 추정하지 않습니다. SEC/EDGAR·기업 IR도 새 확인 대상입니다. 불명확한 출처의 대량 저장·AI 처리는 진행하지 않습니다. API 제한은 실행일 공식 가이드의 확인값만 넣습니다.
 
 ### document_manifest.csv
 
@@ -40,24 +50,26 @@
 | --- | --- | --- |
 | doc_id / revision_id | 문서·수집본의 안정 ID | 필수, revision 중복 금지 |
 | source_id / source_url / attachment_url | 원출처·첨부 | 상세 URL과 홈페이지 분리 |
+| final_url / rights_basis_ref | 최종 redirect URL·조건 근거 | 최종 도메인의 조건·robots도 확인 |
 | title / company_ids / language | 문서 메타데이터 | 복수 기업 가능 |
 | published_at / published_date | 정확 시각 / 날짜 | 정확 시각 미상은 null |
 | time_precision / timezone | second/minute/date/unknown, 시간대 | 출처 근거와 함께 |
 | observed_at | 시스템이 실제 관측한 시각 | published_at 대체 금지 |
 | reference_period_start/end | 자료의 실적 대상 기간 | 발표일과 구별 |
+| fiscal_year / fiscal_quarter / period_basis | 회사 원문 회계연도·분기, fiscal/calendar/other/unknown | 실제 시작/종료일 보존; 달력 분기로 자동 치환 금지 |
 | format / byte_size / sha256 | 원본 형식·크기·hash | 미저장·미측정 이유 |
 | storage_uri / storage_policy | 보관 위치·범위 | 권한·원문 조건 준수 |
 | source_revision_of / relation_type | 정정·번역·재보도·후속 | 대상 문서 존재 확인 |
 | parse_status / parser_version | 추출 상태·방법 | 수동·자동·OCR 분리 |
 | split_exposure | train/dev/test/adaptation/practice/unassigned | 사용 이력 보존 |
 
-문서 전체가 한 기간으로 표현되지 않으면 reference periods 배열을 별도 필드/연결 테이블로 둡니다. 개별 claim의 기간이 최종 비교 기준입니다.
+문서 전체가 한 기간으로 표현되지 않으면 reference periods 배열을 별도 필드/연결 테이블로 둡니다. 개별 claim의 기간이 최종 비교 기준입니다. 원문 시각 문자열·시간대 근거를 보존하고 확인 가능한 경우 IANA 시간대와 UTC 값을 기록합니다. 미국 현지 시각은 날짜별 서머타임을 반영하며 날짜만 알면 00:00을 만들지 않습니다. 페이지 날짜·본문 dateline·공시 접수/게시·수집 시각 충돌은 양쪽 위치와 검토 상태를 유지합니다.
 
 ### blocks.jsonl
 
 `block_id, doc_id, revision_id, block_type, page_number, section_path, raw_text, normalized_text, offset_mapping, table_id, row_index, col_index, header_refs, extraction_method, extraction_version`
 
-페이지 번호는 문서 인쇄 번호와 파일 페이지 index를 구분합니다. 표는 셀 값뿐 아니라 단위·기간·사업범위 머리글을 header_refs로 연결합니다. offset 기준은 원문 block의 Unicode code point인지 UTF-16인지 명시하고 저장·평가 도구 간 통일합니다.
+페이지 번호는 문서 인쇄 번호와 파일 페이지 index를 구분합니다. 표는 단위·기간·사업범위 머리글을 header_refs로 연결합니다. 문자 span은 원문 block의 **Unicode code point, 0-based, [start,end)**를 기준으로 하고 UTF-16 기반 도구와는 명시적 변환을 거칩니다. 정규화 전후 round-trip을 확인합니다. 위치 미확인 fallback은 사건·숫자·관계 gold 근거로 승격하지 않습니다.
 
 ## 4. 사건·주장
 
@@ -66,11 +78,13 @@
 | 묶음 | 필드 | 처리 규칙 |
 | --- | --- | --- |
 | 식별 | event_id, event_family_id, claim_id, doc_id, revision_id | 문서·사건·개별 주장 분리 |
-| 대상 | company_id, scope_id, product_id, actor | 근거 없는 기업 연결 금지 |
+| 대상 | company_id, scope_id, product_id, actor, entity_refs, relation_refs | 존재하는 등록부 ID와 근거로 연결; 관계 추측 금지 |
 | 사건 | event_type, action_raw, modality, negation, conditions | 개발/양산/출하/판매 원문 동작 보존 |
 | 지표 | metric_raw, metric_id, registry_version | 미확정 mapping은 null과 후보 목록 |
 | 값 | value_raw, numeric_value, value_kind, direction, lower, upper | point/range/change/rate/share/qualitative 구분 |
 | 단위 | unit_raw, canonical_unit, currency, scale | 원단위와 변환값 모두 유지 |
+| 회계 | accounting_basis, adjustment_definition, fiscal_year, fiscal_quarter, period_start/end | GAAP/non-GAAP 및 회사별 기간 정의 보존 |
+| 재무 문맥 | statement_type, balance_or_flow, period_duration, line_item_raw, note_refs, concept_ids, adjustment_component_refs | 선정 재무 claim에 적용; 재무상태 시점 잔액과 기간 손익/현금흐름·분기/누적 구분; 비재무 claim은 해당 없음 |
 | 비교 | comparison_basis, denominator, prior_claim_id | YoY/QoQ/기존계획·비중 분모 구분 |
 | 기간 | published_at/date, reference_period, effective_period, observed_at | 네 시점의 역할 분리 |
 | 근거 | evidence[] | block_id, span 또는 표 위치, 허용된 인용 |
@@ -83,7 +97,7 @@ missing_reason 후보: not_disclosed, not_found, ambiguous, not_applicable, pars
 
 ### 가상 JSON 예시
 
-다음은 형식 설명용 합성 사례입니다. 실제 삼성·SK 수치나 연구 결과가 아닙니다.
+다음은 형식 설명용 합성 사례입니다. 실제 기업 수치나 연구 결과가 아닙니다.
 
 ```json
 {
@@ -91,7 +105,7 @@ missing_reason 후보: not_disclosed, not_found, ambiguous, not_applicable, pars
   "claim_id": "EXAMPLE-C001",
   "doc_id": "EXAMPLE-D001",
   "company_id": "EXAMPLE-CO",
-  "scope_id": "EXAMPLE-MEMORY",
+  "scope_id": "EXAMPLE-PRODUCT-LINE",
   "event_type": "capacity_plan_revision",
   "metric_raw": "생산능력",
   "metric_id": "example.capacity",
@@ -111,11 +125,25 @@ missing_reason 후보: not_disclosed, not_found, ambiguous, not_applicable, pars
 
 이 예시만으로 새 생산능력이나 매출을 계산할 수 없습니다. prior 값·단위·기간·가정이 필요합니다.
 
+### business_relations.jsonl
+
+`relation_id, relation_revision_id, relation_type, subject_entity_id, object_entity_id, subject_role, object_role, company_id, scope_id, product_service_ids, claim_id, event_id, event_family_id, relation_raw, modality, negation, conditions, valid_from, valid_to, effective_period, published_at/date, observed_at, available_at, speaker, evidence_refs, evidence_status, extraction_status, uncertainty_reason, schema_version, registry_version, run_id`
+
+관계 타입과 방향은 P02/P03에서 정의합니다. 예: 가상 `supplies_to`는 공급자→고객이며 `competes_with`는 경쟁 대상·제품·시장·유효 시점을 근거로 기록합니다. 기업의 자기 주장과 외부 확인 수준은 evidence_status로 구분합니다. 관련 이름의 동시 출현은 관계의 증거가 아닙니다. 부인·계획·조건부 관계를 현재 확정 관계로 바꾸지 않습니다.
+
+현재 상태를 조회할 때 적용 시점뿐 아니라 공개/관측 시점을 제한합니다. 새 관계 종료·축소·정정 주장은 이전 기록을 덮어쓰지 않고 claim·revision과 연결합니다. 관계의 존재/축소를 기록한 normalized 레코드, 실적 영향 assessments, 추가 가정이 있는 derived 계산은 별도 저장합니다.
+
+### relation_catalog.csv
+
+`relation_type, definition, subject_types, object_types, direction_rule, role_rules, scope_constraints, temporal_rules, allowed_modalities, positive_examples, counterexamples, evidence_requirements, selection_reason, definition_version`
+
+제품/서비스·고객·경쟁·공급·산업 관계는 **후보**입니다. 실제 변화 질문과 자료에 필요한 타입만 선정합니다. RDF·그래프 DB·전 섹터 관계망은 이 규약의 필수 구현이 아닙니다.
+
 ## 5. 지표 등록부·비교 조건
 
 ### metric_catalog.csv
 
-`metric_id, canonical_name, definition, metric_kind, level, scope_constraints, product_constraints, canonical_unit, denominator_definition, period_type, occurrence_docs, occurrence_families, company_count, company_denominator, period_count, forecast_linkage_evidence, stability_notes, selection_status, definition_version`
+`metric_id, canonical_name, definition, metric_kind, level, scope_constraints, product_constraints, canonical_unit, denominator_definition, period_type, occurrence_docs, occurrence_families, company_count, company_denominator, period_count, forecast_linkage_evidence, concept_ids, accounting_basis_constraints, formula_id, input_metric_ids, sign_convention, interpretation_limits, stability_notes, selection_status, definition_version`
 
 ### alias_registry.csv
 
@@ -127,19 +155,23 @@ missing_reason 후보: not_disclosed, not_found, ambiguous, not_applicable, pars
 
 ### comparability record
 
-`new_claim_id, prior_claim_id, company_match, scope_match, product_match, definition_match, period_match, unit_compatible, currency_compatible, value_kind_match, modality_relation, decision, reasons, rule_version`
+`new_claim_id, prior_claim_id, company_match, scope_match, product_match, definition_match, accounting_basis_match, period_match, period_length_match, unit_compatible, currency_compatible, value_kind_match, modality_relation, relation_context_match, decision, reasons, rule_version`
 
 decision: comparable / conditional / not_comparable / unknown. conditional에는 부족한 입력과 허용 가능한 계산을 명시합니다. 동일 % 기호만으로 비율·비중·증가율을 비교하지 않습니다.
+
+사업 관계 비교는 `new_relation_id, prior_relation_id, subject_match, object_match, direction_match, role_match, type_match, scope_match, effective_period_match, modality_relation, change_type, decision, reasons, rule_version`을 별도 기록합니다. 숫자가 없는 관계 변화도 표현하며 전사 매출 delta로 자동 변환하지 않습니다. 서로 다른 통화의 변환에는 환율 값·출처·관측/적용일·정책을 남깁니다.
 
 ## 6. Annotation·split
 
 ### annotation record
 
-`annotation_id, annotator_id, claim_id, guide_version, registry_version, facts, assessments, evidence_refs, uncertainty_reason, started_at, completed_at, status`
+`annotation_id, annotator_id, claim_id, relation_ids, guide_version, registry_version, facts, assessments, evidence_refs, uncertainty_reason, started_at, completed_at, status`
 
 ### adjudication record
 
 `adjudication_id, input_annotation_ids, adjudicator_id, field, previous_values, final_value, unresolved_reason, evidence_refs, rationale, changed_guide_version, created_at`
+
+`gold_events.jsonl`과 `gold_relations.jsonl`은 해당 사건/관계 규약의 조정 결과에 원본 annotation ID·adjudication ID·가이드/등록부 버전·평가 가능 상태를 연결합니다. unresolved를 강제로 합의값으로 바꾸지 않으며 단독 주석 자료는 독립 이중 주석 gold와 구분합니다.
 
 ### split_manifest.csv
 
@@ -149,23 +181,24 @@ decision: comparable / conditional / not_comparable / unknown. conditional에는
 - alias·규칙·threshold를 만드는 데 쓴 자료는 untouched test로 부르지 않습니다.
 - 테스트 label을 학습·prompt 예시·active learning에 사용하지 않습니다.
 - 시점 이전에 공개된 원문을 검색 인덱스에 넣는 것은 label 노출과 구별하되, cutoff·observed 정책을 지킵니다.
-- company holdout과 time holdout을 구별하고, 2개 기업의 제한을 보고합니다.
+- company holdout과 time holdout을 구별하고 실제 기업·섹터·사건 family 수의 제한을 보고합니다.
+- 온톨로지·별칭·관계 정의 수정에 사용한 새 미국 표본은 adaptation/practice 노출 이력으로 관리합니다. 폐기된 한국기업 데이터는 이 분할에 포함하지 않습니다.
 
 ## 7. 검색·변화·계산
 
 ### prior-state / retrieval
 
-`query_event_id, cutoff, cutoff_mode, corpus_version, candidate_claim_id, retrieval_method, score, rank, compatibility, selection_reason, source_publication_evidence`
+`query_event_id, cutoff, cutoff_mode, corpus_version, candidate_claim_id, relation_context_refs, retrieval_method, score, rank, compatibility, selection_reason, source_publication_evidence`
 
 ### change record
 
-`change_id, new_claim_id, prior_claim_id, change_types, old_value, new_value, delta, relative_delta, unit, comparison_basis, formula_id, comparability, uncertainty, evidence_refs, available_at, rule_version`
+`change_id, new_claim_id, prior_claim_id, new_relation_ids, prior_relation_ids, change_types, old_value, new_value, delta, relative_delta, unit, comparison_basis, formula_id, comparability, uncertainty, evidence_refs, available_at, rule_version`
 
 prior_not_found와 repeated는 다릅니다. 정답이 없는 검색 결과에 강제로 prior를 붙이지 않습니다.
 
 ### scenario run
 
-`scenario_id, event_id, formula_id, formula_version, input_values, input_units, input_source_ids, assumption_flags, scenario_name, currency_policy, rounding_policy, missing_inputs, output, output_unit, calculation_status, run_id`
+`scenario_id, event_id, formula_id, formula_version, input_values, input_units, input_source_ids, assumption_flags, assumption_refs, result_kind, target_period, as_of, available_at, supersedes_scenario_id, scenario_name, currency_policy, rounding_policy, missing_inputs, output, output_unit, calculation_status, run_id`
 
 status: computed / insufficient_inputs / incompatible_inputs / invalid_formula / error. computed가 아니면 output은 null이며 이유를 표시합니다. low/base/high는 가정 집합 이름이고 통계적 신뢰구간이 아닙니다.
 
@@ -173,7 +206,9 @@ status: computed / insufficient_inputs / incompatible_inputs / invalid_formula /
 
 ### card record
 
-`card_id, card_version, event_id, company_scope, new_fact, prior_fact, change_summary, evidence_refs, materiality_assessment, uncertainty_fields, review_questions, scenario_refs, pipeline_status, run_id`
+`card_id, card_version, event_id, company_scope, new_fact, prior_fact, business_relation_refs, change_summary, evidence_refs, evidence_status, review_readiness, readiness_reasons, materiality_assessment, uncertainty_fields, review_questions, concept_refs, financial_reconciliation_refs, assumption_refs, analyst_memo_refs, scenario_refs, pipeline_status, run_id`
+
+review_readiness 후보는 `supported / needs_review / not_comparable`입니다. supported는 원문 근거·필수 필드·비교 조건이 해당 카드 목적에 충분하다는 운영 판정이며 외부 사실 확인이나 모델 확률을 뜻하지 않습니다. 날짜 충돌·미공개 관계·불명확한 mapping은 needs_review, 기간/scope 등의 비호환은 not_comparable로 이유를 표시합니다. 사실과 assessments 각각의 근거·불확실성은 필드별로 남깁니다. 정확한 필수 조건·우선순위는 소표본과 팀 논의로 고정합니다.
 
 ### feedback record
 
@@ -197,6 +232,9 @@ action 후보: confirm, correct_fact, irrelevant, investigate, update_assumption
 - raw·normalized·derived 값과 변환 provenance.
 - 정책·모델·registry 버전 변경 시 구결과 덮어쓰기.
 - 실패·미측정 항목을0 또는 정상 성공으로 취급하는지.
+- 기업/제품/고객 개체 오연결·관계 방향/역할 반전·부정/조건/유효 시점 누락.
+- 원문 관계 주장·영향 해석·계산 결과 혼합, 미래에 알려진 관계의 과거 검색 노출.
+- 폐기된 한국기업 artifact·모델·평가가 새 run 입력에 들어갔는지.
 
 ## 11. 평가 지표의 정확한 분모
 
@@ -208,6 +246,8 @@ action 후보: confirm, correct_fact, irrelevant, investigate, update_assumption
 | 숫자·단위·기간 EM | 각각의 일치율과 전체 묶음 일치율을 별도 보고 |
 | Span F1 | exact boundary와 relaxed overlap을 다른 지표로 보고 |
 | Metric top-k | 정답 ID가 후보 k 안에 있는 매핑 건 / 평가 가능한 매핑 건; unknown 정책 별도 |
+| 개체 연결 정확도 | 정답 entity ID로 연결한 mention / 평가 가능한 mention; 미연결·후보·미공개 별도 보고 |
+| 관계 Precision/Recall/F1 | subject·object·타입·방향·역할·scope·시점·modality의 정답 tuple 정의와 TP/FP/FN 고정; 필드별/전체 묶음 분리 |
 | Retrieval Recall@k | qrels의 적합 근거가 topk에 포함된 비율, query별 평균 방식 명시 |
 | Important Recall@k | universe의 중요 사건 중 검토 상위k에 포함된 수 / universe 중요 사건 수 |
 | NDCG@k | relevance gain·query group·tie·정답0 그룹 정책 사전 고정 |
@@ -220,3 +260,54 @@ action 후보: confirm, correct_fact, irrelevant, investigate, update_assumption
 
 분모0은 NA/undefined 정책에 따라 보고하고 평가에서 제외한 건수를 함께 공개합니다. 신뢰구간은 문장 독립 가정보다 사건 family·날짜 그룹 의존성을 고려합니다. 이 통계 선택의 최종 근거는 P3/P5/P8에 남깁니다.
 
+
+## 12. 선정 재무 개념·개인 적용·학습 증거
+
+기존 EventClaim의 원문값·정규화값을 재무 관찰의 기준으로 사용하며 별도 표에 같은 사실을 복제해 진실 원본을 늘리지 않습니다. `financial_reconciliations`와 scenario는 derived, 분석 가정·메모 해석은 assessment입니다. 개인 기여·학습 기록은 업무 이력이며 독립 gold가 아닙니다. 아래 파일들은 Phase 산출물 제안이며 아직 생성된 데이터가 아닙니다.
+
+### accounting_concept_catalog.csv · P03 / p2
+
+`concept_id, canonical_name, definition, applicable_industries, statement_types, related_metric_ids, related_concept_ids, accounting_basis_constraints, policy_evidence_refs, analytical_question, formula_ids, positive_examples, counterexamples, interpretation_limits, selection_status, definition_version, author_id, reviewer_id`
+
+concept는 발생주의·운전자본·감가상각 등 해석 개념이며 숫자 metric과 구별합니다. 기존 metric catalog의 concept_ids로 연결하고 기업별 회계정책·GAAP/non-GAAP·표현·범위 차이를 보존합니다. 관계/지표 등록부를 대체하지 않습니다. 공개 자료에서 확인할 수 있는 개념부터 채택하며 업종별 적용 불가와 미조사를 구분합니다.
+
+### financial_reconciliations.jsonl · P07 / p6
+
+`reconciliation_id, company_id, scope_id, target_period, as_of, reconciliation_type, formula_id, formula_version, concept_ids, input_refs, adjustment_component_refs, reported_target_claim_id, calculated_value, reported_value, residual, unit, currency, tolerance, tolerance_basis, completeness_status, reconciliation_status, missing_inputs, evidence_refs, calculation_method, calculated_at, model_output_seen_before_work, prepared_by, reviewed_by, run_id`
+
+- input_refs는 `record_type, record_id, role, sign`으로 원문 claim 또는 계산 레코드를 연결합니다. 수작업 기준 계산과 프로그램 실행은 수행자·시점·방법 및 열람 이력으로 구분합니다.
+- 순이익→CFO, GAAP→회사 조정지표, 현금흐름 합계 등 선정 대사 목적별 수식을 등록합니다. 서로 다른 기준을 연결하는 대사는 동등한 metric 간 직접 비교와 구별합니다.
+- residual은 `calculated_value - reported_value`입니다. 완전한 조정 항목·필수 입력·단위/기간/scope를 확인하고 원문 반올림 정밀도에 근거한 tolerance를 사용합니다. 원하는 결과에 맞춰 사후 tolerance를 바꾸지 않습니다.
+- reconciliation_status 후보는 reconciled / not_reconciled / incomplete / not_applicable / error입니다. 입력 미공개·누락이면 incomplete로 두고 미계산 값은 null입니다. 잔액 차이를 현금흐름 조정 항목으로 자동 치환하지 않습니다.
+- 수식 대사가 맞아도 모든 추출·회계정책·해석이 옳다는 증거는 아닙니다. 회사가 공시한 대사표와 프로젝트 계산 결과를 각각 보존합니다.
+
+### research_assumptions.jsonl · P07 / p6
+
+`assumption_id, assumption_version, company_id, scope_id, metric_id, target_period, as_of, available_at, construction_mode, basis_type, source_claim_refs, business_relation_refs, value_or_statement, unit, currency, rationale, counterevidence_refs, uncertainty_reason, decision, supersedes_assumption_id, author_id, reviewer_id, created_at, schema_version`
+
+basis_type은 company_guidance / analyst_assumption을 구분합니다. 회사 가이던스는 원문 forecast claim으로 연결하고 사람의 추정·가정에는 판단자·이유·반대 근거를 둡니다. 회사 가이던스 수정과 분석자의 가정 수정은 다른 사건입니다. construction_mode는 contemporaneous / retrospective_reconstruction을 구분하고 작성·공개/관측 시점에 맞게 기록합니다. decision은 maintain / revise / defer 등의 검토 행동입니다. 파생 전망은 scenario의 `result_kind=derived_forecast`로 저장하고 발표 실적 actual_reported로 바꾸지 않습니다.
+
+같은 미래 대상 기간·scope·정의를 기준으로 이전/새 가정을 비교합니다. 모든 source와 prior는 as_of/cutoff 이전에 사용 가능한 자료여야 하며 available_at 정책은 P07에서 고정합니다. 새로운 자료·판단을 추가할 때 이전 기록을 덮어쓰지 않고 supersedes ID로 연결합니다. 과거 자료로 지금 작성한 가정은 실제 작성 시점을 보존하고 사후 재구성으로 표시하며 당시 작성한 전망으로 보고하지 않습니다. 단순 합성 가정은 source-supported 실적으로 표현하지 않습니다.
+
+### analyst_memos.jsonl · P08 / p7 · 개인 적용
+
+`memo_id, memo_version, author_id, reviewer_id, company_id, scope_id, as_of, analytical_question, card_refs, concept_refs, source_claim_refs, business_relation_refs, calculation_refs, reconciliation_refs, assumption_refs, statement_analysis, business_financial_link, alternative_explanations, conclusion, counterevidence_refs, uncertainty_fields, follow_up_questions, supersedes_memo_id, review_status, feedback_refs, created_at, schema_version`
+
+새 정보·기존 상태·재무/사업 해석·전망 가정 변화·추가 확인을 근거와 연결합니다. conclusion은 분석 질문에 대한 사람의 판단이며 매수/매도 점수나 외부 검증된 사실 필드가 아닙니다. agent 초안과 사람의 채택/수정/검토 상태를 구분하고 근거가 부족한 항목은 보류합니다. 메모 UI를 필수로 추가하지 않으며 원문 공유 권한과 같은 제한을 참조·발췌에도 적용합니다.
+
+### learning_cases.jsonl · P09 / p8 · 참여자별 실제 기여
+
+`learning_case_id, participant_id, contribution_areas, task_ids, case_event_refs, source_refs, concept_relation_refs, work_product_refs, manual_calculation_refs, model_output_seen_before_work, model_exposure_reason, explanation, alternatives_considered, errors_found, changes_made, reviewer_id, review_feedback_refs, started_at, completed_at, status, exposure_status, schema_version`
+
+contribution_areas는 ontology / nlp / business_analysis / financial_analysis 등 실제 수행 영역입니다. 모든 팀원에게 금융 영역 작성을 요구하지 않으며 담당한 정의·반례·오류 개선·분석·교차검증의 원본 작업을 연결합니다. 재무 적용 담당은 직접 계산·대사·가정·메모와 그 이유를 연결합니다. 설명·수정·검토 기록이 없으면 미완료이며 agent 출력만으로 개인 이해를 확인하지 않습니다.
+
+개인 학습/연습에 쓴 자료는 split_manifest에 practice/adaptation 등 노출을 표시합니다. 모델 출력 열람 후 만든 계산을 미열람 독립 기준으로 부르지 않으며 학습 사례를 gold 또는 미노출 test로 자동 승격하지 않습니다. 개인 수행 rubric·평가 가능 사례 수·미완료 수는 공통 모델 성능·일치도와 별도 보고합니다.
+
+### 재무·개인 적용 검증 추가 항목
+
+- 재무상태 잔액 시점과 손익·현금흐름 기간, 분기와 누적·연간 기간의 구분.
+- 괄호 음수·현금 지출 부호, scale·통화·분모, 비현금 항목과 현금 지출의 구분.
+- GAAP/non-GAAP의 개별 조정·세금·기업 정의·원문 근거 및 대사 입력 완전성.
+- 수식/가정 버전, 허용 오차 근거, 실제/회사 가이던스/사람 가정/파생 전망 구분.
+- 재무 수치가 없는 사업 관계의 보존, 원문 근거 없는 매출·이익 영향 생성 여부.
+- 실제 수행자·agent 열람 이력·수작업/시스템 계산·동료 검토·test 노출의 분리.
