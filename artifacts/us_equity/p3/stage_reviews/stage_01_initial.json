@@ -1,0 +1,22 @@
+{
+  "stage": 1,
+  "checked_at": "2026-10-06T05:36:22.324746+00:00",
+  "checks": {
+    "unique_claim_ids": true,
+    "source_claims_preserved": true,
+    "all_existing_adaptation": true,
+    "no_legacy_inputs": true,
+    "source_events_separate_from_claims": true,
+    "support_doc_not_family": true,
+    "snapshot_hashes_match": true
+  },
+  "counts": {
+    "numeric_claims": 33,
+    "relation_claims": 6,
+    "events_agent_grouped": 2,
+    "numeric_documents": 2,
+    "support_documents": 1,
+    "independent_human_gold": 0
+  },
+  "status": "awaiting_independent_review_and_source_reservation"
+}

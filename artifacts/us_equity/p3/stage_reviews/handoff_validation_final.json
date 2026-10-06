@@ -1,0 +1,79 @@
+{
+  "checked_at": "2026-10-06T07:12:41.067840+00:00",
+  "status": "passed_with_explicit_limitations",
+  "records": 39,
+  "numeric_records": 33,
+  "relation_records": 6,
+  "errors": [],
+  "negative_cases": [
+    {
+      "case": "double_million",
+      "passed": true,
+      "expected": "numeric_representation"
+    },
+    {
+      "case": "base_value_replaced_with_source_value",
+      "passed": true,
+      "expected": "numeric_representation"
+    },
+    {
+      "case": "base_value_used_as_source_value",
+      "passed": true,
+      "expected": "numeric_representation"
+    },
+    {
+      "case": "cash_outflow_sign_lost",
+      "passed": true,
+      "expected": "raw_sign_policy"
+    },
+    {
+      "case": "wrong_source_claim",
+      "passed": true,
+      "expected": "source_identity"
+    },
+    {
+      "case": "reverse_relation",
+      "passed": true,
+      "expected": "relation_direction"
+    },
+    {
+      "case": "invent_validity",
+      "passed": true,
+      "expected": "invented_relation_validity"
+    },
+    {
+      "case": "missing_evidence",
+      "passed": true,
+      "expected": "evidence_link"
+    },
+    {
+      "case": "fake_human_gold",
+      "passed": true,
+      "expected": "human_gold_overclaim"
+    },
+    {
+      "case": "exposed_test",
+      "passed": true,
+      "expected": "development_exposure"
+    },
+    {
+      "case": "invent_exact_time",
+      "passed": true,
+      "expected": "publication_precision"
+    },
+    {
+      "case": "wrong_original_annotation",
+      "passed": true,
+      "expected": "original_annotation_link"
+    },
+    {
+      "case": "company_id_used_as_scope",
+      "passed": true,
+      "expected": "registry_entity"
+    }
+  ],
+  "code_sha256": "d40fc5e62c74f7bca353bd773112d3d5a1e4f65e6384719eafd136ad558d4cef",
+  "reserved_content_read": false,
+  "human_gold": 0,
+  "scope": "Contract-to-reviewed adapter, IDs, units/sign, provenance, registry, exposure and absent-human-gold checks; not a new source truth audit."
+}

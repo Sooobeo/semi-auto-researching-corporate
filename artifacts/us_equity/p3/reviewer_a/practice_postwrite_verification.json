@@ -1,0 +1,121 @@
+{
+  "checked_at": "2026-10-06T06:05:28.418357+00:00",
+  "reviewer": "AGENT-A",
+  "phase": "practice",
+  "serialized_annotation_passed": 8,
+  "serialized_assessment_passed": 8,
+  "source_DOM_reaudits": 0,
+  "numeric_checks": [
+    {
+      "annotation_id": "practice-AGENT-A-001",
+      "metric": "revenue",
+      "raw": "64,727",
+      "numeric": "64727",
+      "days": 91,
+      "period_start": "2024-04-01",
+      "period_end": "2024-06-30",
+      "as_of_date": null,
+      "span": [
+        0,
+        6
+      ]
+    },
+    {
+      "annotation_id": "practice-AGENT-A-002",
+      "metric": "cfo",
+      "raw": "136,162",
+      "numeric": "136162",
+      "days": 365,
+      "period_start": "2024-07-01",
+      "period_end": "2025-06-30",
+      "as_of_date": null,
+      "span": [
+        4,
+        11
+      ]
+    },
+    {
+      "annotation_id": "practice-AGENT-A-003",
+      "metric": "positive_cash_capex",
+      "raw": "(13,873)",
+      "numeric": "13873",
+      "days": 91,
+      "period_start": "2024-04-01",
+      "period_end": "2024-06-30",
+      "as_of_date": null,
+      "span": [
+        0,
+        8
+      ]
+    },
+    {
+      "annotation_id": "practice-AGENT-A-004",
+      "metric": "total_assets",
+      "raw": "$619,003",
+      "numeric": "619003",
+      "days": null,
+      "period_start": null,
+      "period_end": null,
+      "as_of_date": "2025-06-30",
+      "span": [
+        5,
+        13
+      ]
+    },
+    {
+      "annotation_id": "practice-AGENT-A-005",
+      "metric": "revenue",
+      "raw": "105,362",
+      "numeric": "105362",
+      "days": 366,
+      "period_start": "2023-07-01",
+      "period_end": "2024-06-30",
+      "as_of_date": null,
+      "span": [
+        0,
+        7
+      ]
+    },
+    {
+      "annotation_id": "practice-AGENT-A-006",
+      "metric": "revenue",
+      "raw": "87,464",
+      "numeric": "87464",
+      "days": 366,
+      "period_start": "2023-07-01",
+      "period_end": "2024-06-30",
+      "as_of_date": null,
+      "span": [
+        4,
+        10
+      ]
+    }
+  ],
+  "negative_checks": [
+    {
+      "case": "span shifted",
+      "errors": [
+        "source_span_roundtrip_failed"
+      ],
+      "expected_error": "source_span_roundtrip_failed",
+      "passed": true
+    },
+    {
+      "case": "capex sign wrong",
+      "errors": [
+        "source_sign_or_value_mismatch"
+      ],
+      "expected_error": "source_sign_or_value_mismatch",
+      "passed": true
+    },
+    {
+      "case": "reporting period as validity",
+      "errors": [
+        "reporting_period_is_not_business_validity"
+      ],
+      "expected_error": "reporting_period_is_not_business_validity",
+      "passed": true
+    }
+  ],
+  "purpose": "Reviewer-local serialized output check, not human gold or system accuracy."
+}

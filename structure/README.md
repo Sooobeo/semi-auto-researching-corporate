@@ -2,7 +2,7 @@
 
 기준일: **2026-10-05** / 방향성 개정 v1.2
 
-**최신 실행 기록:** [2026-10-05 P03 브리핑](../artifacts/us_equity/p2/execution_briefing.md). 인간 검토 진입 조건은 사용자 지시로 면제하고 Microsoft 공식 release 2개·scope 보완 1개에서 숫자 33건, 등록부와 비교 규칙을 실행했습니다. 비교 21쌍 중 15쌍 계산·6쌍 정의 차이 차단이며 사람 gold·다른 기업 일반화는 미측정입니다. [앞선 P01·P02 브리핑](../artifacts/us_equity/execution_briefing.md)은 당시 출처 조사·접근 실패와 문헌/스키마 초안 이력입니다. 아래 단계별 전체 설계의 완료를 뜻하지 않습니다.
+**최신 실행 기록:** [2026-10-06 P04 브리핑](../artifacts/us_equity/p3/execution_briefing.md). 사용자 요청의 실행 1~5번에 대해 단계별 자가검증·개선을 수행했습니다. Microsoft 숫자 33·관계 6항목의 agent 이중 주석 78건, 검토·분할·신규 미라벨 문서 1개 예약을 기록했습니다. 인간 gold·독립 test는 0건이며 정식 P04 전체 완료를 뜻하지 않습니다. [P03 브리핑](../artifacts/us_equity/p2/execution_briefing.md)은 등록부·비교 21쌍(15 계산/6 정의 차이 차단), [P01·P02 브리핑](../artifacts/us_equity/execution_briefing.md)은 출처 조사·스키마 이력입니다.
 
 [미국 기업 방향성 제안서](../docs/project_direction/us_equity_research_proposal.md)를 현재 작업 방향에 반영했습니다. 사용자의 2026-10-05 지시에 따라 **기존 한국기업 자료와 결과는 폐기 대상으로 두고 새 프로젝트의 입력·검증·평가에서 제외합니다.** 미국 기업 자료 수집부터 새로 시작합니다. 이 문서 개정은 팀 전체의 합의나 외부 Notion/Jira의 변경을 의미하지 않습니다.
 

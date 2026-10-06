@@ -1,0 +1,309 @@
+[
+  {
+    "case_id": "span_shift",
+    "mutation_path": [
+      "provenance",
+      "evidence",
+      0,
+      "start"
+    ],
+    "expected_rejection": "source_span_roundtrip",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "evidence_index_mismatch",
+      "source_span_roundtrip"
+    ]
+  },
+  {
+    "case_id": "missing_claim",
+    "mutation_path": [
+      "claim_id"
+    ],
+    "expected_rejection": "unknown_claim_id",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "unknown_claim_id",
+      "unknown_item_id"
+    ]
+  },
+  {
+    "case_id": "missing_metric",
+    "mutation_path": [
+      "normalized",
+      "metric_id"
+    ],
+    "expected_rejection": "unknown_metric_id",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "metric_source_mismatch",
+      "unknown_metric_id"
+    ]
+  },
+  {
+    "case_id": "wrong_scope",
+    "mutation_path": [
+      "normalized",
+      "scope_id"
+    ],
+    "expected_rejection": "scope_source_mismatch",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "consolidation_scope",
+      "definition_version",
+      "scope_source_mismatch"
+    ]
+  },
+  {
+    "case_id": "wrong_definition",
+    "mutation_path": [
+      "normalized",
+      "definition_version"
+    ],
+    "expected_rejection": "definition_version",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "definition_version"
+    ]
+  },
+  {
+    "case_id": "fabricated_timestamp",
+    "mutation_path": [
+      "normalized",
+      "temporal",
+      "published_at"
+    ],
+    "expected_rejection": "date_only_precision",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "date_only_precision",
+      "schema:normalized/temporal/published_at"
+    ]
+  },
+  {
+    "case_id": "future_scope_dependency",
+    "mutation_path": [
+      "normalized",
+      "availability_dependencies",
+      0,
+      "available_at"
+    ],
+    "expected_rejection": "scope_dependency_time",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "scope_dependency_time"
+    ]
+  },
+  {
+    "case_id": "past_asof_using_scope",
+    "mutation_path": [
+      "assessment",
+      "as_of"
+    ],
+    "expected_rejection": "future_scope_in_assessment",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "future_scope_in_assessment"
+    ]
+  },
+  {
+    "case_id": "reverse_relation",
+    "mutation_path": [
+      "normalized",
+      "subject_entity_id"
+    ],
+    "expected_rejection": "relation_direction_roles",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "relation_direction_roles"
+    ]
+  },
+  {
+    "case_id": "fabricated_relation_effective",
+    "mutation_path": [
+      "normalized",
+      "temporal",
+      "effective_period",
+      "period_start"
+    ],
+    "expected_rejection": "report_period_not_effective_period",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "report_period_not_effective_period"
+    ]
+  },
+  {
+    "case_id": "null_without_reason",
+    "mutation_path": [
+      "normalized",
+      "numeric_value"
+    ],
+    "expected_rejection": "schema:normalized/missing_reason",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "malformed_record:TypeError",
+      "schema:normalized/missing_reason"
+    ]
+  },
+  {
+    "case_id": "false_gold",
+    "mutation_path": [
+      "human_gold"
+    ],
+    "expected_rejection": "false_human_gold",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "false_human_gold",
+      "schema:human_gold"
+    ]
+  },
+  {
+    "case_id": "false_human",
+    "mutation_path": [
+      "annotation_status"
+    ],
+    "expected_rejection": "false_human_gold",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "false_human_gold"
+    ]
+  },
+  {
+    "case_id": "capex_negative_normalized",
+    "mutation_path": [
+      "normalized",
+      "numeric_value"
+    ],
+    "expected_rejection": "value_scaling_sign",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "derived_lineage",
+      "value_scaling_sign"
+    ]
+  },
+  {
+    "case_id": "scale_million_twice",
+    "mutation_path": [
+      "normalized",
+      "scale"
+    ],
+    "expected_rejection": "unit_scale",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "unit_scale"
+    ]
+  },
+  {
+    "case_id": "wrong_period_year",
+    "mutation_path": [
+      "normalized",
+      "temporal",
+      "reference_period",
+      "fiscal_year"
+    ],
+    "expected_rejection": "period_header_mapping",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "period_header_mapping"
+    ]
+  },
+  {
+    "case_id": "unknown_header_ref",
+    "mutation_path": [
+      "provenance",
+      "evidence",
+      0,
+      "header_refs"
+    ],
+    "expected_rejection": "header_ref_resolution",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "evidence_index_mismatch",
+      "header_ref_resolution",
+      "numeric_header_binding"
+    ]
+  },
+  {
+    "case_id": "wrong_hash",
+    "mutation_path": [
+      "provenance",
+      "source_sha256"
+    ],
+    "expected_rejection": "source_hash",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "packet_linkage",
+      "source_hash"
+    ]
+  },
+  {
+    "case_id": "evidence_externally_verified",
+    "mutation_path": [
+      "normalized",
+      "evidence_status"
+    ],
+    "expected_rejection": "evidence_overclaim",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "evidence_overclaim"
+    ]
+  },
+  {
+    "case_id": "drop_unaudited_qualifier",
+    "mutation_path": [
+      "raw",
+      "source_evidence_status"
+    ],
+    "expected_rejection": "source_evidence_status_preservation",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "source_evidence_status_preservation"
+    ]
+  },
+  {
+    "case_id": "invent_period_start_derivation",
+    "mutation_path": [
+      "raw",
+      "source_period_start_derivation"
+    ],
+    "expected_rejection": "period_derivation_preservation",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "period_derivation_preservation"
+    ]
+  },
+  {
+    "case_id": "false_full_date_audit",
+    "mutation_path": [
+      "normalized",
+      "temporal",
+      "date_conflict_status"
+    ],
+    "expected_rejection": "full_date_audit_not_claimed",
+    "rejected": true,
+    "expected_reason_detected": true,
+    "errors": [
+      "full_date_audit_not_claimed"
+    ]
+  }
+]

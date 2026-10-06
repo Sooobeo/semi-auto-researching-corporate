@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-10-06T07:19:41.744553+00:00",
+  "status": "passed_with_explicit_limitations",
+  "checks": {
+    "original_14_inputs_unchanged": true,
+    "no_legacy_inputs": true,
+    "contract_freeze_manifest.json_files_unchanged": true,
+    "contract_freeze_manifest.json_code_unchanged": true,
+    "annotation_freeze_v1_1.json_files_unchanged": true,
+    "annotation_freeze_v1_2.json_files_unchanged": true,
+    "annotation_execution_manifest.json_files_unchanged": true,
+    "annotation_execution_manifest.json_scripts_unchanged": true,
+    "stage_01_to_04_order": true,
+    "stage_04_outputs_unchanged": true,
+    "reservation_metadata_unchanged": true,
+    "stage_reviews/stage_04_independent.json_inputs_unchanged": true,
+    "stage_reviews/stage_04_independent.json_passed": true,
+    "stage_reviews/stage_05_independent.json_inputs_unchanged": true,
+    "stage_reviews/stage_05_independent.json_passed": true,
+    "split_27_counterexamples_passed": true,
+    "split_no_validation_errors": true,
+    "step_05_started_after_step_04": true,
+    "handoff_39_records_13_counterexamples": true,
+    "handoff_current_code_matches": true,
+    "human_gold_absent_not_completed": true,
+    "all_12_task_statuses_explicit": true,
+    "raw_4_document_hashes_unchanged": true,
+    "all_private_files_gitignored": true,
+    "no_original_phase_files_modified": true,
+    "public_files_parse_and_scripts_compile": true,
+    "manifest_file_set_complete": true,
+    "all_package_hashes_match": true,
+    "stage_05_gate_checks_passed": true,
+    "final_stage_order": true
+  },
+  "details": {
+    "private_files_gitignored": 10,
+    "public_files": 195,
+    "parse_errors": [],
+    "original_inputs": 14,
+    "source_documents": 4
+  },
+  "package_manifest_sha256": "c4c2442b84321225a38de9a56396d88f6e94655f81cf32197c9309dc1a66583b",
+  "formal_phase_complete": false,
+  "human_gold": 0,
+  "independent_test_items": 0,
+  "limitations": [
+    "Integrity and recorded implementation tests only; no human gold certification",
+    "Reserved body is only hashed, never parsed"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "stage": 5,
+  "checked_at": "2026-10-06T07:19:40.937122+00:00",
+  "gate": "passed_with_explicit_limitations",
+  "checks": {
+    "original_14_inputs_unchanged": true,
+    "no_legacy_inputs": true,
+    "contract_freeze_manifest.json_files_unchanged": true,
+    "contract_freeze_manifest.json_code_unchanged": true,
+    "annotation_freeze_v1_1.json_files_unchanged": true,
+    "annotation_freeze_v1_2.json_files_unchanged": true,
+    "annotation_execution_manifest.json_files_unchanged": true,
+    "annotation_execution_manifest.json_scripts_unchanged": true,
+    "stage_01_to_04_order": true,
+    "stage_04_outputs_unchanged": true,
+    "reservation_metadata_unchanged": true,
+    "stage_reviews/stage_04_independent.json_inputs_unchanged": true,
+    "stage_reviews/stage_04_independent.json_passed": true,
+    "stage_reviews/stage_05_independent.json_inputs_unchanged": true,
+    "stage_reviews/stage_05_independent.json_passed": true,
+    "split_27_counterexamples_passed": true,
+    "split_no_validation_errors": true,
+    "step_05_started_after_step_04": true,
+    "handoff_39_records_13_counterexamples": true,
+    "handoff_current_code_matches": true,
+    "human_gold_absent_not_completed": true,
+    "all_12_task_statuses_explicit": true,
+    "raw_4_document_hashes_unchanged": true,
+    "all_private_files_gitignored": true,
+    "no_original_phase_files_modified": true,
+    "public_files_parse_and_scripts_compile": true
+  },
+  "details": {
+    "private_files_gitignored": 10,
+    "public_files": 194,
+    "parse_errors": [],
+    "original_inputs": 14,
+    "source_documents": 4
+  },
+  "improvement_ref": "stage_reviews/stage_05_improvements.md",
+  "independent_review_ref": "stage_reviews/stage_05_independent.json",
+  "counts": {
+    "reviewed_items": 39,
+    "source_numeric_claims": 33,
+    "relation_claims": 6,
+    "agent_annotations": 78,
+    "split_rows": 43,
+    "reserved_unlabeled_documents": 1,
+    "human_gold": 0,
+    "train_items": 0,
+    "dev_items": 0,
+    "test_items": 0
+  },
+  "authorized_work_packages_completed": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "formal_P04_complete": false,
+  "next_stage": null,
+  "limitations": [
+    "Actual human independent annotation/adjudication absent",
+    "Reserved candidate not certified test",
+    "All labeled items adaptation"
+  ]
+}

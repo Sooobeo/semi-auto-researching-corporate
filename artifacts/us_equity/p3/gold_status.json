@@ -1,0 +1,12 @@
+{
+  "recorded_at": "2026-10-06T06:21:18.600142+00:00",
+  "status": "not_created_pending_independent_human_annotation",
+  "gold_events": 0,
+  "gold_relations": 0,
+  "human_annotations": 0,
+  "human_adjudications": 0,
+  "reviewed_agent_numeric_claims": 33,
+  "reviewed_agent_relations": 6,
+  "agent_event_groups": 2,
+  "empty_file_reason": "No independent human annotation/adjudication provenance exists; empty files are not phase completion evidence."
+}

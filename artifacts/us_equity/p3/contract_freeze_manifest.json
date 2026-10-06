@@ -1,0 +1,72 @@
+{
+  "frozen_at": "2026-10-06T05:48:40.525356+00:00",
+  "guide_version": "us-p3-guide-1.0",
+  "registry_version": "us-p2-0.1.0",
+  "freeze_kind": "agent_development_annotation_contract",
+  "files": [
+    {
+      "path": "event_schema_v1.json",
+      "sha256": "801e70d9e33734c53cddf6a3543c8e83693958fc332a3d86e00c5a4b64f8ddfa"
+    },
+    {
+      "path": "annotation_guide_v1.md",
+      "sha256": "7d1b725cd00025e5654d8d7393d28d22a83dea8f7793d00d14dac603da762dc3"
+    },
+    {
+      "path": "annotation_output_contract.json",
+      "sha256": "85e0f572ad55f1c3164375462d4d0bc74c217f22a603576fbf82b59fedeb65f8"
+    },
+    {
+      "path": "annotation_reference.json",
+      "sha256": "d6a1c10c6c28e8db1d365d5c7e784ae130cd1233a055a717b5489694fc6c4d84"
+    },
+    {
+      "path": "source_packets.jsonl",
+      "sha256": "55abb3f80dca1845165e4bcb477c2e64f44cc8c4a8075bd766499d77e300da2a"
+    },
+    {
+      "path": "evidence_index.jsonl",
+      "sha256": "211b889d6315231ba3c9e6de56b1bb20a1a2b8bdf90e1387648c4fbdb940240b"
+    },
+    {
+      "path": "contract_records.jsonl",
+      "sha256": "b0a66045d0f8793b93e45593d625cf4ca9cfa79b1dffc1cc0f5f7cb74c158c4c"
+    },
+    {
+      "path": "schema_migration.md",
+      "sha256": "82174010cdd9bb5d332a9e94fa062e9bbe238c287f716bfb585c3f12d882fb84"
+    },
+    {
+      "path": "contract_validation_final.json",
+      "sha256": "5dca31049847f8a9313f366f74df6bc834be5cbe91c58fa1aa212cfe4be72945"
+    },
+    {
+      "path": "event_claim_links.csv",
+      "sha256": "d42d758353e9954451816ee5a16b69d1ce7005b813f3b53f07678814634eb8b5"
+    },
+    {
+      "path": "dependency_edges.csv",
+      "sha256": "8e9e99b4fdbfa5d998afd7eb2275712c47036b6da056abb17130b28b46c4909c"
+    }
+  ],
+  "code": [
+    {
+      "path": "scripts/p04_build_contract.py",
+      "sha256": "620a296f7cdeae3ca8f446ee69afed4bf3cf8623a0dfb1ed63c49f600e67c835"
+    },
+    {
+      "path": "scripts/p04_contract_validation.py",
+      "sha256": "951bdeecedba124873626967aa60585c971b441af6a931a18876ca9abf82a91c"
+    },
+    {
+      "path": "scripts/p04_annotation_validation.py",
+      "sha256": "de88a7ae1bcf1f6d116527e9c455ee1d52fed33da4e705f661928635e1296f73"
+    },
+    {
+      "path": "scripts/p04_common.py",
+      "sha256": "e61970ccc2d0836b7c411f4148a606bca2e3c45cb91c8b431b795a3c1dea1c36"
+    }
+  ],
+  "human_approval_observed": false,
+  "reserved_content_exposed": false
+}

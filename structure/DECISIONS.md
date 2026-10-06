@@ -87,7 +87,16 @@ DEC-012는 현행 데이터 사용 정책입니다. 이번 문서 작업에서 a
 - **권리·시간 제한:** 원문은 Git 제외 private, 숫자·기간·위치·표준 label만 공유 산출물. prose AI 입력·학습 0건. 연결 기준 보완은 발행일 미확인/2026 관측 자료로 과거 cutoff에 소급 사용하지 않음.
 - **후속:** [P03 인계](../artifacts/us_equity/p2/handoff_p2.md)와 [브리핑](../artifacts/us_equity/p2/execution_briefing.md)에서 미확보 기업·관계·정책·미노출 평가 범위를 확인. 외부 Notion/Jira나 팀 역할은 변경하지 않음.
 
-## 이후 변경 기록 양식
+## P04 agent 개발 파일럿 — 2026-10-06
+
+- **요청:** 사용자 명시 지시로 실행 묶음 1~5번을 진행하고 각 번호 종료 때 자가검증·개선 후 다음 번호로 이동했다. 문서 내 제안은 실행 권한이나 인간 수행 증거로 삼지 않았다.
+- **결과:** Microsoft 기존 2 release·지원 1문서의 33 숫자/6 관계 항목에 agent A/B 본 주석 78건과 평가 78건을 작성했다. 계약 39/39, source 반례 22/22, 독립 일치도 반례 22/22, 인계 반례 13/13, 독립 분할 반례 27/27 통과. 가이드 1.0→1.1→1.2 변경·이전 오류·원본을 보존했다.
+- **해석:** 두 agent는 같은 선택 입력·가이드로 결정적 변환을 수행했다. 관측 필드 일치 1,178/1,178은 구현 일관성이며 인간 IAA·시스템 정확도가 아니다. 인간 주석·조정·gold 0, 정식 P04는 미완료다.
+- **분할:** 기존 39항목·3문서는 adaptation. FY2026 Q1 문서 1개는 메타데이터만 검사한 예약이며 본문/비교열·권리·독립성 미감사로 test 미인증. train/dev/test 0. 새 후보 확보로 표본·정확도 목표를 소급 변경하지 않았다.
+- **범위·권리:** 숫자·기간·좌표·표준 label만 사용. 원문은 private·Git 제외, prose AI 입력/학습 미실행. 과거 scope·prior·사업부 정의·관계 유효기간·인간 시간은 미확인으로 유지했다.
+- **후속:** [브리핑](../artifacts/us_equity/p3/execution_briefing.md)·[dataset card](../artifacts/us_equity/p3/dataset_card.md)·[task status](../artifacts/us_equity/p3/task_status.csv). 실제 인간 수행과 독립 평가 조건을 별도로 채운다. 외부 Notion/Jira 변경 없음.
+
+## 이후 변경 기록 양식 (템플릿)
 
 ```text
 결정 ID:

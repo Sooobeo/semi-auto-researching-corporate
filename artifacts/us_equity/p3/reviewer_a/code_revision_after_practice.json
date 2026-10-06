@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-06T06:06:17.385822+00:00",
+  "reason": "Keep main exposure_log in exact flags/inputs shape; track own-practice IDs outside that object and hash the own-practice input.",
+  "main_executed": false,
+  "practice_artifacts_unchanged": true,
+  "practice_script_preserved_at": "artifacts/us_equity/p3/reviewer_a/code_history/p04_annotate_a.practice_execution.py",
+  "practice_script_sha256": "a0ad457af2209d4875ca8a094f90375177fb76d8dfd27ac839c72211ea48f6f2",
+  "updated_script_sha256": "b098bc0663c0937e0bde22e35fd3c97645a32960eb117cdcdf4a7c3c479285ad",
+  "syntax_check": "passed",
+  "fact_annotation_algorithm_changed": false
+}

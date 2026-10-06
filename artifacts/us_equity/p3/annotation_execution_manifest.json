@@ -1,0 +1,59 @@
+{
+  "frozen_at": "2026-10-06T06:18:59.702986+00:00",
+  "guide_version": "us-p3-guide-1.2",
+  "files": [
+    {
+      "path": "reviewer_a/practice_annotations_v1_2.jsonl",
+      "sha256": "a10677482c8e83301cdb82ba35d2c263a44bb85431ba404f5b7fb84d65ce6e27"
+    },
+    {
+      "path": "reviewer_b/practice_annotations_v1_2.jsonl",
+      "sha256": "56c1f0588ab0a0ff8641699721d4d721a4c4824358a82bb1b05873ad3f8246da"
+    },
+    {
+      "path": "reviewer_a/practice_assessments_v1_2.jsonl",
+      "sha256": "7e70f3fdc5b649daedacab0d5199be31b8cf458855594908b80b40764255276b"
+    },
+    {
+      "path": "reviewer_b/practice_assessments_v1_2.jsonl",
+      "sha256": "231948ed224c581f46b1161e446287e128036904461f8ab0a9fd4e7dc20e9df8"
+    },
+    {
+      "path": "reviewer_a/main_annotations.jsonl",
+      "sha256": "0bdb488f7e60d05ae37e8c588f0b1d5500100500e5a2be7a318d8e4bc3674fe0"
+    },
+    {
+      "path": "reviewer_b/main_annotations.jsonl",
+      "sha256": "b3f1943a1a87c96d853400cf30292e9ad89519fdf91b55ac5831833d0bc644e7"
+    },
+    {
+      "path": "reviewer_a/main_assessments.jsonl",
+      "sha256": "b5c44635f5b0b6d8c21d8c6f4f751708989d5ec150ff3b7f0cf4abf9758210a1"
+    },
+    {
+      "path": "reviewer_b/main_assessments.jsonl",
+      "sha256": "1d79a994ee4c8fafb4f5a2b991ef67798a1c175a8b48a7fb072a93fca0553c8c"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "scripts/p04_annotate_a.py",
+      "sha256": "0462b131968dd3bc8236b1d7903ab2ee5deb9f720eacd1b81f4ed449a7b8ee3b"
+    },
+    {
+      "path": "scripts/p04_annotate_b.py",
+      "sha256": "e9c7e4138d443db3b5a528474a1e3ed355eb3112e68dccfff540557199a1c75a"
+    }
+  ],
+  "counts": {
+    "practice_items": 8,
+    "practice_annotations": 16,
+    "main_items": 39,
+    "main_annotations": 78,
+    "main_assessments": 78,
+    "human_annotations": 0,
+    "human_gold": 0
+  },
+  "human_annotation_minutes": null,
+  "peer_answer_visibility": "withheld_by_task_instruction_not_OS_access_control"
+}

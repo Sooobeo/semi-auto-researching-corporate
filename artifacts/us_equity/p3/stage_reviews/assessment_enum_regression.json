@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-10-06T06:16:12.259859+00:00",
+  "cases": [
+    {
+      "question": "MQ06",
+      "value": "partially_supported",
+      "expected_rejection": true,
+      "passed": true,
+      "errors": [
+        "invalid_assessment_response:MQ06"
+      ]
+    },
+    {
+      "question": "MQ08",
+      "value": "investigate_then_defer",
+      "expected_rejection": true,
+      "passed": true,
+      "errors": [
+        "invalid_assessment_response:MQ08"
+      ]
+    },
+    {
+      "question": "MQ06",
+      "value": "insufficient",
+      "expected_rejection": false,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question": "MQ08",
+      "value": "investigate",
+      "expected_rejection": false,
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "passed": true,
+  "synthetic_mutations_not_observed_annotations": true
+}

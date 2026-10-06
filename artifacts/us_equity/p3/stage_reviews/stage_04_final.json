@@ -1,0 +1,82 @@
+{
+  "stage": 4,
+  "checked_at": "2026-10-06T07:09:45.492116+00:00",
+  "gate": "passed_with_explicit_limitations",
+  "checks": {
+    "independent_input_hashes_unchanged": true,
+    "raw_reviewer_outputs_unchanged": true,
+    "independent_validation_zero_errors": true,
+    "independent_counterexamples_22_of_22": true,
+    "all_64_field_counts_match": true,
+    "all_8_question_confusions_match": true,
+    "numeric_span_counts_match": true,
+    "all_39_adjudications_reference_two_originals": true,
+    "all_reviewed_items_have_evidence_and_no_gold": true,
+    "human_gold_files_empty": true,
+    "unresolved_rows_preserved": true,
+    "stage_sequence": true
+  },
+  "files": [
+    {
+      "path": "agreement_results.json",
+      "sha256": "6dc5a507a275d53935f505451ea2c8dce01ceadc18de3e61d7daf44cd8b9ad06"
+    },
+    {
+      "path": "agreement_report.md",
+      "sha256": "25c29a9de536f4d9aa48eafcf3b56f5dbd9dd573edbb0bfa01fda9931af3c95d"
+    },
+    {
+      "path": "adjudications.jsonl",
+      "sha256": "7a564a00dd05b5f6993f319989449b7d594ff6bb66fdd6711953d284c99eab19"
+    },
+    {
+      "path": "reviewed_agent_claims.jsonl",
+      "sha256": "5c3709eeca68f9d2c54003d58e631329056eb169e85a02ff6c59fb35450a33af"
+    },
+    {
+      "path": "reviewed_agent_relations.jsonl",
+      "sha256": "2c8f8693739777605911685db524274f416f7521051c789fe3324217f75908db"
+    },
+    {
+      "path": "reviewed_agent_events.jsonl",
+      "sha256": "75dd828c076d1215e65a17fe95b62add7c9b4ee1053b79c9ade00e7f89362d7a"
+    },
+    {
+      "path": "assessment_reviews.jsonl",
+      "sha256": "aba72eed034c39b273661ec02fdee542a1a4b961946cc7d174d82ced252504b4"
+    },
+    {
+      "path": "unresolved_cases.csv",
+      "sha256": "e7ef8202b7013a04741e631fd0c5facc980350596406748937a032ebf08b21e5"
+    },
+    {
+      "path": "gold_events.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "gold_relations.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "gold_status.json",
+      "sha256": "6fabb3a2f32261e901396d0ee9a0a3445a31f3b77f0b0c9d0dc8eb2eccdb7eaa"
+    },
+    {
+      "path": "stage_reviews/stage_04_independent.json",
+      "sha256": "d32b68c30febb4c30defca8121b012122a6a0406d840d02df61bb5739d51ed22"
+    }
+  ],
+  "counts": {
+    "agent_item_pairs": 39,
+    "reviewed_numeric_claims": 33,
+    "reviewed_relations": 6,
+    "human_gold": 0,
+    "observed_field_pairs": 1178
+  },
+  "limitations": [
+    "Shared-input agent consistency only",
+    "No fully observed complete tuple",
+    "Human gold remains absent"
+  ],
+  "next_stage": 5
+}

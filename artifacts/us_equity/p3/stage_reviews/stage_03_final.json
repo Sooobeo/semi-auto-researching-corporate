@@ -1,0 +1,28 @@
+{
+  "stage": 3,
+  "checked_at": "2026-10-06T06:18:59.711173+00:00",
+  "gate": "passed_with_explicit_limitations",
+  "checks": {
+    "guide_freeze_unchanged": true,
+    "practice_review_passed": true,
+    "main_source_and_contract_review_passed": true,
+    "all_94_assignments_resolve": true,
+    "main_78_agent_records": true,
+    "main_39_items_each_annotated_twice": true,
+    "no_human_annotation_or_gold_claim": true,
+    "practice_before_main": true,
+    "stage_sequence": true
+  },
+  "annotation_manifest_sha256": "cb1f64220822b43c2e49db448e5a370c3a1782c05b7462a7e12aa04667e5f979",
+  "counts": {
+    "practice_records": 16,
+    "main_records": 78,
+    "unique_annotation_items": 39,
+    "human_annotations": 0
+  },
+  "limitations": [
+    "Agent-authored deterministic annotations on shared preselected inputs, not human annotation or extraction accuracy",
+    "Historical cutoff simulation retains disclosed post-cutoff guide context"
+  ],
+  "next_stage": 4
+}

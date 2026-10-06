@@ -1,0 +1,9 @@
+{
+  "status": "failed_before_improvement",
+  "stage": 5,
+  "failed_check": "all_private_files_gitignored",
+  "private_file_count": 10,
+  "cause": "Windows text subprocess stdin expanded LF to CRLF; Git interpreted CR as part of supplied filename and quoted the paths. This was a verifier false failure, not source-file exposure.",
+  "correction": "NUL-separated binary UTF-8 input/output using git check-ignore -z --stdin",
+  "source_files_modified": false
+}

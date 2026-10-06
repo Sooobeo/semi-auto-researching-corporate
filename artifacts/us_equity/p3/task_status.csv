@@ -1,0 +1,13 @@
+task_id,task,implementation_status,formal_design_status,remaining,artifact,human_completed
+P04-T01,파일럿 표본 계획,agent_scope_fixed,partial_human_or_evaluation_requirements_pending,실제 인간 시간·대표 표본 규모·무관/희귀 유형 미측정,sampling_protocol.md,false
+P04-T02,사건 family 그룹,agent_grouping_implemented,partial_human_or_evaluation_requirements_pending,인간의 사건 단위 확인·신규 후보 중복 감사 필요,event_families.csv,false
+P04-T03,가이드·registry 고정,versioned_contracts_frozen,partial_human_or_evaluation_requirements_pending,실제 인간 적용 가능성 검증 필요,annotation_freeze_v1_2.json,false
+P04-T04,연습 annotation,agent_practice_reviewed,partial_human_or_evaluation_requirements_pending,인간 연습·소요시간 미실행,stage_reviews/practice_check_final.json,false
+P04-T05,본 표본 배정,agent_assignments_executed,partial_human_or_evaluation_requirements_pending,실제 사람 역할·가용시간 배정 없음,assignment_execution.csv,false
+P04-T06,독립 사실 annotation,agent_drafts_reviewed_human_pending,partial_human_or_evaluation_requirements_pending,인간 독립 주석 및 선정 계산의 사람 수행 증명 없음,annotations_raw.jsonl,false
+P04-T07,중요성 독립 평가,agent_responses_reviewed_prior_pending,partial_human_or_evaluation_requirements_pending,prior·가정 부재; 인간 평가·역사적 블라인드 미실행,assessments_raw.jsonl,false
+P04-T08,일치도·원인 분석,agent_consistency_measured,partial_human_or_evaluation_requirements_pending,인간 IAA·분별력·추출 정확도 미측정,agreement_report.md,false
+P04-T09,조정·gold 작성,agent_review_complete_human_gold_pending,partial_human_or_evaluation_requirements_pending,인간 조정·gold 0; 39항목 미해결 판단 유지,gold_status.json,false
+P04-T10,시간·그룹 분할,adaptation_and_reservation_frozen,partial_human_or_evaluation_requirements_pending,train/dev/test 미구성; 예약 후보 test 미인증,split_manifest.csv,false
+P04-T11,label 품질·연결,agent_link_validation_passed,partial_human_or_evaluation_requirements_pending,인간 gold·전체 본문 수동 감사 없음,gold_validation.md,false
+P04-T12,dataset card·인계,agent_package_documented,partial_human_or_evaluation_requirements_pending,독립 평가용 train/dev/test 및 정식 P04 인계는 대기,dataset_card.md,false

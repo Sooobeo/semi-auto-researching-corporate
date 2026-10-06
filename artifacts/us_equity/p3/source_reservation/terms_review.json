@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-10-06T05:39:14.139717+00:00",
+  "checked_on_client_date": "2026-10-06",
+  "url": "https://www.microsoft.com/en-us/legal/terms-of-use",
+  "sha256": "959d04dc22855481a49909b5ef0eef4efa7abf90c10d4e6f6375736288b85804",
+  "documents_permission_section_found": true,
+  "expected_narrow_permission_conditions_found": true,
+  "review_basis": "official_web_terms_read_and_local_conditions_check",
+  "terms_displayed_update": "2022-02-07",
+  "broad_ai_or_training_permission": "unresolved"
+}

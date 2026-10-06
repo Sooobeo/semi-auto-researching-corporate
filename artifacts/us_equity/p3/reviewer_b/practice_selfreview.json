@@ -1,0 +1,62 @@
+{
+  "annotator_id": "AGENT-B",
+  "phase": "practice",
+  "checked_at": "2026-10-06T06:04:59.431787+00:00",
+  "gate": "passed_with_explicit_limitations",
+  "counts": {
+    "assigned_items": 8,
+    "annotations": 8,
+    "assessments": 8,
+    "numeric_annotations": 6,
+    "relation_annotations": 2,
+    "unique_source_claims": 8,
+    "unique_events": 2,
+    "unique_event_families": 2,
+    "human_annotations": 0,
+    "human_gold": 0,
+    "numeric_span_roundtrips": 6
+  },
+  "validation_errors": [],
+  "checks": {
+    "contract_schema_valid": true,
+    "frozen_inputs_verified": true,
+    "raw_values_and_evidence_coordinates_crosschecked": true,
+    "fiscal_period_derived_from_raw_headers": true,
+    "decimal_exact_arithmetic": true,
+    "null_fields_have_reasons": true,
+    "source_identity_and_revision_preserved": true,
+    "private_sources_other_reviewers_and_network_not_used": true,
+    "same_item_main_practice_exposure_recorded": true,
+    "agent_and_retrospective_status_disclosed": true
+  },
+  "parser_boundary_checks": {
+    "unicode_whitespace_preserves_offsets": true,
+    "parentheses_preserve_signed_raw": true,
+    "annual_leap_year_is_366_days": true,
+    "annual_nonleap_year_is_365_days": true,
+    "quarter_has_91_days": true
+  },
+  "frozen_input_checks": {
+    "annotation_guide_v1_1.md": true,
+    "annotation_output_contract_v1_1.json": true,
+    "annotation_clarifications_v1_1.json": true,
+    "annotation_reference.json": true,
+    "source_packets.jsonl": true,
+    "evidence_index.jsonl": true,
+    "practice_selection.json": true
+  },
+  "improvements_before_execution": [
+    "Applied shared guide 1.1 naming clarification while retaining 1.0 inputs and freeze.",
+    "Cross-checked independently calculated numeric DOM spans against evidence references."
+  ],
+  "unresolved": [
+    "Prior comparison object absent; historical importance remains unknown.",
+    "Consolidated scope supplement not historically available.",
+    "Full prose, visual source audit and separate GAAP policy audit not performed.",
+    "Segment definition comparability across presentations unresolved.",
+    "Release times have date precision only.",
+    "Relation reference periods do not establish business validity."
+  ],
+  "main_executed": false,
+  "human_independence_claim": false
+}

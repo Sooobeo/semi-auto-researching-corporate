@@ -1,0 +1,67 @@
+{
+  "annotator_id": "AGENT-B",
+  "phase": "main",
+  "checked_at": "2026-10-06T06:18:10.619903+00:00",
+  "gate": "passed_with_explicit_limitations",
+  "counts": {
+    "assigned_items": 39,
+    "annotations": 39,
+    "assessments": 39,
+    "numeric_annotations": 33,
+    "relation_annotations": 6,
+    "unique_source_claims": 33,
+    "unique_events": 2,
+    "unique_event_families": 2,
+    "human_annotations": 0,
+    "human_gold": 0,
+    "numeric_span_roundtrips": 33
+  },
+  "validation_errors": [],
+  "checks": {
+    "contract_schema_valid": true,
+    "frozen_inputs_verified": true,
+    "raw_values_and_evidence_coordinates_crosschecked": true,
+    "fiscal_period_derived_from_raw_headers": true,
+    "decimal_exact_arithmetic": true,
+    "null_fields_have_reasons": true,
+    "source_identity_and_revision_preserved": true,
+    "private_sources_other_reviewers_and_network_not_used": true,
+    "same_item_main_practice_exposure_recorded": true,
+    "agent_and_retrospective_status_disclosed": true,
+    "original_practice_facts_unchanged": true,
+    "prior_practice_outputs_and_snapshot_preserved": true,
+    "assessment_response_enums_checked": true
+  },
+  "parser_boundary_checks": {
+    "unicode_whitespace_preserves_offsets": true,
+    "parentheses_preserve_signed_raw": true,
+    "annual_leap_year_is_366_days": true,
+    "annual_nonleap_year_is_365_days": true,
+    "quarter_has_91_days": true
+  },
+  "frozen_input_checks": {
+    "annotation_guide_v1_2.md": true,
+    "annotation_output_contract_v1_2.json": true,
+    "annotation_clarifications_v1_1.json": true,
+    "annotation_reference.json": true,
+    "source_packets.jsonl": true,
+    "evidence_index.jsonl": true,
+    "practice_selection.json": true
+  },
+  "improvements_before_execution": [
+    "Applied guide 1.2 assessment response vocabulary while preserving 1.1 original annotations and executable snapshot.",
+    "MQ06 distinguishes sufficient selected-table segment linkage from insufficient historical corporate scope.",
+    "MQ08 records investigate as the single action and deferral rationale in its reason.",
+    "Retained raw-value algorithm and independently recalculated all facts."
+  ],
+  "unresolved": [
+    "Prior comparison object absent; historical importance remains unknown.",
+    "Consolidated scope supplement not historically available.",
+    "Full prose, visual source audit and separate GAAP policy audit not performed.",
+    "Segment definition comparability across presentations unresolved.",
+    "Release times have date precision only.",
+    "Relation reference periods do not establish business validity."
+  ],
+  "main_executed": true,
+  "human_independence_claim": false
+}

@@ -1,0 +1,36 @@
+{
+  "contract_version": "us-p3-annotation-1.0",
+  "guide_version": "us-p3-guide-1.0",
+  "required_top_level": ["annotation_id", "annotator_id", "annotator_kind", "method", "item_id", "item_type", "guide_version", "registry_version", "facts", "evidence_refs", "uncertainty_reasons", "started_at", "completed_at", "status", "exposure_log"],
+  "annotator_kind": "agent",
+  "method": "agent_authored_deterministic_annotation",
+  "status": "agent_draft",
+  "numeric_fact_fields": ["source_claim_id", "doc_id", "revision_id", "event_id", "event_family_id", "company_id", "scope_id", "metric_id", "definition_version", "value_raw", "numeric_value", "scale", "numeric_value_base_units", "currency", "canonical_unit", "sign_policy", "period_start", "period_end", "as_of_date", "period_kind", "duration_days", "fiscal_year", "fiscal_quarter", "balance_or_flow", "modality", "published_date", "published_at", "time_precision", "value_span_start", "value_span_end"],
+  "relation_fact_fields": ["source_relation_id", "source_claim_id", "doc_id", "revision_id", "event_id", "event_family_id", "company_id", "scope_id", "relation_type", "subject_entity_id", "object_entity_id", "subject_role", "object_role", "direction", "modality", "negation", "conditions", "reference_period_start", "reference_period_end", "effective_period_start", "effective_period_end", "valid_from", "valid_to", "published_date", "published_at", "time_precision"],
+  "numeric_rules": {
+    "numeric_value": "Decimal string in source scale; capex positive cash outlay",
+    "scale": "Decimal string",
+    "numeric_value_base_units": "Decimal string numeric_value times scale",
+    "duration_days": "integer; instant=0",
+    "period_start": "flow date; instant null",
+    "period_end": "flow date; instant null",
+    "as_of_date": "instant date; flow null",
+    "period_kind": "duration or instant",
+    "fiscal_year": "integer",
+    "fiscal_quarter": "integer 4 for Q4; null for annual or balance",
+    "value_span_start": "integer original DOM-cell code point",
+    "value_span_end": "integer original DOM-cell code point"
+  },
+  "relation_rules": {
+    "direction": "subject_to_object",
+    "negation": "source reporting table positive claim, false",
+    "conditions": "[]; selected table has no explicit condition evidence",
+    "effective_period_start": null,
+    "effective_period_end": null,
+    "valid_from": null,
+    "valid_to": null
+  },
+  "assessment_file_required_top_level": ["assessment_id", "annotation_id", "item_id", "annotator_id", "annotator_kind", "guide_version", "purpose", "as_of_date", "as_of_precision", "questions", "review_readiness", "reasons", "created_at", "exposure_log"],
+  "assessment_purpose": "historical_comparison",
+  "assessment_policy": "Missing prior and unavailable business assumptions imply unknown/not_assessed, never no/low. MQ01-MQ08 responses are agent assessments and cannot be human materiality gold."
+}

@@ -4,6 +4,8 @@
 
 [전체 목차](README.md) · [공통 데이터 규약](DATA_CONTRACTS.md) · [레퍼런스](REFERENCES.md) · [작업 인덱스](TASK_INDEX.md) · [공통 목표·리서치 적용](GOALS_AND_RESEARCH_WORKFLOW.md)
 
+**실행 기록(2026-10-06):** [P04 agent 개발 파일럿](../artifacts/us_equity/p3/execution_briefing.md)의 1~5번 작업과 단계별 자가검증·개선을 수행했다. 숫자 33·관계 6항목, agent 본 주석 78건, 기존 adaptation 및 신규 미라벨 예약 1문서다. 인간 gold·독립 test는 0건이다. 아래 설계 요구의 남은 작업은 [작업별 상태](../artifacts/us_equity/p3/task_status.csv)에 구분하며 이 실행을 정식 인간 gold 파일럿 완료로 보지 않는다.
+
 ## 1. 이 단계에서 답할 질문
 
 소수 미국 기업의 새 자료에서 사건과 필요한 사업 관계를 두 사람 이상이 일관되게 기록할 수 있으며, 학습·검증·평가를 누수 없이 분리할 수 있는가?

@@ -1,0 +1,896 @@
+{
+  "calculated_at": "2026-10-06T06:21:18.546438+00:00",
+  "comparison_kind": "two_agent_shared_input_implementation_consistency",
+  "guide_version": "us-p3-guide-1.2",
+  "pre_adjudication": true,
+  "source_files": [
+    {
+      "path": "annotations_raw.jsonl",
+      "sha256": "0e67b69ce00b7c870f432dfb1c990889c8652d0249abe0a1763e43e741aea200"
+    },
+    {
+      "path": "assessments_raw.jsonl",
+      "sha256": "79f5b9e6e493d8706b10f427a43a73d1d1ae3962654796f64f03ee092a0f90f1"
+    }
+  ],
+  "input_annotations": 78,
+  "unique_items": 39,
+  "fact_agreement": {
+    "fields": [
+      {
+        "field": "numeric_claim.accounting_basis",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.as_of_date",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 29,
+        "one_null": 0,
+        "both_present": 4,
+        "exact_both_present": 4,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.balance_or_flow",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.canonical_unit",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.company_id",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.currency",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.definition_version",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.doc_id",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.duration_days",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 4,
+        "one_null": 0,
+        "both_present": 29,
+        "exact_both_present": 29,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.event_family_id",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.event_id",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.evidence_status",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.fiscal_quarter",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 23,
+        "one_null": 0,
+        "both_present": 10,
+        "exact_both_present": 10,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.fiscal_year",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.metric_id",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.modality",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.numeric_value",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.numeric_value_base_units",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.period_end",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 4,
+        "one_null": 0,
+        "both_present": 29,
+        "exact_both_present": 29,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.period_kind",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.period_start",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 4,
+        "one_null": 0,
+        "both_present": 29,
+        "exact_both_present": 29,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.period_start_derivation",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.published_at",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 33,
+        "one_null": 0,
+        "both_present": 0,
+        "exact_both_present": 0,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": null
+      },
+      {
+        "field": "numeric_claim.published_date",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.revision_id",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.scale",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.scope_id",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.scope_status_as_of",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.sign_policy",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.source_claim_id",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.speaker",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.time_precision",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.value_raw",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.value_span_end",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "numeric_claim.value_span_start",
+        "pairs": 33,
+        "exact": 33,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 33,
+        "exact_both_present": 33,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.company_id",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.conditions",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.direction",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.doc_id",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.effective_period_end",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 6,
+        "one_null": 0,
+        "both_present": 0,
+        "exact_both_present": 0,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": null
+      },
+      {
+        "field": "reporting_relation.effective_period_start",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 6,
+        "one_null": 0,
+        "both_present": 0,
+        "exact_both_present": 0,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": null
+      },
+      {
+        "field": "reporting_relation.event_family_id",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.event_id",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.evidence_status",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.modality",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.negation",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.object_entity_id",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.object_role",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.published_at",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 6,
+        "one_null": 0,
+        "both_present": 0,
+        "exact_both_present": 0,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": null
+      },
+      {
+        "field": "reporting_relation.published_date",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.reference_period_end",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.reference_period_start",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.relation_type",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.revision_id",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.scope_id",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.scope_status_as_of",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.source_claim_id",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.source_relation_id",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.speaker",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.subject_entity_id",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.subject_role",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.time_precision",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 0,
+        "one_null": 0,
+        "both_present": 6,
+        "exact_both_present": 6,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": 1.0
+      },
+      {
+        "field": "reporting_relation.valid_from",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 6,
+        "one_null": 0,
+        "both_present": 0,
+        "exact_both_present": 0,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": null
+      },
+      {
+        "field": "reporting_relation.valid_to",
+        "pairs": 6,
+        "exact": 6,
+        "both_null": 6,
+        "one_null": 0,
+        "both_present": 0,
+        "exact_both_present": 0,
+        "exact_rate": 1.0,
+        "exact_nonnull_rate": null
+      }
+    ],
+    "tuple_counts": {
+      "numeric_claim_pairs": 33,
+      "numeric_claim_exact": 33,
+      "reporting_relation_pairs": 6,
+      "reporting_relation_exact": 6
+    },
+    "spans": {
+      "pairs": 33,
+      "exact": 33,
+      "overlap_characters": 230,
+      "a_characters": 230,
+      "b_characters": 230,
+      "micro_character_overlap_f1": 1.0,
+      "offset_basis": "original_DOM_cell_Unicode_code_points"
+    },
+    "mismatches": []
+  },
+  "assessment_agreement": [
+    {
+      "question_id": "MQ01",
+      "pairs": 39,
+      "exact": 39,
+      "exact_rate": 1.0,
+      "both_substantive_pairs": 0,
+      "exact_both_substantive": 0,
+      "exact_substantive_rate": null,
+      "excluded_unknown_or_na_pairs": 39,
+      "confusion": [
+        {
+          "a": "unknown",
+          "b": "unknown",
+          "count": 39
+        }
+      ]
+    },
+    {
+      "question_id": "MQ02",
+      "pairs": 39,
+      "exact": 39,
+      "exact_rate": 1.0,
+      "both_substantive_pairs": 0,
+      "exact_both_substantive": 0,
+      "exact_substantive_rate": null,
+      "excluded_unknown_or_na_pairs": 39,
+      "confusion": [
+        {
+          "a": "unknown",
+          "b": "unknown",
+          "count": 39
+        }
+      ]
+    },
+    {
+      "question_id": "MQ03",
+      "pairs": 39,
+      "exact": 39,
+      "exact_rate": 1.0,
+      "both_substantive_pairs": 0,
+      "exact_both_substantive": 0,
+      "exact_substantive_rate": null,
+      "excluded_unknown_or_na_pairs": 39,
+      "confusion": [
+        {
+          "a": "unknown",
+          "b": "unknown",
+          "count": 39
+        }
+      ]
+    },
+    {
+      "question_id": "MQ04",
+      "pairs": 39,
+      "exact": 39,
+      "exact_rate": 1.0,
+      "both_substantive_pairs": 0,
+      "exact_both_substantive": 0,
+      "exact_substantive_rate": null,
+      "excluded_unknown_or_na_pairs": 39,
+      "confusion": [
+        {
+          "a": "unknown",
+          "b": "unknown",
+          "count": 39
+        }
+      ]
+    },
+    {
+      "question_id": "MQ05",
+      "pairs": 39,
+      "exact": 39,
+      "exact_rate": 1.0,
+      "both_substantive_pairs": 0,
+      "exact_both_substantive": 0,
+      "exact_substantive_rate": null,
+      "excluded_unknown_or_na_pairs": 39,
+      "confusion": [
+        {
+          "a": "unknown",
+          "b": "unknown",
+          "count": 39
+        }
+      ]
+    },
+    {
+      "question_id": "MQ06",
+      "pairs": 39,
+      "exact": 39,
+      "exact_rate": 1.0,
+      "both_substantive_pairs": 39,
+      "exact_both_substantive": 39,
+      "exact_substantive_rate": 1.0,
+      "excluded_unknown_or_na_pairs": 0,
+      "confusion": [
+        {
+          "a": "insufficient",
+          "b": "insufficient",
+          "count": 24
+        },
+        {
+          "a": "sufficient",
+          "b": "sufficient",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "question_id": "MQ07",
+      "pairs": 39,
+      "exact": 39,
+      "exact_rate": 1.0,
+      "both_substantive_pairs": 0,
+      "exact_both_substantive": 0,
+      "exact_substantive_rate": null,
+      "excluded_unknown_or_na_pairs": 39,
+      "confusion": [
+        {
+          "a": "unknown",
+          "b": "unknown",
+          "count": 39
+        }
+      ]
+    },
+    {
+      "question_id": "MQ08",
+      "pairs": 39,
+      "exact": 39,
+      "exact_rate": 1.0,
+      "both_substantive_pairs": 39,
+      "exact_both_substantive": 39,
+      "exact_substantive_rate": 1.0,
+      "excluded_unknown_or_na_pairs": 0,
+      "confusion": [
+        {
+          "a": "investigate",
+          "b": "investigate",
+          "count": 39
+        }
+      ]
+    }
+  ],
+  "human_inter_annotator_agreement": null,
+  "human_annotation_count": 0,
+  "extraction_accuracy": null,
+  "chance_corrected_coefficient": null,
+  "coefficient_reason": "No independent human labels; agent outputs share curated context and deterministic guide rules.",
+  "limitations": [
+    "All source items are adaptation",
+    "Source IDs and registry metadata provide hints",
+    "Guide exposes post-cutoff context; this is retrospective simulation",
+    "Both-null agreement is reported separately"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "version": "us-p3-split-1.0",
+  "frozen_at": "2026-10-06T07:11:08.815547+00:00",
+  "status": "development_and_reservation_only",
+  "stage_04_gate_sha256": "9232877ade262cbeda9bb6f8dcc3ba5e5700f72302629de4c7db40152bbe8e70",
+  "split_definitions": {
+    "adaptation": "Existing guide/registry development inputs and agent drafts; not independent evaluation",
+    "reserved_unlabeled": "Metadata inspected; no labels or certified test eligibility"
+  },
+  "counts": {
+    "rows": 43,
+    "annotation_items": 39,
+    "source_numeric_claims": 33,
+    "reporting_relations": 6,
+    "documents": 4,
+    "adaptation_rows": 42,
+    "reserved_rows": 1,
+    "adaptation_documents": 3,
+    "reserved_documents": 1,
+    "labeled_development_families": 2,
+    "reserved_unlabeled_families": 1,
+    "human_gold": 0,
+    "train_items": 0,
+    "dev_items": 0,
+    "test_items": 0
+  },
+  "development_leakage_group": "LG-MSFT-EXPOSED-FY2024-FY2025-EARNINGS",
+  "reserved_leakage_group": "PENDING-US-MSFT-FY2026-Q1",
+  "reserved_group_status": "provisional_not_proof_of_independence",
+  "chronology": {
+    "development_release_dates": [
+      "2024-07-30",
+      "2025-07-30"
+    ],
+    "candidate_boundary_after": "2025-07-30",
+    "candidate_published_date": "2025-10-29",
+    "date_precision": "date",
+    "train_dev_test_boundaries": null,
+    "reason": "Only two exposed release families and zero independent gold; no evaluation split allocated",
+    "date_only_rule": "No invented midnight; same-day exact as-of availability remains unknown"
+  },
+  "dependency_policy": {
+    "representation_overlap": "All three cross-presentation edges retained inside one adaptation group",
+    "retrospective_scope_dependency": "All 24 scope edges recorded; support publication unknown and excluded from 2024/2025 historical evidence",
+    "guide_exposure": "All annotations disclose retrospective_cutoff_simulation and guide_contains_post_cutoff_context"
+  },
+  "support_document": {
+    "doc_id": "US-MSFT-ANNUAL-FY2025-SCOPE-REFERENCE",
+    "published_date": null,
+    "time_precision": "unknown",
+    "observed_at": "2026-10-05T12:31:51.408141+00:00",
+    "historical_eligible": false,
+    "event_family_id": null,
+    "event_quota": 0
+  },
+  "reserved_document": {
+    "doc_id": "US-MSFT-FY2026-Q1-RELEASE",
+    "labels_created": false,
+    "test_eligible": false,
+    "source_prose_exposed": false,
+    "numeric_values_exposed": false,
+    "parser_adaptation_performed": false,
+    "untouched_test_claimed": false,
+    "comparison_overlap_audited": false,
+    "promotion_requires": [
+      "source rights for intended use",
+      "body/date/scope/numeric audit",
+      "comparison/revision/family overlap audit",
+      "independent annotation and adjudication",
+      "model/policy freeze before test answers are opened"
+    ],
+    "summary_sha256": "e558e8ada46e098aca51ef193ca19ee2f312247059811e4968034ec84f7aa6c0"
+  },
+  "answer_access": "No test answers exist. Reserved content separation is procedural and gitignored, not OS-enforced ACL.",
+  "legacy_korean_inputs": [],
+  "permitted_handoff": "adaptation_only_no_benchmark_claim"
+}

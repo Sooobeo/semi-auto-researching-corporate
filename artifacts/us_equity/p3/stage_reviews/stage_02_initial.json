@@ -1,0 +1,26 @@
+{
+  "stage": 2,
+  "checked_at": "2026-10-06T05:48:40.524258+00:00",
+  "checks": {
+    "contract_validation_passed": true,
+    "validated_current_schema": true,
+    "validated_current_records": true,
+    "all_packets_resolve_evidence": true,
+    "packet_preserves_input_revision": true,
+    "raw_packets_omit_normalized_answer_object": true,
+    "numeric_values_match_original_source_base_units": true,
+    "relation_business_effective_period_unknown": true,
+    "date_only_preserved": true,
+    "current_agent_status_honest": true,
+    "guide_post_cutoff_exposure_disclosed": true,
+    "field_null_reasons_required": true,
+    "provenance_required": true,
+    "original_input_hashes_unchanged": true,
+    "new_reserved_document_not_in_development": true,
+    "reservation_hash_unchanged": true,
+    "stage_sequence": true
+  },
+  "adapter_initial_review": "../contract_validation_initial.json",
+  "adapter_final_review": "../contract_validation_final.json",
+  "status": "passed"
+}

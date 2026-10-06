@@ -1,0 +1,22 @@
+{
+  "stage": 5,
+  "created_at": "2026-10-06T07:11:08.817057+00:00",
+  "status": "awaiting_independent_split_and_package_validation",
+  "counts": {
+    "rows": 43,
+    "annotation_items": 39,
+    "source_numeric_claims": 33,
+    "reporting_relations": 6,
+    "documents": 4,
+    "adaptation_rows": 42,
+    "reserved_rows": 1,
+    "adaptation_documents": 3,
+    "reserved_documents": 1,
+    "labeled_development_families": 2,
+    "reserved_unlabeled_families": 1,
+    "human_gold": 0,
+    "train_items": 0,
+    "dev_items": 0,
+    "test_items": 0
+  }
+}

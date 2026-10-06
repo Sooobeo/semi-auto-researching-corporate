@@ -1,0 +1,48 @@
+{
+  "stage": 2,
+  "checked_at": "2026-10-06T05:48:40.527545+00:00",
+  "gate": "passed_with_explicit_limitations",
+  "checks": {
+    "contract_validation_passed": true,
+    "validated_current_schema": true,
+    "validated_current_records": true,
+    "all_packets_resolve_evidence": true,
+    "packet_preserves_input_revision": true,
+    "raw_packets_omit_normalized_answer_object": true,
+    "numeric_values_match_original_source_base_units": true,
+    "relation_business_effective_period_unknown": true,
+    "date_only_preserved": true,
+    "current_agent_status_honest": true,
+    "guide_post_cutoff_exposure_disclosed": true,
+    "field_null_reasons_required": true,
+    "provenance_required": true,
+    "original_input_hashes_unchanged": true,
+    "new_reserved_document_not_in_development": true,
+    "reservation_hash_unchanged": true,
+    "stage_sequence": true
+  },
+  "counts": {
+    "records": 39,
+    "numeric_records": 33,
+    "relation_records": 6,
+    "unique_source_claims": 33,
+    "unique_events": 2,
+    "evidence": 84,
+    "packets": 39,
+    "human_gold": 0
+  },
+  "negative_cases": {
+    "attempted": 22,
+    "rejected": 22,
+    "expected_reason_detected": 22
+  },
+  "freeze_sha256": "c924130abe00a5976b3e7c27e74e1cd63ee6c4baa354df5f6714079d5a45a8d6",
+  "next_stage": 3,
+  "limitations": [
+    "independent human annotation and manual visual audit absent",
+    "whole body completeness not audited",
+    "date-only release timing",
+    "segment presentation policy unresolved",
+    "scope supplement unavailable at historical release cutoff"
+  ]
+}

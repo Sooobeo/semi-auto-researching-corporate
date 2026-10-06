@@ -1,0 +1,57 @@
+{
+  "reviewer": "AGENT-A",
+  "phase": "main",
+  "checked_at": "2026-10-06T06:17:50.596888+00:00",
+  "guide_version": "us-p3-guide-1.2",
+  "gate": "passed_with_explicit_limitations",
+  "counts": {
+    "annotations": 39,
+    "assessments": 39,
+    "numeric_claims": 33,
+    "reporting_relations": 6,
+    "unique_items": 39,
+    "unique_source_claims": 33,
+    "unique_documents": 2,
+    "unique_events": 2,
+    "unique_families": 2,
+    "unique_relation_objects": 3,
+    "human_annotations": 0,
+    "source_DOM_reaudits": 0,
+    "numeric_span_roundtrips_passed": 33,
+    "annotation_validation_passed": 39,
+    "assessment_validation_passed": 39,
+    "question_responses": {
+      "unknown": 234,
+      "insufficient": 24,
+      "investigate": 39,
+      "sufficient": 15
+    }
+  },
+  "checks": {
+    "all_assigned_items_present": true,
+    "contract_validation_passed": true,
+    "source_header_and_evidence_identity_checks_passed": true,
+    "numeric_dates_derived_from_raw_headers_not_identifiers": true,
+    "decimal_values_and_original_unicode_spans": true,
+    "relation_reporting_period_not_business_validity": true,
+    "all_null_facts_have_field_reasons": true,
+    "original_inputs_unchanged": true,
+    "all_required_exposures_recorded": true,
+    "no_prose_or_reserved_content_read": true,
+    "no_other_reviewer_or_normalized_answer_read": true,
+    "practice_main_overlap_not_independent": true,
+    "no_human_gold_claim": true
+  },
+  "annotation_errors": {},
+  "assessment_errors": {},
+  "limitations": [
+    "No independent human annotations or full-document manual audit.",
+    "Published time remains date-only; same-day order is unknown.",
+    "Corporate historical scope has an unavailable retrospective dependency.",
+    "Segment presentation comparability and all prior-dependent materiality judgments remain unresolved.",
+    "Currency and GAAP are shared curator context for selected financial tables, not independent cell-level evidence.",
+    "Guide and cross-release packet exposure prevent claiming unexposed historical assessment."
+  ],
+  "improvement": "v1.2 specifies allowed assessment responses; MQ06 now separates corporate missing scope support from sufficient selected segment reporting links. Facts independently recomputed unchanged; prior practice and code retained.",
+  "next_phase_authorized": true
+}

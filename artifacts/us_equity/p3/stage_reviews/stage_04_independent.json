@@ -1,0 +1,1511 @@
+{
+  "stage": 4,
+  "reviewer": "independent_agent_standard_library_implementation",
+  "checked_at": "2026-10-06T06:22:50.655009+00:00",
+  "gate": "passed_with_explicit_limitations",
+  "source_input_hashes": {
+    "artifacts/us_equity/p3/annotations_raw.jsonl": "0e67b69ce00b7c870f432dfb1c990889c8652d0249abe0a1763e43e741aea200",
+    "artifacts/us_equity/p3/assessments_raw.jsonl": "79f5b9e6e493d8706b10f427a43a73d1d1ae3962654796f64f03ee092a0f90f1",
+    "artifacts/us_equity/p3/annotation_output_contract_v1_2.json": "81736aa4370d9c240642cd931c07e9b6b46f16fdb77f7548115991829c7606da"
+  },
+  "inputs_unchanged": true,
+  "code_sha256": "86206d1a6b6007e97277799a9bf0930e8162d7f86a7d2d00a73b49ae55393f62",
+  "implementation_independence": "No imports from the project's agreement/annotation implementation and no root agreement results read before this calculation.",
+  "validation_errors": [],
+  "self_checks": {
+    "passed": 22,
+    "total": 22,
+    "cases": [
+      {
+        "name": "duplicate_annotation_is_rejected",
+        "passed": true
+      },
+      {
+        "name": "missing_peer_is_rejected",
+        "passed": true
+      },
+      {
+        "name": "swapped_item_ids_are_rejected",
+        "passed": true
+      },
+      {
+        "name": "dropped_fact_field_is_rejected",
+        "passed": true
+      },
+      {
+        "name": "dropped_top_level_field_is_rejected",
+        "passed": true
+      },
+      {
+        "name": "missing_assessment_peer_is_rejected",
+        "passed": true
+      },
+      {
+        "name": "duplicate_assessment_is_rejected",
+        "passed": true
+      },
+      {
+        "name": "swapped_assessment_parents_are_rejected",
+        "passed": true
+      },
+      {
+        "name": "dropped_question_is_rejected",
+        "passed": true
+      },
+      {
+        "name": "duplicate_question_is_rejected",
+        "passed": true
+      },
+      {
+        "name": "missing_question_response_is_rejected",
+        "passed": true
+      },
+      {
+        "name": "null_unknown_unresolved_excluded_but_zero_false_observed",
+        "passed": true
+      },
+      {
+        "name": "all_missing_has_null_observed_score",
+        "passed": true
+      },
+      {
+        "name": "typed_zero_and_false_differ",
+        "passed": true
+      },
+      {
+        "name": "decimal_representation_not_silently_coerced",
+        "passed": true
+      },
+      {
+        "name": "partial_span_overlap_half",
+        "passed": true
+      },
+      {
+        "name": "disjoint_span_overlap_zero",
+        "passed": true
+      },
+      {
+        "name": "wrong_source_context_has_zero_overlap",
+        "passed": true
+      },
+      {
+        "name": "empty_span_rejected",
+        "passed": true
+      },
+      {
+        "name": "boolean_offset_rejected",
+        "passed": true
+      },
+      {
+        "name": "ordinary_mismatch_score_two_thirds",
+        "passed": true
+      },
+      {
+        "name": "confusion_preserves_off_diagonal",
+        "passed": true
+      }
+    ]
+  },
+  "result": {
+    "fact_groups": {
+      "numeric_claim": {
+        "item_pairs": 33,
+        "field_count": 35,
+        "fields": {
+          "source_claim_id": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "doc_id": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "revision_id": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "event_id": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "event_family_id": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "company_id": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "scope_id": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "metric_id": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "definition_version": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "value_raw": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "numeric_value": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "scale": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "numeric_value_base_units": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "currency": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "canonical_unit": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "sign_policy": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "period_start": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 29,
+            "observed_exact_matches": 29,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 4,
+            "excluded_state_pairs": {
+              "null|null": 4
+            },
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 4
+          },
+          "period_end": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 29,
+            "observed_exact_matches": 29,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 4,
+            "excluded_state_pairs": {
+              "null|null": 4
+            },
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 4
+          },
+          "as_of_date": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 4,
+            "observed_exact_matches": 4,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 29,
+            "excluded_state_pairs": {
+              "null|null": 29
+            },
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 29
+          },
+          "period_kind": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "duration_days": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 29,
+            "observed_exact_matches": 29,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 4,
+            "excluded_state_pairs": {
+              "null|null": 4
+            },
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 4
+          },
+          "fiscal_year": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "fiscal_quarter": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 10,
+            "observed_exact_matches": 10,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 23,
+            "excluded_state_pairs": {
+              "null|null": 23
+            },
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 23
+          },
+          "balance_or_flow": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "modality": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "published_date": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "published_at": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 0,
+            "observed_exact_matches": 0,
+            "observed_exact_rate": null,
+            "excluded_pairs": 33,
+            "excluded_state_pairs": {
+              "null|null": 33
+            },
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 33
+          },
+          "time_precision": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "value_span_start": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "value_span_end": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "accounting_basis": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "evidence_status": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "speaker": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "period_start_derivation": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 33,
+            "observed_exact_matches": 33,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "scope_status_as_of": {
+            "all_pairs": 33,
+            "all_exact_matches": 33,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 9,
+            "observed_exact_matches": 9,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 24,
+            "excluded_state_pairs": {
+              "unresolved_or_unknown|unresolved_or_unknown": 24
+            },
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 24
+          }
+        },
+        "micro_fields": {
+          "all_pairs": 1155,
+          "all_exact_matches": 1155,
+          "all_exact_rate": 1.0,
+          "observed_pairs": 1034,
+          "observed_exact_matches": 1034,
+          "observed_exact_rate": 1.0,
+          "excluded_pairs": 121,
+          "excluded_state_pairs": {
+            "null|null": 97,
+            "unresolved_or_unknown|unresolved_or_unknown": 24
+          },
+          "missingness_disagreements": 0,
+          "joint_unobserved_pairs": 121
+        },
+        "whole_tuple_including_missing": {
+          "matches": 33,
+          "denominator": 33,
+          "rate": 1.0
+        },
+        "observed_projection_tuple": {
+          "matches": 33,
+          "denominator": 33,
+          "rate": 1.0,
+          "policy": "Only fields observed on both sides; not a fully observed tuple; asymmetric missingness remains separately reported."
+        },
+        "fully_observed_tuple": {
+          "matches": 0,
+          "denominator": 0,
+          "rate": null,
+          "excluded_incomplete_items": 33
+        }
+      },
+      "reporting_relation": {
+        "item_pairs": 6,
+        "field_count": 29,
+        "fields": {
+          "source_relation_id": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "source_claim_id": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "doc_id": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "revision_id": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "event_id": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "event_family_id": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "company_id": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "scope_id": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "relation_type": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "subject_entity_id": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "object_entity_id": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "subject_role": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "object_role": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "direction": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "modality": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "negation": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "conditions": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "reference_period_start": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "reference_period_end": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "effective_period_start": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 0,
+            "observed_exact_matches": 0,
+            "observed_exact_rate": null,
+            "excluded_pairs": 6,
+            "excluded_state_pairs": {
+              "null|null": 6
+            },
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 6
+          },
+          "effective_period_end": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 0,
+            "observed_exact_matches": 0,
+            "observed_exact_rate": null,
+            "excluded_pairs": 6,
+            "excluded_state_pairs": {
+              "null|null": 6
+            },
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 6
+          },
+          "valid_from": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 0,
+            "observed_exact_matches": 0,
+            "observed_exact_rate": null,
+            "excluded_pairs": 6,
+            "excluded_state_pairs": {
+              "null|null": 6
+            },
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 6
+          },
+          "valid_to": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 0,
+            "observed_exact_matches": 0,
+            "observed_exact_rate": null,
+            "excluded_pairs": 6,
+            "excluded_state_pairs": {
+              "null|null": 6
+            },
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 6
+          },
+          "published_date": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "published_at": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 0,
+            "observed_exact_matches": 0,
+            "observed_exact_rate": null,
+            "excluded_pairs": 6,
+            "excluded_state_pairs": {
+              "null|null": 6
+            },
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 6
+          },
+          "time_precision": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "evidence_status": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "speaker": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          },
+          "scope_status_as_of": {
+            "all_pairs": 6,
+            "all_exact_matches": 6,
+            "all_exact_rate": 1.0,
+            "observed_pairs": 6,
+            "observed_exact_matches": 6,
+            "observed_exact_rate": 1.0,
+            "excluded_pairs": 0,
+            "excluded_state_pairs": {},
+            "missingness_disagreements": 0,
+            "joint_unobserved_pairs": 0
+          }
+        },
+        "micro_fields": {
+          "all_pairs": 174,
+          "all_exact_matches": 174,
+          "all_exact_rate": 1.0,
+          "observed_pairs": 144,
+          "observed_exact_matches": 144,
+          "observed_exact_rate": 1.0,
+          "excluded_pairs": 30,
+          "excluded_state_pairs": {
+            "null|null": 30
+          },
+          "missingness_disagreements": 0,
+          "joint_unobserved_pairs": 30
+        },
+        "whole_tuple_including_missing": {
+          "matches": 6,
+          "denominator": 6,
+          "rate": 1.0
+        },
+        "observed_projection_tuple": {
+          "matches": 6,
+          "denominator": 6,
+          "rate": 1.0,
+          "policy": "Only fields observed on both sides; not a fully observed tuple; asymmetric missingness remains separately reported."
+        },
+        "fully_observed_tuple": {
+          "matches": 0,
+          "denominator": 0,
+          "rate": null,
+          "excluded_incomplete_items": 6
+        }
+      }
+    },
+    "assessment_questions": {
+      "MQ01": {
+        "all_pairs": 39,
+        "all_exact_matches": 39,
+        "all_exact_rate": 1.0,
+        "observed_pairs": 0,
+        "observed_exact_matches": 0,
+        "observed_exact_rate": null,
+        "excluded_pairs": 39,
+        "excluded_state_pairs": {
+          "unknown|unknown": 39
+        },
+        "missingness_disagreements": 0,
+        "joint_unobserved_pairs": 39,
+        "confusion": [
+          {
+            "a": "unknown",
+            "b": "unknown",
+            "count": 39
+          }
+        ]
+      },
+      "MQ02": {
+        "all_pairs": 39,
+        "all_exact_matches": 39,
+        "all_exact_rate": 1.0,
+        "observed_pairs": 0,
+        "observed_exact_matches": 0,
+        "observed_exact_rate": null,
+        "excluded_pairs": 39,
+        "excluded_state_pairs": {
+          "unknown|unknown": 39
+        },
+        "missingness_disagreements": 0,
+        "joint_unobserved_pairs": 39,
+        "confusion": [
+          {
+            "a": "unknown",
+            "b": "unknown",
+            "count": 39
+          }
+        ]
+      },
+      "MQ03": {
+        "all_pairs": 39,
+        "all_exact_matches": 39,
+        "all_exact_rate": 1.0,
+        "observed_pairs": 0,
+        "observed_exact_matches": 0,
+        "observed_exact_rate": null,
+        "excluded_pairs": 39,
+        "excluded_state_pairs": {
+          "unknown|unknown": 39
+        },
+        "missingness_disagreements": 0,
+        "joint_unobserved_pairs": 39,
+        "confusion": [
+          {
+            "a": "unknown",
+            "b": "unknown",
+            "count": 39
+          }
+        ]
+      },
+      "MQ04": {
+        "all_pairs": 39,
+        "all_exact_matches": 39,
+        "all_exact_rate": 1.0,
+        "observed_pairs": 0,
+        "observed_exact_matches": 0,
+        "observed_exact_rate": null,
+        "excluded_pairs": 39,
+        "excluded_state_pairs": {
+          "unknown|unknown": 39
+        },
+        "missingness_disagreements": 0,
+        "joint_unobserved_pairs": 39,
+        "confusion": [
+          {
+            "a": "unknown",
+            "b": "unknown",
+            "count": 39
+          }
+        ]
+      },
+      "MQ05": {
+        "all_pairs": 39,
+        "all_exact_matches": 39,
+        "all_exact_rate": 1.0,
+        "observed_pairs": 0,
+        "observed_exact_matches": 0,
+        "observed_exact_rate": null,
+        "excluded_pairs": 39,
+        "excluded_state_pairs": {
+          "unknown|unknown": 39
+        },
+        "missingness_disagreements": 0,
+        "joint_unobserved_pairs": 39,
+        "confusion": [
+          {
+            "a": "unknown",
+            "b": "unknown",
+            "count": 39
+          }
+        ]
+      },
+      "MQ06": {
+        "all_pairs": 39,
+        "all_exact_matches": 39,
+        "all_exact_rate": 1.0,
+        "observed_pairs": 39,
+        "observed_exact_matches": 39,
+        "observed_exact_rate": 1.0,
+        "excluded_pairs": 0,
+        "excluded_state_pairs": {},
+        "missingness_disagreements": 0,
+        "joint_unobserved_pairs": 0,
+        "confusion": [
+          {
+            "a": "insufficient",
+            "b": "insufficient",
+            "count": 24
+          },
+          {
+            "a": "sufficient",
+            "b": "sufficient",
+            "count": 15
+          }
+        ]
+      },
+      "MQ07": {
+        "all_pairs": 39,
+        "all_exact_matches": 39,
+        "all_exact_rate": 1.0,
+        "observed_pairs": 0,
+        "observed_exact_matches": 0,
+        "observed_exact_rate": null,
+        "excluded_pairs": 39,
+        "excluded_state_pairs": {
+          "unknown|unknown": 39
+        },
+        "missingness_disagreements": 0,
+        "joint_unobserved_pairs": 39,
+        "confusion": [
+          {
+            "a": "unknown",
+            "b": "unknown",
+            "count": 39
+          }
+        ]
+      },
+      "MQ08": {
+        "all_pairs": 39,
+        "all_exact_matches": 39,
+        "all_exact_rate": 1.0,
+        "observed_pairs": 39,
+        "observed_exact_matches": 39,
+        "observed_exact_rate": 1.0,
+        "excluded_pairs": 0,
+        "excluded_state_pairs": {},
+        "missingness_disagreements": 0,
+        "joint_unobserved_pairs": 0,
+        "confusion": [
+          {
+            "a": "investigate",
+            "b": "investigate",
+            "count": 39
+          }
+        ]
+      }
+    },
+    "disagreements": [],
+    "spans": {
+      "denominator": 33,
+      "exact_matches": 33,
+      "exact_rate": 1.0,
+      "context_mismatches": 0,
+      "intersection_code_points": 230,
+      "a_code_points": 230,
+      "b_code_points": 230,
+      "micro_character_overlap_f1": 1.0,
+      "macro_character_overlap_f1": 1.0,
+      "policy": "Paired numeric value spans within a shared source item, revision, hash, evidence set and Unicode code-point basis; no source HTML reread or span truth validation.",
+      "items": [
+        {
+          "item_id": "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-cash_and_equivalents-FY2024-instant-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 7,
+          "a_code_points": 7,
+          "b_code_points": 7,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-cfo-FY2024-FY-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 7,
+          "a_code_points": 7,
+          "b_code_points": 7,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-cfo-FY2024-Q4-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 6,
+          "a_code_points": 6,
+          "b_code_points": 6,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-net_income-FY2024-FY-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 7,
+          "a_code_points": 7,
+          "b_code_points": 7,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-net_income-FY2024-Q4-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 7,
+          "a_code_points": 7,
+          "b_code_points": 7,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-operating_income-FY2024-FY-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 7,
+          "a_code_points": 7,
+          "b_code_points": 7,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-operating_income-FY2024-Q4-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 6,
+          "a_code_points": 6,
+          "b_code_points": 6,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-positive_cash_capex-FY2024-FY-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 8,
+          "a_code_points": 8,
+          "b_code_points": 8,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-positive_cash_capex-FY2024-Q4-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 8,
+          "a_code_points": 8,
+          "b_code_points": 8,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-revenue-FY2024-FY-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 7,
+          "a_code_points": 7,
+          "b_code_points": 7,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-revenue-FY2024-Q4-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 6,
+          "a_code_points": 6,
+          "b_code_points": 6,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-total_assets-FY2024-instant-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 8,
+          "a_code_points": 8,
+          "b_code_points": 8,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-SEG-IC-revenue-FY2024-FY-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 7,
+          "a_code_points": 7,
+          "b_code_points": 7,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-SEG-MPC-revenue-FY2024-FY-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 6,
+          "a_code_points": 6,
+          "b_code_points": 6,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-SEG-PBP-revenue-FY2024-FY-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 7,
+          "a_code_points": 7,
+          "b_code_points": 7,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-cash_and_equivalents-FY2025-instant-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 7,
+          "a_code_points": 7,
+          "b_code_points": 7,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-cfo-FY2025-FY-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 7,
+          "a_code_points": 7,
+          "b_code_points": 7,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-cfo-FY2025-Q4-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 6,
+          "a_code_points": 6,
+          "b_code_points": 6,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-net_income-FY2025-FY-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 8,
+          "a_code_points": 8,
+          "b_code_points": 8,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-net_income-FY2025-Q4-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 7,
+          "a_code_points": 7,
+          "b_code_points": 7,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-operating_income-FY2025-FY-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 7,
+          "a_code_points": 7,
+          "b_code_points": 7,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-operating_income-FY2025-Q4-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 6,
+          "a_code_points": 6,
+          "b_code_points": 6,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-positive_cash_capex-FY2025-FY-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 8,
+          "a_code_points": 8,
+          "b_code_points": 8,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-positive_cash_capex-FY2025-Q4-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 8,
+          "a_code_points": 8,
+          "b_code_points": 8,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-revenue-FY2025-FY-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 7,
+          "a_code_points": 7,
+          "b_code_points": 7,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-revenue-FY2025-Q4-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 6,
+          "a_code_points": 6,
+          "b_code_points": 6,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-total_assets-FY2025-instant-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 8,
+          "a_code_points": 8,
+          "b_code_points": 8,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-SEG-IC-revenue-FY2024-FY-comparative_prior_year",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 6,
+          "a_code_points": 6,
+          "b_code_points": 6,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-SEG-IC-revenue-FY2025-FY-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 7,
+          "a_code_points": 7,
+          "b_code_points": 7,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-SEG-MPC-revenue-FY2024-FY-comparative_prior_year",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 6,
+          "a_code_points": 6,
+          "b_code_points": 6,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-SEG-MPC-revenue-FY2025-FY-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 6,
+          "a_code_points": 6,
+          "b_code_points": 6,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-SEG-PBP-revenue-FY2024-FY-comparative_prior_year",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 8,
+          "a_code_points": 8,
+          "b_code_points": 8,
+          "character_overlap_f1": 1.0
+        },
+        {
+          "item_id": "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-SEG-PBP-revenue-FY2025-FY-current_period",
+          "same_context": true,
+          "exact": true,
+          "intersection_code_points": 8,
+          "a_code_points": 8,
+          "b_code_points": 8,
+          "character_overlap_f1": 1.0
+        }
+      ]
+    },
+    "review_readiness": {
+      "all_pairs": 39,
+      "all_exact_matches": 39,
+      "all_exact_rate": 1.0,
+      "observed_pairs": 39,
+      "observed_exact_matches": 39,
+      "observed_exact_rate": 1.0,
+      "excluded_pairs": 0,
+      "excluded_state_pairs": {},
+      "missingness_disagreements": 0,
+      "joint_unobserved_pairs": 0,
+      "confusion": [
+        {
+          "a": "needs_review",
+          "b": "needs_review",
+          "count": 39
+        }
+      ]
+    },
+    "counts": {
+      "annotation_rows": 78,
+      "assessment_rows": 78,
+      "paired_items": 39,
+      "numeric_claim_items": 33,
+      "relation_items": 6,
+      "unique_source_claim_ids": 33,
+      "documents": 2,
+      "events": 2,
+      "families": 2,
+      "human_annotation_rows": 0,
+      "human_paired_items": 0
+    }
+  },
+  "human_iaa": {
+    "annotation_rows": 0,
+    "paired_items": 0,
+    "score": null,
+    "reason": "No independent human annotations; agent outputs cannot estimate human IAA."
+  },
+  "interpretation": "Agreement of agent-authored deterministic outputs on the same preselected packets, guide and curator metadata; implementation consistency only, not extraction accuracy, independent human agreement, or external fact verification.",
+  "missing_policy": "All-state exact is descriptive only. Observed exact excludes either-side null, empty, unknown, not_applicable, not_assessed, unable_to_judge, and unresolved-prefixed labels. Empty lists and false/zero remain observed selected-table assertions. Fully observed tuples require every contract fact field observed on both sides.",
+  "limitations": [
+    "Adaptation data with disclosed future-context guide exposure",
+    "Original DOM not reopened; paired span agreement does not establish source truth",
+    "Constant-label fields and MQ responses cannot establish discriminative annotation quality",
+    "No kappa/alpha inferred from deterministic shared-input outputs; no human coefficients",
+    "Practice-exposed items are not independent test samples"
+  ],
+  "next_stage_authorized_by_this_report": false
+}

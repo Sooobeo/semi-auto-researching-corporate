@@ -1,0 +1,269 @@
+{
+  "stage": 5,
+  "checked_at": "2026-10-06T07:15:28.932171+00:00",
+  "reviewer": "independent_agent_metadata_lineage_graph_audit",
+  "gate": "passed_with_explicit_limitations",
+  "source_input_hashes": {
+    "artifacts/us_equity/p3/split_manifest.csv": "0ad8bb4da4f19898719a1600df12534c98eec2f2cc3fdad2e2107e0bb2d6f5a8",
+    "artifacts/us_equity/p3/split_policy.json": "78a67e94d1f5a319762f7d7718b10a7dfab772c313996182b153b38a542cdc6b",
+    "artifacts/us_equity/p0/available_20261005/document_manifest_v0_3.csv": "a4d2ffd35db473a1e88a0dac5d470328801212f0b63cffbc13e5ba89ad2d4915",
+    "artifacts/us_equity/p3/exposure_manifest.csv": "0f259ebcab3c4c8f4ac357332e5c3b26280a0659a1ded1b9b9ed356550d853c9",
+    "artifacts/us_equity/p3/event_families.csv": "c0cd570257cae1b90f41df30301a5f2ab811f690f7c98c17abb6bf238caa905c",
+    "artifacts/us_equity/p3/event_claim_links.csv": "d42d758353e9954451816ee5a16b69d1ce7005b813f3b53f07678814634eb8b5",
+    "artifacts/us_equity/p3/dependency_edges.csv": "8e9e99b4fdbfa5d998afd7eb2275712c47036b6da056abb17130b28b46c4909c",
+    "artifacts/us_equity/p3/source_reservation/document_manifest.json": "72b9019f77e7c0978603be237bfb82d296f8db636de4dd7b152c2b0ffb72dafc",
+    "artifacts/us_equity/p3/source_reservation/reservation_summary.json": "e558e8ada46e098aca51ef193ca19ee2f312247059811e4968034ec84f7aa6c0",
+    "artifacts/us_equity/p3/annotations_raw.jsonl": "0e67b69ce00b7c870f432dfb1c990889c8652d0249abe0a1763e43e741aea200",
+    "artifacts/us_equity/p3/gold_events.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/us_equity/p3/gold_relations.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "inputs_unchanged": true,
+  "code_sha256": "08143f0c17e3cdc76f72b07fd4a608ac379f45ed2e365ed75fbf65c16fe9c38d",
+  "result": {
+    "errors": [],
+    "counts": {
+      "rows": 43,
+      "annotation_items": 39,
+      "source_numeric_claims": 33,
+      "reporting_relations": 6,
+      "documents": 4,
+      "adaptation_rows": 42,
+      "reserved_rows": 1,
+      "adaptation_documents": 3,
+      "reserved_documents": 1,
+      "labeled_development_families": 2,
+      "reserved_unlabeled_families": 1,
+      "human_gold": 0,
+      "train_items": 0,
+      "dev_items": 0,
+      "test_items": 0
+    },
+    "lineage_components": [
+      {
+        "node_count": 42,
+        "splits": [
+          "adaptation"
+        ],
+        "groups": [
+          "LG-MSFT-EXPOSED-FY2024-FY2025-EARNINGS"
+        ],
+        "nodes": [
+          "US-MSFT-ANNUAL-FY2025-SCOPE-REFERENCE",
+          "US-MSFT-FY2024-Q4-RELEASE",
+          "US-MSFT-FY2024-Q4-RELEASE-REPORTS-IC",
+          "US-MSFT-FY2024-Q4-RELEASE-REPORTS-MPC",
+          "US-MSFT-FY2024-Q4-RELEASE-REPORTS-PBP",
+          "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-cash_and_equivalents-FY2024-instant-current_period",
+          "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-cfo-FY2024-FY-current_period",
+          "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-cfo-FY2024-Q4-current_period",
+          "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-net_income-FY2024-FY-current_period",
+          "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-net_income-FY2024-Q4-current_period",
+          "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-operating_income-FY2024-FY-current_period",
+          "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-operating_income-FY2024-Q4-current_period",
+          "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-positive_cash_capex-FY2024-FY-current_period",
+          "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-positive_cash_capex-FY2024-Q4-current_period",
+          "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-revenue-FY2024-FY-current_period",
+          "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-revenue-FY2024-Q4-current_period",
+          "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-total_assets-FY2024-instant-current_period",
+          "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-SEG-IC-revenue-FY2024-FY-current_period",
+          "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-SEG-MPC-revenue-FY2024-FY-current_period",
+          "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-SEG-PBP-revenue-FY2024-FY-current_period",
+          "US-MSFT-FY2025-Q4-RELEASE",
+          "US-MSFT-FY2025-Q4-RELEASE-REPORTS-IC",
+          "US-MSFT-FY2025-Q4-RELEASE-REPORTS-MPC",
+          "US-MSFT-FY2025-Q4-RELEASE-REPORTS-PBP",
+          "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-cash_and_equivalents-FY2025-instant-current_period",
+          "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-cfo-FY2025-FY-current_period",
+          "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-cfo-FY2025-Q4-current_period",
+          "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-net_income-FY2025-FY-current_period",
+          "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-net_income-FY2025-Q4-current_period",
+          "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-operating_income-FY2025-FY-current_period",
+          "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-operating_income-FY2025-Q4-current_period",
+          "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-positive_cash_capex-FY2025-FY-current_period",
+          "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-positive_cash_capex-FY2025-Q4-current_period",
+          "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-revenue-FY2025-FY-current_period",
+          "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-revenue-FY2025-Q4-current_period",
+          "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-total_assets-FY2025-instant-current_period",
+          "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-SEG-IC-revenue-FY2024-FY-comparative_prior_year",
+          "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-SEG-IC-revenue-FY2025-FY-current_period",
+          "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-SEG-MPC-revenue-FY2024-FY-comparative_prior_year",
+          "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-SEG-MPC-revenue-FY2025-FY-current_period",
+          "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-SEG-PBP-revenue-FY2024-FY-comparative_prior_year",
+          "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-SEG-PBP-revenue-FY2025-FY-current_period"
+        ]
+      },
+      {
+        "node_count": 1,
+        "splits": [
+          "reserved_unlabeled"
+        ],
+        "groups": [
+          "PENDING-US-MSFT-FY2026-Q1"
+        ],
+        "nodes": [
+          "US-MSFT-FY2026-Q1-RELEASE"
+        ]
+      }
+    ],
+    "scope_dependency_claims": 24,
+    "representation_overlap_edges": 3,
+    "relation_source_claim_links": 6,
+    "candidate_boundary_after": "2025-07-30",
+    "candidate_published_date": "2025-10-29",
+    "gold_file_line_counts": {
+      "gold_events.jsonl": 0,
+      "gold_relations.jsonl": 0
+    }
+  },
+  "negative_checks": {
+    "passed": 27,
+    "total": 27,
+    "cases": [
+      {
+        "name": "duplicate_manifest_row_rejected",
+        "passed": true,
+        "expected_error": "duplicate_split_row"
+      },
+      {
+        "name": "missing_manifest_item_rejected",
+        "passed": true,
+        "expected_error": "annotation_item_coverage_mismatch"
+      },
+      {
+        "name": "exposed_item_in_test_rejected",
+        "passed": true,
+        "expected_error": "exposed_document_outside_adaptation"
+      },
+      {
+        "name": "family_cross_split_rejected",
+        "passed": true,
+        "expected_error": "family_crosses_splits"
+      },
+      {
+        "name": "graph_group_split_rejected",
+        "passed": true,
+        "expected_error": "connected_lineage_crosses_groups"
+      },
+      {
+        "name": "exposure_status_erasure_rejected",
+        "passed": true,
+        "expected_error": "exposure_erased"
+      },
+      {
+        "name": "agent_label_marked_human_gold_rejected",
+        "passed": true,
+        "expected_error": "unsupported_human_gold"
+      },
+      {
+        "name": "invented_gold_file_row_rejected",
+        "passed": true,
+        "expected_error": "unsupported_gold_rows_present"
+      },
+      {
+        "name": "reserved_candidate_promoted_to_test_rejected",
+        "passed": true,
+        "expected_error": "reservation_promoted"
+      },
+      {
+        "name": "reserved_candidate_test_eligible_rejected",
+        "passed": true,
+        "expected_error": "unsupported_test_eligibility"
+      },
+      {
+        "name": "false_overlap_audit_claim_rejected",
+        "passed": true,
+        "expected_error": "reserved_policy_unjustified_promotion"
+      },
+      {
+        "name": "unknown_source_publication_imputed_rejected",
+        "passed": true,
+        "expected_error": "unknown_publication_imputed"
+      },
+      {
+        "name": "support_source_asof_eligibility_rejected",
+        "passed": true,
+        "expected_error": "support_historical_eligibility_invalid"
+      },
+      {
+        "name": "future_scope_as_current_fact_rejected",
+        "passed": true,
+        "expected_error": "future_scope_asof_fact_leak"
+      },
+      {
+        "name": "future_scope_lineage_dropped_rejected",
+        "passed": true,
+        "expected_error": "scope_dependency_lineage_dropped"
+      },
+      {
+        "name": "missing_scope_dependency_edge_rejected",
+        "passed": true,
+        "expected_error": "scope_dependency_edge_coverage_mismatch"
+      },
+      {
+        "name": "missing_representation_overlap_edge_rejected",
+        "passed": true,
+        "expected_error": "representation_overlap_edge_coverage_mismatch"
+      },
+      {
+        "name": "duplicate_dependency_edge_rejected",
+        "passed": true,
+        "expected_error": "duplicate_dependency_edge_id"
+      },
+      {
+        "name": "missing_duration_period_rejected",
+        "passed": true,
+        "expected_error": "unknown_or_invalid_reference_period"
+      },
+      {
+        "name": "wrong_duration_length_rejected",
+        "passed": true,
+        "expected_error": "duration_period_mismatch"
+      },
+      {
+        "name": "relation_link_to_wrong_scope_claim_rejected",
+        "passed": true,
+        "expected_error": "relation_claim_identity_mismatch"
+      },
+      {
+        "name": "relation_link_missing_claim_rejected",
+        "passed": true,
+        "expected_error": "relation_claim_reference_missing"
+      },
+      {
+        "name": "reporting_period_as_actual_validity_rejected",
+        "passed": true,
+        "expected_error": "reporting_period_promoted_to_business_validity"
+      },
+      {
+        "name": "annotation_answer_id_dropped_rejected",
+        "passed": true,
+        "expected_error": "annotation_id_reference_mismatch"
+      },
+      {
+        "name": "source_hash_tampering_rejected",
+        "passed": true,
+        "expected_error": "source_metadata_mismatch"
+      },
+      {
+        "name": "candidate_boundary_before_development_rejected",
+        "passed": true,
+        "expected_error": "candidate_boundary_mismatch"
+      },
+      {
+        "name": "legacy_korean_input_rejected",
+        "passed": true,
+        "expected_error": "legacy_korean_inputs_present"
+      }
+    ]
+  },
+  "method": "Standard-library independent reconstruction from source metadata, exposure, event/claim links and dependency edges; connected-component grouping; source annotation reference checks. Root split implementation not imported or read.",
+  "scope": "43 manifest rows are metadata/development lineage, not 43 independent events or evaluation examples.",
+  "limitations": [
+    "Reserved FY2026 Q1 body, numbers and private source were not opened; overlap remains unaudited",
+    "A later publication date and provisional group do not establish independent test eligibility",
+    "Human gold, train, dev and test allocations remain zero",
+    "Support publication is unknown; the 24 retrospective scope dependencies cannot serve as historical facts",
+    "Reservation separation is procedural; no OS access-control isolation verified",
+    "No network access or source-rights expansion performed"
+  ]
+}

@@ -1,0 +1,3 @@
+event_family_id,event_id,event_type,company_id,doc_id,published_date,numeric_claim_count,relation_claim_count,split,leakage_group_id,grouping_basis,status
+US-MSFT-FY2024-Q4-EARNINGS,EV-US-MSFT-FY2024-Q4-EARNINGS,earnings_release,US-MSFT,US-MSFT-FY2024-Q4-RELEASE,2024-07-30,15,3,adaptation,LG-MSFT-EXPOSED-FY2024-FY2025-EARNINGS,same_company_earnings_announcement; atomic_claims_preserved,agent_structural_grouping_not_human_gold
+US-MSFT-FY2025-Q4-EARNINGS,EV-US-MSFT-FY2025-Q4-EARNINGS,earnings_release,US-MSFT,US-MSFT-FY2025-Q4-RELEASE,2025-07-30,18,3,adaptation,LG-MSFT-EXPOSED-FY2024-FY2025-EARNINGS,same_company_earnings_announcement; atomic_claims_preserved,agent_structural_grouping_not_human_gold

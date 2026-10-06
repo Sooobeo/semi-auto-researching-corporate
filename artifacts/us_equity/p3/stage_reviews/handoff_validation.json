@@ -1,0 +1,99 @@
+{
+  "checked_at": "2026-10-06T07:12:18.587684+00:00",
+  "status": "failed",
+  "records": 39,
+  "numeric_records": 33,
+  "relation_records": 6,
+  "errors": [
+    "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-revenue-FY2024-Q4-current_period:registry_entity",
+    "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-operating_income-FY2024-Q4-current_period:registry_entity",
+    "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-net_income-FY2024-Q4-current_period:registry_entity",
+    "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-cfo-FY2024-Q4-current_period:registry_entity",
+    "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-positive_cash_capex-FY2024-Q4-current_period:registry_entity",
+    "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-revenue-FY2024-FY-current_period:registry_entity",
+    "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-operating_income-FY2024-FY-current_period:registry_entity",
+    "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-net_income-FY2024-FY-current_period:registry_entity",
+    "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-cfo-FY2024-FY-current_period:registry_entity",
+    "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-positive_cash_capex-FY2024-FY-current_period:registry_entity",
+    "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-total_assets-FY2024-instant-current_period:registry_entity",
+    "US-MSFT-FY2024-Q4-RELEASE-US-MSFT-CONSOLIDATED-cash_and_equivalents-FY2024-instant-current_period:registry_entity",
+    "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-revenue-FY2025-Q4-current_period:registry_entity",
+    "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-operating_income-FY2025-Q4-current_period:registry_entity",
+    "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-net_income-FY2025-Q4-current_period:registry_entity",
+    "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-cfo-FY2025-Q4-current_period:registry_entity",
+    "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-positive_cash_capex-FY2025-Q4-current_period:registry_entity",
+    "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-revenue-FY2025-FY-current_period:registry_entity",
+    "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-operating_income-FY2025-FY-current_period:registry_entity",
+    "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-net_income-FY2025-FY-current_period:registry_entity",
+    "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-cfo-FY2025-FY-current_period:registry_entity",
+    "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-positive_cash_capex-FY2025-FY-current_period:registry_entity",
+    "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-total_assets-FY2025-instant-current_period:registry_entity",
+    "US-MSFT-FY2025-Q4-RELEASE-US-MSFT-CONSOLIDATED-cash_and_equivalents-FY2025-instant-current_period:registry_entity"
+  ],
+  "negative_cases": [
+    {
+      "case": "double_million",
+      "passed": true,
+      "expected": "numeric_representation"
+    },
+    {
+      "case": "base_value_replaced_with_source_value",
+      "passed": true,
+      "expected": "numeric_representation"
+    },
+    {
+      "case": "base_value_used_as_source_value",
+      "passed": true,
+      "expected": "numeric_representation"
+    },
+    {
+      "case": "cash_outflow_sign_lost",
+      "passed": true,
+      "expected": "raw_sign_policy"
+    },
+    {
+      "case": "wrong_source_claim",
+      "passed": true,
+      "expected": "source_identity"
+    },
+    {
+      "case": "reverse_relation",
+      "passed": true,
+      "expected": "relation_direction"
+    },
+    {
+      "case": "invent_validity",
+      "passed": true,
+      "expected": "invented_relation_validity"
+    },
+    {
+      "case": "missing_evidence",
+      "passed": true,
+      "expected": "evidence_link"
+    },
+    {
+      "case": "fake_human_gold",
+      "passed": true,
+      "expected": "human_gold_overclaim"
+    },
+    {
+      "case": "exposed_test",
+      "passed": true,
+      "expected": "development_exposure"
+    },
+    {
+      "case": "invent_exact_time",
+      "passed": true,
+      "expected": "publication_precision"
+    },
+    {
+      "case": "wrong_original_annotation",
+      "passed": true,
+      "expected": "original_annotation_link"
+    }
+  ],
+  "code_sha256": "f4961d9c7fe160ed64d6ab1eb127d0b544d66444b06c40e9ca55cb806741a472",
+  "reserved_content_read": false,
+  "human_gold": 0,
+  "scope": "Contract-to-reviewed adapter, IDs, units/sign, provenance, registry, exposure and absent-human-gold checks; not a new source truth audit."
+}

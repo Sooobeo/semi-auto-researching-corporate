@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-10-06T05:36:22.249722+00:00",
+  "inputs": [
+    {
+      "path": "artifacts/us_equity/p0/available_20261005/facts_v0_3.jsonl",
+      "sha256": "9da66d8defbe80a58a9583a2ad2c57bd78dbc7cfb54a8ed230752b8ab030ba05"
+    },
+    {
+      "path": "artifacts/us_equity/p0/available_20261005/document_manifest_v0_3.csv",
+      "sha256": "a4d2ffd35db473a1e88a0dac5d470328801212f0b63cffbc13e5ba89ad2d4915"
+    },
+    {
+      "path": "artifacts/us_equity/p0/available_20261005/extraction_audit_v0_3.csv",
+      "sha256": "a6187bb89f2723423dd9d008fd83fda71c967a2500b058eafdbdd24879bd8f4b"
+    },
+    {
+      "path": "artifacts/us_equity/p0/available_20261005/source_registry.csv",
+      "sha256": "39b43e07bd4f90ef8ef93416bcd54e53a8d8bf361bd80d81311f53f29312234b"
+    },
+    {
+      "path": "artifacts/us_equity/p0/available_20261005/source_conditions.md",
+      "sha256": "fb562c431460433b3bd1b1d4effb11bfc5b8b00a96ad66ef293facb7d2f5532a"
+    },
+    {
+      "path": "artifacts/us_equity/p0/available_20261005/scope_corroboration.json",
+      "sha256": "e08d6fa1e22ea1b322f82b257a670ee099cc016011707d07f309d49d2832b331"
+    },
+    {
+      "path": "artifacts/us_equity/p2/business_relations.jsonl",
+      "sha256": "2175a42b41980c0767d65479ead70c06fab71b58e4d3ddf4072b32a7029cbb18"
+    },
+    {
+      "path": "artifacts/us_equity/p2/registry_v0.1_manifest.json",
+      "sha256": "dfad7ce5f6671bda639f2621711b5d9126b93903483f766cd83bfc105bef7103"
+    },
+    {
+      "path": "artifacts/us_equity/p2/entity_catalog.csv",
+      "sha256": "690347b8d37b46a40fc4138cf87e734c172f86c2344bd1a1874ae65171b3136c"
+    },
+    {
+      "path": "artifacts/us_equity/p2/metric_catalog.csv",
+      "sha256": "d6d6632798cfb559aacae90838b6a8c105e48eccc6b4d1458cd56d0af1800b7b"
+    },
+    {
+      "path": "artifacts/us_equity/p2/definition_history.csv",
+      "sha256": "0df256e34704f89070f41099826d244d7996c2ffd3f12b617fe41d3c25ce8530"
+    },
+    {
+      "path": "artifacts/us_equity/p2/applied_002/comparability_results.jsonl",
+      "sha256": "ca2418b0874053b5a7cd0b3dc87856094eb31c48493b2002015e18f5fa307644"
+    },
+    {
+      "path": "artifacts/us_equity/p1/event_schema_v0.1.json",
+      "sha256": "a738b85f769df93e267c94cdf2b8d70f3fb811ba72455ce32eddc1ceb81aa2f3"
+    },
+    {
+      "path": "artifacts/us_equity/p1/annotation_guide_v0.1.md",
+      "sha256": "b5532d25db22603b206ec23bf571be7297641f5fdd8c9f790a090da69855acf1"
+    }
+  ],
+  "legacy_inputs": [],
+  "source_revision": "v0_3",
+  "registry_version": "us-p2-0.1.0"
+}

@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-10-06T05:46:46.940085+00:00",
+  "source_manifest": "artifacts\\us_equity\\p0\\available_20261005\\document_manifest_v0_3.csv",
+  "source_manifest_sha256": "a4d2ffd35db473a1e88a0dac5d470328801212f0b63cffbc13e5ba89ad2d4915",
+  "schema_version": "1.0.0-agent-pilot",
+  "source_numeric_claims": 33,
+  "relation_records": 6,
+  "record_count": 39,
+  "evidence_count": 84,
+  "packet_count": 39,
+  "input_paths": [
+    "artifacts\\us_equity\\p2\\applied_002\\normalized_claims.jsonl",
+    "artifacts\\us_equity\\p2\\business_relations.jsonl",
+    "artifacts\\us_equity\\p3\\event_claim_links.csv"
+  ],
+  "original_prose_exported": false,
+  "reserved_content_opened": false,
+  "outputs": {
+    "event_schema_v1.json": "9a05f8a8b0d82a53035c8980eaa7a85694cd4d586ee2d7831f934346a058a5af",
+    "contract_records.jsonl": "1dfaff796041fe9bb9b88ad4767b5f76f75798f6756d3cf3334b212776c533e9",
+    "evidence_index.jsonl": "211b889d6315231ba3c9e6de56b1bb20a1a2b8bdf90e1387648c4fbdb940240b",
+    "source_packets.jsonl": "55abb3f80dca1845165e4bcb477c2e64f44cc8c4a8075bd766499d77e300da2a",
+    "annotation_reference.json": "d6a1c10c6c28e8db1d365d5c7e784ae130cd1233a055a717b5489694fc6c4d84",
+    "schema_migration.md": "6ce63be920aa179a9d0e6ca5ac460e3acda8e9b0f64216a164a1e93ef14eaafd"
+  }
+}

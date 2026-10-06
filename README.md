@@ -2,7 +2,7 @@
 
 **새로운 기업정보에서 달라진 점을 찾아, 사람이 검토할 가치가 있는 사건을 선별하는 Research Triage 프로젝트**
 
-> **현재 작업 방향(2026-10-05):** [structure](structure/README.md)의 미국 기업 신규 프로젝트가 기준입니다. 아래 한국기업 기획은 이전 범위의 설명이며 새 입력·검증·평가에 적용하지 않습니다. [최신 P03 실행 브리핑](artifacts/us_equity/p2/execution_briefing.md)에 Microsoft 공식 자료의 숫자 33건·비교 21쌍과 확보 범위의 등록부 결과를 기록했습니다. [앞선 P01·P02 기록](artifacts/us_equity/execution_briefing.md)은 당시 출처 조사·스키마 초안 이력입니다.
+> **현재 작업 방향(2026-10-06):** [structure](structure/README.md)의 미국 기업 신규 프로젝트가 기준입니다. 아래 한국기업 기획은 이전 범위의 설명이며 새 입력·검증·평가에 적용하지 않습니다. [최신 P04 실행 브리핑](artifacts/us_equity/p3/execution_briefing.md)에 39항목의 agent 이중 주석·검토, adaptation 분할과 신규 미라벨 예약 1문서를 기록했습니다. 인간 gold·독립 test는 0건입니다. [P03 기록](artifacts/us_equity/p2/execution_briefing.md)은 숫자 33건·비교 21쌍과 등록부 결과, [P01·P02 기록](artifacts/us_equity/execution_briefing.md)은 출처 조사·스키마 초안 이력입니다.
 
 뉴스·공시·IR 자료에서 기업, 지표, 수치, 기간, 사건을 구조화하고 기존 정보와 비교합니다. 검토자는 원문 근거가 연결된 **Review Card**를 통해 무엇이 달라졌고 어떤 가정을 확인해야 하는지 파악할 수 있습니다.
 

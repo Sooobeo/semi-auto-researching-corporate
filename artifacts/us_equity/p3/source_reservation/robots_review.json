@@ -1,0 +1,11 @@
+{
+  "checked_on_client_date": "2026-10-06",
+  "checked_at": "2026-10-06T05:39:09.679727+00:00",
+  "robots_url": "https://www.microsoft.com/robots.txt",
+  "robots_sha256": "79a2a24e3e2c00deaba2fc1922b9113f5508e74133911eadea4ebb00b5de9768",
+  "user_agent": "semi-auto-researching-corporate/0.1 (personal noncommercial factual reference)",
+  "terms_allowed_by_robots": true,
+  "candidate_allowed_by_robots": true,
+  "minimum_interval_seconds": 2.0,
+  "robots_does_not_establish_storage_or_ai_rights": true
+}

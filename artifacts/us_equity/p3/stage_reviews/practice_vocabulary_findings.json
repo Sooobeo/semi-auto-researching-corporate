@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-10-06T06:07:22.574576+00:00",
+  "prior_practice_structural_and_source_review": "practice_check_001.json",
+  "gap": "v1.1 omitted question response enums; source verification alone did not reject out-of-vocabulary assessment labels",
+  "observed": {
+    "AGENT-A": {
+      "MQ06": "partially_supported",
+      "MQ08": "investigate"
+    },
+    "AGENT-B": {
+      "MQ06": "partially_supported",
+      "MQ08": "investigate_then_defer"
+    }
+  },
+  "improvement": "guide/contract1.2 explicit enum enforcement and fresh practice revision; preserve initial records",
+  "specific_item_answers_shared": false
+}

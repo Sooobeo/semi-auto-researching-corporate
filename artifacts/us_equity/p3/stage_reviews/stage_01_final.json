@@ -1,0 +1,32 @@
+{
+  "stage": 1,
+  "checked_at": "2026-10-06T05:40:19.083867+00:00",
+  "gate": "passed_with_explicit_limitations",
+  "checks": {
+    "numeric_claim_mapping_33_of_33": true,
+    "relation_source_claims_6_of_6": true,
+    "stable_existing_event_ids": true,
+    "comparatives_remain_later_publication": true,
+    "exposure_documents_3_of_3": true,
+    "support_doc_excluded_from_event_quota": true,
+    "scope_dependency_edges_24": true,
+    "representation_overlap_edges_3": true,
+    "source_hashes_unchanged": true,
+    "all_existing_documents_adaptation": true
+  },
+  "source_reservation_summary_sha256": "e558e8ada46e098aca51ef193ca19ee2f312247059811e4968034ec84f7aa6c0",
+  "counts": {
+    "source_numeric_claims": 33,
+    "relation_records": 6,
+    "annotation_items": 39,
+    "events_agent_grouped": 2,
+    "human_gold": 0,
+    "human_annotation_time_measured": false
+  },
+  "limitations": [
+    "Human sampling workload and adjudication unmeasured",
+    "Coverage gaps remain explicit",
+    "Reserved new document is unlabeled, not certified test data"
+  ],
+  "next_stage": 2
+}

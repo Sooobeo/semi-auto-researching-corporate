@@ -1,0 +1,44 @@
+{
+  "version": "p04-reference-1",
+  "company_id": "US-MSFT",
+  "company_name": "Microsoft Corporation",
+  "company_scope_id": "US-MSFT-CONSOLIDATED",
+  "metric_label_to_id": {
+    "Total revenue": "revenue",
+    "Operating income": "operating_income",
+    "Net income": "net_income",
+    "Net cash from operations": "cfo",
+    "Additions to property and equipment": "positive_cash_capex",
+    "Total assets": "total_assets",
+    "Cash and cash equivalents": "cash_and_equivalents"
+  },
+  "segment_label_to_entity_id": {
+    "Productivity and Business Processes": "US-MSFT-SEG-PBP",
+    "Intelligent Cloud": "US-MSFT-SEG-IC",
+    "More Personal Computing": "US-MSFT-SEG-MPC"
+  },
+  "segment_table_metric_id": "revenue",
+  "fiscal_calendar": {
+    "year_end_month": 6,
+    "year_end_day": 30,
+    "annual_start": "previous year July 1",
+    "Q4_start": "same year April 1"
+  },
+  "scope_dependencies": [
+    {
+      "record_id": "US-MSFT-ANNUAL-FY2025-SCOPE-REFERENCE",
+      "published_date": null,
+      "observed_at": "2026-10-05T12:31:51.408141+00:00",
+      "sha256": "564154a15ac28c0f7f72f304ae26b74c29cfca9f3eafe8d59595776769d621ca",
+      "use_policy": "current-only scope corroboration; not available at release cutoff"
+    }
+  ],
+  "derived_rules": [
+    "USD millions multiply by 1000000 exactly",
+    "parentheses denote negative raw value",
+    "cash PP&E additions outflows map to positive cash capex by negation",
+    "instant uses as_of_date and null duration",
+    "segment presentation definition follows source release year, including comparative columns"
+  ],
+  "label_status": "agent_reference_not_gold"
+}

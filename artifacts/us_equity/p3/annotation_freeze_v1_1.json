@@ -1,0 +1,36 @@
+{
+  "frozen_at": "2026-10-06T06:01:57.289089+00:00",
+  "guide_version": "us-p3-guide-1.1",
+  "previous_freeze_sha256": "c924130abe00a5976b3e7c27e74e1cd63ee6c4baa354df5f6714079d5a45a8d6",
+  "reason": "prepractice_annotator_questions_resolved_by_shared_enums_no_answers",
+  "files": [
+    {
+      "path": "annotation_guide_v1_1.md",
+      "sha256": "88809dfac03470cf7647f8c4034df3298464c7d7fc7e5832b498e50331e44b38"
+    },
+    {
+      "path": "annotation_output_contract_v1_1.json",
+      "sha256": "bced0f2143b723300ef9c32f6528bc5e96d3e391937e80b61b56d381e1ed53f7"
+    },
+    {
+      "path": "annotation_clarifications_v1_1.json",
+      "sha256": "574154098d330dbab351a451cfcf07acb92bf8001b5a3e7110ae461b939fb662"
+    },
+    {
+      "path": "annotation_reference.json",
+      "sha256": "d6a1c10c6c28e8db1d365d5c7e784ae130cd1233a055a717b5489694fc6c4d84"
+    },
+    {
+      "path": "source_packets.jsonl",
+      "sha256": "55abb3f80dca1845165e4bcb477c2e64f44cc8c4a8075bd766499d77e300da2a"
+    },
+    {
+      "path": "evidence_index.jsonl",
+      "sha256": "211b889d6315231ba3c9e6de56b1bb20a1a2b8bdf90e1387648c4fbdb940240b"
+    },
+    {
+      "path": "practice_selection.json",
+      "sha256": "6552e6185605fb05a463f54abdf17aeec423e1389415f027650312ed207ee323"
+    }
+  ]
+}

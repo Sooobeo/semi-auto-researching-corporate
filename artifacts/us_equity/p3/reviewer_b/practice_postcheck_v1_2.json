@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-06T06:17:02.488275+00:00",
+  "annotation_count": 8,
+  "assessment_count": 8,
+  "errors": [],
+  "original_output_hashes_match_execution": {
+    "practice_annotations.jsonl": true,
+    "practice_assessments.jsonl": true,
+    "practice_selfreview.json": true,
+    "practice_script_snapshot.py": true
+  },
+  "current_validator_sha256": "9d1010ab68cd163abdf4c78c37ff6be6d494c9eea8ab2630e78668f23c8f9734",
+  "main_output_exists": false,
+  "mq06_counts": {
+    "sufficient": 4,
+    "insufficient": 4
+  },
+  "mq08_investigate_count": 8
+}

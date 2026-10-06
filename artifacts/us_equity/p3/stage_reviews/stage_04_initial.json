@@ -1,0 +1,11 @@
+{
+  "stage": 4,
+  "checked_at": "2026-10-06T06:21:18.603050+00:00",
+  "status": "awaiting_independent_recalculation",
+  "tuple_exact": 39,
+  "tuple_pairs": 39,
+  "field_mismatches": 0,
+  "adjudications": 39,
+  "unresolved_rows": 78,
+  "human_gold": 0
+}

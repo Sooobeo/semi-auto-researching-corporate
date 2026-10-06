@@ -1,0 +1,2122 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0-agent-pilot"
+    },
+    "record_kind": {
+      "enum": [
+        "event_claim",
+        "business_relation"
+      ]
+    },
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "record_revision_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_revision_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "event_family_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "relation_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "relation_revision_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "example_kind": {
+      "enum": [
+        "source_supported",
+        "synthetic"
+      ]
+    },
+    "annotation_status": {
+      "enum": [
+        "agent_draft",
+        "independent_human",
+        "adjudicated",
+        "synthetic_fixture"
+      ]
+    },
+    "exposure_status": {
+      "enum": [
+        "adaptation",
+        "practice",
+        "train",
+        "dev",
+        "test",
+        "embargo",
+        "unassigned",
+        "synthetic"
+      ]
+    },
+    "registry_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model_version": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "supersedes_record_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "follow_up_of_family_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "provenance": {
+      "$ref": "#/$defs/provenance"
+    },
+    "raw": {
+      "$ref": "#/$defs/raw"
+    },
+    "normalized": {
+      "type": "object"
+    },
+    "assessment": {
+      "$ref": "#/$defs/assessment"
+    },
+    "derived": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/calculation"
+      },
+      "minItems": 0
+    },
+    "guide_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_record_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "human_gold": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "record_kind",
+    "record_id",
+    "record_revision_id",
+    "claim_id",
+    "claim_revision_id",
+    "event_id",
+    "event_family_id",
+    "relation_id",
+    "relation_revision_id",
+    "example_kind",
+    "annotation_status",
+    "exposure_status",
+    "registry_version",
+    "model_version",
+    "run_id",
+    "supersedes_record_id",
+    "follow_up_of_family_id",
+    "provenance",
+    "raw",
+    "normalized",
+    "assessment",
+    "derived",
+    "guide_version",
+    "source_record_ref",
+    "human_gold"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:semi-auto-researching-corporate:us-equity:p04:1.0.0-agent-pilot",
+  "title": "P04 agent pilot contract; human gold is absent",
+  "description": "P02 v0.1 minimally extended for the observed P03 source cells and reporting membership.",
+  "$defs": {
+    "missing_reason": {
+      "enum": [
+        "not_disclosed",
+        "not_found",
+        "ambiguous",
+        "not_applicable",
+        "parse_failed",
+        "incompatible",
+        "not_yet_checked"
+      ]
+    },
+    "missing_reasons": {
+      "type": "object",
+      "additionalProperties": {
+        "enum": [
+          "not_disclosed",
+          "not_found",
+          "ambiguous",
+          "not_applicable",
+          "parse_failed",
+          "incompatible",
+          "not_yet_checked"
+        ]
+      }
+    },
+    "decimal": {
+      "type": "string",
+      "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?$"
+    },
+    "period": {
+      "type": "object",
+      "properties": {
+        "period_start": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "period_end": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "as_of_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "period_basis": {
+          "enum": [
+            "fiscal",
+            "calendar",
+            "other",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "period_kind": {
+          "enum": [
+            "quarter",
+            "ytd",
+            "annual",
+            "instant",
+            "other",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "fiscal_year": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1900,
+              "maximum": 2200
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fiscal_quarter": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "duration_days": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "missing_reason": {
+          "anyOf": [
+            {
+              "enum": [
+                "not_disclosed",
+                "not_found",
+                "ambiguous",
+                "not_applicable",
+                "parse_failed",
+                "incompatible",
+                "not_yet_checked"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "period_start",
+        "period_end",
+        "as_of_date",
+        "period_basis",
+        "period_kind",
+        "fiscal_year",
+        "fiscal_quarter",
+        "duration_days",
+        "missing_reason"
+      ],
+      "additionalProperties": false
+    },
+    "temporal": {
+      "type": "object",
+      "properties": {
+        "published_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "published_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "time_precision": {
+          "enum": [
+            "second",
+            "minute",
+            "date",
+            "unknown"
+          ]
+        },
+        "timezone": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "utc_offset": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[+-](?:0[0-9]|1[0-4]):[0-5][0-9]$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "publication_evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "reference_period": {
+          "$ref": "#/$defs/period"
+        },
+        "effective_period": {
+          "$ref": "#/$defs/period"
+        },
+        "observed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "available_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "availability_policy": {
+          "enum": [
+            "publication_verified",
+            "observation_as_of",
+            "date_only_boundary",
+            "unknown"
+          ]
+        },
+        "availability_evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "date_conflict_status": {
+          "enum": [
+            "none_observed",
+            "unresolved",
+            "not_yet_checked"
+          ]
+        }
+      },
+      "required": [
+        "published_at",
+        "published_date",
+        "time_precision",
+        "timezone",
+        "utc_offset",
+        "publication_evidence_refs",
+        "reference_period",
+        "effective_period",
+        "observed_at",
+        "available_at",
+        "availability_policy",
+        "availability_evidence_refs",
+        "date_conflict_status"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "time_precision": {
+                "enum": [
+                  "date",
+                  "unknown"
+                ]
+              }
+            },
+            "required": [
+              "time_precision"
+            ]
+          },
+          "then": {
+            "properties": {
+              "published_at": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "published_at": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "evidence_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "doc_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "block_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "location_type": {
+          "enum": [
+            "xpath",
+            "table_cell",
+            "page",
+            "api_field",
+            "synthetic",
+            "unlocated"
+          ]
+        },
+        "location": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "location_status": {
+          "enum": [
+            "verified",
+            "unverified",
+            "unlocated",
+            "synthetic"
+          ]
+        },
+        "start": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "end": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "offset_unit": {
+          "const": "unicode_code_point"
+        },
+        "offset_interval": {
+          "const": "0-based-[start,end)"
+        },
+        "offset_mapping": {
+          "enum": [
+            "identity",
+            "verified_mapping",
+            "not_available",
+            "not_applicable"
+          ]
+        },
+        "selected_text": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "table_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "row_index": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "col_index": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "header_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "note_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "evidence_id",
+        "doc_id",
+        "revision_id",
+        "block_id",
+        "location_type",
+        "location",
+        "location_status",
+        "start",
+        "end",
+        "offset_unit",
+        "offset_interval",
+        "offset_mapping",
+        "selected_text",
+        "table_id",
+        "row_index",
+        "col_index",
+        "header_refs",
+        "note_refs"
+      ],
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "final_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "rights_basis_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rights_check_status": {
+          "enum": [
+            "verified_for_this_use",
+            "unresolved",
+            "synthetic"
+          ]
+        },
+        "storage_policy": {
+          "enum": [
+            "allowed",
+            "conditional",
+            "prohibited",
+            "unresolved",
+            "synthetic"
+          ]
+        },
+        "ai_input_policy": {
+          "enum": [
+            "allowed",
+            "conditional",
+            "prohibited",
+            "unresolved",
+            "synthetic"
+          ]
+        },
+        "external_transfer_policy": {
+          "enum": [
+            "allowed",
+            "conditional",
+            "prohibited",
+            "unresolved",
+            "synthetic"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          },
+          "minItems": 1
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "source_parser_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_schema_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_normalization_revision_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "doc_id",
+        "revision_id",
+        "source_id",
+        "source_url",
+        "final_url",
+        "rights_basis_ref",
+        "rights_check_status",
+        "storage_policy",
+        "ai_input_policy",
+        "external_transfer_policy",
+        "evidence",
+        "source_sha256",
+        "source_parser_version",
+        "source_schema_version",
+        "source_normalization_revision_id"
+      ],
+      "additionalProperties": false
+    },
+    "raw": {
+      "type": "object",
+      "properties": {
+        "claim_text": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "action_raw": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "metric_raw": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "value_raw": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "unit_raw": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "line_item_raw": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "speaker_raw": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "time_raw": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "source_evidence_status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_period_start_derivation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_effective_period": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "start": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "end": {
+                  "type": "string",
+                  "format": "date"
+                }
+              },
+              "required": [
+                "start",
+                "end"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "claim_text",
+        "action_raw",
+        "metric_raw",
+        "value_raw",
+        "unit_raw",
+        "line_item_raw",
+        "speaker_raw",
+        "time_raw",
+        "source_evidence_status",
+        "source_period_start_derivation",
+        "source_effective_period"
+      ],
+      "additionalProperties": false
+    },
+    "financial_context": {
+      "type": "object",
+      "properties": {
+        "statement_type": {
+          "enum": [
+            "balance_sheet",
+            "income_statement",
+            "cash_flow",
+            "equity",
+            "note",
+            "md_and_a",
+            "other",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "balance_or_flow": {
+          "enum": [
+            "balance",
+            "flow",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "period_duration": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "note_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "concept_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "adjustment_component_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "statement_type",
+        "balance_or_flow",
+        "period_duration",
+        "note_refs",
+        "concept_ids",
+        "adjustment_component_refs"
+      ],
+      "additionalProperties": false
+    },
+    "assessment": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "assessment_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "author_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "author_kind": {
+              "enum": [
+                "agent_draft",
+                "independent_human",
+                "human_review",
+                "adjudicated"
+              ]
+            },
+            "created_at": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "as_of": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "review_readiness": {
+              "enum": [
+                "supported",
+                "needs_review",
+                "not_comparable"
+              ]
+            },
+            "readiness_reasons": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "uncertainty_reason": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "questions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "question_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "response": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "rationale": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "evidence_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "minItems": 0
+                  }
+                },
+                "required": [
+                  "question_id",
+                  "response",
+                  "rationale",
+                  "evidence_refs"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 0
+            },
+            "business_financial_interpretation": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "assessment_id",
+            "author_id",
+            "author_kind",
+            "created_at",
+            "as_of",
+            "review_readiness",
+            "readiness_reasons",
+            "uncertainty_reason",
+            "questions",
+            "business_financial_interpretation"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "calculation": {
+      "type": "object",
+      "properties": {
+        "calculation_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "formula_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "formula_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "input_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "output": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "output_unit": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "calculation_status": {
+          "enum": [
+            "computed",
+            "insufficient_inputs",
+            "incompatible_inputs",
+            "invalid_formula",
+            "error"
+          ]
+        },
+        "missing_inputs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "rounding_policy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calculated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "prepared_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reviewed_by": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "model_output_seen_before_work": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "calculation_id",
+        "formula_id",
+        "formula_version",
+        "input_refs",
+        "output",
+        "output_unit",
+        "calculation_status",
+        "missing_inputs",
+        "rounding_policy",
+        "calculated_at",
+        "prepared_by",
+        "reviewed_by",
+        "model_output_seen_before_work"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "calculation_status": {
+                "const": "computed"
+              }
+            },
+            "required": [
+              "calculation_status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "output": {
+                "type": "string",
+                "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?$"
+              },
+              "missing_inputs": {
+                "maxItems": 0
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "output": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "event_normalized": {
+      "type": "object",
+      "properties": {
+        "company_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "scope_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "modality": {
+          "enum": [
+            "actual_reported",
+            "plan",
+            "forecast",
+            "possibility",
+            "denial",
+            "unknown"
+          ]
+        },
+        "negation": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "temporal": {
+          "$ref": "#/$defs/temporal"
+        },
+        "evidence_status": {
+          "enum": [
+            "company_reported",
+            "source_reported",
+            "externally_verified",
+            "unresolved",
+            "synthetic"
+          ]
+        },
+        "extraction_status": {
+          "enum": [
+            "complete",
+            "partial",
+            "unresolved"
+          ]
+        },
+        "field_missing_reasons": {
+          "$ref": "#/$defs/missing_reasons"
+        },
+        "event_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "product_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "actor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "entity_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "relation_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "metric_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "metric_mapping_candidates": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "numeric_value": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "value_kind": {
+          "enum": [
+            "point",
+            "range",
+            "relative_change",
+            "absolute_change",
+            "rate",
+            "share",
+            "qualitative",
+            "unknown"
+          ]
+        },
+        "lower": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "upper": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "missing_reason": {
+          "anyOf": [
+            {
+              "enum": [
+                "not_disclosed",
+                "not_found",
+                "ambiguous",
+                "not_applicable",
+                "parse_failed",
+                "incompatible",
+                "not_yet_checked"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "direction": {
+          "enum": [
+            "increase",
+            "decrease",
+            "unchanged",
+            "mixed",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "canonical_unit": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "currency": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Z]{3}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "scale": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "accounting_basis": {
+          "enum": [
+            "GAAP",
+            "non_GAAP",
+            "other",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "adjustment_definition": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "consolidation": {
+          "enum": [
+            "consolidated",
+            "separate",
+            "segment",
+            "unknown"
+          ]
+        },
+        "financial_context": {
+          "$ref": "#/$defs/financial_context"
+        },
+        "comparison_basis": {
+          "enum": [
+            "yoy",
+            "qoq",
+            "previous_plan",
+            "previous_guidance",
+            "previous_statement",
+            "share_denominator",
+            "none",
+            "unknown"
+          ]
+        },
+        "denominator": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "prior_claim_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "prior_state_status": {
+          "enum": [
+            "not_yet_checked",
+            "prior_not_found",
+            "candidate_found",
+            "comparable_prior",
+            "repeated",
+            "not_applicable"
+          ]
+        },
+        "definition_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "availability_dependencies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "record_id",
+              "available_at",
+              "availability_basis"
+            ],
+            "properties": {
+              "record_type": {
+                "type": "string",
+                "minLength": 1
+              },
+              "record_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "published_date": {
+                "type": "null"
+              },
+              "available_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "observed_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "availability_basis": {
+                "const": "observed_conservative"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "source_scale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_numeric_value": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sign_policy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "occurrence_note": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "company_id",
+        "scope_id",
+        "modality",
+        "negation",
+        "conditions",
+        "temporal",
+        "evidence_status",
+        "extraction_status",
+        "field_missing_reasons",
+        "event_type",
+        "product_id",
+        "actor",
+        "entity_refs",
+        "relation_refs",
+        "metric_id",
+        "metric_mapping_candidates",
+        "numeric_value",
+        "value_kind",
+        "lower",
+        "upper",
+        "missing_reason",
+        "direction",
+        "canonical_unit",
+        "currency",
+        "scale",
+        "accounting_basis",
+        "adjustment_definition",
+        "consolidation",
+        "financial_context",
+        "comparison_basis",
+        "denominator",
+        "prior_claim_id",
+        "prior_state_status",
+        "definition_version",
+        "availability_dependencies",
+        "source_scale",
+        "source_numeric_value",
+        "sign_policy",
+        "occurrence_note"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "numeric_value": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "numeric_value"
+            ]
+          },
+          "then": {
+            "properties": {
+              "missing_reason": {
+                "enum": [
+                  "not_disclosed",
+                  "not_found",
+                  "ambiguous",
+                  "not_applicable",
+                  "parse_failed",
+                  "incompatible",
+                  "not_yet_checked"
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "missing_reason": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "value_kind": {
+                "const": "range"
+              }
+            },
+            "required": [
+              "value_kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "lower": {
+                "type": "string",
+                "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?$"
+              },
+              "upper": {
+                "type": "string",
+                "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?$"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "lower": {
+                "type": "null"
+              },
+              "upper": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "relation_normalized": {
+      "type": "object",
+      "properties": {
+        "company_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "scope_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "modality": {
+          "enum": [
+            "actual_reported",
+            "plan",
+            "forecast",
+            "possibility",
+            "denial",
+            "unknown"
+          ]
+        },
+        "negation": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "temporal": {
+          "$ref": "#/$defs/temporal"
+        },
+        "evidence_status": {
+          "enum": [
+            "company_reported",
+            "source_reported",
+            "externally_verified",
+            "unresolved",
+            "synthetic"
+          ]
+        },
+        "extraction_status": {
+          "enum": [
+            "complete",
+            "partial",
+            "unresolved"
+          ]
+        },
+        "field_missing_reasons": {
+          "$ref": "#/$defs/missing_reasons"
+        },
+        "relation_type": {
+          "enum": [
+            "supplies_to",
+            "develops",
+            "offers",
+            "partners_with",
+            "competes_with",
+            "belongs_to_industry",
+            "unknown",
+            "reports_segment"
+          ]
+        },
+        "subject_entity_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "object_entity_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "subject_role": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "object_role": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "direction": {
+          "enum": [
+            "subject_to_object",
+            "symmetric",
+            "unknown"
+          ]
+        },
+        "product_service_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "entity_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "valid_from": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "valid_to": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "speaker": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "prior_relation_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "uncertainty_reason": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "definition_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "availability_dependencies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "record_id",
+              "available_at",
+              "availability_basis"
+            ],
+            "properties": {
+              "record_type": {
+                "type": "string",
+                "minLength": 1
+              },
+              "record_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "published_date": {
+                "type": "null"
+              },
+              "available_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "observed_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "availability_basis": {
+                "const": "observed_conservative"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "company_id",
+        "scope_id",
+        "modality",
+        "negation",
+        "conditions",
+        "temporal",
+        "evidence_status",
+        "extraction_status",
+        "field_missing_reasons",
+        "relation_type",
+        "subject_entity_id",
+        "object_entity_id",
+        "subject_role",
+        "object_role",
+        "direction",
+        "product_service_ids",
+        "entity_refs",
+        "valid_from",
+        "valid_to",
+        "speaker",
+        "prior_relation_id",
+        "uncertainty_reason",
+        "definition_version",
+        "availability_dependencies"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "relation_type": {
+                "const": "reports_segment"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "subject_role": {
+                "const": "reporting_company"
+              },
+              "object_role": {
+                "const": "reported_segment"
+              },
+              "direction": {
+                "const": "subject_to_object"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "record_kind": {
+            "const": "event_claim"
+          }
+        },
+        "required": [
+          "record_kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "normalized": {
+            "$ref": "#/$defs/event_normalized"
+          },
+          "relation_id": {
+            "type": "null"
+          },
+          "relation_revision_id": {
+            "type": "null"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "normalized": {
+            "$ref": "#/$defs/relation_normalized"
+          },
+          "relation_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "relation_revision_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "example_kind": {
+            "const": "synthetic"
+          }
+        },
+        "required": [
+          "example_kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "annotation_status": {
+            "const": "synthetic_fixture"
+          },
+          "exposure_status": {
+            "const": "synthetic"
+          }
+        }
+      }
+    }
+  ]
+}

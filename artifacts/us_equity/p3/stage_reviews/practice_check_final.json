@@ -1,0 +1,54 @@
+{
+  "phase": "practice",
+  "checked_at": "2026-10-06T06:17:30.112313+00:00",
+  "status": "passed",
+  "summaries": [
+    {
+      "annotator_id": "AGENT-A",
+      "annotations": 8,
+      "assessments": 8,
+      "checks": {
+        "item_coverage": true,
+        "unique_annotation_ids": true,
+        "one_annotation_per_item": true,
+        "assessments_same_count": true,
+        "assessment_annotation_links": true,
+        "correct_actor": true
+      }
+    },
+    {
+      "annotator_id": "AGENT-B",
+      "annotations": 8,
+      "assessments": 8,
+      "checks": {
+        "item_coverage": true,
+        "unique_annotation_ids": true,
+        "one_annotation_per_item": true,
+        "assessments_same_count": true,
+        "assessment_annotation_links": true,
+        "correct_actor": true
+      }
+    }
+  ],
+  "findings": [],
+  "source_fidelity_basis": "stage2_source_verified_contract_projection",
+  "does_not_measure_extraction_accuracy_or_human_agreement": true,
+  "inputs": [
+    {
+      "path": "artifacts/us_equity/p3/reviewer_a/practice_annotations_v1_2.jsonl",
+      "sha256": "a10677482c8e83301cdb82ba35d2c263a44bb85431ba404f5b7fb84d65ce6e27"
+    },
+    {
+      "path": "artifacts/us_equity/p3/reviewer_a/practice_assessments_v1_2.jsonl",
+      "sha256": "7e70f3fdc5b649daedacab0d5199be31b8cf458855594908b80b40764255276b"
+    },
+    {
+      "path": "artifacts/us_equity/p3/reviewer_b/practice_annotations_v1_2.jsonl",
+      "sha256": "56c1f0588ab0a0ff8641699721d4d721a4c4824358a82bb1b05873ad3f8246da"
+    },
+    {
+      "path": "artifacts/us_equity/p3/reviewer_b/practice_assessments_v1_2.jsonl",
+      "sha256": "231948ed224c581f46b1161e446287e128036904461f8ab0a9fd4e7dc20e9df8"
+    }
+  ]
+}

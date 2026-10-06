@@ -1,0 +1,64 @@
+{
+  "version": "us-p3-guide-1.1",
+  "previous_version": "us-p3-guide-1.0",
+  "created_at": "2026-10-06T06:01:57.285851+00:00",
+  "trigger": "Both annotators independently reported missing registry naming/enums before practice execution.",
+  "contains_item_answers": false,
+  "definition_version": {
+    "corporate": "us-financial-0.1",
+    "segment": "msft-segment-presentation-fy{source_release_fiscal_year}",
+    "rule": "Use packet source_presentation_id release year, not comparative reference year."
+  },
+  "currency": "USD",
+  "canonical_unit": "USD",
+  "scale": "1000000",
+  "source_metadata_basis": "Preselected Microsoft financial-statement table references; these currency/accounting categories are curator-provided context, not independently inferred from a numeric cell.",
+  "accounting_basis": "GAAP",
+  "accounting_basis_limit": "financial_statement_context_not_nonGAAP_reconciliation; company_policy_prose_not_audited",
+  "sign_policy": {
+    "default": "preserve",
+    "cash_ppe_additions": "outflow_to_positive"
+  },
+  "balance_or_flow": {
+    "cash_and_equivalents": "balance",
+    "total_assets": "balance",
+    "other_selected_metrics": "flow"
+  },
+  "period_start_derivation": {
+    "duration": "calendar_months_from_three_or_twelve_month_header",
+    "instant": "instant_end_date"
+  },
+  "period_kind": [
+    "duration",
+    "instant"
+  ],
+  "duration_days_instant": null,
+  "evidence_status": {
+    "numeric_claim": "company_reported_unaudited",
+    "reporting_relation": "company_reported_table"
+  },
+  "speaker": "Microsoft Corporation",
+  "scope_status_as_of": {
+    "corporate": "unresolved_retrospective_dependency",
+    "segment": "reported_segment_in_selected_table"
+  },
+  "direction": "subject_to_object",
+  "relation_type": "reports_segment",
+  "subject_role": "reporting_company",
+  "object_role": "reported_segment",
+  "offset_basis": "Unicode code point; 0-based [start,end) within original DOM-cell text",
+  "assessment_question_object": [
+    "question_id",
+    "response",
+    "reason"
+  ],
+  "exposure_log_shape": {
+    "flags": "array of required flags plus actual exposure",
+    "inputs": "array of files actually read"
+  },
+  "other_rules": [
+    "Recompute numeric values/spans/periods from raw cells and headers.",
+    "Do not open source_record_ref paths as answer keys.",
+    "Shared metadata means this is agent consistency work on preselected facts, not end-to-end extraction evaluation."
+  ]
+}

@@ -1,0 +1,19 @@
+# P04 contract migration
+
+P02 v0.1 schema hash `a738b85f769df93e267c94cdf2b8d70f3fb811ba72455ce32eddc1ceb81aa2f3` is preserved. P04 `1.0.0-agent-pilot` retains raw/normalized/assessment/derived and adds explicit source hash, source record reference, guide version, false human_gold, definition_version and availability dependencies. reports_segment is a directed company → reported segment relation with fixed roles.
+
+33 numeric source claims produce 33 event_claim records. Six reporting relations reference six of those same claim IDs and produce six distinct business_relation records. Thus records=39, unique source claims=33, families/events=2; record_id is the primary key, never claim_id alone.
+
+Original values, signs and source scale are retained. Normalized monetary values use base USD scale=1. Derived calculation records disclose exact scale/sign conversion and prior model output exposure. Balance observations use as_of_date and null duration; source duration zero is not a zero-day flow. Evidence offsets are original DOM-cell Unicode code points, 0-based [start,end), with independent period/year/unit/row-header references.
+
+Initial self-validation found eight cash-flow rows whose P03 cash_flow_statement value was outside the P02 cash_flow enum, and four capex rows whose upstream source_numeric_value had already been made positive. The initial artifacts are preserved in contract_revisions/initial. The mapper now uses cash_flow and parses source_numeric_value directly from the signed raw token; positive capex remains a separate derived/normalized value. All initial failures remain in contract_validation_initial.json.
+
+Cross-review added raw.source_evidence_status to preserve company_reported_unaudited/company_reported_table, raw.source_period_start_derivation for header-derived calendar starts, source parser/schema/normalization revisions, and fully qualified temporal missing-reason paths. Normalized company_reported means source attribution only. date_conflict_status is not_yet_checked because manifest consistency does not constitute a full independent publication-date conflict audit. The earlier passing implementation is preserved in contract_revisions/before_cross_review.
+
+Publication dates remain date-only, published_at/available_at/timezone/UTC offset are null. source publication refs use manifest locations; no exact time is invented. Annual-report scope support has only 2026 observation availability, recorded separately from release publication. The mapper assessment is current-as-of. Release-cutoff judgments must exclude that supplemental support.
+
+P03 relation effective_period merely copied the financial reporting period. P04 moves it to temporal.reference_period and preserves the original in raw.source_effective_period. Effective business period, valid_from and valid_to remain unknown/not_disclosed. Reports_segment cannot establish business-effect magnitude, customer/supply relationships or segment policy details.
+
+source_packets contains selected raw numeric/period/year/unit/standard-label references, with no mapped normalized answers. annotation_reference supplies common ID and calendar rules. These are existing adaptation documents, not blind test sources. Reserved FY2026 Q1 content is never read by this builder.
+
+All 39 records are agent_draft; independent human annotation, human gold and full-body audit remain absent. Outputs are exclusively created; rerun into a fresh --output-dir.
