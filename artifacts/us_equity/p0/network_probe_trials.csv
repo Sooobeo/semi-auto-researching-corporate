@@ -1,0 +1,3 @@
+trial_id,source_host,source_url,method,observed_at,observation_precision,http_status,result,request_count,retry_count,body_saved,endpoint_requests_after_failure,evidence
+ROBOTS-DATA-20261005,data.sec.gov,https://data.sec.gov/robots.txt,urllib_declared_application_user_agent,2026-10-05T11:56:03Z,second,403,access_failed_stop_host,1,0,false,0,source_rights_agent_tool_trace
+ROBOTS-WWW-20261005,www.sec.gov,https://www.sec.gov/robots.txt,urllib_declared_application_user_agent,,run_trace_only,403,access_failed_stop_host,1,0,false,0,root_tool_trace_exact_timestamp_not_logged

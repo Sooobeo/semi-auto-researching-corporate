@@ -1,0 +1,36 @@
+{
+  "completed_at": "2026-10-06T01:01:59.976110+00:00",
+  "execution_as_of": "2026-10-05",
+  "active_application": "applied_002",
+  "registry_version": "us-p2-0.1.0",
+  "qa_status_counts": {
+    "passed": 23,
+    "not_exercised": 1
+  },
+  "engine_probes": 59,
+  "engine_probes_passed": 59,
+  "numeric_source_checks": 33,
+  "comparison_recalculations": 21,
+  "comparison_decisions": {
+    "comparable": 15,
+    "not_comparable": 6
+  },
+  "frozen_registry_hashes_verified": 35,
+  "source_hashes_verified": 9,
+  "code_hashes_verified": 4,
+  "hash_mismatches": 0,
+  "private_files_git_ignored": 6,
+  "restricted_raw_files_tracked": 0,
+  "human_gate": "waived_by_user_for_progression",
+  "human_records": 0,
+  "gold_records": 0,
+  "reserved_untouched_evaluation_cases": 0,
+  "source_prose_ai_inputs": 0,
+  "compile_check": "passed",
+  "git_diff_check": "passed",
+  "scope": "limited_P03_selected_MSFT_numeric_cells_and_reporting_segments",
+  "qa_report_sha256": "75ffd86efcdb7942c7cc8cd9410362e774aab102ce316d05069c5eaf6ce0eb30",
+  "documentation_links": "passed",
+  "local_documentation_links_checked": 203,
+  "inventory_file_count": 74
+}

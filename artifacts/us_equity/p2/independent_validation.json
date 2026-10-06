@@ -1,0 +1,2395 @@
+{
+  "validator_version": "us-p03-independent-qa-0.1.0",
+  "checked_at": "2026-10-06T00:59:36.715267+00:00",
+  "artifact_directory": "artifacts/us_equity/p2",
+  "checks": [
+    {
+      "check": "contract_metric_catalog.csv",
+      "status": "passed",
+      "tested_records": 14,
+      "findings": [],
+      "note": "Empty table is not evidence of completed annotation or source coverage."
+    },
+    {
+      "check": "contract_accounting_concept_catalog.csv",
+      "status": "passed",
+      "tested_records": 7,
+      "findings": [],
+      "note": "Empty table is not evidence of completed annotation or source coverage."
+    },
+    {
+      "check": "contract_entity_catalog.csv",
+      "status": "passed",
+      "tested_records": 5,
+      "findings": [],
+      "note": "Empty table is not evidence of completed annotation or source coverage."
+    },
+    {
+      "check": "contract_relation_catalog.csv",
+      "status": "passed",
+      "tested_records": 6,
+      "findings": [],
+      "note": "Empty table is not evidence of completed annotation or source coverage."
+    },
+    {
+      "check": "contract_alias_registry.csv",
+      "status": "passed",
+      "tested_records": 14,
+      "findings": [],
+      "note": "Empty table is not evidence of completed annotation or source coverage."
+    },
+    {
+      "check": "contract_unit_rules.csv",
+      "status": "passed",
+      "tested_records": 9,
+      "findings": [],
+      "note": "Empty table is not evidence of completed annotation or source coverage."
+    },
+    {
+      "check": "contract_definition_history.csv",
+      "status": "passed",
+      "tested_records": 4,
+      "findings": [],
+      "note": "Empty table is not evidence of completed annotation or source coverage."
+    },
+    {
+      "check": "contract_driver_edges.csv",
+      "status": "passed",
+      "tested_records": 4,
+      "findings": [],
+      "note": "Empty table is not evidence of completed annotation or source coverage."
+    },
+    {
+      "check": "registry_foreign_keys_and_driver_layer",
+      "status": "passed",
+      "tested_records": 63,
+      "findings": []
+    },
+    {
+      "check": "unit_rule_guard_contract",
+      "status": "passed",
+      "tested_records": 9,
+      "findings": []
+    },
+    {
+      "check": "independent_adversarial_engine_probes",
+      "status": "passed",
+      "tested_records": 59,
+      "findings": [],
+      "note": "Synthetic implementation probes; no extraction accuracy or human agreement claim."
+    },
+    {
+      "check": "source_numeric_span_hash_scale_and_provenance",
+      "status": "passed",
+      "tested_records": 33,
+      "findings": [],
+      "note": "Private local DOM numeric-cell checks; no complete-body or human audit certification."
+    },
+    {
+      "check": "source_period_header_confirmation",
+      "status": "passed",
+      "tested_records": 33,
+      "findings": [],
+      "note": "Confirmed 33/33 numeric occurrence period headers; unresolved audit rows 33."
+    },
+    {
+      "check": "catalog_occurrence_denominators",
+      "status": "passed",
+      "tested_records": 14,
+      "findings": []
+    },
+    {
+      "check": "base_unit_normalization_provenance",
+      "status": "passed",
+      "tested_records": 33,
+      "findings": []
+    },
+    {
+      "check": "actual_relation_entities_and_source_layer",
+      "status": "passed",
+      "tested_records": 6,
+      "findings": [],
+      "note": "Reporting membership is preserved separately from customer/supply/product and financial impact claims."
+    },
+    {
+      "check": "actual_comparison_recalculation_and_counts",
+      "status": "passed",
+      "tested_records": 21,
+      "findings": [],
+      "note": "Recalculated current retrospective pairs; comparative success is not extraction accuracy or holdout performance."
+    },
+    {
+      "check": "frozen_hashes_baseline_registry_0.1.0",
+      "status": "passed",
+      "tested_records": 8,
+      "findings": []
+    },
+    {
+      "check": "frozen_hashes_p2",
+      "status": "passed",
+      "tested_records": 35,
+      "findings": []
+    },
+    {
+      "check": "transfer_ids_and_adaptation_exposure",
+      "status": "passed",
+      "tested_records": 18,
+      "findings": [],
+      "note": "Retrospective same-company reapplication; no blind-company or cross-sector performance claim."
+    },
+    {
+      "check": "future_independent_evaluation_split_leakage",
+      "status": "not_exercised",
+      "tested_records": 0,
+      "findings": [],
+      "note": "P04 is outside this P03 execution scope. Current source occurrences and transfer cases are adaptation; reserved untouched evaluation cases are declared as zero."
+    },
+    {
+      "check": "human_waiver_does_not_fabricate_gold",
+      "status": "passed",
+      "tested_records": 1,
+      "findings": [],
+      "note": "Observed independent human annotations and agreement remain unmeasured."
+    },
+    {
+      "check": "user_progression_waiver_provenance",
+      "status": "passed",
+      "tested_records": 1,
+      "findings": []
+    },
+    {
+      "check": "alias_scope_ambiguity",
+      "status": "passed",
+      "tested_records": 14,
+      "findings": []
+    }
+  ],
+  "status_counts": {
+    "passed": 23,
+    "not_exercised": 1
+  },
+  "engine_probes": [
+    {
+      "case": "same_period_delta",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "comparable",
+        "reasons": [],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": "5",
+        "relative_delta": "0.05",
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD",
+        "relative_delta_definition": "(new-prior)/abs(prior); fraction, not percent"
+      }
+    },
+    {
+      "case": "block_scope_id",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": false,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "not_comparable",
+        "reasons": [
+          "scope_id_mismatch"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "block_company_id",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": false,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "not_comparable",
+        "reasons": [
+          "company_id_mismatch"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "block_accounting_basis",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": false,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "not_comparable",
+        "reasons": [
+          "accounting_basis_mismatch",
+          "non_gaap_definition_missing"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "block_definition_version",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": false,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "not_comparable",
+        "reasons": [
+          "definition_version_mismatch"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "block_currency",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": false,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "not_comparable",
+        "reasons": [
+          "currency_mismatch"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "block_canonical_unit",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": false,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "not_comparable",
+        "reasons": [
+          "canonical_unit_mismatch"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "percent_point"
+      }
+    },
+    {
+      "case": "block_modality",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": false,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "not_comparable",
+        "reasons": [
+          "modality_mismatch"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "block_consolidation",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": false,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "not_comparable",
+        "reasons": [
+          "consolidation_mismatch"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "block_period_kind",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": false,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "not_comparable",
+        "reasons": [
+          "period_kind_mismatch"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "block_period_basis",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": false,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "not_comparable",
+        "reasons": [
+          "period_basis_mismatch"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "block_value_kind",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": false,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "not_comparable",
+        "reasons": [
+          "value_kind_mismatch",
+          "ratio_denominator_unknown"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "block_period_duration_days",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": null
+        },
+        "decision": "unknown",
+        "reasons": [
+          "period_duration_missing_or_inconsistent"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "missing_company_id",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": null,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "unknown",
+        "reasons": [
+          "company_id_unknown"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "missing_scope_id",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": null,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "unknown",
+        "reasons": [
+          "scope_id_unknown"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "missing_metric_id",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": null,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "unknown",
+        "reasons": [
+          "metric_id_unknown"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "missing_definition_version",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": null,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "unknown",
+        "reasons": [
+          "definition_version_unknown"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "missing_accounting_basis",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": null,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "unknown",
+        "reasons": [
+          "accounting_basis_unknown"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "missing_currency",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": null,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "unknown",
+        "reasons": [
+          "currency_unknown"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "missing_value_kind",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": null,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "unknown",
+        "reasons": [
+          "value_kind_unknown"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "missing_modality",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": null,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "unknown",
+        "reasons": [
+          "modality_unknown"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "missing_period_start",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": null
+        },
+        "decision": "unknown",
+        "reasons": [
+          "flow_period_missing"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "missing_period_duration_days",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": null
+        },
+        "decision": "unknown",
+        "reasons": [
+          "period_duration_missing_or_inconsistent"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "real_zero_prior",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "comparable",
+        "reasons": [],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": "105",
+        "relative_delta": null,
+        "relative_delta_missing_reason": "zero_prior_denominator",
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "missing_value_is_not_zero",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "unknown",
+        "reasons": [
+          "numeric_value_missing:not_disclosed"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "no_future_information",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "unknown",
+        "reasons": [
+          "future_information_after_cutoff"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "date_only_intraday_boundary",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "unknown",
+        "reasons": [
+          "date_only_intraday_availability_unresolved"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "future_scope_dependency_is_not_historical_evidence",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "unknown",
+        "reasons": [
+          "dependency:future_information_after_cutoff"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "current_scope_dependency_is_available",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "comparable",
+        "reasons": [],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": "5",
+        "relative_delta": "0.05",
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD",
+        "relative_delta_definition": "(new-prior)/abs(prior); fraction, not percent"
+      }
+    },
+    {
+      "case": "source_scale_requires_explicit_normalization",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "not_comparable",
+        "reasons": [
+          "explicit_base_unit_normalization_required"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "explicit_YoY_calendar_quarter",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "yoy",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true,
+          "calendar_anniversary_length_guard": true
+        },
+        "decision": "comparable",
+        "reasons": [],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": "5",
+        "relative_delta": "0.05",
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD",
+        "relative_delta_definition": "(new-prior)/abs(prior); fraction, not percent"
+      }
+    },
+    {
+      "case": "leap_year_calendar_anniversary_is_explained",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "yoy",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": false,
+          "calendar_anniversary_length_guard": true
+        },
+        "decision": "comparable",
+        "reasons": [],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": "5",
+        "relative_delta": "0.05",
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD",
+        "relative_delta_definition": "(new-prior)/abs(prior); fraction, not percent"
+      }
+    },
+    {
+      "case": "53_week_fiscal_year_is_not_silent_calendar_YoY",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "yoy",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": false,
+          "period_length_match": false,
+          "calendar_anniversary_length_guard": false
+        },
+        "decision": "not_comparable",
+        "reasons": [
+          "yoy_actual_period_not_aligned"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "missing_adjustment_non-GAAP",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "unknown",
+        "reasons": [
+          "non_gaap_definition_missing"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "missing_adjustment_non_GAAP",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "unknown",
+        "reasons": [
+          "non_gaap_definition_missing"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "missing_adjustment_non_gaap",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "unknown",
+        "reasons": [
+          "non_gaap_definition_missing"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "missing_adjustment_non_GAAP_company",
+      "passed": true,
+      "observed": {
+        "new_claim_id": "QA-NEW",
+        "prior_claim_id": "QA-PRIOR",
+        "comparison_basis": "same_period",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true,
+          "period_match": true,
+          "period_length_match": true
+        },
+        "decision": "unknown",
+        "reasons": [
+          "non_gaap_definition_missing"
+        ],
+        "rule_version": "us-comparability-0.1.1",
+        "delta": null,
+        "relative_delta": null,
+        "relative_delta_missing_reason": null,
+        "calculation_layer": "derived",
+        "delta_unit": "USD"
+      }
+    },
+    {
+      "case": "scale_USD_million_5",
+      "passed": true,
+      "observed": {
+        "calculation_status": "computed",
+        "output": "5000000",
+        "output_unit": "USD",
+        "currency": "USD",
+        "input_value": "5",
+        "input_unit": "USD_million",
+        "rule_version": "us-comparability-0.1.1",
+        "multiplier": "1000000",
+        "rule_id": "U_USD_MILLION_TO_BASE",
+        "source_rule_version": "us-p2-0.1.0",
+        "reasons": []
+      }
+    },
+    {
+      "case": "scale_USD_thousand_-25",
+      "passed": true,
+      "observed": {
+        "calculation_status": "computed",
+        "output": "-25000",
+        "output_unit": "USD",
+        "currency": "USD",
+        "input_value": "-25",
+        "input_unit": "USD_thousand",
+        "rule_version": "us-comparability-0.1.1",
+        "multiplier": "1000",
+        "rule_id": "U_USD_THOUSAND_TO_BASE",
+        "source_rule_version": "us-p2-0.1.0",
+        "reasons": []
+      }
+    },
+    {
+      "case": "scale_USD_0",
+      "passed": true,
+      "observed": {
+        "calculation_status": "computed",
+        "output": "0",
+        "output_unit": "USD",
+        "currency": "USD",
+        "input_value": "0",
+        "input_unit": "USD",
+        "rule_version": "us-comparability-0.1.1",
+        "multiplier": "1",
+        "rule_id": "U_USD_IDENTITY",
+        "source_rule_version": "us-p2-0.1.0",
+        "reasons": []
+      }
+    },
+    {
+      "case": "blocked_normalization_1_USD_million_EUR",
+      "passed": true,
+      "observed": {
+        "calculation_status": "incompatible_inputs",
+        "output": null,
+        "output_unit": null,
+        "currency": "EUR",
+        "input_value": "1",
+        "input_unit": "USD_million",
+        "rule_version": "us-comparability-0.1.1",
+        "reasons": [
+          "no_unambiguous_scale_rule"
+        ]
+      }
+    },
+    {
+      "case": "blocked_normalization_1_percent_USD",
+      "passed": true,
+      "observed": {
+        "calculation_status": "incompatible_inputs",
+        "output": null,
+        "output_unit": null,
+        "currency": "USD",
+        "input_value": "1",
+        "input_unit": "percent",
+        "rule_version": "us-comparability-0.1.1",
+        "reasons": [
+          "no_unambiguous_scale_rule"
+        ]
+      }
+    },
+    {
+      "case": "blocked_normalization_1_percent_point_USD",
+      "passed": true,
+      "observed": {
+        "calculation_status": "incompatible_inputs",
+        "output": null,
+        "output_unit": null,
+        "currency": "USD",
+        "input_value": "1",
+        "input_unit": "percent_point",
+        "rule_version": "us-comparability-0.1.1",
+        "reasons": [
+          "no_unambiguous_scale_rule"
+        ]
+      }
+    },
+    {
+      "case": "blocked_normalization_NaN_USD_USD",
+      "passed": true,
+      "observed": {
+        "calculation_status": "invalid_input",
+        "output": null,
+        "output_unit": null,
+        "currency": "USD",
+        "input_value": "NaN",
+        "input_unit": "USD",
+        "rule_version": "us-comparability-0.1.1",
+        "reasons": [
+          "numeric_value must be a finite Decimal string"
+        ]
+      }
+    },
+    {
+      "case": "blocked_normalization_None_USD_USD",
+      "passed": true,
+      "observed": {
+        "calculation_status": "insufficient_inputs",
+        "output": null,
+        "output_unit": null,
+        "currency": "USD",
+        "input_value": null,
+        "input_unit": "USD",
+        "rule_version": "us-comparability-0.1.1",
+        "reasons": [
+          "value_missing"
+        ]
+      }
+    },
+    {
+      "case": "compatible_YTD_difference",
+      "passed": true,
+      "observed": {
+        "calculation_status": "computed",
+        "output": "50",
+        "input_refs": [
+          "QA-NEW",
+          "QA-PRIOR"
+        ],
+        "formula_id": "compatible_ytd_difference",
+        "rule_version": "us-comparability-0.1.1",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true
+        },
+        "layer": "derived",
+        "output_unit": "USD",
+        "currency": "USD",
+        "period_start": "2024-04-01",
+        "period_end": "2024-06-30",
+        "period_duration_days": 91,
+        "reasons": []
+      }
+    },
+    {
+      "case": "block_YTD_period_start",
+      "passed": true,
+      "observed": {
+        "calculation_status": "insufficient_inputs",
+        "output": null,
+        "input_refs": [
+          "QA-NEW",
+          "QA-PRIOR"
+        ],
+        "formula_id": "compatible_ytd_difference",
+        "rule_version": "us-comparability-0.1.1",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true
+        },
+        "layer": "derived",
+        "reasons": [
+          "period_duration_missing_or_inconsistent"
+        ]
+      }
+    },
+    {
+      "case": "block_YTD_scope_id",
+      "passed": true,
+      "observed": {
+        "calculation_status": "incompatible_inputs",
+        "output": null,
+        "input_refs": [
+          "QA-NEW",
+          "QA-PRIOR"
+        ],
+        "formula_id": "compatible_ytd_difference",
+        "rule_version": "us-comparability-0.1.1",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": false,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true
+        },
+        "layer": "derived",
+        "reasons": [
+          "scope_id_mismatch"
+        ]
+      }
+    },
+    {
+      "case": "block_YTD_metric_id",
+      "passed": true,
+      "observed": {
+        "calculation_status": "incompatible_inputs",
+        "output": null,
+        "input_refs": [
+          "QA-NEW",
+          "QA-PRIOR"
+        ],
+        "formula_id": "compatible_ytd_difference",
+        "rule_version": "us-comparability-0.1.1",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": false,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true
+        },
+        "layer": "derived",
+        "reasons": [
+          "metric_id_mismatch"
+        ]
+      }
+    },
+    {
+      "case": "block_YTD_currency",
+      "passed": true,
+      "observed": {
+        "calculation_status": "incompatible_inputs",
+        "output": null,
+        "input_refs": [
+          "QA-NEW",
+          "QA-PRIOR"
+        ],
+        "formula_id": "compatible_ytd_difference",
+        "rule_version": "us-comparability-0.1.1",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": false,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true
+        },
+        "layer": "derived",
+        "reasons": [
+          "currency_mismatch"
+        ]
+      }
+    },
+    {
+      "case": "block_YTD_definition_version",
+      "passed": true,
+      "observed": {
+        "calculation_status": "incompatible_inputs",
+        "output": null,
+        "input_refs": [
+          "QA-NEW",
+          "QA-PRIOR"
+        ],
+        "formula_id": "compatible_ytd_difference",
+        "rule_version": "us-comparability-0.1.1",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": false,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true
+        },
+        "layer": "derived",
+        "reasons": [
+          "definition_version_mismatch"
+        ]
+      }
+    },
+    {
+      "case": "block_YTD_fiscal_year",
+      "passed": true,
+      "observed": {
+        "calculation_status": "incompatible_inputs",
+        "output": null,
+        "input_refs": [
+          "QA-NEW",
+          "QA-PRIOR"
+        ],
+        "formula_id": "compatible_ytd_difference",
+        "rule_version": "us-comparability-0.1.1",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true
+        },
+        "layer": "derived",
+        "reasons": [
+          "fiscal_year_mismatch"
+        ]
+      }
+    },
+    {
+      "case": "block_YTD_numeric_value",
+      "passed": true,
+      "observed": {
+        "calculation_status": "insufficient_inputs",
+        "output": null,
+        "input_refs": [
+          "QA-NEW",
+          "QA-PRIOR"
+        ],
+        "formula_id": "compatible_ytd_difference",
+        "rule_version": "us-comparability-0.1.1",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true
+        },
+        "layer": "derived",
+        "reasons": [
+          "numeric_input_missing_or_invalid"
+        ]
+      }
+    },
+    {
+      "case": "block_YTD_claim_id",
+      "passed": true,
+      "observed": {
+        "calculation_status": "insufficient_inputs",
+        "output": null,
+        "input_refs": [
+          "QA-NEW",
+          null
+        ],
+        "formula_id": "compatible_ytd_difference",
+        "rule_version": "us-comparability-0.1.1",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true
+        },
+        "layer": "derived",
+        "reasons": [
+          "input_record_identity_missing"
+        ]
+      }
+    },
+    {
+      "case": "nonadditive_YTD_rate",
+      "passed": true,
+      "observed": {
+        "calculation_status": "incompatible_inputs",
+        "output": null,
+        "input_refs": [
+          "QA-NEW",
+          "QA-PRIOR"
+        ],
+        "formula_id": "compatible_ytd_difference",
+        "rule_version": "us-comparability-0.1.1",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true
+        },
+        "layer": "derived",
+        "reasons": [
+          "ytd_difference_requires_additive_point_amounts"
+        ]
+      }
+    },
+    {
+      "case": "nonadditive_YTD_share",
+      "passed": true,
+      "observed": {
+        "calculation_status": "incompatible_inputs",
+        "output": null,
+        "input_refs": [
+          "QA-NEW",
+          "QA-PRIOR"
+        ],
+        "formula_id": "compatible_ytd_difference",
+        "rule_version": "us-comparability-0.1.1",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true
+        },
+        "layer": "derived",
+        "reasons": [
+          "ytd_difference_requires_additive_point_amounts"
+        ]
+      }
+    },
+    {
+      "case": "nonadditive_YTD_relative_change",
+      "passed": true,
+      "observed": {
+        "calculation_status": "incompatible_inputs",
+        "output": null,
+        "input_refs": [
+          "QA-NEW",
+          "QA-PRIOR"
+        ],
+        "formula_id": "compatible_ytd_difference",
+        "rule_version": "us-comparability-0.1.1",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true
+        },
+        "layer": "derived",
+        "reasons": [
+          "ytd_difference_requires_additive_point_amounts"
+        ]
+      }
+    },
+    {
+      "case": "nonadditive_YTD_unit_percent_point",
+      "passed": true,
+      "observed": {
+        "calculation_status": "incompatible_inputs",
+        "output": null,
+        "input_refs": [
+          "QA-NEW",
+          "QA-PRIOR"
+        ],
+        "formula_id": "compatible_ytd_difference",
+        "rule_version": "us-comparability-0.1.1",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true
+        },
+        "layer": "derived",
+        "reasons": [
+          "ytd_difference_requires_additive_point_amounts"
+        ]
+      }
+    },
+    {
+      "case": "nonadditive_YTD_unit_percentage_point",
+      "passed": true,
+      "observed": {
+        "calculation_status": "incompatible_inputs",
+        "output": null,
+        "input_refs": [
+          "QA-NEW",
+          "QA-PRIOR"
+        ],
+        "formula_id": "compatible_ytd_difference",
+        "rule_version": "us-comparability-0.1.1",
+        "checks": {
+          "company_id_match": true,
+          "scope_id_match": true,
+          "metric_id_match": true,
+          "definition_version_match": true,
+          "accounting_basis_match": true,
+          "consolidation_match": true,
+          "canonical_unit_match": true,
+          "currency_match": true,
+          "value_kind_match": true,
+          "balance_or_flow_match": true,
+          "period_basis_match": true,
+          "period_kind_match": true,
+          "modality_match": true,
+          "scale_match": true,
+          "product_match": true,
+          "adjustment_definition_match": true,
+          "denominator_match": true,
+          "sign_convention_match": true
+        },
+        "layer": "derived",
+        "reasons": [
+          "ytd_difference_requires_additive_point_amounts"
+        ]
+      }
+    }
+  ],
+  "human_validation": "waived_by_user; not performed by this validator",
+  "human_agreement": null,
+  "gold_certification": false,
+  "source_content_validation": {
+    "status": "numeric_spans_verified_with_stated_limits",
+    "source_revision": "v0_3",
+    "source_files": [
+      "artifacts/us_equity/p0/available_20261005/document_manifest_v0_3.csv",
+      "artifacts/us_equity/p0/available_20261005/facts_v0_3.jsonl",
+      "artifacts/us_equity/p0/available_20261005/extraction_audit_v0_3.csv"
+    ],
+    "source_documents": 3,
+    "selected_numeric_documents": 2,
+    "scope_corroboration_documents": 1,
+    "source_numeric_occurrences": 33,
+    "source_families": 3,
+    "selected_numeric_families": 2,
+    "source_companies": 1,
+    "period_headers_confirmed": 33,
+    "full_bodies_verified": 0,
+    "original_prose_ai_inputs": 0,
+    "human_annotations": 0
+  },
+  "table_row_counts": {
+    "metric_catalog.csv": 14,
+    "accounting_concept_catalog.csv": 7,
+    "entity_catalog.csv": 5,
+    "relation_catalog.csv": 6,
+    "alias_registry.csv": 14,
+    "unit_rules.csv": 9,
+    "definition_history.csv": 4,
+    "driver_edges.csv": 4
+  },
+  "input_hashes": {
+    "metric_catalog.csv": "d6d6632798cfb559aacae90838b6a8c105e48eccc6b4d1458cd56d0af1800b7b",
+    "accounting_concept_catalog.csv": "b131becf4887e744d4a23a8114e876c62391f36d8adfdd1bab1aa9549c1eb8fb",
+    "entity_catalog.csv": "690347b8d37b46a40fc4138cf87e734c172f86c2344bd1a1874ae65171b3136c",
+    "relation_catalog.csv": "fddd8582ece008dd78b7ad9d3c1396c6965fbdc851a7aa3b8667e0873d44a90f",
+    "alias_registry.csv": "42f711b5dc3facfbf5a4d272c4055b5671a47bfeba792c102eadf16029d31d70",
+    "unit_rules.csv": "9c64b93bfdcdaaf73ae385902234dc69344efb232f20258fd07e55cc654dbf40",
+    "definition_history.csv": "0df256e34704f89070f41099826d244d7996c2ffd3f12b617fe41d3c25ce8530",
+    "driver_edges.csv": "025060c4c016e055655ea4089727a09b075f23c19a682a251fd32d33b2e656a1"
+  }
+}

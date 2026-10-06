@@ -1,0 +1,13 @@
+{
+  "recorded_on": "2026-10-05",
+  "user_instruction": "인간 검증은 했다고 치고 다음꺼 해봐 확보할 수 있는 자료들 선에서 해결해",
+  "authorized_next_phase": "P03_Phase_2",
+  "human_gate_policy": "waived_by_user_for_progression",
+  "human_review_records_created": 0,
+  "inter_annotator_agreement_computed": false,
+  "gold_status": "not_created",
+  "source_accuracy_policy": "retain_actual_source_evidence_and_unresolved_fields",
+  "scope_policy": "use_accessible_US_materials_small_sample_without_further_scope_approval",
+  "legacy_inputs": [],
+  "interpretation": "Proceed using agent and deterministic verification without waiting for human review; do not fabricate past review results."
+}

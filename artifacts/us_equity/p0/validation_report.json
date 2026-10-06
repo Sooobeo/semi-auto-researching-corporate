@@ -1,0 +1,538 @@
+{
+  "verifier_version": "us-p01-offline-verify-0.1.0",
+  "verified_at": "2026-10-05T12:15:58.424186+00:00",
+  "manifest_directory": "artifacts/us_equity/p0/pilot_20261005_002",
+  "review_kind": "independent_agent_offline_reproduction_not_human_audit",
+  "run_id": "us-sec-pilot-20261005-002",
+  "counts": {
+    "api_resources_selected": 4,
+    "api_resources_network_attempted": 0,
+    "api_resources_valid_json": 0,
+    "filing_candidates": 0,
+    "filing_network_attempted": 0,
+    "filing_downloaded": 0,
+    "filing_body_manual_audited": 0,
+    "complete_filing_bodies_verified": 0,
+    "structured_observations": 0,
+    "business_relations_verified": 0,
+    "news_article_candidates": 0,
+    "news_article_bodies_verified": 0,
+    "independent_reporting_expressions": 0,
+    "comparable_cross_outlet_pairs": 0,
+    "ai_original_text_input_calls": 0,
+    "llm_training_runs": 0
+  },
+  "network_denominators": {
+    "robots_log_rows": 0,
+    "robots_actual_network_attempts_in_run": 0,
+    "robots_prior_evidence_hosts": [
+      "data.sec.gov",
+      "www.sec.gov"
+    ],
+    "api_endpoint_network_attempts": 0,
+    "filing_endpoint_network_attempts": 0,
+    "policy_probe_actual_requests_all_recorded_evidence": 2,
+    "policy_probe_http403_rows": 2,
+    "policy_probe_retries": 0,
+    "probe_timestamp_unknown_rows": 1
+  },
+  "rates": {
+    "api_endpoint_access": {
+      "numerator": 0,
+      "denominator": 0,
+      "rate": null
+    },
+    "filing_body_access": {
+      "numerator": 0,
+      "denominator": 0,
+      "rate": null
+    },
+    "automatic_text_extraction": {
+      "numerator": 0,
+      "denominator": 0,
+      "rate": null
+    }
+  },
+  "artifact_inventory": [
+    {
+      "path": "artifacts/us_equity/p0/pilot_20261005_002/access_trials.csv",
+      "sha256": "9a43f32e0dc4d0f41473b4f5bcf8d35e8bf6ede6b0d80f1ac3633ddd62d348b0",
+      "bytes": 1040,
+      "format": "csv",
+      "rows": 4,
+      "headers": [
+        "trial_id",
+        "resource_kind",
+        "resource_id",
+        "source_url",
+        "observed_at",
+        "http_status",
+        "status",
+        "original_filing_body_read"
+      ],
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/pilot_20261005_002/api_payload_manifest.csv",
+      "sha256": "c429fe0199baacee9b4e3c7d7774317585ff6ae952c801b25582c9f93392d2e3",
+      "bytes": 1601,
+      "format": "csv",
+      "rows": 4,
+      "headers": [
+        "resource_id",
+        "company_id",
+        "resource_kind",
+        "source_id",
+        "source_url",
+        "final_url",
+        "observed_at",
+        "http_status",
+        "access_status",
+        "sha256",
+        "revision_id",
+        "byte_size",
+        "storage_uri",
+        "rights_basis_ref",
+        "published_at",
+        "published_date",
+        "time_precision",
+        "split_exposure"
+      ],
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/pilot_20261005_002/blocks.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "format": "jsonl",
+      "rows": 0,
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/pilot_20261005_002/document_manifest.csv",
+      "sha256": "85f28c06d9c83cbe3060e6cdaaa16b6523f84fef126580097b8fe083880ca319",
+      "bytes": 22,
+      "format": "csv",
+      "rows": 0,
+      "headers": [
+        "doc_id",
+        "access_status"
+      ],
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/pilot_20261005_002/entities.csv",
+      "sha256": "719f6ee1fc164fb743f644e3d6a24c5a2ea726722c9eebb51d852b2a091d8216",
+      "bytes": 135,
+      "format": "csv",
+      "rows": 2,
+      "headers": [
+        "company_id",
+        "cik_candidate",
+        "mapping_status"
+      ],
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/pilot_20261005_002/extraction_audit.csv",
+      "sha256": "d7a465cc278eb36c90a75977828dafe3d4aca58a75ad45d1948f2973679f08d1",
+      "bytes": 15,
+      "format": "csv",
+      "rows": 0,
+      "headers": [
+        "doc_id",
+        "status"
+      ],
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/pilot_20261005_002/observations.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "format": "jsonl",
+      "rows": 0,
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/pilot_20261005_002/parser_trials.csv",
+      "sha256": "72054ebff54295219bd909d216937afa29800e5f04b557d39264e117cbf1ae45",
+      "bytes": 535,
+      "format": "csv",
+      "rows": 4,
+      "headers": [
+        "resource_id",
+        "method",
+        "version",
+        "attempted",
+        "status",
+        "full_filing_text_extraction"
+      ],
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/pilot_20261005_002/robots_trials.csv",
+      "sha256": "e5f1764b12ec927b6a6585da7125f3faa413ed6f4cf943f613deb877b4521ab4",
+      "bytes": 45,
+      "format": "csv",
+      "rows": 0,
+      "headers": [
+        "url",
+        "status",
+        "http_status",
+        "decision",
+        "observed_at"
+      ],
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/pilot_20261005_002/run_manifest.json",
+      "sha256": "cbb26a1a3f33d23e3e3362f8486b6a322923377e74f158c6a78900c082ab6d0f",
+      "bytes": 1642,
+      "format": "json",
+      "items": null,
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/pilot_20261005_002/selected_filings.json",
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "bytes": 4,
+      "format": "json",
+      "items": 0,
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/pilot_20261005_002/summary.json",
+      "sha256": "178e634c1bf69436db9764c23a077c35d8ba6ecc4ef84b5bba3eaa9da9b35ee0",
+      "bytes": 565,
+      "format": "json",
+      "items": null,
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/source_registry.csv",
+      "format": "csv",
+      "sha256": "a70beb0619053234dac2ad78781f8a2312c194eb65cf60e25694fcce4886e5e4",
+      "rows": 5,
+      "headers": [
+        "source_id",
+        "provider",
+        "source_type",
+        "landing_url",
+        "terms_url",
+        "terms_version",
+        "checked_at",
+        "accessible_period",
+        "authentication",
+        "manual_read",
+        "automated_access",
+        "storage_policy",
+        "internal_analysis_policy",
+        "ai_input_policy",
+        "ai_training_policy",
+        "external_transfer_policy",
+        "sharing_policy",
+        "redistribution_policy",
+        "rate_limit_evidence",
+        "status",
+        "unresolved_reason",
+        "checked_on",
+        "evidence_urls",
+        "terms_evidence_locator",
+        "automated_access_conditions",
+        "storage_conditions",
+        "internal_analysis_conditions",
+        "ai_input_conditions",
+        "ai_training_conditions",
+        "external_transfer_conditions",
+        "sharing_conditions",
+        "redistribution_conditions",
+        "robots_url",
+        "robots_status",
+        "robots_checked_at",
+        "robots_note",
+        "adoption_decision",
+        "api_scope",
+        "factual_only_processing_scope",
+        "assessment_kind",
+        "observation_precision",
+        "local_access_status"
+      ],
+      "bytes": 13701,
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/coverage_matrix.csv",
+      "format": "csv",
+      "sha256": "94c3ed1a317d9a5156a5cb0c9cf7ea637f4dd07399d93192353bef5f639cb54d",
+      "rows": 10,
+      "headers": [
+        "company_id",
+        "document_type",
+        "source_id",
+        "reference_period_start",
+        "reference_period_end",
+        "period_basis",
+        "coverage_status",
+        "reason",
+        "scope_id",
+        "team_scope_status"
+      ],
+      "bytes": 1458,
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/document_manifest.csv",
+      "format": "csv",
+      "sha256": "67d0e319765cda43029632f1810db9379c4d5185d5cc63ecbf278d71ce5c5d72",
+      "rows": 0,
+      "headers": [
+        "doc_id",
+        "revision_id",
+        "source_id",
+        "source_url",
+        "access_status",
+        "missing_reason"
+      ],
+      "bytes": 69,
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/document_relations.csv",
+      "format": "csv",
+      "sha256": "f50a5e92d6994428fe31fe8da0ddc42a49e7181e4fd6647662fe0fc01929b36a",
+      "rows": 0,
+      "headers": [
+        "subject_doc_id",
+        "object_doc_id",
+        "relation_type",
+        "evidence_ref",
+        "review_status"
+      ],
+      "bytes": 70,
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/entities.csv",
+      "format": "csv",
+      "sha256": "ea9c8a2f36aa54d28fe5301ab71e34ccbd1181754af4ce0cfed13f139fd38a85",
+      "rows": 2,
+      "headers": [
+        "company_id",
+        "entity_id",
+        "entity_type",
+        "legal_name_candidate",
+        "ticker_candidate",
+        "cik_candidate",
+        "scope_id",
+        "consolidation",
+        "mapping_status",
+        "evidence_ref",
+        "registry_version"
+      ],
+      "bytes": 504,
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/network_probe_trials.csv",
+      "format": "csv",
+      "sha256": "7b2ce4ccada65e3eccc36944a65d8d3519d672cde891cb939c72a7ac5a35354c",
+      "rows": 2,
+      "headers": [
+        "trial_id",
+        "source_host",
+        "source_url",
+        "method",
+        "observed_at",
+        "observation_precision",
+        "http_status",
+        "result",
+        "request_count",
+        "retry_count",
+        "body_saved",
+        "endpoint_requests_after_failure",
+        "evidence"
+      ],
+      "bytes": 575,
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/news_manifest.csv",
+      "format": "csv",
+      "sha256": "9f499dd3e3a10ba36ca2c8a0492ed3014ad7f95b034df47b14c109ab43791734",
+      "rows": 0,
+      "headers": [
+        "doc_id",
+        "source_id",
+        "source_url",
+        "body_status",
+        "event_family_id",
+        "missing_reason"
+      ],
+      "bytes": 71,
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/news_source_trials.csv",
+      "format": "csv",
+      "sha256": "c3bdd225513cbed8eabaa4e448b8d53fdbd5f9af111f0f0b2eb8f49f65762c82",
+      "rows": 2,
+      "headers": [
+        "source_id",
+        "source_role",
+        "trial_type",
+        "article_body_requests",
+        "decision",
+        "reason",
+        "rights_basis_ref"
+      ],
+      "bytes": 303,
+      "parse_status": "passed"
+    },
+    {
+      "path": "artifacts/us_equity/p0/task_status.csv",
+      "format": "csv",
+      "sha256": "d596a69a4146706a9e36403e22c928f29800f5d7d9644838694231a863b4195c",
+      "rows": 11,
+      "headers": [
+        "task_id",
+        "status",
+        "deliverable",
+        "evidence_or_remaining_condition"
+      ],
+      "bytes": 1329,
+      "parse_status": "passed"
+    }
+  ],
+  "checks": [
+    {
+      "check": "artifact_parse_and_required_inventory",
+      "status": "passed",
+      "tested_records": 12,
+      "findings": []
+    },
+    {
+      "check": "source_registry_independent_rights_fields",
+      "status": "passed",
+      "tested_records": 5,
+      "findings": []
+    },
+    {
+      "check": "p0_supporting_csv_inventory_parse",
+      "status": "passed",
+      "tested_records": 9,
+      "findings": []
+    },
+    {
+      "check": "supporting_table_source_and_candidate_company_foreign_keys",
+      "status": "passed",
+      "tested_records": 27,
+      "findings": []
+    },
+    {
+      "check": "unique_ids_and_source_rights_foreign_keys",
+      "status": "passed",
+      "tested_records": 8,
+      "findings": []
+    },
+    {
+      "check": "stored_bytes_hash_revision_and_ignored_path",
+      "status": "not_exercised",
+      "tested_records": 0,
+      "findings": []
+    },
+    {
+      "check": "raw_and_blocks_git_exclusion_rules",
+      "status": "passed",
+      "tested_records": 2,
+      "findings": []
+    },
+    {
+      "check": "failed_or_unattempted_states_not_hidden_as_success",
+      "status": "passed",
+      "tested_records": 8,
+      "findings": []
+    },
+    {
+      "check": "manifest_recomputed_counts_separate_api_and_filings",
+      "status": "passed",
+      "tested_records": 16,
+      "findings": []
+    },
+    {
+      "check": "policy_probe_denial_stop_and_request_denominators",
+      "status": "passed",
+      "tested_records": 2,
+      "findings": [],
+      "note": "Historical probes are distinct from this run's endpoint requests; unknown probe timestamp retained."
+    },
+    {
+      "check": "legacy_exclusion_and_raw_ai_hold",
+      "status": "passed",
+      "tested_records": 4,
+      "findings": []
+    },
+    {
+      "check": "json_pointer_source_round_trip",
+      "status": "not_exercised",
+      "tested_records": 0,
+      "findings": []
+    },
+    {
+      "check": "unicode_code_point_offsets_and_normalization_round_trip",
+      "status": "not_exercised",
+      "tested_records": 0,
+      "findings": []
+    },
+    {
+      "check": "structured_numbers_units_periods_scope_and_nulls",
+      "status": "not_exercised",
+      "tested_records": 0,
+      "findings": [],
+      "note": "Structured API checks do not replace original filing table/header audit."
+    },
+    {
+      "check": "original_filing_body_completeness",
+      "status": "not_exercised",
+      "tested_records": 0,
+      "findings": [],
+      "note": "No source specimen or independent human audit supplied; not passed."
+    },
+    {
+      "check": "filing_table_headers_and_scope_manual_audit",
+      "status": "not_exercised",
+      "tested_records": 0,
+      "findings": [],
+      "note": "No source specimen or independent human audit supplied; not passed."
+    },
+    {
+      "check": "fiscal_vs_calendar_and_period_length_comparability",
+      "status": "not_exercised",
+      "tested_records": 0,
+      "findings": [],
+      "note": "No source specimen or independent human audit supplied; not passed."
+    },
+    {
+      "check": "duplicate_recollection_and_follow_up_examples",
+      "status": "not_exercised",
+      "tested_records": 0,
+      "findings": [],
+      "note": "No source specimen or independent human audit supplied; not passed."
+    },
+    {
+      "check": "human_independent_annotation_and_handoff",
+      "status": "not_exercised",
+      "tested_records": 0,
+      "findings": [],
+      "note": "No source specimen or independent human audit supplied; not passed."
+    },
+    {
+      "check": "run_versions_and_timestamp_order",
+      "status": "passed",
+      "tested_records": 1,
+      "findings": []
+    }
+  ],
+  "provenance_notes": [],
+  "human_phase_completion": "not_established",
+  "overall_status": "metadata_valid_content_not_exercised"
+}

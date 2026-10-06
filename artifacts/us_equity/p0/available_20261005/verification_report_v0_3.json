@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "numeric_cell_value_scale_span_roundtrips_passed": 33,
+  "numeric_cell_value_scale_span_roundtrips_attempted": 33,
+  "period_length_arithmetic_passed": 33,
+  "period_specific_original_header_passed": 33,
+  "period_specific_original_header_attempted": 33,
+  "raw_hash_integrity": {
+    "US-MSFT-FY2024-Q4-RELEASE": true,
+    "US-MSFT-FY2025-Q4-RELEASE": true,
+    "US-MSFT-ANNUAL-FY2025-SCOPE-REFERENCE": true
+  },
+  "human_validation": "waived_by_user_not_observed",
+  "source_prose_ai_inputs": 0,
+  "full_body_complete_audits": 0,
+  "nonempty_independent_gold": false,
+  "scope_limit": "current_retrospective_consolidation_corroboration; segment_presentation_definitions_kept_separate"
+}

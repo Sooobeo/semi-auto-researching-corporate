@@ -1,0 +1,2 @@
+# Isolated validator dependency; no corporate source retrieval library.
+jsonschema==4.26.0

@@ -1,8 +1,12 @@
 # 공통 데이터 규약 및 산출물 계약
 
-기준일: 2026-10-05 / 제안 버전 v1.2. [미국 기업 방향성](../docs/project_direction/us_equity_research_proposal.md)과 사용자 폐기 지시에 따라 미국 자료로 새로 작성할 공통 규약입니다. 기존 한국기업 데이터·등록부·gold·모델·검증 결과는 입력으로 승계하지 않습니다. 실제 스키마·저장 방식은 각 Phase에서 구현하고 새 사례 검증 후 고정합니다. 신규 산출물 경로는 `artifacts/us_equity/p0/`~`p8/` 제안이며 아직 생성된 결과가 아닙니다.
+기준일: 2026-10-05 / 제안 버전 v1.2. [미국 기업 방향성](../docs/project_direction/us_equity_research_proposal.md)과 사용자 폐기 지시에 따라 미국 자료로 새로 작성할 공통 규약입니다. 기존 한국기업 데이터·등록부·gold·모델·검증 결과는 입력으로 승계하지 않습니다. 실제 스키마·저장 방식은 각 Phase에서 구현하고 새 사례 검증 후 고정합니다. 신규 산출물 경로는 `artifacts/us_equity/p0/`~`p8/`이며 아래 계약 정의는 실제 사례 검증·팀 고정 전 제안입니다.
 
 [공통 목표·개인 리서치 적용](GOALS_AND_RESEARCH_WORKFLOW.md)에 따라 기존 사건·사업 관계·검토 카드 계약을 유지하면서 선정 재무 개념·계산·가정·메모·기여 기록을 연결합니다. 아래 추가 계약은 최초 사례에서 구현·검증할 제안이며 모든 기업·참여자에게 재무 분석 산출물을 요구하지 않습니다.
+
+2026-10-05 [P01·P02 실행 기록](../artifacts/us_equity/execution_briefing.md)에서 p0 조사/실패 manifest와 p1 구현 초안을 생성했습니다. 이 공통 규약 v1.2는 설계 제안이며 초안의 합성 검사나 빈 manifest QA가 실제 원문·인간 검증을 통과했다는 뜻은 아닙니다.
+
+후속 [P03 실행 기록](../artifacts/us_equity/p2/execution_briefing.md)은 Microsoft 실제 숫자 33건의 표 셀 검증과 비교 적용입니다. `entity_type=segment`, `reports_segment`는 해당 P03 sidecar의 제한된 확장으로 [정의 결정](../artifacts/us_equity/p2/ontology_decisions.md)에 남겼습니다. 아래 공통 event schema 전체 변경·인간 gold·모델 평가를 의미하지 않습니다. 인간 진입 조건은 최신 사용자 지시로 면제했으며 실제 사람 주석은 0건입니다.
 
 ## 1. 기록 원칙
 

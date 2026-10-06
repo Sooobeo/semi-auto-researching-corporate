@@ -20,7 +20,7 @@
 - `event_schema.md / relation_schema.md / schema_examples.jsonl`
 - `annotation_guide_draft.md와 decisions.md`
 
-새 산출물 경로는 저장소 루트의 `artifacts/us_equity/p1/` 기준 제안입니다. 기존 한국기업 사례·주석 결과를 미국 기준이나 adaptation 세트로 가져오지 않습니다. 새 데이터·코드는 아직 생성되지 않았으며 원문은 새 P0의 권리와 보관 규칙을 따릅니다.
+새 산출물 경로는 저장소 루트의 `artifacts/us_equity/p1/`입니다. 기존 한국기업 사례·주석 결과를 미국 기준이나 adaptation 세트로 가져오지 않습니다. [P01·P02 실행 브리핑](../artifacts/us_equity/execution_briefing.md)에 신규 문헌·스키마/가이드 초안과 합성 검사 결과를 연결했습니다. 이후 [P03 실행](../artifacts/us_equity/p2/execution_briefing.md)은 사용자 지시로 인간 검토 진입 조건을 면제하고 실제 미국 숫자 33건과 보고 사업부 관계를 별도 sidecar 등록부에 적용했습니다. 이를 P02 전체 event 스키마의 실자료 검증이나 인간 독립 양식 시험 완료로 승격하지 않습니다. 원문은 새 P0의 권리와 보관 규칙을 따르며 아래 작업의 전체 완료를 뜻하지 않습니다.
 
 ## 3. 상세 설계와 판단 규칙
 

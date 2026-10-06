@@ -1,0 +1,59 @@
+{
+  "registry_version": "us-p2-0.1.0",
+  "definition_version": "0.1.0",
+  "freeze_kind": "FY2024_only_registry_reconstruction_before_scripted_reapplication",
+  "baseline_doc_ids": [
+    "US-MSFT-FY2024-Q4-RELEASE"
+  ],
+  "baseline_numeric_occurrences": 15,
+  "transfer_doc_ids": [
+    "US-MSFT-FY2025-Q4-RELEASE"
+  ],
+  "transfer_visibility": "FY2025 facts already seen during acquisition; retrospective adaptation, not blinded",
+  "human_validation": "user_waived_requirement",
+  "independent_human_annotation_count": 0,
+  "human_agreement": null,
+  "files": [
+    {
+      "path": "metric_catalog.csv",
+      "sha256": "d07562a26a6edee0b1516df36c9f7b2433e7b96e49e979fe823a97106b2eee0c",
+      "byte_size": 13248
+    },
+    {
+      "path": "accounting_concept_catalog.csv",
+      "sha256": "b131becf4887e744d4a23a8114e876c62391f36d8adfdd1bab1aa9549c1eb8fb",
+      "byte_size": 5738
+    },
+    {
+      "path": "entity_catalog.csv",
+      "sha256": "690347b8d37b46a40fc4138cf87e734c172f86c2344bd1a1874ae65171b3136c",
+      "byte_size": 2183
+    },
+    {
+      "path": "relation_catalog.csv",
+      "sha256": "fddd8582ece008dd78b7ad9d3c1396c6965fbdc851a7aa3b8667e0873d44a90f",
+      "byte_size": 4660
+    },
+    {
+      "path": "alias_registry.csv",
+      "sha256": "cb5e5efce2a62474d307ac8658e730efeedef1ebd3cf1bda98ca611c96bf46df",
+      "byte_size": 3584
+    },
+    {
+      "path": "unit_rules.csv",
+      "sha256": "9c64b93bfdcdaaf73ae385902234dc69344efb232f20258fd07e55cc654dbf40",
+      "byte_size": 4305
+    },
+    {
+      "path": "definition_history.csv",
+      "sha256": "66b5a134d453693709aebb947b0b9e84b8bd3f460098473baa9c3e3572a2e1c7",
+      "byte_size": 655
+    },
+    {
+      "path": "driver_edges.csv",
+      "sha256": "025060c4c016e055655ea4089727a09b075f23c19a682a251fd32d33b2e656a1",
+      "byte_size": 2652
+    }
+  ],
+  "created_at": "2026-10-05T12:34:53.487200+00:00"
+}

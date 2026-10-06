@@ -1,0 +1,33 @@
+{
+  "version": "p03-apply-0.1.0",
+  "completed_at": "2026-10-05T12:40:38.099229+00:00",
+  "as_of": "2026-10-05",
+  "mode": "retrospective_current_only",
+  "facts_path": "artifacts/us_equity/p0/available_20261005/facts_v0_3.jsonl",
+  "facts_sha256": "9da66d8defbe80a58a9583a2ad2c57bd78dbc7cfb54a8ed230752b8ab030ba05",
+  "audit_path": "artifacts/us_equity/p0/available_20261005/extraction_audit_v0_3.csv",
+  "audit_sha256": "a6187bb89f2723423dd9d008fd83fda71c967a2500b058eafdbdd24879bd8f4b",
+  "metric_catalog_sha256": "d6d6632798cfb559aacae90838b6a8c105e48eccc6b4d1458cd56d0af1800b7b",
+  "unit_rules_sha256": "9c64b93bfdcdaaf73ae385902234dc69344efb232f20258fd07e55cc654dbf40",
+  "occurrences_sha256": "4641d2f76ed04d6f5156efd6099f48d59c195a96dea136b841a37b659db9e522",
+  "script_sha256": "bbb86f9eca25c8a170f9cc12049e1b31320daf2dbc7c8eeedb65f483b40164bf",
+  "normalized_claims": 33,
+  "conversions_computed": 33,
+  "source_documents_for_numeric_facts": 2,
+  "numeric_publication_families": 2,
+  "comparison_pairs": 21,
+  "comparison_decisions": {
+    "comparable": 15,
+    "not_comparable": 6
+  },
+  "human_records": 0,
+  "human_gate": "waived_by_user_for_progression",
+  "gold_records": 0,
+  "source_prose_ai_inputs": 0,
+  "legacy_inputs": [],
+  "limitations": [
+    "Supplemental corporate scope evidence is available conservatively from observation in 2026.",
+    "Numeric-cell audit does not certify complete body extraction.",
+    "Same-company retrospective application is not a blind company/sector holdout."
+  ]
+}

@@ -1,0 +1,2 @@
+url,status,http_status,decision,observed_at
+https://data.sec.gov/robots.txt,host_blocked_after_403_or_429,,unresolved_fail_closed,2026-10-05T11:59:49.999593+00:00

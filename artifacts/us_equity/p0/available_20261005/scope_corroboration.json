@@ -1,0 +1,34 @@
+{
+  "url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+  "final_url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+  "observed_at": "2026-10-05T12:31:51.408141+00:00",
+  "resource_kind": "accounting_scope_corroboration",
+  "status": "downloaded_private_reference",
+  "http_status": 200,
+  "byte_size": 601259,
+  "sha256": "564154a15ac28c0f7f72f304ae26b74c29cfca9f3eafe8d59595776769d621ca",
+  "storage_uri": "artifacts/us_equity/p0/available_20261005/private/msft_annual2025_reference.html",
+  "matches": [],
+  "consolidated_token_present": true,
+  "source_prose_ai_input": false,
+  "policy_features": [
+    {
+      "xpath": "/html/body/main/section[2]/article[18]/p[4]",
+      "statement_character_count": 166,
+      "statement_sha256": "a9d394c1ec3d4f0f9c16e1e298109702bed81fe20f33caf866a440975ea60a3d",
+      "states_financial_statement_inclusion": true,
+      "states_microsoft_corporation": true,
+      "states_subsidiaries": true,
+      "states_consolidation": true
+    },
+    {
+      "xpath": "/html/body/main/section[2]/article[36]/p[4]",
+      "statement_character_count": 758,
+      "statement_sha256": "874fb2cafa10da9b87749d71e95cde75f69999b0f3a4881419c9c83a1750646e",
+      "states_financial_statement_inclusion": false,
+      "states_microsoft_corporation": true,
+      "states_subsidiaries": true,
+      "states_consolidation": true
+    }
+  ]
+}

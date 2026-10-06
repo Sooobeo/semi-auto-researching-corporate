@@ -1,0 +1,303 @@
+{
+  "registry_version": "us-p2-0.1.0",
+  "definition_version": "scope_and_metric_specific; see metric_occurrences and definition_history",
+  "frozen_at": "2026-10-06T00:59:11.693497+00:00",
+  "execution_as_of": "2026-10-05",
+  "human_gate": "waived_by_user_for_progression",
+  "independent_human_annotation_count": 0,
+  "human_agreement": null,
+  "independent_gold_count": 0,
+  "original_prose_ai_inputs": 0,
+  "active_application": "applied_002/run_manifest.json",
+  "prior_application": "applied_001/run_manifest.json",
+  "source_revision": "v0_3",
+  "freeze_kind": "post_adaptation_registry_snapshot",
+  "baseline_manifest": "baseline_registry_0.1.0/manifest.json",
+  "exposure_status": "same_company_retrospective_adaptation_not_blind_holdout",
+  "reserved_untouched_evaluation_cases": 0,
+  "legacy_inputs": [],
+  "counts": {
+    "selected_companies": 1,
+    "unselected_company_candidates": 1,
+    "selected_numeric_documents": 2,
+    "numeric_publication_families": 2,
+    "scope_corroboration_documents": 1,
+    "numeric_occurrences": 33,
+    "corporate_numeric_occurrences": 24,
+    "segment_numeric_occurrences": 9,
+    "reporting_relation_claims": 6,
+    "unique_reporting_relations": 3,
+    "metric_definitions": 14,
+    "observed_metrics": 7,
+    "project_formula_metrics": 2,
+    "candidate_metrics": 5,
+    "accounting_concepts": 7,
+    "entities": 5,
+    "relation_definitions": 6,
+    "aliases": 14,
+    "unit_policies": 9,
+    "driver_edges": 4,
+    "definition_history_records": 4,
+    "baseline_claims": 15,
+    "adaptation_application_claims": 18,
+    "field_assessments": 72,
+    "normalized_claims": 33,
+    "comparison_pairs": 21,
+    "comparable_pairs": 15,
+    "not_comparable_pairs": 6
+  },
+  "files": [
+    {
+      "path": "accounting_concept_catalog.csv",
+      "sha256": "b131becf4887e744d4a23a8114e876c62391f36d8adfdd1bab1aa9549c1eb8fb",
+      "byte_size": 5738
+    },
+    {
+      "path": "alias_registry.csv",
+      "sha256": "42f711b5dc3facfbf5a4d272c4055b5671a47bfeba792c102eadf16029d31d70",
+      "byte_size": 6930
+    },
+    {
+      "path": "applied_002/comparability_results.jsonl",
+      "sha256": "ca2418b0874053b5a7cd0b3dc87856094eb31c48493b2002015e18f5fa307644",
+      "byte_size": 32267
+    },
+    {
+      "path": "applied_002/comparison_inputs.jsonl",
+      "sha256": "ebc0955c0d14a952683bbc988184463ec8c7dc474ae7b7b78d932d5f7d001506",
+      "byte_size": 203279
+    },
+    {
+      "path": "applied_002/normalized_claims.jsonl",
+      "sha256": "366bd5c0f51e4c1b57cecaf67d4158b43f555a26f29f3651858363def08f031f",
+      "byte_size": 164050
+    },
+    {
+      "path": "applied_002/run_manifest.json",
+      "sha256": "31eeb4dbf182d1e911fbd61069e0e7c806da71c88d886d63bf6db74f66305e22",
+      "byte_size": 1858
+    },
+    {
+      "path": "applied_002/unit_conversions.jsonl",
+      "sha256": "eca412036efd92407379cc79014d1cff742aca23701bf8ab88d32b9e1a1de1a1",
+      "byte_size": 19918
+    },
+    {
+      "path": "baseline_registry_0.1.0/accounting_concept_catalog.csv",
+      "sha256": "b131becf4887e744d4a23a8114e876c62391f36d8adfdd1bab1aa9549c1eb8fb",
+      "byte_size": 5738
+    },
+    {
+      "path": "baseline_registry_0.1.0/alias_registry.csv",
+      "sha256": "cb5e5efce2a62474d307ac8658e730efeedef1ebd3cf1bda98ca611c96bf46df",
+      "byte_size": 3584
+    },
+    {
+      "path": "baseline_registry_0.1.0/definition_history.csv",
+      "sha256": "66b5a134d453693709aebb947b0b9e84b8bd3f460098473baa9c3e3572a2e1c7",
+      "byte_size": 655
+    },
+    {
+      "path": "baseline_registry_0.1.0/driver_edges.csv",
+      "sha256": "025060c4c016e055655ea4089727a09b075f23c19a682a251fd32d33b2e656a1",
+      "byte_size": 2652
+    },
+    {
+      "path": "baseline_registry_0.1.0/entity_catalog.csv",
+      "sha256": "690347b8d37b46a40fc4138cf87e734c172f86c2344bd1a1874ae65171b3136c",
+      "byte_size": 2183
+    },
+    {
+      "path": "baseline_registry_0.1.0/manifest.json",
+      "sha256": "cadc152b947e539e8d1eca57301c6bed8d76c489e1a1d7a6853ecce624c435c4",
+      "byte_size": 1946
+    },
+    {
+      "path": "baseline_registry_0.1.0/metric_catalog.csv",
+      "sha256": "d07562a26a6edee0b1516df36c9f7b2433e7b96e49e979fe823a97106b2eee0c",
+      "byte_size": 13248
+    },
+    {
+      "path": "baseline_registry_0.1.0/relation_catalog.csv",
+      "sha256": "fddd8582ece008dd78b7ad9d3c1396c6965fbdc851a7aa3b8667e0873d44a90f",
+      "byte_size": 4660
+    },
+    {
+      "path": "baseline_registry_0.1.0/unit_rules.csv",
+      "sha256": "9c64b93bfdcdaaf73ae385902234dc69344efb232f20258fd07e55cc654dbf40",
+      "byte_size": 4305
+    },
+    {
+      "path": "business_relations.jsonl",
+      "sha256": "2175a42b41980c0767d65479ead70c06fab71b58e4d3ddf4072b32a7029cbb18",
+      "byte_size": 13748
+    },
+    {
+      "path": "comparability_rules.md",
+      "sha256": "bb0e42b7111aef91fb1211c5c69846434cb6c6b1618fbf767e84aff8fb6727f5",
+      "byte_size": 6035
+    },
+    {
+      "path": "definition_history.csv",
+      "sha256": "0df256e34704f89070f41099826d244d7996c2ffd3f12b617fe41d3c25ce8530",
+      "byte_size": 3573
+    },
+    {
+      "path": "driver_edges.csv",
+      "sha256": "025060c4c016e055655ea4089727a09b075f23c19a682a251fd32d33b2e656a1",
+      "byte_size": 2652
+    },
+    {
+      "path": "entity_catalog.csv",
+      "sha256": "690347b8d37b46a40fc4138cf87e734c172f86c2344bd1a1874ae65171b3136c",
+      "byte_size": 2183
+    },
+    {
+      "path": "handoff_p2.md",
+      "sha256": "5aa45d21b383740e2021ae2bbd0415abfc5d4b6f11ffc8416f4b7cee6b824764",
+      "byte_size": 6742
+    },
+    {
+      "path": "metric_catalog.csv",
+      "sha256": "d6d6632798cfb559aacae90838b6a8c105e48eccc6b4d1458cd56d0af1800b7b",
+      "byte_size": 14377
+    },
+    {
+      "path": "metric_occurrences.csv",
+      "sha256": "4641d2f76ed04d6f5156efd6099f48d59c195a96dea136b841a37b659db9e522",
+      "byte_size": 74338
+    },
+    {
+      "path": "metric_sampling.md",
+      "sha256": "d7305276811b29b90c14dcb870d9e8280ee74d6d4d14854e5349ce0d086f58e4",
+      "byte_size": 4954
+    },
+    {
+      "path": "occurrences_company_a.csv",
+      "sha256": "4641d2f76ed04d6f5156efd6099f48d59c195a96dea136b841a37b659db9e522",
+      "byte_size": 74338
+    },
+    {
+      "path": "occurrences_company_b.csv",
+      "sha256": "aeaaf093a30d41d4f911dd02524aa3b0a8e1123ce08594d5e279f744fd4e8829",
+      "byte_size": 913
+    },
+    {
+      "path": "ontology_decisions.md",
+      "sha256": "59e2d1e79c26a80bff2b33ffd803b3f8fe53abd57b567b6db597474b29a0f18f",
+      "byte_size": 4372
+    },
+    {
+      "path": "progression_authorization.json",
+      "sha256": "451fc4af266b679ac2bd504e0a9b94f1fd69523604b8e826b5857d54d54131bb",
+      "byte_size": 721
+    },
+    {
+      "path": "relation_catalog.csv",
+      "sha256": "fddd8582ece008dd78b7ad9d3c1396c6965fbdc851a7aa3b8667e0873d44a90f",
+      "byte_size": 4660
+    },
+    {
+      "path": "task_status.csv",
+      "sha256": "7134941e5ded7d6f1651b82ea8b9d859764cfb88ca75d6079247f5540aa7f596",
+      "byte_size": 2691
+    },
+    {
+      "path": "transfer_assessment.csv",
+      "sha256": "ad4b08e77d9eea2f02a1303b4bb4041d16a1c1af1db9d4682fcbf27cb5b270b3",
+      "byte_size": 33386
+    },
+    {
+      "path": "transfer_cases.jsonl",
+      "sha256": "9955a29443b498d3fef1a267fc8c228d9501b182c8b87e044a7506fd3080513f",
+      "byte_size": 43061
+    },
+    {
+      "path": "transfer_manifest.csv",
+      "sha256": "a42e0866902303754659efa0bfc0eda49b5fd014117f7b077d5f589a58d7304b",
+      "byte_size": 9343
+    },
+    {
+      "path": "unit_rules.csv",
+      "sha256": "9c64b93bfdcdaaf73ae385902234dc69344efb232f20258fd07e55cc654dbf40",
+      "byte_size": 4305
+    }
+  ],
+  "source_inputs": [
+    {
+      "path": "artifacts/us_equity/p0/available_20261005/facts_v0_3.jsonl",
+      "sha256": "9da66d8defbe80a58a9583a2ad2c57bd78dbc7cfb54a8ed230752b8ab030ba05",
+      "byte_size": 132902
+    },
+    {
+      "path": "artifacts/us_equity/p0/available_20261005/document_manifest_v0_3.csv",
+      "sha256": "a4d2ffd35db473a1e88a0dac5d470328801212f0b63cffbc13e5ba89ad2d4915",
+      "byte_size": 2578
+    },
+    {
+      "path": "artifacts/us_equity/p0/available_20261005/extraction_audit_v0_3.csv",
+      "sha256": "a6187bb89f2723423dd9d008fd83fda71c967a2500b058eafdbdd24879bd8f4b",
+      "byte_size": 24466
+    },
+    {
+      "path": "artifacts/us_equity/p0/available_20261005/verification_report_v0_3.json",
+      "sha256": "c7e934881d7d27364e90b2435347baa441f5e8b511e8ba9c14edd9f48480ad5e",
+      "byte_size": 733
+    },
+    {
+      "path": "artifacts/us_equity/p0/available_20261005/business_relations.jsonl",
+      "sha256": "73b3d824f54975051912f8dbf636a6b7470d875240af47dd2997fa3ffa89ea29",
+      "byte_size": 9536
+    },
+    {
+      "path": "artifacts/us_equity/p0/available_20261005/scope_corroboration.json",
+      "sha256": "e08d6fa1e22ea1b322f82b257a670ee099cc016011707d07f309d49d2832b331",
+      "byte_size": 1426
+    },
+    {
+      "path": "artifacts/us_equity/p0/available_20261005/source_registry.csv",
+      "sha256": "39b43e07bd4f90ef8ef93416bcd54e53a8d8bf361bd80d81311f53f29312234b",
+      "byte_size": 1270
+    },
+    {
+      "path": "artifacts/us_equity/p0/available_20261005/source_conditions.md",
+      "sha256": "fb562c431460433b3bd1b1d4effb11bfc5b8b00a96ad66ef293facb7d2f5532a",
+      "byte_size": 7826
+    },
+    {
+      "path": "artifacts/us_equity/p0/available_20261005/source_run_manifest.json",
+      "sha256": "ab320d58e76ae80d71f74c728ad838e5c76ae7212536b8134d6aef43fc601ece",
+      "byte_size": 2332
+    }
+  ],
+  "code_inputs": [
+    {
+      "path": "scripts/p03_source_facts.py",
+      "sha256": "12b5bb198baca5d4f0bb2e5dfb1237af275f4c4d45f4613d58ef7280bbfe0432",
+      "byte_size": 34668
+    },
+    {
+      "path": "scripts/p03_comparability.py",
+      "sha256": "2a65132d15d7d89d0a0ccfc0957901bfbb8458f779e2d3a8b6180e3b0b3a19a9",
+      "byte_size": 17366
+    },
+    {
+      "path": "scripts/p03_apply_registry.py",
+      "sha256": "4fbb3e33188fb6f05ff2fca1fa88391f0ea87e7765b97b556c70af9baf994413",
+      "byte_size": 9315
+    },
+    {
+      "path": "scripts/p03_verify_registry.py",
+      "sha256": "e0a72f2f8c75a8864a0ec8e3331741701fc5241f997bea2fe137a8e276b68a8b",
+      "byte_size": 41609
+    }
+  ],
+  "qa_report": "independent_validation.json",
+  "qa_hash_policy": "Final QA is produced after this snapshot and excluded to prevent a circular hash; artifact_inventory records its final hash.",
+  "limitations": [
+    "Numeric-cell audits only; full-body completeness unassessed.",
+    "Supplemental consolidation evidence observed in 2026 with publication date unknown; historical cutoff guards enforced.",
+    "Segment presentation change cause remains unresolved; version mismatch comparisons produce no delta.",
+    "P04 independent annotation, untouched evaluation, other companies/sectors and broader business relations are outside this execution."
+  ]
+}

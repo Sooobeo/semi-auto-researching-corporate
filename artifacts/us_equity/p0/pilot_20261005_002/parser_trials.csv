@@ -1,0 +1,5 @@
+resource_id,method,version,attempted,status,full_filing_text_extraction
+SEC-API-0000789019-submissions,stdlib_json,sec-pilot-0.1.1,False,held_by_source_registry_host_block,not_attempted
+SEC-API-0000789019-companyfacts,stdlib_json,sec-pilot-0.1.1,False,held_by_source_registry_host_block,not_attempted
+SEC-API-0001045810-submissions,stdlib_json,sec-pilot-0.1.1,False,held_by_source_registry_host_block,not_attempted
+SEC-API-0001045810-companyfacts,stdlib_json,sec-pilot-0.1.1,False,held_by_source_registry_host_block,not_attempted

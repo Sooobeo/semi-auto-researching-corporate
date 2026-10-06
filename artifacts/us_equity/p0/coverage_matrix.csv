@@ -1,0 +1,11 @@
+company_id,document_type,source_id,reference_period_start,reference_period_end,period_basis,coverage_status,reason,scope_id,team_scope_status
+US-MSFT,annual_report,SEC_EDGAR_ARCHIVES,,,unknown,not_tested,SEC_host_403_before_document_discovery,US-MSFT-CONSOLIDATED,pending
+US-MSFT,quarterly_report,SEC_EDGAR_ARCHIVES,,,unknown,not_tested,SEC_host_403_before_document_discovery,US-MSFT-CONSOLIDATED,pending
+US-MSFT,earnings_and_adjustment_tables,MSFT_IR_WEB,,,unknown,held_rights_review,corpus_and_AI_conditions_unresolved,US-MSFT-CONSOLIDATED,pending
+US-MSFT,business_relation_announcement,MSFT_IR_WEB,,,unknown,held_rights_review,corpus_and_AI_conditions_unresolved,unknown,pending
+US-MSFT,management_QA,MSFT_IR_WEB,,,unknown,not_tested,source_route_not_adopted,unknown,pending
+US-NVDA,annual_report,SEC_EDGAR_ARCHIVES,,,unknown,not_tested,SEC_host_403_before_document_discovery,US-NVDA-CONSOLIDATED,pending
+US-NVDA,quarterly_report,SEC_EDGAR_ARCHIVES,,,unknown,not_tested,SEC_host_403_before_document_discovery,US-NVDA-CONSOLIDATED,pending
+US-NVDA,earnings_and_adjustment_tables,NVDA_IR_WEB,,,unknown,held_rights_review,automation_terms_restrict_and_IR_applicability_unresolved,US-NVDA-CONSOLIDATED,pending
+US-NVDA,business_relation_announcement,NVDA_IR_WEB,,,unknown,held_rights_review,automation_terms_restrict_and_IR_applicability_unresolved,unknown,pending
+US-NVDA,management_QA,NVDA_IR_WEB,,,unknown,not_tested,source_route_not_adopted,unknown,pending

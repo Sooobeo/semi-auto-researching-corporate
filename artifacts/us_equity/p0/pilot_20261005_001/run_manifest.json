@@ -1,0 +1,37 @@
+{
+  "run_id": "us-sec-pilot-20261005-001",
+  "started_at": "2026-10-05T11:59:49.983568+00:00",
+  "completed_at": "2026-10-05T11:59:50.036777+00:00",
+  "client_reference_date": "2026-10-05",
+  "scope_status": "agent_selected_access_trial_candidates_team_pending",
+  "code_revision": "9314d07a5721fc2add4c32db017482b8403e5f8d",
+  "script_sha256": "6f7744f54e2760a9f0ee8a79e75e1c8db9a5267474d63395fd1c6fece60cfe09",
+  "python_version": "3.13.3",
+  "parser_version": "sec-pilot-0.1.0",
+  "input_manifest_hash": "ad3411b2c0b14dc447ee6d37e3fe04878e59d5f3b8cb803c42f7f4a3b67815e6",
+  "legacy_inputs": [],
+  "rate_policy": "one_request_per_second_sequential_no_retry",
+  "redirect_policy": "stop_for_separate_final_domain_review",
+  "ai_processing": "none",
+  "blocked_hosts_from_prior_evidence": [
+    "data.sec.gov"
+  ],
+  "summary": {
+    "api_resources_selected": 4,
+    "api_resources_network_attempted": 0,
+    "api_resources_valid_json": 0,
+    "filing_candidates": 0,
+    "filing_network_attempted": 0,
+    "filing_downloaded": 0,
+    "filing_body_manual_audited": 0,
+    "complete_filing_bodies_verified": 0,
+    "structured_observations": 0,
+    "business_relations_verified": 0,
+    "news_article_candidates": 0,
+    "news_article_bodies_verified": 0,
+    "independent_reporting_expressions": 0,
+    "comparable_cross_outlet_pairs": 0,
+    "ai_original_text_input_calls": 0,
+    "llm_training_runs": 0
+  }
+}

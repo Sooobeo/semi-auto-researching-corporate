@@ -1,0 +1,3 @@
+source_id,source_role,trial_type,article_body_requests,decision,reason,rights_basis_ref
+MSFT_IR_WEB,official_company,terms_only,0,held,corpus_AI_use_unresolved,source_registry.csv
+NVDA_IR_WEB,official_company,terms_only,0,held,automation_restricted_IR_terms_applicability_unresolved,source_registry.csv

@@ -1,0 +1,13 @@
+task_id,status,completed_work,remaining_work,artifact_refs
+P03-T01,completed_limited_scope,Microsoft 1 selected company; FY2024 base/FY2025 exposed adaptation scope and denominators fixed,NVIDIA candidate and uninvestigated prose/sector scopes retained,metric_sampling.md
+P03-T02,completed_selected_cells,Microsoft official numeric occurrences33; explicit source XPath/headers and raw/scale fields,Whole body/company policy coverage not audited; source extraction is agent draft,metric_occurrences.csv;../p0/available_20261005/facts_v0_3.jsonl
+P03-T03,scope_exception,Additional company not required under available-data scope; NVIDIA candidate retained,Not an executed second-company extraction or company holdout,metric_sampling.md
+P03-T04,completed_selected_cells,Metric counts recomputed from33 source records; 7observed/2projectformulas/5candidate,Forecast linkage and industry generality not investigated,metric_catalog.csv
+P03-T05,completed_registry_draft,"14metric,7concept,5entity,6relation definitions and14scoped aliases source-linked","Company FCF, customer/product/supply/competition evidence remains candidate",alias_registry.csv;entity_catalog.csv;relation_catalog.csv;accounting_concept_catalog.csv
+P03-T06,implemented_policy,9unit rules define direct scale and guarded period/sign/FX policies,Root engine checks separate from operational source-rights validation,unit_rules.csv
+P03-T07,implemented_root_engine,Root comparer preserves reason-coded conditions and definition/scope/date guards,Actual application/independent probes are in root-generated reports,comparability_rules.md
+P03-T08,completed_limited_scope,6reports_segmentclaims/3unique endpoints; calculation2/proposed2 driver separation,No customer/supplier relations or revenue impact inferred,driver_edges.csv;business_relations.jsonl
+P03-T09,user_waived_requirement,Human gate waived; FY2024-only reconstructed registry8files hash frozen,Actual human annotation/adjudication/agreement absent; no blind freeze claim,ontology_decisions.md;registry_v0.1_manifest.json
+P03-T10,completed_adaptation_scope,18source claims in FY2025 separate release selected; exposed same-company adaptation,No company/sector holdout; no reserved untouched source cases,transfer_manifest.csv
+P03-T11,completed_registry_application,"18cases/72fieldassessments; corporate12use,segment6presentation version guard","Policy cause not read; reapplication is retrospective adaptation, not accuracy",transfer_cases.jsonl;transfer_assessment.csv
+P03-T12,completed_limited_handoff,Traceable registry/baseline/source lineage and caveats handed off,Root package checks and complete phase scope limits in final briefing,handoff_p2.md

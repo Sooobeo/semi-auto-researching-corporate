@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-10-05T12:17:34.040130+00:00",
+  "client_reference_date": "2026-10-05",
+  "source_supported_documents": 0,
+  "human_independent_annotations": 0,
+  "gold_records": 0,
+  "p01_policy_regression": {
+    "tests_passed": 14,
+    "tests_failed": 0,
+    "live_network_requests": 0,
+    "command": "python -m unittest tests/test_p01_us_sec_pilot.py"
+  },
+  "p01_manifest_validation": {
+    "passed": 11,
+    "not_exercised": 9
+  },
+  "p02_synthetic_validation": {
+    "examples_valid": 6,
+    "examples_total": 6,
+    "negative_cases": 22,
+    "cases_passed": 28,
+    "cases_total": 28
+  },
+  "markdown_links": {
+    "files_checked": 23,
+    "broken": []
+  },
+  "p02_artifact_manifest_hash_errors": [],
+  "python_compilation": "passed",
+  "git_diff_check": "passed",
+  "legacy_artifact_changes": [],
+  "phase_status": "preparatory_execution_and_draft_package_only_source_and_human_validation_incomplete"
+}

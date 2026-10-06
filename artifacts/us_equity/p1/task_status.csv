@@ -1,0 +1,12 @@
+task_id,status,completed_work,remaining_work,artifact_refs
+P02-T01,partial,"RQ and search plan written","Team scope/time/reviewer allocation","search_protocol.md"
+P02-T02,partial,"Doc2EDAG selected body sections and FinQA task/evidence sections checked","Team-selected full reading and English source-case transfer validation","literature_events.csv"
+P02-T03,partial,"Accounting/research action distinction and read limits recorded","IFRS full text and MacKinlay body unread; no team label agreement","literature_materiality.csv;materiality_schema_candidates.md"
+P02-T04,partial,"SKOS PROV-O and selected SEC/CFA sections linked to concepts","Company KPI/relationship terms and FIBO term release unverified","literature_metrics.csv;concept_dictionary.md;financial_annotation_notes.md"
+P02-T05,incomplete,"Pending source record and six explicitly synthetic schema examples","Authorized auditable actual US body and real seed cases not obtained","schema_seed_cases.jsonl;schema_examples.jsonl"
+P02-T06,provisional,"Atomic claim decision and alternatives documented","Actual cases and team review pending","event_unit_decision.md"
+P02-T07,provisional,"JSON Schema and event/relation field missingness definitions implemented","Actual source and independent human validation pending","event_schema.md;relation_schema.md;event_schema_v0.1.json"
+P02-T08,provisional,"Multiple claims correction/followup and relation rules written","Real plan-execution/correction/direction examples unavailable","event_relation_rules.md"
+P02-T09,provisional,"MQ01-MQ08 response/readiness candidates separate from facts","Independent ratings and usefulness/threshold decisions pending","materiality_questions.md"
+P02-T10,incomplete,"Synthetic contract fixtures executed","Two or more humans and previously unseen actual US cases not available","usability_notes.md;schema_validation_report.json"
+P02-T11,provisional_handoff,"RQ-source-rule-validation trace and reproducible draft package","T10 and team acceptance must precede final handoff","research_map.md;handoff_p1.md"

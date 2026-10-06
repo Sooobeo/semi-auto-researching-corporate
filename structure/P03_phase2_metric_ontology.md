@@ -4,6 +4,8 @@
 
 [전체 목차](README.md) · [공통 데이터 규약](DATA_CONTRACTS.md) · [레퍼런스](REFERENCES.md) · [작업 인덱스](TASK_INDEX.md) · [공통 목표·리서치 적용](GOALS_AND_RESEARCH_WORKFLOW.md)
 
+**2026-10-05 실행:** [P03 브리핑](../artifacts/us_equity/p2/execution_briefing.md), [작업 상태](../artifacts/us_equity/p2/task_status.csv), [인계](../artifacts/us_equity/p2/handoff_p2.md). 최신 사용자 지시로 인간 검토 진입 조건을 면제하고 확보 가능한 Microsoft 공식 자료의 33개 숫자·6개 보고 사업부 관계 주장으로 제한된 등록부와 비교 구현을 실행했습니다. 전사/사업부 비교 21쌍 중 15쌍 계산·표시 정의 차이 6쌍 차단입니다. 아래 여러 기업·독립 주석·미노출 전이 검증 설계의 전체 완료나 인간 gold를 뜻하지 않습니다.
+
 ## 1. 이 단계에서 답할 질문
 
 미국 기업의 지표·사건과 필요한 제품/서비스·고객·경쟁·공급·산업 관계를 어떤 개념·규칙으로 표현해야 기존 상태와 새 정보를 일관되게 연결·비교할 수 있는가? 작은 기업 표본에서 만든 기준을 다른 기업·섹터에 적용할 때 무엇을 유지하고 바꿔야 하는가?
@@ -22,7 +24,7 @@
 - `driver_edges.csv / ontology_decisions.md`
 - `transfer_cases.jsonl / transfer_assessment.csv`
 
-새 산출물 경로는 저장소 루트의 `artifacts/us_equity/p2/` 기준 제안입니다. 기존 한국기업 registry·전이 사례·평가 결과를 새 기준이나 adaptation 증거로 사용하지 않습니다. 새 데이터·코드는 아직 생성되지 않았으며 원문은 새 P0의 권리와 보관 규칙을 따릅니다.
+실행 산출물 경로는 저장소 루트의 `artifacts/us_equity/p2/`입니다. Microsoft 한 기업의 선정 표 셀·등록부·사후 adaptation 결과와 비교 코드를 생성했습니다. 기존 한국기업 registry·전이 사례·평가 결과를 새 기준이나 adaptation 증거로 사용하지 않습니다. 원문은 새 P0의 권리와 보관 규칙을 따르며 소량 사실 참조로 제한했습니다.
 
 ## 3. 상세 설계와 판단 규칙
 

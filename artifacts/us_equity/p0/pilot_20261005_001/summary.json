@@ -1,0 +1,18 @@
+{
+  "api_resources_selected": 4,
+  "api_resources_network_attempted": 0,
+  "api_resources_valid_json": 0,
+  "filing_candidates": 0,
+  "filing_network_attempted": 0,
+  "filing_downloaded": 0,
+  "filing_body_manual_audited": 0,
+  "complete_filing_bodies_verified": 0,
+  "structured_observations": 0,
+  "business_relations_verified": 0,
+  "news_article_candidates": 0,
+  "news_article_bodies_verified": 0,
+  "independent_reporting_expressions": 0,
+  "comparable_cross_outlet_pairs": 0,
+  "ai_original_text_input_calls": 0,
+  "llm_training_runs": 0
+}

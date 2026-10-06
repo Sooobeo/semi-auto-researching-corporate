@@ -1,0 +1,5 @@
+trial_id,resource_kind,resource_id,source_url,observed_at,http_status,status,original_filing_body_read
+us-sec-pilot-20261005-001-SEC-API-0000789019-submissions,api_payload,SEC-API-0000789019-submissions,https://data.sec.gov/submissions/CIK0000789019.json,2026-10-05T11:59:49.999526+00:00,,robots_denied_or_unresolved,False
+us-sec-pilot-20261005-001-SEC-API-0000789019-companyfacts,api_payload,SEC-API-0000789019-companyfacts,https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json,2026-10-05T11:59:49.999605+00:00,,robots_denied_or_unresolved,False
+us-sec-pilot-20261005-001-SEC-API-0001045810-submissions,api_payload,SEC-API-0001045810-submissions,https://data.sec.gov/submissions/CIK0001045810.json,2026-10-05T11:59:49.999616+00:00,,robots_denied_or_unresolved,False
+us-sec-pilot-20261005-001-SEC-API-0001045810-companyfacts,api_payload,SEC-API-0001045810-companyfacts,https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json,2026-10-05T11:59:49.999623+00:00,,robots_denied_or_unresolved,False

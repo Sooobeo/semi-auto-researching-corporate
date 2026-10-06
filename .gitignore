@@ -11,5 +11,9 @@ artifacts/p0/domestic_pilot_*/**/raw/
 artifacts/p0/domestic_pilot_*/**/bodies/
 artifacts/p0/domestic_pilot_*/**/private/
 artifacts/p0/domestic_pilot_*/**/body_blocks.jsonl
+artifacts/us_equity/**/raw/
+artifacts/us_equity/**/private/
+artifacts/us_equity/**/bodies/
+artifacts/us_equity/**/blocks.jsonl
 __pycache__/
 *.pyc

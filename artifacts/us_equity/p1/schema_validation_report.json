@@ -1,0 +1,295 @@
+{
+  "checked_at_date": "2026-10-05",
+  "schema_version": "0.1.0",
+  "schema_sha256": "a738b85f769df93e267c94cdf2b8d70f3fb811ba72455ce32eddc1ceb81aa2f3",
+  "jsonschema_version": "4.26.0",
+  "schema_check": "passed",
+  "source_supported_examples": 0,
+  "synthetic_examples": 6,
+  "examples_valid": 6,
+  "examples_total": 6,
+  "negative_cases": 22,
+  "cases_passed": 28,
+  "cases_total": 28,
+  "human_independent_annotations": 0,
+  "gold_events": 0,
+  "source_audit_status": "not_performed_by_this_validator",
+  "rights_audit_status": "not_certified_by_this_validator",
+  "example_results": [
+    {
+      "record_id": "SYN-C-plan",
+      "errors": []
+    },
+    {
+      "record_id": "SYN-C-actual",
+      "errors": []
+    },
+    {
+      "record_id": "SYN-C-zero",
+      "errors": []
+    },
+    {
+      "record_id": "SYN-C-relative",
+      "errors": []
+    },
+    {
+      "record_id": "SYN-C-relation-plan",
+      "errors": []
+    },
+    {
+      "record_id": "SYN-C-relation-executed",
+      "errors": []
+    }
+  ],
+  "case_results": [
+    {
+      "case_id": "valid-SYN-C-plan",
+      "expected_valid": true,
+      "observed_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "valid-SYN-C-actual",
+      "expected_valid": true,
+      "observed_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "valid-SYN-C-zero",
+      "expected_valid": true,
+      "observed_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "valid-SYN-C-relative",
+      "expected_valid": true,
+      "observed_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "valid-SYN-C-relation-plan",
+      "expected_valid": true,
+      "observed_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "valid-SYN-C-relation-executed",
+      "expected_valid": true,
+      "observed_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "reject-date-invented-midnight",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "normalized/temporal/published_at: '2025-01-15T00:00:00Z' is not of type 'null'"
+      ]
+    },
+    {
+      "case_id": "reject-null-without-reason",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "normalized/missing_reason: None is not one of ['not_disclosed', 'not_found', 'ambiguous', 'not_applicable', 'parse_failed', 'incompatible', 'not_yet_checked']"
+      ]
+    },
+    {
+      "case_id": "reject-insufficient-input-nonnull-output",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "derived/0/output: '120' is not of type 'null'"
+      ]
+    },
+    {
+      "case_id": "reject-binary-float-value",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "normalized/numeric_value: 0.0 is not valid under any of the given schemas"
+      ]
+    },
+    {
+      "case_id": "reject-comma-number",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "normalized/numeric_value: '1,000' is not valid under any of the given schemas"
+      ]
+    },
+    {
+      "case_id": "reject-synthetic-gold",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "annotation_status: 'synthetic_fixture' was expected"
+      ]
+    },
+    {
+      "case_id": "reject-synthetic-test",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "exposure_status: 'synthetic' was expected"
+      ]
+    },
+    {
+      "case_id": "reject-unlocated-nonnull-offset",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "unverified/unlocated evidence cannot assert verified offsets"
+      ]
+    },
+    {
+      "case_id": "reject-end-before-start",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "span end before start",
+        "Unicode code-point span round-trip mismatch"
+      ]
+    },
+    {
+      "case_id": "reject-utf16-offset-unit",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "provenance/evidence/0/offset_unit: 'unicode_code_point' was expected"
+      ]
+    },
+    {
+      "case_id": "reject-range-missing-endpoints",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "normalized/lower: None is not of type 'string'",
+        "normalized/upper: None is not of type 'string'"
+      ]
+    },
+    {
+      "case_id": "reject-future-period-reversed",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "effective_period: period ends before start"
+      ]
+    },
+    {
+      "case_id": "reject-relation-direction-flipped",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "supplies_to requires supplier→customer direction and roles"
+      ]
+    },
+    {
+      "case_id": "reject-body-with-unresolved-rights",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "raw.claim_text: body must not be copied with unresolved rights",
+        "evidence.selected_text: excerpt must not be copied with unresolved rights",
+        "raw.action_raw: body-derived expression must not be copied with unresolved rights"
+      ]
+    },
+    {
+      "case_id": "reject-unknown-field-no-reason",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "company_id: null without explicit missing reason"
+      ]
+    },
+    {
+      "case_id": "reject-product-reference-inconsistent",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "product_id missing from entity_refs"
+      ]
+    },
+    {
+      "case_id": "reject-financial-flow-marked-nonfinancial",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "financial_result cannot have nonfinancial context"
+      ]
+    },
+    {
+      "case_id": "reject-stale-missing-reason-for-present-value",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "canonical_unit: missing reason attached to a present value"
+      ]
+    },
+    {
+      "case_id": "reject-action-absent-from-raw-claim",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "synthetic action_raw is not supported by claim_text"
+      ]
+    },
+    {
+      "case_id": "reject-unicode-roundtrip-surface-mismatch",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "Unicode code-point span round-trip mismatch"
+      ]
+    },
+    {
+      "case_id": "reject-excerpt-with-unresolved-rights-no-body",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "evidence.selected_text: excerpt must not be copied with unresolved rights"
+      ]
+    },
+    {
+      "case_id": "reject-missing-reason-for-array-without-crash",
+      "expected_valid": false,
+      "observed_valid": false,
+      "passed": true,
+      "errors": [
+        "entity_refs: missing reason attached to a present value"
+      ]
+    }
+  ],
+  "limitations": [
+    "Synthetic regression checks are not empirical English extraction accuracy.",
+    "External IDs and actual rights require P01 registries and source review.",
+    "Human independent pilot and adjudication remain incomplete."
+  ]
+}
