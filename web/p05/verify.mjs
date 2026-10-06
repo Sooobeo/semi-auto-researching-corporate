@@ -23,4 +23,4 @@ assert(!/password|api_key|bearer_token/i.test(readFileSync(resolve(root,'snapsho
 // All content-related IDs referenced by the script exist in the initial HTML or generated views.
 const fixedIds=['summary','record-list','detail','document-filter','run-button','notice','run-dialog','validation-view','about-view'];
 for(const id of fixedIds)assert(html.includes(`id="${id}"`));
-console.log(JSON.stringify({status:'passed',records:39,numeric:33,relations:6,source_prose_included:false,independent_test:0,browser_qa:'unavailable_no_enabled_browser',webmcp_live_validation:'unavailable_no_supported_browser'}));
+console.log(JSON.stringify({status:'passed',records:39,numeric:33,relations:6,source_prose_included:false,independent_test:0,browser_qa:'not_performed_by_static_check',webmcp_live_validation:'not_performed_by_static_check'}));

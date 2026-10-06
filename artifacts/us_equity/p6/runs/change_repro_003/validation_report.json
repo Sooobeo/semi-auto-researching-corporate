@@ -1,0 +1,83 @@
+{
+  "checks": {
+    "all_modes_all_candidates_accounted": true,
+    "no_duplicate_change_ids": true,
+    "references_resolve": true,
+    "withheld_numeric_outputs_null": true,
+    "relation_no_numeric_delta": true,
+    "reconciliations_incomplete_not_success": true,
+    "no_human_gold_invented": true,
+    "outputs_frozen_before_p03_regression": true,
+    "p03_regression_complete": true,
+    "synthetic_counterexamples": true
+  },
+  "synthetic_cases": 31,
+  "summary": {
+    "candidates": 39,
+    "numeric_candidates": 33,
+    "relation_candidates": 6,
+    "documents": 2,
+    "families": 2,
+    "queries": 234,
+    "retrieval_statuses": {
+      "selected": 24,
+      "all_candidates_time_excluded": 48,
+      "all_candidates_incompatible": 36,
+      "query_unavailable": 126
+    },
+    "modes": {
+      "current_review": {
+        "queries": 78,
+        "selected_queries": 24,
+        "queries_with_candidates": 42,
+        "excluded_candidates": 228,
+        "changes": 42,
+        "paired_comparisons": 24,
+        "comparable_pairs": 15,
+        "not_comparable_pairs": 9,
+        "computed_changes": 15,
+        "withheld_changes": 27,
+        "formula_attempts": 8,
+        "formula_computed": 8
+      },
+      "historical_public": {
+        "queries": 78,
+        "selected_queries": 0,
+        "queries_with_candidates": 20,
+        "excluded_candidates": 284,
+        "changes": 42,
+        "paired_comparisons": 12,
+        "comparable_pairs": 3,
+        "not_comparable_pairs": 9,
+        "computed_changes": 3,
+        "withheld_changes": 39,
+        "formula_attempts": 8,
+        "formula_computed": 0
+      },
+      "observed_live": {
+        "queries": 78,
+        "selected_queries": 0,
+        "queries_with_candidates": 0,
+        "excluded_candidates": 326,
+        "changes": 42,
+        "paired_comparisons": 3,
+        "comparable_pairs": 3,
+        "not_comparable_pairs": 0,
+        "computed_changes": 0,
+        "withheld_changes": 42,
+        "formula_attempts": 8,
+        "formula_computed": 0
+      }
+    },
+    "human_qrels": 0,
+    "human_change_gold": 0,
+    "independent_test": 0,
+    "recall_at_k": null,
+    "change_accuracy": null,
+    "scenario_computed": 0,
+    "scenario_attempts": 1,
+    "reconciliation_complete": 0,
+    "reconciliation_attempts": 12,
+    "new_source_requests": 0
+  }
+}

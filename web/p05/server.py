@@ -18,7 +18,7 @@ RUNS=ROOT/'artifacts/us_equity/p4_web_runs'
 TOKEN=secrets.token_urlsafe(32)
 LOCK=threading.Lock()
 STATE={'busy':False,'stage':None,'run_id':None,'error':None,'run_dir':None}
-STATIC={'/':'index.html','/index.html':'index.html','/app.js':'app.js','/styles.css':'styles.css','/favicon.svg':'favicon.svg','/snapshot.json':'snapshot.json'}
+STATIC={'/':'index.html','/index.html':'index.html','/app.js':'app.js','/styles.css':'styles.css','/favicon.svg':'favicon.svg','/snapshot.json':'snapshot.json','/phases.js':'phases.js','/phases.json':'phases.json','/phase-schema.json':'phase-schema.json'}
 
 def worker():
     run_id='web_'+datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')+'_'+uuid.uuid4().hex[:8]

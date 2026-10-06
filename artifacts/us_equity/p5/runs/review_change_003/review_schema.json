@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "review_item_id",
+    "record_id",
+    "review_group_id",
+    "position",
+    "review_reasons",
+    "review_readiness",
+    "materiality_score",
+    "probability"
+  ],
+  "properties": {
+    "review_readiness": {
+      "const": "needs_review"
+    },
+    "materiality_score": {
+      "type": "null"
+    },
+    "probability": {
+      "type": "null"
+    },
+    "position": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "review_reasons": {
+      "type": "array",
+      "minItems": 1
+    }
+  }
+}

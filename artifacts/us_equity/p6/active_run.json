@@ -1,0 +1,13 @@
+{
+  "run_id": "change_002",
+  "run_dir": "artifacts/us_equity/p6/runs/change_002",
+  "reproduction_run": "change_repro_003",
+  "status": "development_ready",
+  "research_status": "not_evaluated",
+  "site_status": "published",
+  "human_gold": 0,
+  "independent_test": 0,
+  "site_version_number": 2,
+  "deployment_id": "appgdep_6ac4d56b7b8881919765e1e03712e607",
+  "formal_benchmark_complete": false
+}

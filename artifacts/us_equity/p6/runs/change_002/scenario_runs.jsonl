@@ -1,0 +1,1 @@
+{"formula_id": "revenue_from_units_asp", "status": "insufficient_inputs", "output": null, "missing_inputs": ["units", "asp", "target_period", "scope_id", "currency"], "result_kind": "derived_forecast", "assumption_refs": [], "scenario_id": "SC-no-inputs", "synthetic": false, "assumptions_status": "not_provided"}

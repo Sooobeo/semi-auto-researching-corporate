@@ -1,0 +1,72 @@
+{
+  "phase_id": "P06",
+  "run_id": "review_repro_004",
+  "completed_at": "2026-10-06T10:46:56.773309+00:00",
+  "policy_version": "review-0.2.0",
+  "policy_sha256": "ce93c1106e59381768c95a7eef2a15a19b10abc264b6236c904d5b9f59770a43",
+  "schema_version": "p06-0.1",
+  "input_snapshot_sha256": "0dceb8aff695a2d10e562b05001cfb4f5b82ae87fb36736e436f5097fbdc2f31",
+  "summary": {
+    "source_run": "m0_004",
+    "candidate_count": 39,
+    "numeric_count": 33,
+    "relation_count": 6,
+    "documents": 2,
+    "families": 2,
+    "human_gold": 0,
+    "independent_test": 0,
+    "reserved_body_read": false,
+    "legacy_inputs": [],
+    "rights_basis": "existing narrow factual reference; no new source collection or prose export",
+    "rights_checked_date": "2026-10-05",
+    "new_source_requests": 0,
+    "review_groups": 33,
+    "change_connected_candidates": 39,
+    "formal_materiality_benchmark_complete": false
+  },
+  "code_hashes": {
+    "scripts/p06_common.py": "8e17626992bc2bd080bcc6748a7319d04c261887840fba3577aadaebaa9fdba0",
+    "scripts/p06_review.py": "22655aa06dd23d4ce892114502ed7470f0727403cdfdd8b01e3168831e94715d",
+    "scripts/p06_run.py": "923f67ec3d50bc2b6f32cb728786df88419646f88f03d7c21a0a5fe42f7a466a",
+    "scripts/p06_test_review.py": "dc21d5b0266ef92b54490924ca262feec7c43261828b336efe60ebed65014e90",
+    "scripts/p06_verify_package.py": "f63e8efd84318ab24565b8ed90e8c007b5c95ebfa9f454f2b1ff6b6446a66625"
+  },
+  "output_hashes": {
+    "baseline_rankings.jsonl": "d6f62e870d8c33bd17161b65374fe286bca2ff245517b81ee81c6ecedb581bfb",
+    "calibration_report.md": "387cbe294045e237aa27d88defc735a2bbe5dede8c4359108c9163b61951fe6c",
+    "change_feature_ablation.md": "aed2f37b52b296a4c1ae0b2625005cfb46bc90912a8f6d68accae178527e0924",
+    "failed_items.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "feature_records.jsonl": "8a35270e791fb12025fbc44b43ae6a715c4fd63eef2c6191899944ed8c9c802c",
+    "feature_registry.csv": "7def30c53d2af9c1b43c0d24fae4a86f49a10c6b0ee3d9884a28b47b6e601fda",
+    "handoff_p5.md": "f5604a101fcbf33c4911350afebb289afab5e889b82e047e8a88a88ebef12573",
+    "input_records.jsonl": "2b5714475fed710778d2ffbf2429d4e0b3029aadc2479ceb9dfb466727c8980e",
+    "input_snapshot.json": "0dceb8aff695a2d10e562b05001cfb4f5b82ae87fb36736e436f5097fbdc2f31",
+    "label_structure_report.md": "75e225f63046f04662cb594ab42f0609c0bd887fd39e0fe73910b140279f1fe4",
+    "materiality_decision.md": "f36b8febe36cf0eeff64bf3f739bb9fdab02f87a1b5e2fadcff9579c3e00e6f1",
+    "materiality_protocol.md": "19139ad1d4eda5f0e5ff4f90d86663292bfb6b3466a33b8bc1b7ce54080f1777",
+    "model_card.md": "1d9ffb038d8ff707b74459d6af00683694ae01278e26ea8381d059e1efc18629",
+    "outcome_feasibility.md": "c78a5750d971a54d3f195718beed21cb7746274ea2319f0822037a73ff324104",
+    "outcome_manifest.csv": "ca4a719dc30a4753694723ea8582f0a3aa4542779d4e410190333f879cc8cb5b",
+    "policy.json": "351b13ff37f035aad2415c56574cbb956cbcc4cc60a49485c93e7b02f57923e6",
+    "ranking_predictions.jsonl": "20fc7c98081e1adb49ed0053469c6af499b6e6f118aea67b8cef73b5e9509bea",
+    "readiness_report.md": "dd0db2fcad433202a941d9b4aa787fbfbfb0e605a435798f1ac7baa12dc3cad0",
+    "representation_comparison.csv": "a0eb262ec673fd25c4cb9033aaa247c91b105d961cdc2f5011e753bf1038879f",
+    "reproducibility_report.md": "8b71c940f6af2dea2a06399c52399d968d3dcef604739c2596d6b38056bc3a50",
+    "review_schema.json": "b5dde281dd439c0ba7377cef6bb7507fdd9e0fff65cba897dfb4253fa813ad3b",
+    "synthetic_tests.json": "7915f3ec71220a8fe75f9b35e9f9c463ec6c079aadd94e3c2c558aaa30cbf8ac",
+    "validation_report.json": "508ecba4fc602af0b63ffe088075ad5fc8de3fac8e6e3e22b92b10e0070d8d15"
+  },
+  "semantic_hash": "19ca291986aa58258831d96158f2969623c916b12f5c44794cc48c7e54c5de84",
+  "semantic_files": [
+    "feature_records.jsonl",
+    "baseline_rankings.jsonl",
+    "ranking_predictions.jsonl"
+  ],
+  "environment": {
+    "python": "3.13.3",
+    "dependencies": "Python standard library"
+  },
+  "development_status": "development_ready",
+  "research_status": "not_evaluated",
+  "formal_benchmark_complete": false
+}

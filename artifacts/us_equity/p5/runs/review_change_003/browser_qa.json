@@ -1,0 +1,23 @@
+{
+  "status": "passed_for_exercised_flows",
+  "local_url": "http://127.0.0.1:8765",
+  "checks": {
+    "review_date_scope_metric_filters": true,
+    "reason_and_time_views": true,
+    "empty_review_result": true,
+    "review_to_comparison": true,
+    "review_to_original_evidence": true,
+    "three_comparison_modes": true,
+    "current_calculation_and_historical_withholding": true,
+    "validation_page": true,
+    "browser_console_errors_observed": false,
+    "narrow_dom_no_horizontal_overflow": true
+  },
+  "narrow_viewport": {
+    "width": 390,
+    "body_scroll_width": 375
+  },
+  "pixel_qa": "not_certified_screenshot_timing_inconsistent",
+  "live_site_browser_check": "not_performed",
+  "teammate_actual_access": "not_verified"
+}

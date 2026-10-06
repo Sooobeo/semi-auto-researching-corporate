@@ -1,0 +1,17 @@
+{
+  "version": "prior-change-0.1.0",
+  "default_mode": "current_review",
+  "date_only": "strictly earlier prior date",
+  "dependency_policy": "historical requires public evidence; current review permits observed retrospective context",
+  "relative_delta": "(new-old)/abs(old); fraction, not percent",
+  "decimal_precision": 28,
+  "rounding": "ROUND_HALF_EVEN",
+  "calendar_anniversary": "exact month/day endpoints; leap-year difference <=1 day",
+  "retrieval": "exact_key + local_label_tfidf",
+  "modes": [
+    "current_review",
+    "historical_public",
+    "observed_live"
+  ],
+  "cutoff_override": null
+}

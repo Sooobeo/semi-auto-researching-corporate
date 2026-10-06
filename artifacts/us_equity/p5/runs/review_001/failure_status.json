@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "reason": "input order invariance test failed in unsorted feature list",
+  "preserved": true,
+  "fixed_in": "review_002"
+}

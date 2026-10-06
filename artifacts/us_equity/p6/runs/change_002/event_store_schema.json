@@ -1,0 +1,15 @@
+{
+  "required": [
+    "record_id",
+    "doc_id",
+    "revision_id",
+    "raw",
+    "normalized",
+    "assessment",
+    "derived",
+    "evidence_refs"
+  ],
+  "record_id_unique": true,
+  "revision_immutable": true,
+  "source": "P05 candidate extension; not human gold"
+}

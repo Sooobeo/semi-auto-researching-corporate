@@ -1,0 +1,5 @@
+formula_id,version,input_roles,expression,unit,period_scope,rounding,output_kind
+absolute_and_relative_delta,0.1,"new,old",new-old; delta/abs(old),same base unit; relative=fraction,same actual period or calendar-anniversary yoy,28 significant digits HALF_EVEN,derived_change
+operating_margin,0.1,"operating_income,revenue",operating_income/revenue,fraction,same company/consolidated/actual period,28 significant digits HALF_EVEN,project_ratio
+project_fcf,0.1,"cfo,positive_cash_capex",cfo-positive_cash_capex,USD scale=1,same company/consolidated/actual period,exact subtraction,project_fcf_not_company_reported
+revenue_from_units_asp,0.1,"units,asp,scope_id,target_period,currency,assumption_refs",units*asp,explicit currency,same future scope/period; reviewed assumptions,28 significant digits HALF_EVEN,derived_forecast

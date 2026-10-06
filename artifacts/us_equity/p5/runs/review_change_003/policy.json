@@ -1,0 +1,13 @@
+{
+  "version": "review-0.2.0",
+  "mode": "current_review",
+  "group_order": [
+    "scope_availability",
+    "segment_definition",
+    "relation_validity",
+    "evidence_review"
+  ],
+  "date_sort": "ascending; unknown last; record_id ascending for ties",
+  "score_type": "not_estimated",
+  "change_policy": "p07-current-review-sidecar"
+}

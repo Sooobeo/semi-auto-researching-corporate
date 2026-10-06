@@ -45,7 +45,7 @@ function render() {
   const d=state.data,s=d.summary;
   $('nav-count').textContent=s.candidates;$('version').textContent=d.rule_version;
   $('mode').textContent=d.local?.enabled?'내 PC · 실행 가능':'팀 공유 · 결과 보기';
-  $('run-button').textContent=d.local?.enabled?'다시 실행':'실행 방법';
+  $('run-button').textContent=d.local?.enabled?'P05 추출 재실행':'실행 방법';
   $('run-label').textContent=`${d.run_id} · ${displayDate(d.completed_at)} 기준`;
   $('summary').innerHTML=[
     ['처리한 입력',s.inputs,'개',`${s.documents}개 발표 · ${s.families}개 발표 묶음`,'▦',false],
@@ -55,6 +55,7 @@ function render() {
   ].map(([label,n,unit,foot,icon,focus])=>`<article class="stat-card ${focus?'focus-card':''}"><span class="stat-label">${label}</span><span class="stat-icon" aria-hidden="true">${icon}</span><div class="stat-number">${n}<small>${unit}</small></div><div class="stat-foot">${foot}</div></article>`).join('');
   $('document-filter').innerHTML='<option value="all">모든 발표</option>'+d.documents.map(doc=>`<option value="${escapeHTML(doc.id)}">${escapeHTML(doc.label)}</option>`).join('');
   $('document-filter').value=state.doc;renderList();renderDetail();renderValidation();renderAbout();
+  if(window.renderPhaseReports)window.renderPhaseReports(state.view);
 }
 function renderList() {
   const records=filtered();$('filtered-count').textContent=records.length;
@@ -94,11 +95,13 @@ function renderAbout() {
   $('about-view').innerHTML=`<div class="scope-grid"><section class="panel scope-card"><div class="eyebrow">WHAT YOU ARE LOOKING AT</div><h2>P05는 무엇을 하나요?</h2><p>기업 실적표의 숫자와 사업부 이름을 읽어, 값·단위·기준 기간·사업 범위·원문 위치를 구조화하는 첫 프로그램입니다.</p><p>예를 들어 <strong>64,727 × 백만 달러</strong>는 <strong>64,727,000,000 USD</strong>로 정리합니다. 어느 기간의 어떤 지표인지도 함께 남깁니다.</p><p>원문, 구조화한 값, 검토 상태, 계산 결과를 구분합니다. 회사 발표 주장은 외부에서 사실을 검증한 상태와 다릅니다.</p></section><section class="panel scope-card"><div class="eyebrow">CURRENT DATA</div><h2>현재 자료 범위</h2>${d.documents.map(doc=>`<div class="check-row"><span>${escapeHTML(doc.label)}<br><small class="secondary">발표 ${doc.published_date}</small></span><strong>${doc.count}개</strong></div>`).join('')}<p>사업부 관계 6개는 숫자 근거 일부를 함께 사용합니다. 같은 근거를 독립된 실적 관측으로 중복 계산하지 않습니다.</p><p>2025 발표의 2024 비교열은 2025 발표의 표시 정의를 유지합니다.</p></section>${d.limitations.map(l=>`<section class="panel scope-card"><div class="eyebrow">NEEDS REVIEW</div><h2>${escapeHTML(l.label)}</h2><p>${escapeHTML(l.detail)}</p></section>`).join('')}<section class="panel scope-card"><div class="eyebrow">NEXT STEPS</div><h2>다음 단계</h2><p>기존 실적과 새 발표의 비교, 사업부 정의 확인, 근거를 연결한 검토 카드로 확장할 수 있습니다. 실제 성능 평가에는 독립적인 사람 정답과 새로운 문서가 필요합니다.</p></section><section class="panel scope-card"><div class="eyebrow">SHARED VIEW</div><h2>공유한 내용</h2><p>최소 숫자·표준 라벨·기간·위치와 개발 결과를 보여줍니다. 출처 조건은 2026-10-05 확인한 기존 사실 참조 범위를 따릅니다.</p><p>공유 화면은 게시된 실행 결과입니다. 새 로컬 실행 결과를 팀 화면에 반영하려면 결과를 내보내고 다시 게시해야 합니다.</p></section></div>`;
 }
 function switchView(view) {
-  if(!['results','validation','about'].includes(view))throw new Error('지원하지 않는 화면입니다.');
-  state.view=view;['results','validation','about'].forEach(name=>$(name+'-view').hidden=name!==view);
+  const views=['review','changes','calculations','results','validation','about'];
+  if(!views.includes(view))throw new Error('지원하지 않는 화면입니다.');
+  state.view=view;views.forEach(name=>$(name+'-view').hidden=name!==view);
   document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===view));
-  $('page-title').textContent={results:'실적 추출 결과',validation:'실행·검증',about:'범위와 남은 일'}[view];
-  $('page-subtitle').textContent={results:'표에 적힌 숫자가 무엇을 뜻하는지, 어디에서 왔는지 확인하세요.',validation:'입력부터 참조 비교까지, 이번 실행의 과정을 확인하세요.',about:'현재 확인한 내용과 추가 검토가 필요한 부분을 구분합니다.'}[view];
+  $('page-title').textContent={review:'검토할 항목',changes:'이전 정보와 비교',calculations:'재무 계산',results:'실적 추출 결과',validation:'실행·검증',about:'범위와 남은 일'}[view];
+  $('page-subtitle').textContent={review:'확인이 필요한 이유와 다음에 볼 근거를 살펴보세요.',changes:'시점과 정의가 맞는 값만 비교하고, 보류 이유를 함께 확인하세요.',calculations:'입력·기간·사업 범위가 맞는 공식만 계산합니다.',results:'표에 적힌 숫자가 무엇을 뜻하는지, 어디에서 왔는지 확인하세요.',validation:'입력부터 참조 비교까지, 이번 실행의 과정을 확인하세요.',about:'현재 확인한 내용과 추가 검토가 필요한 부분을 구분합니다.'}[view];
+  if(window.renderPhaseReports)window.renderPhaseReports(view);
 }
 async function startRun() {
   if(!state.data?.local?.enabled){$('run-dialog').showModal();return;}
@@ -117,7 +120,7 @@ async function startRun() {
     await load();notice('새 실행이 완료되었습니다. 이 화면에 최신 로컬 결과를 반영했습니다.');
     return {run_id:state.data.run_id,inputs:state.data.summary.inputs,candidates:state.data.summary.candidates};
   } catch(error){notice(error.message,true);throw error;}
-  finally{state.running=false;$('run-button').disabled=false;$('run-button').textContent=state.data?.local?.enabled?'다시 실행':'실행 방법';}
+  finally{state.running=false;$('run-button').disabled=false;$('run-button').textContent=state.data?.local?.enabled?'P05 추출 재실행':'실행 방법';}
 }
 document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>switchView(b.dataset.view)));
 document.querySelectorAll('[data-kind]').forEach(b=>b.addEventListener('click',()=>{state.kind=b.dataset.kind;document.querySelectorAll('[data-kind]').forEach(t=>t.classList.toggle('selected',t===b));renderList();}));
