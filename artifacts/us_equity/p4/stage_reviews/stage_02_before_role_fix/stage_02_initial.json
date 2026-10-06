@@ -1,0 +1,33 @@
+{
+  "stage": 2,
+  "phase": "initial",
+  "checked_at": "2026-10-06T07:42:04.610673+00:00",
+  "gate": "passed_with_explicit_limitations",
+  "checks": {
+    "inputs_preserved": true,
+    "reference_links_39": true,
+    "evidence_84": true,
+    "schemas_valid": true,
+    "offsets_roundtrip": true,
+    "source_roundtrip": true,
+    "unique_input_ids": true,
+    "no_answer_fields": true
+  },
+  "details": {
+    "inputs": 39,
+    "unique_evidence": 84,
+    "evidence_occurrences": 189
+  },
+  "code_sha256": {
+    "scripts/p05_common.py": "824792bd734438ce66a59a5b06210b697c912c516749c4d55a38e013a0699024",
+    "scripts/p05_contracts.py": "cb69a466daf27cd90a8404e8e5029e9858da735d049bcf14b2c2cc5a91b80ef7",
+    "scripts/p05_prepare_inputs.py": "50c8cce92f4b31e352a638ee93b238f715637e9eb7b79aa3269f41853b11a65a"
+  },
+  "independent_evaluation": "not_evaluated",
+  "human_gold": 0,
+  "limitations": [
+    "selected cells, shared adaptation references",
+    "no human gold or independent test",
+    "no full-body or date-conflict audit"
+  ]
+}

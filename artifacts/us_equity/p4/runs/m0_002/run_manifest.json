@@ -1,0 +1,51 @@
+{
+  "run_id": "m0_002",
+  "started_at": "2026-10-06T07:46:49.003441+00:00",
+  "completed_at": "2026-10-06T07:46:49.571829+00:00",
+  "input_count": 39,
+  "candidate_count": 39,
+  "terminal_results": 39,
+  "status_counts": {
+    "predicted": 39
+  },
+  "attempts": 39,
+  "external_calls": 0,
+  "network_disabled": true,
+  "reference_read_at": null,
+  "reference_access": "not_read_by_extractor",
+  "inference_file_reads": [],
+  "blocked_accesses": [],
+  "input_mode": "preselected_cells",
+  "exposure": "adaptation",
+  "human_gold": 0,
+  "independent_evaluation": "not_evaluated",
+  "code_sha256": {
+    "scripts/p05_common.py": "60504724adff609786b1bfce5f4ad09c61c1f0295ae698537a9035cd7fc30471",
+    "scripts/p05_contracts.py": "cb69a466daf27cd90a8404e8e5029e9858da735d049bcf14b2c2cc5a91b80ef7",
+    "scripts/p05_input_validation.py": "a172610b8ca50190d381eb6365a593a9dd0b5bdc49ae0ce8158c289773349d50",
+    "scripts/p05_prepare_inputs.py": "8c149752cf1767496d16ed43a6265077eee0940f7ac004cfd8f477dff22b516d",
+    "scripts/p05_rule_baseline.py": "01e5da20fa426ee8bf32f6b5cbdff03e80728ebd7d5a92473e69d22bc8daee5f",
+    "scripts/p05_test_baseline.py": "e3270adc9d074b143d235e48847ed891842afd1c7f5ec2a7914d16bc9978da7d"
+  },
+  "input_schema_registry_dependency_hashes": {
+    "artifacts/us_equity/p4/rules_v0_1.json": "08f1f39f9cbeb693d8916b9dd8546189baf0c2a2cab74166ec9a9a86b9aa7626",
+    "artifacts/us_equity/p4/input_schema.json": "c97d69f07b2b45eaeb06c1ecf289e1a6e940a467cf319eb4bc76b2fb5605311a",
+    "artifacts/us_equity/p4/prediction_schema.json": "d150ade6d4c239cee7f0a3173528c34d3f0addacb7aa895cd093f22119856bb5",
+    "artifacts/us_equity/p4/extractor_inputs.jsonl": "5d5fdad7aa198f8c8a0e93fdabf49c95380c50b0796da3cdb5496314d4ed631e",
+    "artifacts/us_equity/p4/requirements.lock": "25ec68bc28610e251f9f6da05a9eac1b895129af8e646a143ca5ed9287946eb2",
+    "artifacts/us_equity/p4/environment_manifest.json": "4c1529181ff9312c72f53e0f352e54e015267b0efa7226a890d4d72d32b8025e"
+  },
+  "output_hashes": {
+    "artifacts/us_equity/p4/runs/m0_002/predictions.jsonl": "313e6c70b25ebef305b13ae76d7a732d24066f44ac06f43b98aa445950c9ac79",
+    "artifacts/us_equity/p4/runs/m0_002/input_results.jsonl": "e4d441e5cff586e44ab226fe9dd453b976914dcf0336f1c318c1b9814948beb6",
+    "artifacts/us_equity/p4/runs/m0_002/normalization_audit.jsonl": "6dbf06448895d2cc3f3bcc3d39fd824a240cb72a2c764763b80d4ae0b77f5652"
+  },
+  "initialization_seconds": 0.199489700000413,
+  "inference_seconds": 0.36118070000156877,
+  "total_seconds": 0.6085786000003282,
+  "cpu_seconds": 0.53125,
+  "peak_python_allocation_bytes": 252017,
+  "resource_limitations": "Python allocations only; OS peak RSS not measured",
+  "random_seed": null,
+  "seed_reason": "deterministic_no_random_generator"
+}

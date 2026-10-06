@@ -1,0 +1,521 @@
+{
+  "package_version": "us-p4-m0-0.1.1",
+  "frozen_at": "2026-10-06T07:56:51.591380+00:00",
+  "status": "development_baseline_ready",
+  "formal_p05_benchmark_complete": false,
+  "human_gold": 0,
+  "independent_test_items": 0,
+  "active_run": "m0_004",
+  "reproduction_run": "m0_repro_005",
+  "files": [
+    {
+      "path": "artifacts/us_equity/p4/active_run.json",
+      "sha256": "c3ee362bf0d1cfcda4588b18afaad47c51fd1937d1494101a0ec86be6f80901a"
+    },
+    {
+      "path": "artifacts/us_equity/p4/baseline_protocol.md",
+      "sha256": "dfad69234244aba96fb074dd7a8a2e8c01077cbcd9a77c838b55d9a85ea88fee"
+    },
+    {
+      "path": "artifacts/us_equity/p4/candidate_store_records.jsonl",
+      "sha256": "886000c8bcb8af27b74648ebeefe25d21c253ac3c4bfe2ef2aac442ef082c87c"
+    },
+    {
+      "path": "artifacts/us_equity/p4/context_provenance.jsonl",
+      "sha256": "3c82efa32b4d8d5b815ca0afb984b90cc21a45843c0036912a70b7cfa78478d4"
+    },
+    {
+      "path": "artifacts/us_equity/p4/development_report.md",
+      "sha256": "026450741de29bca5497a71d041e94408f09e026b27a154f590295a958ae54ec"
+    },
+    {
+      "path": "artifacts/us_equity/p4/environment_manifest.json",
+      "sha256": "4c1529181ff9312c72f53e0f352e54e015267b0efa7226a890d4d72d32b8025e"
+    },
+    {
+      "path": "artifacts/us_equity/p4/evidence_map.jsonl",
+      "sha256": "6114c34d4d919648757c94818cba4ee75a5091a9bdabba1f5e96c96d7a8dc065"
+    },
+    {
+      "path": "artifacts/us_equity/p4/execution_briefing.md",
+      "sha256": "7cf304fa51f232b0e649e150e0ff6835e6b3eb0bd12fb3d1f79f29f927b00fb7"
+    },
+    {
+      "path": "artifacts/us_equity/p4/extractor_inputs.jsonl",
+      "sha256": "c72d389334ecb43c0e9c0b78c31e42e09166e3e6f7e793f8ca50a0e99396f194"
+    },
+    {
+      "path": "artifacts/us_equity/p4/fallback_policy.md",
+      "sha256": "f8e52f512fe19394782ad7da6f572c3f1a21ce680f6f383ca6f77ffa23be0600"
+    },
+    {
+      "path": "artifacts/us_equity/p4/handoff_p4.md",
+      "sha256": "43a7fb88d905b09de5f8c091a6546195e1f9eb00bdfe64bc438708be4b32fc0a"
+    },
+    {
+      "path": "artifacts/us_equity/p4/input_manifest.csv",
+      "sha256": "21e62df907d6a8681857ae100958580ad30f678931724fe6064021d81bb7705a"
+    },
+    {
+      "path": "artifacts/us_equity/p4/input_schema.json",
+      "sha256": "c97d69f07b2b45eaeb06c1ecf289e1a6e940a467cf319eb4bc76b2fb5605311a"
+    },
+    {
+      "path": "artifacts/us_equity/p4/input_snapshot.json",
+      "sha256": "74714ad793557a0d47aa67c72bc7fab3085ccc0b5618c776437fe65a2c8948ba"
+    },
+    {
+      "path": "artifacts/us_equity/p4/model_selection.md",
+      "sha256": "1e3f0ca9a30c773700e2a3519c80a3485908c0dd86ed325725df249b1945e0f4"
+    },
+    {
+      "path": "artifacts/us_equity/p4/prediction_schema.json",
+      "sha256": "d150ade6d4c239cee7f0a3173528c34d3f0addacb7aa895cd093f22119856bb5"
+    },
+    {
+      "path": "artifacts/us_equity/p4/preprocess_audit.csv",
+      "sha256": "becf0809161acdcece0f06fe40bcb128755a0510d166d646799c92b0eafe2d8c"
+    },
+    {
+      "path": "artifacts/us_equity/p4/reference_links.jsonl",
+      "sha256": "062d980d78bb6b53e86ea9db96110bcc44b8ecca36422a654ebea46514715fcf"
+    },
+    {
+      "path": "artifacts/us_equity/p4/relation_claim_links.jsonl",
+      "sha256": "043524c8fd1b510c8d0f8c7365c7979cdd38ec4a2c9d70f8d0b5e10afa5b49d7"
+    },
+    {
+      "path": "artifacts/us_equity/p4/requirements.lock",
+      "sha256": "25ec68bc28610e251f9f6da05a9eac1b895129af8e646a143ca5ed9287946eb2"
+    },
+    {
+      "path": "artifacts/us_equity/p4/revisions/qualifier_001/extractor_inputs.jsonl",
+      "sha256": "5d5fdad7aa198f8c8a0e93fdabf49c95380c50b0796da3cdb5496314d4ed631e"
+    },
+    {
+      "path": "artifacts/us_equity/p4/revisions/qualifier_001/revision_log.json",
+      "sha256": "50d186c6fd2c06eb2db471632d89a69443f0fde52a48f3663c3c057778181367"
+    },
+    {
+      "path": "artifacts/us_equity/p4/revisions/qualifier_001/rules_v0_1.json",
+      "sha256": "08f1f39f9cbeb693d8916b9dd8546189baf0c2a2cab74166ec9a9a86b9aa7626"
+    },
+    {
+      "path": "artifacts/us_equity/p4/rule_provenance.csv",
+      "sha256": "a217eeff8e6492165e1ba6d0aa05f06b73a9f6e5d3561fcd05698cd66fdcf955"
+    },
+    {
+      "path": "artifacts/us_equity/p4/rules_v0_1.json",
+      "sha256": "9ae734956cf5b2f5006ccf829e7684cd2037e22e087c1adbd22fef6dc65c0c8c"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_001/input_results.jsonl",
+      "sha256": "463091a117a24ed3549742989977e17e317d6934ea40696816bb67df35f9dd1c"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_001/normalization_audit.jsonl",
+      "sha256": "8ad7671faa60425a64582b55fc32ffdb39628215a4da71856a264874833db4ed"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_001/predictions.jsonl",
+      "sha256": "e18ca2686c347f85b3843226d6057f68739fd26c28b37255ca0aa003aed643b2"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_001/run_failure.json",
+      "sha256": "c4e1955d869e6d7cbb58bcbaabbb1b016408ec6216f2ccffd423d62ccde26c01"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_002/comparison_manifest.json",
+      "sha256": "beb3279a2cc97158e80cc06f0b1cdc951e577891a6655855aef3cb030a567743"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_002/error_analysis.csv",
+      "sha256": "836ae29655bf9b73b52421d87a443c6c5e001adbfd63f2559064a4aedfeb781d"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_002/input_results.jsonl",
+      "sha256": "e4d441e5cff586e44ab226fe9dd453b976914dcf0336f1c318c1b9814948beb6"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_002/metrics.csv",
+      "sha256": "3558c53265bdf4dd62dd90cdba96ea2b9088f0cfc17e0d652a20f8d2b6771956"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_002/normalization_audit.jsonl",
+      "sha256": "6dbf06448895d2cc3f3bcc3d39fd824a240cb72a2c764763b80d4ae0b77f5652"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_002/predictions.jsonl",
+      "sha256": "313e6c70b25ebef305b13ae76d7a732d24066f44ac06f43b98aa445950c9ac79"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_002/reference_match_results.jsonl",
+      "sha256": "f0fbfb40145439d3acc2add4c6841169f660537e99a554214cda4e982d90b77d"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_002/run_manifest.json",
+      "sha256": "04f2afe2d6145ca8b48750e09b50e0d93ac24715f4e47bccf1cfc3b9b7c4a387"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_002/unmatched_candidates.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_002/validation_report.json",
+      "sha256": "c886aadddde131143aa090e8def0bc49991049c076e841374ca2467ed7a957bf"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_003/comparison_manifest.json",
+      "sha256": "9fa8d4fc950fc0a0e2307ea6f45245b866fdba7e7e160033a70628cd817262c8"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_003/error_analysis.csv",
+      "sha256": "f6bcab295ce4b2e3ea34e2041d193462e32e198ce89049a025b7be5fdadcdebf"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_003/input_results.jsonl",
+      "sha256": "f18feaad79d327509d41412b7295c7dbcd3653cb31d18bd18d0e30c622cf556a"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_003/metrics.csv",
+      "sha256": "c8a564c739082213bf178e7a5b69c227b048790f36774acf94bb361724eaad81"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_003/normalization_audit.jsonl",
+      "sha256": "fc7f261f95b25126adbc9c1ea70a697679e984d25f70e502954114e576ce0cb5"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_003/predictions.jsonl",
+      "sha256": "67afcaefe64e382eb602af8bf3d93bc8ca28b3fcd11aaf551ada0cbe705cf342"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_003/reference_match_results.jsonl",
+      "sha256": "b8acf680229b93735de4e8c2a63b64e2a69377a5bf2a4615ae6ffbc18b5c12a4"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_003/run_manifest.json",
+      "sha256": "271ddee2fd2f6e48d8fab9e013bbfd71672795f4ac76756ca805077ce21d87ee"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_003/unmatched_candidates.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_003/validation_report.json",
+      "sha256": "f833008c8fe96a2471b591a5123a34e2a23e90f2348648122a298caa26dc357d"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_004/comparison_manifest.json",
+      "sha256": "db0220df2e86727360bb6459041bb19e0dcd77f2605428e3cf1d2d4977dac34d"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_004/error_analysis.csv",
+      "sha256": "f6bcab295ce4b2e3ea34e2041d193462e32e198ce89049a025b7be5fdadcdebf"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_004/input_results.jsonl",
+      "sha256": "252e97c1b4a7fde0ce7d23fc13b8dd83ca7c8801c07a5f8a44cfb0e84cc4c80e"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_004/metrics.csv",
+      "sha256": "c8a564c739082213bf178e7a5b69c227b048790f36774acf94bb361724eaad81"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_004/normalization_audit.jsonl",
+      "sha256": "a39f0ebe3b829f0994f04faa308db4de80cfea836b75cdf2c59e4d1069c462c1"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_004/predictions.jsonl",
+      "sha256": "931993260caf7bd8ed59c2ce2fca52857dca64a14f23eafa2303c05907373219"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_004/reference_match_results.jsonl",
+      "sha256": "7ec482f3458b569c5bc724b782b004f6da516ed801601a23a9b3705c2960bd31"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_004/run_manifest.json",
+      "sha256": "77dc4149b75d386debbb236d3fa5efb63a2842d32b9d29b65c3cdaf1b6d5a60d"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_004/unmatched_candidates.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_004/validation_report.json",
+      "sha256": "72045c195ebbf477951c07658af0046c7ea9295ca3c8de26bad99ae615e48bc5"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_repro_005/comparison_manifest.json",
+      "sha256": "710ed0a598304dab8a65ef1a47c3020764d3b0b5ec5e6510214dcb4ba8ce73c9"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_repro_005/error_analysis.csv",
+      "sha256": "f6bcab295ce4b2e3ea34e2041d193462e32e198ce89049a025b7be5fdadcdebf"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_repro_005/input_results.jsonl",
+      "sha256": "f22d0a79ab0b78d33525bd6557e45ecb4dc9576db010844f110fd85f91079b8e"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_repro_005/metrics.csv",
+      "sha256": "c8a564c739082213bf178e7a5b69c227b048790f36774acf94bb361724eaad81"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_repro_005/normalization_audit.jsonl",
+      "sha256": "a266caeaae89136b4e558bb363cea0d808d3b0815029e88b161d95c1a6d20f2e"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_repro_005/predictions.jsonl",
+      "sha256": "dc0336171c2e550f4db255037d522238c812e335adc3b9d97bd5713efcd3cb97"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_repro_005/reference_match_results.jsonl",
+      "sha256": "1f307eeb331c44b6fc66f073ee97e4623f51829175995563ecff02dc3c2bbe07"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_repro_005/run_manifest.json",
+      "sha256": "c5d988f06322f10e28d26a4da9cd714750a74cd9b3241705228414176e93b51f"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_repro_005/unmatched_candidates.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/us_equity/p4/runs/m0_repro_005/validation_report.json",
+      "sha256": "5d21cdaee0448139e124867fc3b79d7e7ff860d315ff5104e50bdaa4fa673686"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/p05_compare_reference.before_syntax_fix.py",
+      "sha256": "d945876d5f59599659047e5902df198f295fc0588cc05a83b0ac2cd4408409d2"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_01_final.json",
+      "sha256": "73f2a16d883ca3907d3936a267bb928f29bf565376e5ea776c207e8b0ddd3c69"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_01_improvements.md",
+      "sha256": "169b96e987c8ed21a7da9f83099a1d93481935c8d232283ecc0fe914d4cd787f"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_01_initial.json",
+      "sha256": "2e47e2686423b90f0010729bbd9fcb2430fa725366919a9fd92e9aa780f27d1c"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_02_before_role_fix/context_provenance.jsonl",
+      "sha256": "3c82efa32b4d8d5b815ca0afb984b90cc21a45843c0036912a70b7cfa78478d4"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_02_before_role_fix/evidence_map.jsonl",
+      "sha256": "0d5ca01c04b8deb972ac33ba2dd28270edc09f57aa41afbc2e9d80eb99f08a3f"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_02_before_role_fix/extractor_inputs.jsonl",
+      "sha256": "8d0207e8502162f08f9fd1518326dde0d23ef45554babf062c25a3faaffbfd05"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_02_before_role_fix/p05_prepare_inputs.py",
+      "sha256": "50c8cce92f4b31e352a638ee93b238f715637e9eb7b79aa3269f41853b11a65a"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_02_before_role_fix/preprocess_audit.csv",
+      "sha256": "22abe89d7aa13d5ff265180806a8967fc2f98c55781ef65377b6a4c7918c9e93"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_02_before_role_fix/reference_links.jsonl",
+      "sha256": "062d980d78bb6b53e86ea9db96110bcc44b8ecca36422a654ebea46514715fcf"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_02_before_role_fix/stage_02_initial.json",
+      "sha256": "3bdc789e0cd8de5264f9c51d536d64dbd4e324ffb3e541f54e9b2d1bc9f9c9ab"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_02_final.json",
+      "sha256": "3871b819bf66478d0d229630073647044362936dd85d18c9e34fa559c9363b8d"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_02_improvements.md",
+      "sha256": "8284d4b329b3837d0c7dd29512fe0207a408beda0529527b4cee3e8eda8df73a"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_02_initial.json",
+      "sha256": "4463bb2085aeebeb74a1dd2904640f5015a83556de2f7e849dc0b44cea81deba"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_02_tests_final.json",
+      "sha256": "82a4562157360eff2f0577c3e0e05daf3c627a33aea935f3e3eaf9ddedf9123c"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_02_tests_initial.json",
+      "sha256": "c2af3c25e296dd7e374db2d1020a5e35f68b23d51e46ba0979a9a8e68562ea26"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_03_final.json",
+      "sha256": "768db84fa974e1817fa1c82fedcd0025f06cb9502605370188a2179a5dcc9b67"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_03_improvements.md",
+      "sha256": "33ec6bc83f8375dda273e3fd33887c5fbf007468d7b115f48b363a942babc8ea"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_03_initial.json",
+      "sha256": "c0ef0fbf282c314b5578d3eb2e451738c28dd85b42100d76250dedd5f24e0998"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_03_tests_initial.json",
+      "sha256": "b5b0f6779f8afba11f73cf97809c7d533c5712b31969d6d56418daa2d88acfc7"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_04_adverse_tests.json",
+      "sha256": "f61f36bb0dfe44b016930cc08da9735a97ebeefe925a75eb7ca4bb0f7b75a9e8"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_04_final.json",
+      "sha256": "fc47ef492680b424adbc893d149552dc14de59396ffaaaed69b89d61013fb548"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_04_improvements.md",
+      "sha256": "1f406a985317c896b1d48f15eef61bc30b93c064b3bb409a562734794acb5664"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_04_initial.json",
+      "sha256": "d3f2c43b2bf36b7fbac7a46a0c965a62eac08a75afaa25274ba18ace976106d3"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_04_rules_after_fix.json",
+      "sha256": "199ba6d41cffcfac67c7d14fc012a123250394641c5f98895aae2f3847e53e3c"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_05_final.json",
+      "sha256": "4d4a84d59b2d211abb7753acc79de3d242c8cae7b22247d55b7eecbd7476b189"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_05_improvements.md",
+      "sha256": "105bed8ecc0979431b8416cc6262591c567736c740aef3dc81d3cca0d1a636fd"
+    },
+    {
+      "path": "artifacts/us_equity/p4/stage_reviews/stage_05_initial.json",
+      "sha256": "6b044c2829b3a57062c9bf303c5c4c0c8e38fff83948831ac104b18f9ed5be6f"
+    },
+    {
+      "path": "artifacts/us_equity/p4/task_status.csv",
+      "sha256": "cdcb875d355b031d549408d2039c15503c9068d29fb7c521b45eef536c579c62"
+    },
+    {
+      "path": "artifacts/us_equity/p4/validated_candidates.jsonl",
+      "sha256": "931993260caf7bd8ed59c2ce2fca52857dca64a14f23eafa2303c05907373219"
+    },
+    {
+      "path": "artifacts/us_equity/p4/verification_commands.md",
+      "sha256": "023f577a1855d66948f7f2375c44eedce59cdbb8e1f6451a6d2c8aff536e371a"
+    },
+    {
+      "path": "artifacts/us_equity/p4/withheld_results.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/us_equity/p4_attempts/protocol_001/baseline_protocol.md",
+      "sha256": "dfad69234244aba96fb074dd7a8a2e8c01077cbcd9a77c838b55d9a85ea88fee"
+    },
+    {
+      "path": "artifacts/us_equity/p4_attempts/protocol_001/environment_manifest.json",
+      "sha256": "0098885d56b074e74f05bd3bebee9121f9471afa0351ea4d8afcad67d4db4ae3"
+    },
+    {
+      "path": "artifacts/us_equity/p4_attempts/protocol_001/input_manifest.csv",
+      "sha256": "21e62df907d6a8681857ae100958580ad30f678931724fe6064021d81bb7705a"
+    },
+    {
+      "path": "artifacts/us_equity/p4_attempts/protocol_001/input_schema.json",
+      "sha256": "c97d69f07b2b45eaeb06c1ecf289e1a6e940a467cf319eb4bc76b2fb5605311a"
+    },
+    {
+      "path": "artifacts/us_equity/p4_attempts/protocol_001/input_snapshot.json",
+      "sha256": "a2c7ea49794b1d3592fac8beea002918651c3285b25386b8682a94afe6bb75e8"
+    },
+    {
+      "path": "artifacts/us_equity/p4_attempts/protocol_001/prediction_schema.json",
+      "sha256": "d150ade6d4c239cee7f0a3173528c34d3f0addacb7aa895cd093f22119856bb5"
+    },
+    {
+      "path": "artifacts/us_equity/p4_attempts/protocol_001/requirements.lock",
+      "sha256": "25ec68bc28610e251f9f6da05a9eac1b895129af8e646a143ca5ed9287946eb2"
+    },
+    {
+      "path": "artifacts/us_equity/p4_attempts/protocol_001/rule_provenance.csv",
+      "sha256": "a217eeff8e6492165e1ba6d0aa05f06b73a9f6e5d3561fcd05698cd66fdcf955"
+    },
+    {
+      "path": "artifacts/us_equity/p4_attempts/protocol_001/rules_v0_1.json",
+      "sha256": "08f1f39f9cbeb693d8916b9dd8546189baf0c2a2cab74166ec9a9a86b9aa7626"
+    },
+    {
+      "path": "artifacts/us_equity/p4_attempts/protocol_001/stage_reviews/stage_01_final.json",
+      "sha256": "88bc865d6b5f59a26e622e7704bf506330d4c22abc9e837936ac2aa20ff01c54"
+    },
+    {
+      "path": "artifacts/us_equity/p4_attempts/protocol_001/stage_reviews/stage_01_improvements.md",
+      "sha256": "b23fc139083deffa986b07a31e193dbdb1233f1d2752bb9226ebed250e4dea5c"
+    },
+    {
+      "path": "artifacts/us_equity/p4_attempts/protocol_001/stage_reviews/stage_01_initial.json",
+      "sha256": "d3d8a8d9114a8c13569c51a0eb93674b71cca0596d95ce59c559516fb53778c3"
+    },
+    {
+      "path": "scripts/p05_common.py",
+      "sha256": "fbc7651510bf82225a1c6442b31d61fb8c02f6bba3f3cba7397ce089a647d719"
+    },
+    {
+      "path": "scripts/p05_compare_reference.py",
+      "sha256": "ac5d8d2dc0d863751dbe8450fc5d1ce4a6a9dfa2c70291eaa6327ea2954de470"
+    },
+    {
+      "path": "scripts/p05_contracts.py",
+      "sha256": "cb69a466daf27cd90a8404e8e5029e9858da735d049bcf14b2c2cc5a91b80ef7"
+    },
+    {
+      "path": "scripts/p05_finalize.py",
+      "sha256": "0d8d6476934afe42f45e7e336dbf99a7ce1807e8a53a1d403bda2af1c1a9386d"
+    },
+    {
+      "path": "scripts/p05_input_validation.py",
+      "sha256": "a172610b8ca50190d381eb6365a593a9dd0b5bdc49ae0ce8158c289773349d50"
+    },
+    {
+      "path": "scripts/p05_prepare_inputs.py",
+      "sha256": "08cef5c8e724f3ccb84697c048683e6c1a7c76614d93c916826a7d13c568d27b"
+    },
+    {
+      "path": "scripts/p05_rule_baseline.py",
+      "sha256": "9601378b4550acfa452dba57eed6e8a77f7f5b7521e3c402d6b13cad406dc6ce"
+    },
+    {
+      "path": "scripts/p05_test_baseline.py",
+      "sha256": "2e1174816cb42567257d9f7f499e99e7fdaee76fb469198eb8da47fe83d9606a"
+    },
+    {
+      "path": "scripts/p05_test_evaluation.py",
+      "sha256": "2242dde81d71611c92126baf35bcb37adabab63d0e9f35f78af46b0a6ac82b44"
+    },
+    {
+      "path": "scripts/p05_validate_predictions.py",
+      "sha256": "b5cd66f31831a6773c288e1b933f6ec8724c612f8141b17b4049c8ecce0254f5"
+    },
+    {
+      "path": "scripts/p05_verify_package.py",
+      "sha256": "a65219e19d7df5c58f01e2e8244fa8a760f9ffd5704e6dadcaddb3fcdca0e91e"
+    }
+  ],
+  "exclude": [
+    "package_manifest.json self",
+    "package_validation.json post-freeze",
+    "private original HTML",
+    "__pycache__"
+  ],
+  "recorded_failures_retained": true,
+  "unresolved": [
+    "human gold",
+    "independent benchmark",
+    "scope/presentation/prior policies",
+    "full-body and date-conflict audit"
+  ]
+}

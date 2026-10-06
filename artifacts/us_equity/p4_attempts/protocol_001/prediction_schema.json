@@ -1,0 +1,573 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "us-p4-prediction-0.1.0"
+    },
+    "registry_version": {
+      "type": "string"
+    },
+    "rule_version": {
+      "type": "string"
+    },
+    "prediction_id": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "input_id": {
+      "type": "string"
+    },
+    "doc_id": {
+      "type": "string"
+    },
+    "revision_id": {
+      "type": "string"
+    },
+    "candidate_claim_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "candidate_relation_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "record_kind": {
+      "enum": [
+        "numeric_claim",
+        "reporting_relation"
+      ]
+    },
+    "input_mode": {
+      "const": "preselected_cells"
+    },
+    "status": {
+      "enum": [
+        "predicted",
+        "abstained",
+        "failed",
+        "quarantined"
+      ]
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "raw": {
+      "type": "object",
+      "properties": {
+        "value_raw": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "value_cell": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "row_label": {
+          "type": "string"
+        },
+        "period_header": {
+          "type": "string"
+        },
+        "year_header": {
+          "type": "string"
+        },
+        "unit_header": {
+          "type": "string"
+        },
+        "source_qualifier": {
+          "type": "string"
+        },
+        "value_span_start": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "value_span_end": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "value_raw",
+        "value_cell",
+        "row_label",
+        "period_header",
+        "year_header",
+        "unit_header",
+        "source_qualifier",
+        "value_span_start",
+        "value_span_end"
+      ],
+      "additionalProperties": false
+    },
+    "normalized": {
+      "type": "object",
+      "properties": {
+        "company_id": {
+          "type": "string"
+        },
+        "scope_id": {
+          "type": "string"
+        },
+        "definition_version": {
+          "type": "string"
+        },
+        "modality": {
+          "const": "actual_reported"
+        },
+        "evidence_status": {
+          "const": "company_reported"
+        },
+        "temporal": {
+          "type": "object",
+          "properties": {
+            "published_date": {
+              "type": "string"
+            },
+            "published_at": {
+              "type": "null"
+            },
+            "time_precision": {
+              "const": "date"
+            },
+            "timezone": {
+              "type": "null"
+            },
+            "observed_at": {
+              "type": "string"
+            },
+            "available_at": {
+              "type": "null"
+            },
+            "date_conflict_status": {
+              "const": "not_yet_checked"
+            },
+            "reference_period": {
+              "type": "object",
+              "properties": {
+                "period_start": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "period_end": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "as_of_date": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "period_kind": {
+                  "enum": [
+                    "quarter",
+                    "annual",
+                    "instant"
+                  ]
+                },
+                "fiscal_year": {
+                  "type": "integer"
+                },
+                "fiscal_quarter": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "duration_days": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "period_basis": {
+                  "const": "fiscal"
+                }
+              },
+              "required": [
+                "period_start",
+                "period_end",
+                "as_of_date",
+                "period_kind",
+                "fiscal_year",
+                "fiscal_quarter",
+                "duration_days",
+                "period_basis"
+              ],
+              "additionalProperties": false
+            },
+            "effective_period": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "published_date",
+            "published_at",
+            "time_precision",
+            "timezone",
+            "observed_at",
+            "available_at",
+            "date_conflict_status",
+            "reference_period",
+            "effective_period"
+          ],
+          "additionalProperties": false
+        },
+        "scope_status_as_of": {
+          "type": "string"
+        },
+        "availability_dependencies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "record_id": {
+                "type": "string"
+              },
+              "published_date": {
+                "type": "null"
+              },
+              "observed_at": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              },
+              "use_policy": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "record_id",
+              "published_date",
+              "observed_at",
+              "sha256",
+              "use_policy"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "metric_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "numeric_value": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^-?\\d+(\\.\\d+)?$"
+        },
+        "currency": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "canonical_unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scale": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_scale": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_numeric_value": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sign_policy": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "balance_or_flow": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "statement_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "accounting_basis": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relation_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "subject_entity_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "object_entity_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "subject_role": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "object_role": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "direction": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "negation": {
+          "type": "boolean"
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "valid_from": {
+          "type": "null"
+        },
+        "valid_to": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "company_id",
+        "scope_id",
+        "definition_version",
+        "modality",
+        "evidence_status",
+        "temporal",
+        "scope_status_as_of",
+        "availability_dependencies",
+        "metric_id",
+        "numeric_value",
+        "currency",
+        "canonical_unit",
+        "scale",
+        "source_scale",
+        "source_numeric_value",
+        "sign_policy",
+        "balance_or_flow",
+        "statement_type",
+        "accounting_basis",
+        "relation_type",
+        "subject_entity_id",
+        "object_entity_id",
+        "subject_role",
+        "object_role",
+        "direction",
+        "negation",
+        "conditions",
+        "valid_from",
+        "valid_to"
+      ],
+      "additionalProperties": false
+    },
+    "assessment": {
+      "type": "object",
+      "properties": {
+        "review_readiness": {
+          "const": "needs_review"
+        },
+        "reasons": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rule_signal": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "score_type": {
+          "const": "uncalibrated_rule"
+        },
+        "probability": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "review_readiness",
+        "reasons",
+        "rule_signal",
+        "score_type",
+        "probability"
+      ],
+      "additionalProperties": false
+    },
+    "derived": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "formula_id": {
+            "type": "string"
+          },
+          "input_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "output": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "rounding_policy": {
+            "type": "string"
+          },
+          "origin": {
+            "const": "derived"
+          }
+        },
+        "required": [
+          "formula_id",
+          "input_refs",
+          "output",
+          "rounding_policy",
+          "origin"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "source_sha256": {
+          "type": "string"
+        },
+        "source_url": {
+          "type": "string"
+        },
+        "rights_basis_ref": {
+          "type": "string"
+        },
+        "context_origin": {
+          "const": "curator_provided"
+        },
+        "context_provenance_ref": {
+          "type": "string"
+        },
+        "exposure": {
+          "const": "adaptation"
+        },
+        "leakage_group": {
+          "type": "string"
+        },
+        "historical_blind": {
+          "const": false
+        },
+        "source_parser_version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_sha256",
+        "source_url",
+        "rights_basis_ref",
+        "context_origin",
+        "context_provenance_ref",
+        "exposure",
+        "leakage_group",
+        "historical_blind",
+        "source_parser_version"
+      ],
+      "additionalProperties": false
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "field_missing_reasons": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "registry_version",
+    "rule_version",
+    "prediction_id",
+    "run_id",
+    "input_id",
+    "doc_id",
+    "revision_id",
+    "candidate_claim_id",
+    "candidate_relation_id",
+    "record_kind",
+    "input_mode",
+    "status",
+    "synthetic",
+    "raw",
+    "normalized",
+    "assessment",
+    "derived",
+    "provenance",
+    "evidence_refs",
+    "field_missing_reasons"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

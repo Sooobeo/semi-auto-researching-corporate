@@ -1,0 +1,56 @@
+{
+  "changed_at": "2026-10-06T07:50:39.216093+00:00",
+  "changes": [
+    {
+      "input_id": "I-904ee5f8de322335d24ccbdc",
+      "before": "company_reported_table",
+      "after": "company_reported_unaudited"
+    },
+    {
+      "input_id": "I-5aa56d69eeee12372958b27a",
+      "before": "company_reported_table",
+      "after": "company_reported_unaudited"
+    },
+    {
+      "input_id": "I-a08d1d5f0ab9ed838d60ac81",
+      "before": "company_reported_table",
+      "after": "company_reported_unaudited"
+    },
+    {
+      "input_id": "I-39cfd2a1e5c1fba265dc47f4",
+      "before": "company_reported_table",
+      "after": "company_reported_unaudited"
+    },
+    {
+      "input_id": "I-13c510f72f9d7796a8305bcd",
+      "before": "company_reported_table",
+      "after": "company_reported_unaudited"
+    },
+    {
+      "input_id": "I-c25c1c66469e8df6db3b0b9f",
+      "before": "company_reported_table",
+      "after": "company_reported_unaudited"
+    },
+    {
+      "input_id": "I-5ca1a57c0cb8fce62a4be96c",
+      "before": "company_reported_table",
+      "after": "company_reported_unaudited"
+    },
+    {
+      "input_id": "I-f28e8a624520087c9efc0f94",
+      "before": "company_reported_table",
+      "after": "company_reported_unaudited"
+    },
+    {
+      "input_id": "I-1638a0c36874cb3024f76584",
+      "before": "company_reported_table",
+      "after": "company_reported_unaudited"
+    }
+  ],
+  "rule_version": "m0-0.1.1",
+  "reason": "Retain unaudited numeric table qualifier for all scopes; relation membership qualifier remains table-only",
+  "evidence": "artifacts/us_equity/p0/available_20261005/source_conditions.md",
+  "evidence_sha256": "fb562c431460433b3bd1b1d4effb11bfc5b8b00a96ad66ef293facb7d2f5532a",
+  "previous_run": "m0_002",
+  "next_run": "m0_003"
+}

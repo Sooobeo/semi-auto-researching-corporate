@@ -1,0 +1,279 @@
+{
+  "checked_at": "2026-10-06T07:50:39.681598+00:00",
+  "stage": "rules",
+  "synthetic": true,
+  "cases": [
+    {
+      "case_id": "zero_is_value",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "decimal_exact",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "nbsp_cell",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "negative_noncapex_preserved",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "capex_outflow_once",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "positive_capex_not_abs",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "capex_zero",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "invalid_number_-",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "invalid_number_unknown",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "invalid_number_1,23",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "invalid_number_(-1)",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "invalid_number_(10",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "invalid_number_NaN",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "blank_is_not_zero",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "unknown_unit",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "missing_unit",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "missing_year",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "ambiguous_year",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "period_from_header_not_doc_id",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "quarter_to_annual_from_header",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "annual_leap_366",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "annual_common_365",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "flow_as_instant_rejected",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "balance_as_flow_rejected",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "ambiguous_label",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "derived_fcf_not_source_metric",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "ambiguous_scope",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "currency_unsupported",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "external_verification_not_allowed",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "reserved_document_rejected",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "wrong_source_hash",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "relation_survives_numeric_failure",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "relation_direction",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "segment_numeric_retains_unaudited",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "relation_effective_unknown",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "company_table_not_relation",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "comparative_retains_release_definition",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    }
+  ],
+  "passed": 37,
+  "total": 37,
+  "source_evaluation_samples": 0,
+  "code_sha256": {
+    "scripts/p05_common.py": "fbc7651510bf82225a1c6442b31d61fb8c02f6bba3f3cba7397ce089a647d719",
+    "scripts/p05_compare_reference.py": "ecac7fa664697bc4177675d42aca8cc334717695eb5ce514952d0ef0db335dfc",
+    "scripts/p05_contracts.py": "cb69a466daf27cd90a8404e8e5029e9858da735d049bcf14b2c2cc5a91b80ef7",
+    "scripts/p05_input_validation.py": "a172610b8ca50190d381eb6365a593a9dd0b5bdc49ae0ce8158c289773349d50",
+    "scripts/p05_prepare_inputs.py": "08cef5c8e724f3ccb84697c048683e6c1a7c76614d93c916826a7d13c568d27b",
+    "scripts/p05_rule_baseline.py": "9601378b4550acfa452dba57eed6e8a77f7f5b7521e3c402d6b13cad406dc6ce",
+    "scripts/p05_test_baseline.py": "2e1174816cb42567257d9f7f499e99e7fdaee76fb469198eb8da47fe83d9606a",
+    "scripts/p05_validate_predictions.py": "943baec09b8b50484d91a2d35bcd580e4707e2856bcd1b251a7b7797ed883b14"
+  }
+}

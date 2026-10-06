@@ -1,0 +1,10 @@
+reference_item_id,prediction_id,field,error_type,expected,actual
+US-MSFT-FY2024-Q4-RELEASE-US-MSFT-SEG-PBP-revenue-FY2024-FY-current_period,P-fe25e9fa80cb1ddab81d00a3,source_qualifier,field_mismatch,"""company_reported_unaudited""","""company_reported_table"""
+US-MSFT-FY2024-Q4-RELEASE-US-MSFT-SEG-IC-revenue-FY2024-FY-current_period,P-54f7c85d908f941d612ec5a3,source_qualifier,field_mismatch,"""company_reported_unaudited""","""company_reported_table"""
+US-MSFT-FY2024-Q4-RELEASE-US-MSFT-SEG-MPC-revenue-FY2024-FY-current_period,P-cb6c33fb4914050bbca40640,source_qualifier,field_mismatch,"""company_reported_unaudited""","""company_reported_table"""
+US-MSFT-FY2025-Q4-RELEASE-US-MSFT-SEG-PBP-revenue-FY2025-FY-current_period,P-64667ccee9a0903dce9a85dc,source_qualifier,field_mismatch,"""company_reported_unaudited""","""company_reported_table"""
+US-MSFT-FY2025-Q4-RELEASE-US-MSFT-SEG-PBP-revenue-FY2024-FY-comparative_prior_year,P-9218cbbbea9c1caa35005750,source_qualifier,field_mismatch,"""company_reported_unaudited""","""company_reported_table"""
+US-MSFT-FY2025-Q4-RELEASE-US-MSFT-SEG-IC-revenue-FY2025-FY-current_period,P-9e4eb132e3b764ce828c2596,source_qualifier,field_mismatch,"""company_reported_unaudited""","""company_reported_table"""
+US-MSFT-FY2025-Q4-RELEASE-US-MSFT-SEG-IC-revenue-FY2024-FY-comparative_prior_year,P-48035a535693d74f4dddcc41,source_qualifier,field_mismatch,"""company_reported_unaudited""","""company_reported_table"""
+US-MSFT-FY2025-Q4-RELEASE-US-MSFT-SEG-MPC-revenue-FY2025-FY-current_period,P-6f736d6c7fcdc368d37308cc,source_qualifier,field_mismatch,"""company_reported_unaudited""","""company_reported_table"""
+US-MSFT-FY2025-Q4-RELEASE-US-MSFT-SEG-MPC-revenue-FY2024-FY-comparative_prior_year,P-6a07868919ac8bc7c346a635,source_qualifier,field_mismatch,"""company_reported_unaudited""","""company_reported_table"""

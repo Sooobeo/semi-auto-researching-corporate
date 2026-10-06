@@ -1,0 +1,100 @@
+{
+  "rule_version": "m0-0.1.0",
+  "registry_version": "us-p2-0.1.0",
+  "origin": "adaptation_curator_registry",
+  "company_id": "US-MSFT",
+  "company_name": "Microsoft Corporation",
+  "company_scope_id": "US-MSFT-CONSOLIDATED",
+  "metric_labels": {
+    "Total revenue": {
+      "metric_id": "revenue",
+      "balance_or_flow": "flow",
+      "statement_type": "income_statement",
+      "sign_policy": "preserve"
+    },
+    "Operating income": {
+      "metric_id": "operating_income",
+      "balance_or_flow": "flow",
+      "statement_type": "income_statement",
+      "sign_policy": "preserve"
+    },
+    "Net income": {
+      "metric_id": "net_income",
+      "balance_or_flow": "flow",
+      "statement_type": "income_statement",
+      "sign_policy": "preserve"
+    },
+    "Net cash from operations": {
+      "metric_id": "cfo",
+      "balance_or_flow": "flow",
+      "statement_type": "cash_flow_statement",
+      "sign_policy": "preserve"
+    },
+    "Additions to property and equipment": {
+      "metric_id": "positive_cash_capex",
+      "balance_or_flow": "flow",
+      "statement_type": "cash_flow_statement",
+      "sign_policy": "outflow_to_positive"
+    },
+    "Total assets": {
+      "metric_id": "total_assets",
+      "balance_or_flow": "balance",
+      "statement_type": "balance_sheet",
+      "sign_policy": "preserve"
+    },
+    "Cash and cash equivalents": {
+      "metric_id": "cash_and_equivalents",
+      "balance_or_flow": "balance",
+      "statement_type": "balance_sheet",
+      "sign_policy": "preserve"
+    }
+  },
+  "segment_labels": {
+    "Productivity and Business Processes": "US-MSFT-SEG-PBP",
+    "Intelligent Cloud": "US-MSFT-SEG-IC",
+    "More Personal Computing": "US-MSFT-SEG-MPC"
+  },
+  "fiscal_calendar": {
+    "year_end_month": 6,
+    "year_end_day": 30,
+    "annual_start": "previous year July 1",
+    "Q4_start": "same year April 1"
+  },
+  "scope_dependencies": [
+    {
+      "record_id": "US-MSFT-ANNUAL-FY2025-SCOPE-REFERENCE",
+      "published_date": null,
+      "observed_at": "2026-10-05T12:31:51.408141+00:00",
+      "sha256": "564154a15ac28c0f7f72f304ae26b74c29cfca9f3eafe8d59595776769d621ca",
+      "use_policy": "current-only scope corroboration; not available at release cutoff"
+    }
+  ],
+  "documents": {
+    "US-MSFT-FY2024-Q4-RELEASE": {
+      "revision_id": "US-MSFT-FY2024-Q4-RELEASE-R-a953a5776ce3",
+      "source_sha256": "a953a5776ce30f24288f2bb32ab23e8ad98c007687bb8b7301781797bc9a60b2",
+      "source_url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2024-Q4/press-release-webcast",
+      "rights_basis_ref": "artifacts\\us_equity\\p0\\available_20261005\\source_conditions.md#msft-factual-reference",
+      "published_date": "2024-07-30",
+      "observed_at": "2026-10-05T12:25:04.835472+00:00",
+      "segment_definition": "msft-segment-presentation-fy2024",
+      "source_parser_version": "p03-source-facts-0.1"
+    },
+    "US-MSFT-FY2025-Q4-RELEASE": {
+      "revision_id": "US-MSFT-FY2025-Q4-RELEASE-R-1801a07368af",
+      "source_sha256": "1801a07368af4aa9c269ae733f932fe42e8c6b30d5c853d958cf1f95fd0bb056",
+      "source_url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q4/press-release-webcast",
+      "rights_basis_ref": "artifacts\\us_equity\\p0\\available_20261005\\source_conditions.md#msft-factual-reference",
+      "published_date": "2025-07-30",
+      "observed_at": "2026-10-05T12:25:06.947555+00:00",
+      "segment_definition": "msft-segment-presentation-fy2025",
+      "source_parser_version": "p03-source-facts-0.1"
+    }
+  },
+  "units": {
+    "millions": "1000000"
+  },
+  "leakage_group": "LG-MSFT-EXPOSED-FY2024-FY2025-EARNINGS",
+  "reference_access": "forbidden_in_extractor",
+  "external_calls": 0
+}

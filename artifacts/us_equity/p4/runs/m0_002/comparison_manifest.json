@@ -1,0 +1,36 @@
+{
+  "compared_at": "2026-10-06T07:49:47.246840+00:00",
+  "reference_read_at": "2026-10-06T07:49:47.213382+00:00",
+  "predictions_frozen_at": "2026-10-06T07:46:49.571829+00:00",
+  "prediction_sha256": "313e6c70b25ebef305b13ae76d7a732d24066f44ac06f43b98aa445950c9ac79",
+  "reference_hashes": {
+    "artifacts/us_equity/p3/reviewed_agent_claims.jsonl": "5c3709eeca68f9d2c54003d58e631329056eb169e85a02ff6c59fb35450a33af",
+    "artifacts/us_equity/p3/reviewed_agent_relations.jsonl": "2c8f8693739777605911685db524274f416f7521051c789fe3324217f75908db",
+    "artifacts/us_equity/p3/evidence_index.jsonl": "211b889d6315231ba3c9e6de56b1bb20a1a2b8bdf90e1387648c4fbdb940240b"
+  },
+  "reference_count": 39,
+  "candidate_count": 39,
+  "matching_status": {
+    "matched": 39
+  },
+  "reference_keys_unique": true,
+  "unmatched_candidate_count": 0,
+  "field_errors": 9,
+  "span": {
+    "intersection_codepoints": 230,
+    "reference_codepoints": 230,
+    "predicted_codepoints": 230,
+    "overlap_f1": 1.0
+  },
+  "independent_evaluation": "not_evaluated",
+  "code_sha256": {
+    "scripts/p05_common.py": "60504724adff609786b1bfce5f4ad09c61c1f0295ae698537a9035cd7fc30471",
+    "scripts/p05_compare_reference.py": "ecac7fa664697bc4177675d42aca8cc334717695eb5ce514952d0ef0db335dfc",
+    "scripts/p05_contracts.py": "cb69a466daf27cd90a8404e8e5029e9858da735d049bcf14b2c2cc5a91b80ef7",
+    "scripts/p05_input_validation.py": "a172610b8ca50190d381eb6365a593a9dd0b5bdc49ae0ce8158c289773349d50",
+    "scripts/p05_prepare_inputs.py": "8c149752cf1767496d16ed43a6265077eee0940f7ac004cfd8f477dff22b516d",
+    "scripts/p05_rule_baseline.py": "01e5da20fa426ee8bf32f6b5cbdff03e80728ebd7d5a92473e69d22bc8daee5f",
+    "scripts/p05_test_baseline.py": "e3270adc9d074b143d235e48847ed891842afd1c7f5ec2a7914d16bc9978da7d",
+    "scripts/p05_validate_predictions.py": "943baec09b8b50484d91a2d35bcd580e4707e2856bcd1b251a7b7797ed883b14"
+  }
+}

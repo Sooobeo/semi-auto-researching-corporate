@@ -1,0 +1,34 @@
+{
+  "stage": 3,
+  "phase": "initial",
+  "checked_at": "2026-10-06T07:47:25.392564+00:00",
+  "gate": "needs_improvement",
+  "checks": {
+    "inputs_39": true,
+    "candidates_39": true,
+    "schemas_valid": true,
+    "terminal_one_per_input": true,
+    "synthetic_36": true,
+    "no_reference_reads": true,
+    "initial_run_manifest_completed": false
+  },
+  "details": {
+    "initial_run": "m0_001",
+    "replacement_run": "m0_002"
+  },
+  "code_sha256": {
+    "scripts/p05_common.py": "60504724adff609786b1bfce5f4ad09c61c1f0295ae698537a9035cd7fc30471",
+    "scripts/p05_contracts.py": "cb69a466daf27cd90a8404e8e5029e9858da735d049bcf14b2c2cc5a91b80ef7",
+    "scripts/p05_input_validation.py": "a172610b8ca50190d381eb6365a593a9dd0b5bdc49ae0ce8158c289773349d50",
+    "scripts/p05_prepare_inputs.py": "8c149752cf1767496d16ed43a6265077eee0940f7ac004cfd8f477dff22b516d",
+    "scripts/p05_rule_baseline.py": "01e5da20fa426ee8bf32f6b5cbdff03e80728ebd7d5a92473e69d22bc8daee5f",
+    "scripts/p05_test_baseline.py": "e3270adc9d074b143d235e48847ed891842afd1c7f5ec2a7914d16bc9978da7d"
+  },
+  "independent_evaluation": "not_evaluated",
+  "human_gold": 0,
+  "limitations": [
+    "selected cells, shared adaptation references",
+    "no human gold or independent test",
+    "no full-body or date-conflict audit"
+  ]
+}

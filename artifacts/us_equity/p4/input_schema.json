@@ -1,0 +1,261 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "us-p4-selected-cells-0.1.0"
+    },
+    "input_id": {
+      "type": "string",
+      "pattern": "^I-[a-f0-9]{24}$"
+    },
+    "input_kind": {
+      "enum": [
+        "numeric_cell",
+        "relation_context"
+      ]
+    },
+    "input_mode": {
+      "const": "preselected_cells"
+    },
+    "doc_id": {
+      "type": "string"
+    },
+    "revision_id": {
+      "type": "string"
+    },
+    "source_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "publication": {
+      "type": "object",
+      "properties": {
+        "published_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "published_at": {
+          "type": "null"
+        },
+        "time_precision": {
+          "const": "date"
+        },
+        "observed_at": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "published_date",
+        "published_at",
+        "time_precision",
+        "observed_at"
+      ],
+      "additionalProperties": false
+    },
+    "raw": {
+      "type": "object",
+      "properties": {
+        "value_cell": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "row_label": {
+          "type": "string"
+        },
+        "period_header": {
+          "type": "string"
+        },
+        "year_header": {
+          "type": "string"
+        },
+        "unit_header": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value_cell",
+        "row_label",
+        "period_header",
+        "year_header",
+        "unit_header"
+      ],
+      "additionalProperties": false
+    },
+    "context": {
+      "type": "object",
+      "properties": {
+        "context_origin": {
+          "const": "curator_provided"
+        },
+        "context_provenance_ref": {
+          "type": "string"
+        },
+        "company_name": {
+          "type": "string"
+        },
+        "company_id": {
+          "type": "string"
+        },
+        "scope_label": {
+          "type": "string"
+        },
+        "table_purpose": {
+          "enum": [
+            "company_financial_statement",
+            "segment_revenue"
+          ]
+        },
+        "currency": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "accounting_basis": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_qualifier": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "context_origin",
+        "context_provenance_ref",
+        "company_name",
+        "company_id",
+        "scope_label",
+        "table_purpose",
+        "currency",
+        "accounting_basis",
+        "source_qualifier"
+      ],
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "numeric_value",
+              "row_label",
+              "period_header",
+              "year_header",
+              "unit"
+            ]
+          },
+          "location": {
+            "type": "string"
+          },
+          "table_id": {
+            "type": "string"
+          },
+          "row_index": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "col_index": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "start": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "end": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "raw_fragment": {
+            "type": "string"
+          },
+          "fragment_origin": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "selected_text": {
+            "type": "string"
+          },
+          "normalized_fragment": {
+            "type": "string"
+          },
+          "normalized_to_raw": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "header_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "offset_unit": {
+            "const": "unicode_code_point"
+          },
+          "offset_interval": {
+            "const": "0-based-[start,end)"
+          }
+        },
+        "required": [
+          "evidence_id",
+          "kind",
+          "location",
+          "table_id",
+          "row_index",
+          "col_index",
+          "start",
+          "end",
+          "raw_fragment",
+          "fragment_origin",
+          "selected_text",
+          "normalized_fragment",
+          "normalized_to_raw",
+          "header_refs",
+          "offset_unit",
+          "offset_interval"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "synthetic": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "input_id",
+    "input_kind",
+    "input_mode",
+    "doc_id",
+    "revision_id",
+    "source_sha256",
+    "publication",
+    "raw",
+    "context",
+    "evidence",
+    "synthetic"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,12 @@
+task_id,status,scope
+P05-T01,completed_development_scope,Selected-cell development scope
+P05-T02,completed_development_scope,Selected-cell development scope
+P05-T03,completed_development_scope,Selected-cell development scope
+P05-T04,not_evaluated,No relevance labels or independent split
+P05-T05,not_evaluated,No usable sentence/span gold; M2 deferred
+P05-T06,completed_development_scope,Exact label mapping only; embeddings deferred
+P05-T07,completed_development_scope,Selected-cell development scope
+P05-T08,completed_development_scope,Shared adaptation regression only
+P05-T09,completed_development_scope,Uncalibrated rule signals; external fallback disabled
+P05-T10,not_evaluated,No independent test
+P05-T11,completed_development_scope,M0 development handoff; no learned model comparison

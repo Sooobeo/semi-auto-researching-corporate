@@ -1,0 +1,57 @@
+{
+  "stage": 5,
+  "phase": "final",
+  "checked_at": "2026-10-06T07:56:51.578576+00:00",
+  "gate": "passed_with_explicit_limitations",
+  "checks": {
+    "semantic_reproduction": true,
+    "primary_39": true,
+    "reproduction_39": true,
+    "all_terminal_39": true,
+    "upstream_preserved": true,
+    "current_code_hashes": true,
+    "no_external_calls": true,
+    "reference_free_inference": true,
+    "reproduction_valid": true,
+    "reproduction_comparison": true,
+    "export_39": true,
+    "relation_claim_links_6": true
+  },
+  "details": {
+    "status": "development_baseline_ready",
+    "primary_run": "m0_004",
+    "reproduction_run": "m0_repro_005",
+    "input_count": 39,
+    "export": {
+      "candidates": 39,
+      "store_records": 39,
+      "relations": 6,
+      "linked_relations": 6
+    },
+    "upstream_files": 214,
+    "input_hashes": {
+      "artifacts/us_equity/p4/extractor_inputs.jsonl": "c72d389334ecb43c0e9c0b78c31e42e09166e3e6f7e793f8ca50a0e99396f194",
+      "artifacts/us_equity/p4/rules_v0_1.json": "9ae734956cf5b2f5006ccf829e7684cd2037e22e087c1adbd22fef6dc65c0c8c"
+    }
+  },
+  "code_sha256": {
+    "scripts/p05_common.py": "fbc7651510bf82225a1c6442b31d61fb8c02f6bba3f3cba7397ce089a647d719",
+    "scripts/p05_compare_reference.py": "ac5d8d2dc0d863751dbe8450fc5d1ce4a6a9dfa2c70291eaa6327ea2954de470",
+    "scripts/p05_contracts.py": "cb69a466daf27cd90a8404e8e5029e9858da735d049bcf14b2c2cc5a91b80ef7",
+    "scripts/p05_finalize.py": "0d8d6476934afe42f45e7e336dbf99a7ce1807e8a53a1d403bda2af1c1a9386d",
+    "scripts/p05_input_validation.py": "a172610b8ca50190d381eb6365a593a9dd0b5bdc49ae0ce8158c289773349d50",
+    "scripts/p05_prepare_inputs.py": "08cef5c8e724f3ccb84697c048683e6c1a7c76614d93c916826a7d13c568d27b",
+    "scripts/p05_rule_baseline.py": "9601378b4550acfa452dba57eed6e8a77f7f5b7521e3c402d6b13cad406dc6ce",
+    "scripts/p05_test_baseline.py": "2e1174816cb42567257d9f7f499e99e7fdaee76fb469198eb8da47fe83d9606a",
+    "scripts/p05_test_evaluation.py": "2242dde81d71611c92126baf35bcb37adabab63d0e9f35f78af46b0a6ac82b44",
+    "scripts/p05_validate_predictions.py": "b5cd66f31831a6773c288e1b933f6ec8724c612f8141b17b4049c8ecce0254f5",
+    "scripts/p05_verify_package.py": "a65219e19d7df5c58f01e2e8244fa8a760f9ffd5704e6dadcaddb3fcdca0e91e"
+  },
+  "independent_evaluation": "not_evaluated",
+  "human_gold": 0,
+  "limitations": [
+    "selected cells, shared adaptation references",
+    "no human gold or independent test",
+    "no full-body or date-conflict audit"
+  ]
+}

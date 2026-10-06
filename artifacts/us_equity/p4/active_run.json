@@ -1,0 +1,10 @@
+{
+  "run_id": "m0_004",
+  "run_dir": "artifacts/us_equity/p4/runs/m0_004",
+  "reproduction_run": "m0_repro_005",
+  "rule_version": "m0-0.1.1",
+  "status": "development_baseline_ready",
+  "formal_p05_benchmark_complete": false,
+  "human_gold": 0,
+  "independent_test_items": 0
+}

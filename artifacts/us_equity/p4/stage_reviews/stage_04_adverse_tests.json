@@ -1,0 +1,242 @@
+{
+  "checked_at": "2026-10-06T07:51:58.031836+00:00",
+  "synthetic": true,
+  "cases": [
+    {
+      "case_id": "changed_numeric",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "changed_prediction_input_id",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "missing_required_field",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "double_million",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "raw_sign_loss",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "period_year_mutation",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "future_dependency_missing",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "retrospective_status_lost",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "invented_exact_time",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "claim_external_verification",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "drop_unaudited",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "calibrated_probability_invention",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "review_readiness_overclaim",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "date_audit_overclaim",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "shifted_numeric_span",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "direction_reversed",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "role_reversed",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "effective_promoted_from_report",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "wrong_source_hash",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "missing_reason",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "baseline_39_valid",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "changed_number_scored_mismatch",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "changed_reference_id_not_matching_feature",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "missing_prediction_denominator_stays_33",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "missing_input_terminal_detected",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "duplicate_candidate_tie_not_double_success",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "duplicate_terminal_detected",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "unknown_id_cannot_count_success",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "invalid_candidate_stays_in_denominator",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "quarantined_candidate_stays_in_denominator",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "abstained_candidate_stays_in_denominator",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "missing_all_denominator_preserved",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "extra_candidate_truth_unassessed",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "zero_independent_denominator_null",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "unknowns_separate_from_observed",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "duplicate_reference_refuses_scoring",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "coherent_header_swap_rejected_by_original_binding",
+      "synthetic": true,
+      "passed": true,
+      "error": null
+    }
+  ],
+  "passed": 37,
+  "total": 37,
+  "code_sha256": {
+    "scripts/p05_common.py": "fbc7651510bf82225a1c6442b31d61fb8c02f6bba3f3cba7397ce089a647d719",
+    "scripts/p05_compare_reference.py": "ac5d8d2dc0d863751dbe8450fc5d1ce4a6a9dfa2c70291eaa6327ea2954de470",
+    "scripts/p05_contracts.py": "cb69a466daf27cd90a8404e8e5029e9858da735d049bcf14b2c2cc5a91b80ef7",
+    "scripts/p05_input_validation.py": "a172610b8ca50190d381eb6365a593a9dd0b5bdc49ae0ce8158c289773349d50",
+    "scripts/p05_prepare_inputs.py": "08cef5c8e724f3ccb84697c048683e6c1a7c76614d93c916826a7d13c568d27b",
+    "scripts/p05_rule_baseline.py": "9601378b4550acfa452dba57eed6e8a77f7f5b7521e3c402d6b13cad406dc6ce",
+    "scripts/p05_test_baseline.py": "2e1174816cb42567257d9f7f499e99e7fdaee76fb469198eb8da47fe83d9606a",
+    "scripts/p05_test_evaluation.py": "2242dde81d71611c92126baf35bcb37adabab63d0e9f35f78af46b0a6ac82b44",
+    "scripts/p05_validate_predictions.py": "b5cd66f31831a6773c288e1b933f6ec8724c612f8141b17b4049c8ecce0254f5"
+  },
+  "source_evaluation_samples": 0
+}

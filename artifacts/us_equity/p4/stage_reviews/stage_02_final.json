@@ -1,0 +1,42 @@
+{
+  "stage": 2,
+  "phase": "final",
+  "checked_at": "2026-10-06T07:46:26.974557+00:00",
+  "gate": "passed_with_explicit_limitations",
+  "checks": {
+    "inputs_preserved": true,
+    "reference_links_39": true,
+    "source_evidence_84": true,
+    "schemas_valid": true,
+    "offsets_roundtrip": true,
+    "source_roundtrip": true,
+    "unique_input_ids": true,
+    "no_answer_fields": true,
+    "synthetic_cases_23": true
+  },
+  "details": {
+    "input_count": 39,
+    "unique_source_evidence": 84,
+    "evidence_roles": 88,
+    "synthetic_passed": 23,
+    "input_hashes": {
+      "artifacts/us_equity/p4/extractor_inputs.jsonl": "5d5fdad7aa198f8c8a0e93fdabf49c95380c50b0796da3cdb5496314d4ed631e",
+      "artifacts/us_equity/p4/evidence_map.jsonl": "6114c34d4d919648757c94818cba4ee75a5091a9bdabba1f5e96c96d7a8dc065"
+    }
+  },
+  "code_sha256": {
+    "scripts/p05_common.py": "824792bd734438ce66a59a5b06210b697c912c516749c4d55a38e013a0699024",
+    "scripts/p05_contracts.py": "cb69a466daf27cd90a8404e8e5029e9858da735d049bcf14b2c2cc5a91b80ef7",
+    "scripts/p05_input_validation.py": "a172610b8ca50190d381eb6365a593a9dd0b5bdc49ae0ce8158c289773349d50",
+    "scripts/p05_prepare_inputs.py": "8c149752cf1767496d16ed43a6265077eee0940f7ac004cfd8f477dff22b516d",
+    "scripts/p05_rule_baseline.py": "01e5da20fa426ee8bf32f6b5cbdff03e80728ebd7d5a92473e69d22bc8daee5f",
+    "scripts/p05_test_baseline.py": "e3270adc9d074b143d235e48847ed891842afd1c7f5ec2a7914d16bc9978da7d"
+  },
+  "independent_evaluation": "not_evaluated",
+  "human_gold": 0,
+  "limitations": [
+    "selected cells, shared adaptation references",
+    "no human gold or independent test",
+    "no full-body or date-conflict audit"
+  ]
+}

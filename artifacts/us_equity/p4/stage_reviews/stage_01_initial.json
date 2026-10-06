@@ -1,0 +1,41 @@
+{
+  "stage": 1,
+  "phase": "initial",
+  "checked_at": "2026-10-06T07:41:58.969666+00:00",
+  "gate": "passed_with_explicit_limitations",
+  "checks": {
+    "p04_30_checks": true,
+    "input_39": true,
+    "numeric_33": true,
+    "relation_6": true,
+    "releases_2": true,
+    "unique_ids": true,
+    "adaptation_only": true,
+    "reserved_excluded": true,
+    "upstream_hashes": true,
+    "imports_and_schemas": true,
+    "legacy_excluded": true
+  },
+  "details": {
+    "input_count": 39,
+    "p04": {
+      "status": "passed_with_explicit_limitations",
+      "checks_passed": 30,
+      "checks_total": 30,
+      "manifest_files": 196,
+      "failed_checks": []
+    }
+  },
+  "code_sha256": {
+    "scripts/p05_common.py": "824792bd734438ce66a59a5b06210b697c912c516749c4d55a38e013a0699024",
+    "scripts/p05_contracts.py": "cb69a466daf27cd90a8404e8e5029e9858da735d049bcf14b2c2cc5a91b80ef7",
+    "scripts/p05_prepare_inputs.py": "50c8cce92f4b31e352a638ee93b238f715637e9eb7b79aa3269f41853b11a65a"
+  },
+  "independent_evaluation": "not_evaluated",
+  "human_gold": 0,
+  "limitations": [
+    "selected cells, shared adaptation references",
+    "no human gold or independent test",
+    "no full-body or date-conflict audit"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "stage": 1,
+  "phase": "final",
+  "checked_at": "2026-10-06T07:41:59.000328+00:00",
+  "gate": "passed_with_explicit_limitations",
+  "checks": {
+    "p04_30_checks": true,
+    "input_39": true,
+    "numeric_33": true,
+    "relation_6": true,
+    "releases_2": true,
+    "unique_ids": true,
+    "adaptation_only": true,
+    "reserved_excluded": true,
+    "upstream_hashes": true,
+    "imports_and_schemas": true,
+    "legacy_excluded": true
+  },
+  "details": {
+    "input_count": 39,
+    "files": {
+      "artifacts/us_equity/p4/input_schema.json": "c97d69f07b2b45eaeb06c1ecf289e1a6e940a467cf319eb4bc76b2fb5605311a",
+      "artifacts/us_equity/p4/prediction_schema.json": "d150ade6d4c239cee7f0a3173528c34d3f0addacb7aa895cd093f22119856bb5",
+      "artifacts/us_equity/p4/rules_v0_1.json": "08f1f39f9cbeb693d8916b9dd8546189baf0c2a2cab74166ec9a9a86b9aa7626"
+    }
+  },
+  "code_sha256": {
+    "scripts/p05_common.py": "824792bd734438ce66a59a5b06210b697c912c516749c4d55a38e013a0699024",
+    "scripts/p05_contracts.py": "cb69a466daf27cd90a8404e8e5029e9858da735d049bcf14b2c2cc5a91b80ef7",
+    "scripts/p05_prepare_inputs.py": "50c8cce92f4b31e352a638ee93b238f715637e9eb7b79aa3269f41853b11a65a"
+  },
+  "independent_evaluation": "not_evaluated",
+  "human_gold": 0,
+  "limitations": [
+    "selected cells, shared adaptation references",
+    "no human gold or independent test",
+    "no full-body or date-conflict audit"
+  ]
+}

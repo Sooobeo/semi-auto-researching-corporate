@@ -1,0 +1,179 @@
+{
+  "checked_at": "2026-10-06T07:46:10.631687+00:00",
+  "stage": "inputs",
+  "synthetic": true,
+  "cases": [
+    {
+      "case_id": "all_39_input_contracts",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "reject_answer_field_source_claim_id",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "reject_answer_field_source_relation_id",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "reject_answer_field_source_record_ref",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "reject_answer_field_metric_id",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "reject_answer_field_scope_id",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "reject_answer_field_item_id",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "mismatched_unit_header",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "mismatched_year_header",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "mismatched_row_label",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "mismatched_period_header",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "wrong_row_index",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "wrong_table",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "missing_header_binding",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "shifted_span",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "normalization_map_tamper",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "preserve_raw_'0'",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "preserve_raw_'(13,873)'",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "preserve_raw_'\\xa0 64,727\\xa0'",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "preserve_raw_'-'",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "preserve_raw_'unknown'",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "unicode_nonbmp_codepoint_mapping",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": null
+    },
+    {
+      "case_id": "decoy_reference_answer_mutation_invariant",
+      "synthetic": true,
+      "passed": true,
+      "error": null,
+      "details": "No production references read; inference function takes only input and rules. CLI file-read guard tested in actual run."
+    }
+  ],
+  "passed": 23,
+  "total": 23,
+  "source_evaluation_samples": 0,
+  "code_sha256": {
+    "scripts/p05_common.py": "824792bd734438ce66a59a5b06210b697c912c516749c4d55a38e013a0699024",
+    "scripts/p05_contracts.py": "cb69a466daf27cd90a8404e8e5029e9858da735d049bcf14b2c2cc5a91b80ef7",
+    "scripts/p05_input_validation.py": "a172610b8ca50190d381eb6365a593a9dd0b5bdc49ae0ce8158c289773349d50",
+    "scripts/p05_prepare_inputs.py": "8c149752cf1767496d16ed43a6265077eee0940f7ac004cfd8f477dff22b516d",
+    "scripts/p05_rule_baseline.py": "01e5da20fa426ee8bf32f6b5cbdff03e80728ebd7d5a92473e69d22bc8daee5f",
+    "scripts/p05_test_baseline.py": "e3270adc9d074b143d235e48847ed891842afd1c7f5ec2a7914d16bc9978da7d"
+  }
+}
