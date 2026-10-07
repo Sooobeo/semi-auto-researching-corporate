@@ -1,0 +1,34 @@
+{
+  "synthetic": true,
+  "real_candidate_count": 0,
+  "cases": [
+    {
+      "name": "input_order_and_ties_stable",
+      "passed": true
+    },
+    {
+      "name": "all_candidates_retained",
+      "passed": true
+    },
+    {
+      "name": "no_materiality_from_amount_or_relation",
+      "passed": true
+    },
+    {
+      "name": "retrospective_context_not_historical",
+      "passed": true
+    },
+    {
+      "name": "prior_missing_not_zero",
+      "passed": true
+    },
+    {
+      "name": "unknown_date_last",
+      "passed": true
+    },
+    {
+      "name": "readiness_never_promoted",
+      "passed": true
+    }
+  ]
+}

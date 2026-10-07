@@ -1,5 +1,7 @@
 # P08 · Phase 7 실행 설계 — 실행·비교·검토 기록을 하나로 연결하기
 
+> 실제 실행 2026-10-07: `integration_012` 개발·검증 및 같은 사이트 버전 4 게시 완료. 고정 입력 배치·실패 재개·카드 33개·파일 피드백 검증/충돌 이력을 구현했습니다. 브라우저 초안은 기기별이며 공동 저장은 파일 가져오기·재게시 경로입니다. 사람 검토/독립 연구 평가는 미실행입니다. [실행 결과](../artifacts/us_equity/p7/execution_briefing.md) · [운영 안내](../artifacts/us_equity/p7/operator_guide.md). 아래 표의 ‘현재/선행 상태’는 작성일 기준이며 실행 결과는 별도 manifest를 따릅니다.
+
 > 작성일 2026-10-06 / v0.1 / 상태: 실행 전. 기존 웹 화면을 통합 검토 도구로 발전시키는 설계다. 통합 실행·카드·공동 피드백 저장이 이미 구현됐다는 설명이 아니다.
 
 [전체 로드맵](P06_P09_execution_roadmap.md) · [P08 연구 설계](P08_phase7_system_integration.md) · [공통 규약](DATA_CONTRACTS.md) · [사이트 업데이트 계약](SITE_PHASE_UPDATE_CONTRACT.md) · [다음 P09](P09_phase8_execution_plan.md)

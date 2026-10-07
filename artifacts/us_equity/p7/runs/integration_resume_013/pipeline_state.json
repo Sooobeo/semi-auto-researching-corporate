@@ -1,0 +1,220 @@
+{
+  "phase_id": "P08",
+  "run_id": "integration_resume_013",
+  "stage_input_key": "3dd13fdb831117cd5c964c3b13185d1bfb33966ff10cde59284c25ce566d815d",
+  "status": "succeeded",
+  "started_at": "2026-10-07T04:52:42.779395+00:00",
+  "stages": {
+    "extract": {
+      "status": "reused",
+      "reason": "same_key_and_output_hash_verified",
+      "stage_key": "6420c7efafdef0baed0d7bcee9b0f8c69a6487054f3f60afc30f84d79a0ee6d5",
+      "output_dir": "stages/extract/attempt_001",
+      "hashes": {
+        "adapter_check.json": "cc5401862cdb12d2de96821c69f16c28d07819da1f0419174200403047af6fa3",
+        "replay/comparison_manifest.json": "338c5db2c15bbb9d86e2eb01e282ddb2068ed9b310e01c177f306ede03c4324f",
+        "replay/error_analysis.csv": "f6bcab295ce4b2e3ea34e2041d193462e32e198ce89049a025b7be5fdadcdebf",
+        "replay/input_results.jsonl": "7f7fcb5a2b308414e1a3c94f7e2e05b0964180e4afdb37cad0583e21d166a9ae",
+        "replay/metrics.csv": "c8a564c739082213bf178e7a5b69c227b048790f36774acf94bb361724eaad81",
+        "replay/normalization_audit.jsonl": "b161c43a8fae0e0970bf4d58798cc47830c39658db7b7617e97dfd6c72b5b8ef",
+        "replay/predictions.jsonl": "23fc9436d7b95a2ea699c212e0e19c1b9b4c458c5e89279276a83bac8c461771",
+        "replay/reference_match_results.jsonl": "59ac829edd05d4ad22563566faef32a04488b9f1b4407e8e7a8b045ec7fc6b8d",
+        "replay/run_manifest.json": "6a814f0cb58a39b98b80a4cfa31686cbd47dbbdff096fde1dbd31eb2af8c9400",
+        "replay/unmatched_candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "replay/validation_report.json": "7041708e063d2c55c02a2c1b4e01ba695541af1843d2853957f7ad549e5da852"
+      },
+      "counts": {
+        "unit": "candidate",
+        "input": 39,
+        "normal": 39,
+        "failed": 0,
+        "held": 0
+      },
+      "attempt": 1,
+      "started_at": "2026-10-07T04:52:42.781276+00:00",
+      "completed_at": "2026-10-07T04:52:44.263592+00:00",
+      "elapsed_seconds": 1.4823326000041561,
+      "external_calls": 0
+    },
+    "compare": {
+      "status": "reused",
+      "reason": "same_key_and_output_hash_verified",
+      "stage_key": "2da2a9b2bd1a60d11dc92a317685c34125d16efc90d76050fbcf9c28e3921749",
+      "output_dir": "stages/compare/attempt_001",
+      "hashes": {
+        "result/asof_policy.json": "0d5ae3cc7f52172de15cee69c5814fa36a5a738f1edd9d61a60e512e8e98e779",
+        "result/asof_query_cases.jsonl": "77f669f26701aabc99255d46cae322989dcb55b163f83a207ef8d94fae5c081e",
+        "result/calculation_registry.csv": "5c312c55b52e32684b78a375c25e0caf2a6807458188ac0c31306c7787e3fbf8",
+        "result/calculation_results.jsonl": "bca815a7c10eeb93a4debab6686db82209565b03b8f02b8ddba03407e2fff53d",
+        "result/change_benchmark.md": "6d58aa27fc0db92c8f4b7698ac0a54eec33994c492d58eacd959503161d82b3d",
+        "result/change_records.jsonl": "25d683eb6c6372860940ff08002592c5c4ea66c1ff5d6f22d30a193327f26ae3",
+        "result/change_schema.json": "a8713134d751e7e1d630667f60ba72a2cc34929370c4fccaa858fab36a016185",
+        "result/event_store_records.jsonl": "2b5714475fed710778d2ffbf2429d4e0b3029aadc2479ceb9dfb466727c8980e",
+        "result/event_store_schema.json": "257dc3978a81d1ac0c8c7345af6ede5fc8d58dfac1888d99b74b104619d389b6",
+        "result/financial_reconciliations.jsonl": "239234c0cee516bca598b9129c65243f2681a22f54721f4da756503f7aefe48d",
+        "result/handoff_p6.md": "d01c9578e54095088f8528317f1a96c3a114b52a0f7b2a05bcef6505e400773a",
+        "result/input_snapshot.json": "6bcbdf99a38c0e604f8413289597cd83dc066862b16825e862615010afa0e6a5",
+        "result/numeric_changes.jsonl": "601e9cd3a85bc711ce980b05dbe700d89fd24cad85c5c3d6ae73c1e6654aa7b8",
+        "result/output_freeze_before_regression.json": "042083727a4183874ca01399f9388b1745466f4f50c14b4279a922173d307f20",
+        "result/p03_regression.json": "93fe83a6318da85d23d76f9090da7639e245ed5742e186417923953508bd9952",
+        "result/prior_state_records.jsonl": "8490ccbf645688b7079cc162b07581990752915987cbd8e7f7095527c3fd30d1",
+        "result/qualitative_changes.jsonl": "da85881eace3d40cb4c977e490cf92190b31770fb56b456a61f7c13d90288048",
+        "result/readiness_report.md": "00921152eecac18a0a8c17fed1759f0682d8a22aaad91adf184f05e6cb6e759a",
+        "result/reproducibility_report.md": "a2c99fab3790407a007779a43e7f69aa104ec685f94663acde4d1f9faf3957f6",
+        "result/research_assumptions.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "result/retrieval_benchmark.md": "77afeb73815ef04ce2eab1f81800e6780ffce399e8067208b0b04add9fa800b4",
+        "result/retrieval_protocol.md": "f2aeac90cc5820154cb0e62bdd14af6b98c853065096c9a07046ce68b55a5f27",
+        "result/retrieval_qrels.csv": "91d378389e9b23ccaa53402d68266f0e1df55388074345565c94729b32ecf8a0",
+        "result/retrieval_results.jsonl": "835c1c69f38f980f56cfea9d16c89dfe253517ef31d20fc7684237edc6a67c90",
+        "result/retrieval_review_candidates.jsonl": "5bcd32a19d128575727da0bf979201fd743ce3f87c378577c80927975906e2e4",
+        "result/run_manifest.json": "5a89d37e72a389b4f8628e63e7fe2b2341ed70243f9300b1188aaff286d5fe56",
+        "result/scenario_runs.jsonl": "1c0d7e88275e83a62b2b8ca325b6e042b14e9638b9f86b91937efe429ab0b29b",
+        "result/synthetic_tests.json": "e163218cc011003a8097995fdb5f344d4965e53bc8da855d819bba03927be273",
+        "result/validation_report.json": "bce7d392e4f1e208180c8e9633885ea11e7930e05f32c8919e35060c3700a5bd"
+      },
+      "counts": {
+        "unit": "candidate",
+        "input": 39,
+        "normal": 39,
+        "failed": 0,
+        "held": 0,
+        "change_attempts": 126
+      },
+      "attempt": 1,
+      "started_at": "2026-10-07T04:52:44.273720+00:00",
+      "completed_at": "2026-10-07T04:52:44.917596+00:00",
+      "elapsed_seconds": 0.6438930000003893,
+      "external_calls": 0
+    },
+    "review": {
+      "status": "succeeded",
+      "reason": null,
+      "stage_key": "b6886955b6d5e1e5f0dc4c511f2c0b5a7e6f1a95a6023a2b7d0f052f2553744b",
+      "output_dir": "stages/review/attempt_002",
+      "hashes": {
+        "result/baseline_rankings.jsonl": "d6f62e870d8c33bd17161b65374fe286bca2ff245517b81ee81c6ecedb581bfb",
+        "result/calibration_report.md": "387cbe294045e237aa27d88defc735a2bbe5dede8c4359108c9163b61951fe6c",
+        "result/change_feature_ablation.md": "aed2f37b52b296a4c1ae0b2625005cfb46bc90912a8f6d68accae178527e0924",
+        "result/failed_items.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "result/feature_records.jsonl": "8a35270e791fb12025fbc44b43ae6a715c4fd63eef2c6191899944ed8c9c802c",
+        "result/feature_registry.csv": "7def30c53d2af9c1b43c0d24fae4a86f49a10c6b0ee3d9884a28b47b6e601fda",
+        "result/handoff_p5.md": "f5604a101fcbf33c4911350afebb289afab5e889b82e047e8a88a88ebef12573",
+        "result/input_records.jsonl": "2b5714475fed710778d2ffbf2429d4e0b3029aadc2479ceb9dfb466727c8980e",
+        "result/input_snapshot.json": "f467ccabd1bdaadfeb965164c5fff205ac452183c086ce406fd8da0e11ad0d05",
+        "result/label_structure_report.md": "75e225f63046f04662cb594ab42f0609c0bd887fd39e0fe73910b140279f1fe4",
+        "result/materiality_decision.md": "f36b8febe36cf0eeff64bf3f739bb9fdab02f87a1b5e2fadcff9579c3e00e6f1",
+        "result/materiality_protocol.md": "19139ad1d4eda5f0e5ff4f90d86663292bfb6b3466a33b8bc1b7ce54080f1777",
+        "result/model_card.md": "1d9ffb038d8ff707b74459d6af00683694ae01278e26ea8381d059e1efc18629",
+        "result/outcome_feasibility.md": "c78a5750d971a54d3f195718beed21cb7746274ea2319f0822037a73ff324104",
+        "result/outcome_manifest.csv": "ca4a719dc30a4753694723ea8582f0a3aa4542779d4e410190333f879cc8cb5b",
+        "result/policy.json": "351b13ff37f035aad2415c56574cbb956cbcc4cc60a49485c93e7b02f57923e6",
+        "result/ranking_predictions.jsonl": "20fc7c98081e1adb49ed0053469c6af499b6e6f118aea67b8cef73b5e9509bea",
+        "result/readiness_report.md": "dd0db2fcad433202a941d9b4aa787fbfbfb0e605a435798f1ac7baa12dc3cad0",
+        "result/representation_comparison.csv": "a0eb262ec673fd25c4cb9033aaa247c91b105d961cdc2f5011e753bf1038879f",
+        "result/reproducibility_report.md": "8b71c940f6af2dea2a06399c52399d968d3dcef604739c2596d6b38056bc3a50",
+        "result/review_schema.json": "b5dde281dd439c0ba7377cef6bb7507fdd9e0fff65cba897dfb4253fa813ad3b",
+        "result/run_manifest.json": "9d02fd3fe975caf51a1afcfebfe1908b03d70d1a2e52deb5c7178083550d63f7",
+        "result/synthetic_tests.json": "7915f3ec71220a8fe75f9b35e9f9c463ec6c079aadd94e3c2c558aaa30cbf8ac",
+        "result/validation_report.json": "508ecba4fc602af0b63ffe088075ad5fc8de3fac8e6e3e22b92b10e0070d8d15"
+      },
+      "counts": {
+        "unit": "candidate",
+        "input": 39,
+        "normal": 39,
+        "failed": 0,
+        "held": 0
+      },
+      "attempt": 2,
+      "started_at": "2026-10-07T04:52:45.057884+00:00",
+      "completed_at": "2026-10-07T04:52:45.564684+00:00",
+      "elapsed_seconds": 0.5068427999940468,
+      "external_calls": 0
+    },
+    "cards": {
+      "status": "succeeded",
+      "reason": null,
+      "stage_key": "a00de3325a5d5bab47eb74e5df6168054a987a80c976921a553d5b1e8d6aabb9",
+      "output_dir": "stages/cards/attempt_001",
+      "hashes": {
+        "candidate_card_links.jsonl": "683a4f3cf362408de6adeebef71231adf3135bb34fa404d2a7985747bb0788f2",
+        "comparison_totals.json": "2b8762a9a5f2ca910058181554cd480df9719d0b069474f12c90b43113b78398",
+        "failed_items.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "review_card_schema.json": "a91b98a5bed6d4d1ab0c378fd1b254765afadc0c1363cb2802c1634d76380e66",
+        "review_cards.jsonl": "29f60705ab6a43c9fc8c25b0d8c162d811a7f1dabd66f6209b60cdac4fc3c472"
+      },
+      "counts": {
+        "unit": "candidate",
+        "input": 39,
+        "normal": 39,
+        "failed": 0,
+        "held": 0,
+        "cards": 33
+      },
+      "attempt": 1,
+      "started_at": "2026-10-07T04:52:45.614370+00:00",
+      "completed_at": "2026-10-07T04:52:46.022794+00:00",
+      "elapsed_seconds": 0.4084635999897728,
+      "external_calls": 0
+    },
+    "feedback_snapshot": {
+      "status": "succeeded",
+      "reason": null,
+      "stage_key": "431febf0e175c6c964b8436248e6c374b1e3d97e53e653384db16a06039527e5",
+      "output_dir": "stages/feedback_snapshot/attempt_001",
+      "hashes": {
+        "active_learning_queue.csv": "92723fd5053561e806f63770e50f64c9b713c68217809701bdade5f199abd39d",
+        "analyst_memos.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "feedback_snapshot.json": "002bac155fc0094e3775bc0659c7f4214014cc450efebb728f57f3d4dde6ef29"
+      },
+      "counts": {
+        "unit": "feedback_event",
+        "input": 0,
+        "normal": 0,
+        "failed": 0,
+        "held": 0,
+        "human_gold": 0,
+        "snapshot_revision": 0
+      },
+      "attempt": 1,
+      "started_at": "2026-10-07T04:52:46.036456+00:00",
+      "completed_at": "2026-10-07T04:52:46.077471+00:00",
+      "elapsed_seconds": 0.04104430000006687,
+      "external_calls": 0
+    },
+    "validate": {
+      "status": "succeeded",
+      "reason": null,
+      "stage_key": "71bfef784710e9b0ad99d83c3099c789a4df686fdba4e8ba3fa8fad5f7664299",
+      "output_dir": "stages/validate/attempt_001",
+      "hashes": {
+        "validation_report.json": "6b4fcc55074d779a93083a12acc76be3b7097affc6df0024595b308ae5925547"
+      },
+      "counts": {
+        "unit": "card",
+        "input": 33,
+        "normal": 33,
+        "failed": 0,
+        "held": 0
+      },
+      "attempt": 1,
+      "started_at": "2026-10-07T04:52:46.094220+00:00",
+      "completed_at": "2026-10-07T04:52:46.401492+00:00",
+      "elapsed_seconds": 0.30730400000174996,
+      "external_calls": 0
+    }
+  },
+  "errors": [
+    {
+      "at": "2026-10-07T04:52:44.928384+00:00",
+      "reason": "injected_test_failure"
+    }
+  ],
+  "resume_count": 1,
+  "external_calls": 0,
+  "new_source_requests": 0,
+  "completed_at": "2026-10-07T04:52:47.269068+00:00",
+  "semantic_hash": "f400ffd4bd83836b67e7bd6e73bdbbde11e9d9a54e9a8345fae9c0fa3e5363f9",
+  "card_count": 33,
+  "candidate_count": 39,
+  "empty_result_reason": null
+}

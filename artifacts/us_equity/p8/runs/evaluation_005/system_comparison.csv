@@ -1,0 +1,7 @@
+system,status,records,covered_candidates,documents,families,materialization_seconds,warm_seconds,unit,reason
+S0,executed_development,39,39,2,2,2.2200008970685303e-05,1.030000566970557e-05,candidate,exposed_development_not_independent
+S1,executed_development,39,39,2,2,2.720000338740647e-05,1.0399991879239678e-05,candidate,exposed_development_not_independent
+S3,executed_development,33,39,2,2,2.800006768666208e-06,2.7999922167509794e-06,card,exposed_development_not_independent
+S2,not_evaluated,,,2,2,,,not_applicable,independent_train_dev_human_labels_absent
+S4,not_evaluated,,,2,2,,,not_applicable,ai_external_transfer_rights_and_budget_not_established
+S5,not_evaluated,,,2,2,,,not_applicable,ai_external_transfer_rights_and_budget_not_established

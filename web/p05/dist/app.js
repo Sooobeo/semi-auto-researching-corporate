@@ -5,7 +5,7 @@ const metrics = {revenue:'매출',operating_income:'영업이익',net_income:'�
 const scopes = {'US-MSFT-CONSOLIDATED':'전사 · 연결','US-MSFT-SEG-PBP':'Productivity and Business Processes','US-MSFT-SEG-IC':'Intelligent Cloud','US-MSFT-SEG-MPC':'More Personal Computing'};
 const evidenceNames = {numeric_value:'원문 숫자',row_label:'항목 이름',period_header:'기간 머리글',year_header:'연도 머리글',unit:'단위 머리글'};
 const checks = {input_sources:'입력과 원문 위치 연결',unique_results:'처리 결과 중복 없음',all_inputs_have_terminal_result:'모든 입력의 처리 결과 보존',unique_predictions:'추출 후보 중복 없음',predictions_reference_known_inputs:'후보와 입력 연결',terminal_status_valid:'처리 상태 형식',terminal_prediction_links:'처리 결과와 후보 연결',predicted_result_has_candidate:'성공 결과의 후보 존재',candidate_status_matches_result:'후보와 처리 상태 일치',no_candidate_validation_errors:'후보 검증 오류 없음'};
-const state = {data:null,kind:'all',doc:'all',selected:null,view:'results',running:false};
+const state = {data:null,kind:'all',doc:'all',selected:null,view:'cards',running:false};
 
 function exact(value) {
   if(value === null || value === undefined) return '알 수 없음';
@@ -95,13 +95,14 @@ function renderAbout() {
   $('about-view').innerHTML=`<div class="scope-grid"><section class="panel scope-card"><div class="eyebrow">WHAT YOU ARE LOOKING AT</div><h2>P05는 무엇을 하나요?</h2><p>기업 실적표의 숫자와 사업부 이름을 읽어, 값·단위·기준 기간·사업 범위·원문 위치를 구조화하는 첫 프로그램입니다.</p><p>예를 들어 <strong>64,727 × 백만 달러</strong>는 <strong>64,727,000,000 USD</strong>로 정리합니다. 어느 기간의 어떤 지표인지도 함께 남깁니다.</p><p>원문, 구조화한 값, 검토 상태, 계산 결과를 구분합니다. 회사 발표 주장은 외부에서 사실을 검증한 상태와 다릅니다.</p></section><section class="panel scope-card"><div class="eyebrow">CURRENT DATA</div><h2>현재 자료 범위</h2>${d.documents.map(doc=>`<div class="check-row"><span>${escapeHTML(doc.label)}<br><small class="secondary">발표 ${doc.published_date}</small></span><strong>${doc.count}개</strong></div>`).join('')}<p>사업부 관계 6개는 숫자 근거 일부를 함께 사용합니다. 같은 근거를 독립된 실적 관측으로 중복 계산하지 않습니다.</p><p>2025 발표의 2024 비교열은 2025 발표의 표시 정의를 유지합니다.</p></section>${d.limitations.map(l=>`<section class="panel scope-card"><div class="eyebrow">NEEDS REVIEW</div><h2>${escapeHTML(l.label)}</h2><p>${escapeHTML(l.detail)}</p></section>`).join('')}<section class="panel scope-card"><div class="eyebrow">NEXT STEPS</div><h2>다음 단계</h2><p>기존 실적과 새 발표의 비교, 사업부 정의 확인, 근거를 연결한 검토 카드로 확장할 수 있습니다. 실제 성능 평가에는 독립적인 사람 정답과 새로운 문서가 필요합니다.</p></section><section class="panel scope-card"><div class="eyebrow">SHARED VIEW</div><h2>공유한 내용</h2><p>최소 숫자·표준 라벨·기간·위치와 개발 결과를 보여줍니다. 출처 조건은 2026-10-05 확인한 기존 사실 참조 범위를 따릅니다.</p><p>공유 화면은 게시된 실행 결과입니다. 새 로컬 실행 결과를 팀 화면에 반영하려면 결과를 내보내고 다시 게시해야 합니다.</p></section></div>`;
 }
 function switchView(view) {
-  const views=['review','changes','calculations','results','validation','about'];
+  const views=['cards','pipeline','evaluation','review','changes','calculations','results','validation','about'];
   if(!views.includes(view))throw new Error('지원하지 않는 화면입니다.');
   state.view=view;views.forEach(name=>$(name+'-view').hidden=name!==view);
   document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===view));
-  $('page-title').textContent={review:'검토할 항목',changes:'이전 정보와 비교',calculations:'재무 계산',results:'실적 추출 결과',validation:'실행·검증',about:'범위와 남은 일'}[view];
-  $('page-subtitle').textContent={review:'확인이 필요한 이유와 다음에 볼 근거를 살펴보세요.',changes:'시점과 정의가 맞는 값만 비교하고, 보류 이유를 함께 확인하세요.',calculations:'입력·기간·사업 범위가 맞는 공식만 계산합니다.',results:'표에 적힌 숫자가 무엇을 뜻하는지, 어디에서 왔는지 확인하세요.',validation:'입력부터 참조 비교까지, 이번 실행의 과정을 확인하세요.',about:'현재 확인한 내용과 추가 검토가 필요한 부분을 구분합니다.'}[view];
+  $('page-title').textContent={cards:'통합 검토 카드',pipeline:'통합 실행·검토 기록',evaluation:'비교 검증·평가',review:'검토할 항목',changes:'이전 정보와 비교',calculations:'재무 계산',results:'실적 추출 결과',validation:'실행·검증',about:'범위와 남은 일'}[view];
+  $('page-subtitle').textContent={cards:'발표·이전 정보·근거·확인 질문을 함께 살펴보세요.',pipeline:'내 PC 실행과 파일 기반 검토 이력의 반영 상태를 확인하세요.',evaluation:'실제로 측정한 개발 결과와 아직 평가하지 않은 항목을 확인하세요.',review:'확인이 필요한 이유와 다음에 볼 근거를 살펴보세요.',changes:'시점과 정의가 맞는 값만 비교하고, 보류 이유를 함께 확인하세요.',calculations:'입력·기간·사업 범위가 맞는 공식만 계산합니다.',results:'표에 적힌 숫자가 무엇을 뜻하는지, 어디에서 왔는지 확인하세요.',validation:'입력부터 참조 비교까지, 이번 실행의 과정을 확인하세요.',about:'현재 확인한 내용과 추가 검토가 필요한 부분을 구분합니다.'}[view];
   if(window.renderPhaseReports)window.renderPhaseReports(view);
+  if(window.renderIntegrationReports)window.renderIntegrationReports(view);
 }
 async function startRun() {
   if(!state.data?.local?.enabled){$('run-dialog').showModal();return;}

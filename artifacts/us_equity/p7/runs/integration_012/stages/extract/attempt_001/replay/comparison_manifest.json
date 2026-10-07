@@ -1,0 +1,39 @@
+{
+  "compared_at": "2026-10-07T04:52:38.752845+00:00",
+  "reference_read_at": "2026-10-07T04:52:38.691437+00:00",
+  "predictions_frozen_at": "2026-10-07T04:52:38.005076+00:00",
+  "prediction_sha256": "23fc9436d7b95a2ea699c212e0e19c1b9b4c458c5e89279276a83bac8c461771",
+  "reference_hashes": {
+    "artifacts/us_equity/p3/reviewed_agent_claims.jsonl": "5c3709eeca68f9d2c54003d58e631329056eb169e85a02ff6c59fb35450a33af",
+    "artifacts/us_equity/p3/reviewed_agent_relations.jsonl": "2c8f8693739777605911685db524274f416f7521051c789fe3324217f75908db",
+    "artifacts/us_equity/p3/evidence_index.jsonl": "211b889d6315231ba3c9e6de56b1bb20a1a2b8bdf90e1387648c4fbdb940240b"
+  },
+  "reference_count": 39,
+  "candidate_count": 39,
+  "matching_status": {
+    "matched": 39
+  },
+  "reference_keys_unique": true,
+  "unmatched_candidate_count": 0,
+  "field_errors": 0,
+  "span": {
+    "intersection_codepoints": 230,
+    "reference_codepoints": 230,
+    "predicted_codepoints": 230,
+    "overlap_f1": 1.0
+  },
+  "independent_evaluation": "not_evaluated",
+  "code_sha256": {
+    "scripts/p05_common.py": "fbc7651510bf82225a1c6442b31d61fb8c02f6bba3f3cba7397ce089a647d719",
+    "scripts/p05_compare_reference.py": "ac5d8d2dc0d863751dbe8450fc5d1ce4a6a9dfa2c70291eaa6327ea2954de470",
+    "scripts/p05_contracts.py": "cb69a466daf27cd90a8404e8e5029e9858da735d049bcf14b2c2cc5a91b80ef7",
+    "scripts/p05_finalize.py": "0d8d6476934afe42f45e7e336dbf99a7ce1807e8a53a1d403bda2af1c1a9386d",
+    "scripts/p05_input_validation.py": "a172610b8ca50190d381eb6365a593a9dd0b5bdc49ae0ce8158c289773349d50",
+    "scripts/p05_prepare_inputs.py": "08cef5c8e724f3ccb84697c048683e6c1a7c76614d93c916826a7d13c568d27b",
+    "scripts/p05_rule_baseline.py": "9601378b4550acfa452dba57eed6e8a77f7f5b7521e3c402d6b13cad406dc6ce",
+    "scripts/p05_test_baseline.py": "2e1174816cb42567257d9f7f499e99e7fdaee76fb469198eb8da47fe83d9606a",
+    "scripts/p05_test_evaluation.py": "2242dde81d71611c92126baf35bcb37adabab63d0e9f35f78af46b0a6ac82b44",
+    "scripts/p05_validate_predictions.py": "b5cd66f31831a6773c288e1b933f6ec8724c612f8141b17b4049c8ecce0254f5",
+    "scripts/p05_verify_package.py": "a65219e19d7df5c58f01e2e8244fa8a760f9ffd5704e6dadcaddb3fcdca0e91e"
+  }
+}

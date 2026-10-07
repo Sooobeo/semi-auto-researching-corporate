@@ -1,0 +1,43 @@
+{
+  "phase_id": "P08",
+  "run_id": "integration_resume_013_deadline",
+  "stage_input_key": "3dd13fdb831117cd5c964c3b13185d1bfb33966ff10cde59284c25ce566d815d",
+  "status": "failed",
+  "started_at": "2026-10-07T04:52:48.130758+00:00",
+  "stages": {
+    "extract": {
+      "status": "skipped",
+      "reason": "upstream_incomplete"
+    },
+    "compare": {
+      "status": "skipped",
+      "reason": "upstream_incomplete"
+    },
+    "review": {
+      "status": "skipped",
+      "reason": "upstream_incomplete"
+    },
+    "cards": {
+      "status": "skipped",
+      "reason": "upstream_incomplete"
+    },
+    "feedback_snapshot": {
+      "status": "skipped",
+      "reason": "upstream_incomplete"
+    },
+    "validate": {
+      "status": "skipped",
+      "reason": "upstream_incomplete"
+    }
+  },
+  "errors": [
+    {
+      "at": "2026-10-07T04:52:48.136420+00:00",
+      "reason": "pipeline_deadline"
+    }
+  ],
+  "resume_count": 0,
+  "external_calls": 0,
+  "new_source_requests": 0,
+  "completed_at": "2026-10-07T04:52:48.136398+00:00"
+}

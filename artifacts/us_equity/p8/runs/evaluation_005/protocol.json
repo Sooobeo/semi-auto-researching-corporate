@@ -1,0 +1,53 @@
+{
+  "protocol_version": "development-evaluation-0.1.0",
+  "evaluation_kind": "development_engineering",
+  "systems": [
+    "S0",
+    "S1",
+    "S3"
+  ],
+  "unexecuted_systems": [
+    "S2",
+    "S4",
+    "S5"
+  ],
+  "input_documents": 2,
+  "input_families": 2,
+  "input_candidates": 39,
+  "review_budget_candidates": 39,
+  "cutoff_current_review": "2026-10-06",
+  "historical_cutoff": "each release published_date; date precision",
+  "primary_endpoints": [
+    "contracts",
+    "source_id_coverage",
+    "semantic_reproduction",
+    "frozen_regression",
+    "failure_retention"
+  ],
+  "secondary_endpoints": [
+    "local_materialization_seconds",
+    "stage_wall_seconds",
+    "external_calls"
+  ],
+  "independent_metrics": [
+    "numeric_accuracy",
+    "relation_accuracy",
+    "retrieval_recall_at_k",
+    "change_accuracy",
+    "important_recall",
+    "ndcg",
+    "human_time_saved"
+  ],
+  "undefined_policy": "null with reason and denominator; zero cost is never inferred",
+  "split_policy": "both exposed Microsoft families remain adaptation; reserved FY2026 Q1 body unopened",
+  "gold_policy": "human independent labels and qrels required; agent references only development regression",
+  "target_selection_status": "incomplete_no_independent_dev",
+  "threshold": null,
+  "confidence_interval": null,
+  "ablation": "exact_key vs local_label_tfidf query coverage/agreement only; no qrels-based performance",
+  "human_study": "not_performed; at most two actual participants; distinct matched tasks and crossed order",
+  "cost_policy": "two-document denominator; observed hardware/labor/energy cost null; external calls counted",
+  "frozen_at": "2026-10-07T04:54:25.506489+00:00",
+  "site_version_at_protocol": 3,
+  "site_snapshot_sha256": "2efd7cafeb4e704274d941f62293707e945f5f84e5b1342c2b5ce8b73e69bb37"
+}

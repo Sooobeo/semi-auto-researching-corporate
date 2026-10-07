@@ -1,0 +1,161 @@
+{
+  "synthetic": true,
+  "real_candidate_count": 0,
+  "cases": [
+    {
+      "name": "retrospective_dependency_excluded",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "late_observed_excluded",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "current_review_not_historical",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "same_day_date_order_unknown",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "unknown_publication_withheld",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "date_only_cutoff_never_fabricates_time",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "future_revision_does_not_change_eligible_priors",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "same_release_prior_cell_not_historical",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "currency_mismatch_withheld",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "scale_mismatch_withheld",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "definition_version_mismatch_withheld",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "balance_or_flow_mismatch_withheld",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "accounting_basis_mismatch_withheld",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "scope_id_mismatch_withheld",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "modality_mismatch_withheld",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "invalid_period_length_withheld",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "zero_value_is_real_but_ratio_null",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "missing_value_not_zero",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "negative_base_keeps_interpretation",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "percentage_points_not_relative_percent",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "base_usd_not_scaled_twice",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "positive_cash_capex_subtracted_once",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "invalid_capex_sign_stops",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "missing_formula_input_stops",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "relation_direction_not_numeric_delta",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "relation_unknown_validity_preserved",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "plan_actual_not_delta",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "scenario_missing_inputs_stops",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "scenario_invalid_formula_stops",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "scenario_no_assumptions_stops",
+      "passed": true,
+      "synthetic": true
+    },
+    {
+      "name": "synthetic_scenario_arithmetic",
+      "passed": true,
+      "synthetic": true
+    }
+  ]
+}

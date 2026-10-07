@@ -1,0 +1,9 @@
+{
+  "source_p08_run": "integration_012",
+  "candidate_count": 39,
+  "card_count": 33,
+  "selection": "all_development_records",
+  "synthetic_in_actual_counts": false,
+  "raw_source_included": false,
+  "private_source_dependency_for_source_validation": true
+}

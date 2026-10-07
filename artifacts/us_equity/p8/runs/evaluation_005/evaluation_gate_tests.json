@@ -1,0 +1,41 @@
+{
+  "cases": [
+    {
+      "name": "zero_denominator_null",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "missing_gold_blocks_independent",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "adaptation_never_untouched",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "qrels_absent_not_no_answer",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "empty_sessions_not_zero_time",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "independent_dev_threshold_null",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "absent_systems_explicit",
+      "passed": true,
+      "kind": "synthetic"
+    }
+  ],
+  "passed": 7,
+  "total": 7
+}

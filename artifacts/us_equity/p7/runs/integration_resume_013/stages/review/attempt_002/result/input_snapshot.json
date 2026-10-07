@@ -1,0 +1,85 @@
+{
+  "source_run": "m0_004",
+  "inputs": [
+    {
+      "path": "artifacts/us_equity/p4/active_run.json",
+      "sha256": "c3ee362bf0d1cfcda4588b18afaad47c51fd1937d1494101a0ec86be6f80901a"
+    },
+    {
+      "path": "artifacts/us_equity/p4/candidate_store_records.jsonl",
+      "sha256": "886000c8bcb8af27b74648ebeefe25d21c253ac3c4bfe2ef2aac442ef082c87c"
+    },
+    {
+      "path": "artifacts/us_equity/p4/validated_candidates.jsonl",
+      "sha256": "931993260caf7bd8ed59c2ce2fca52857dca64a14f23eafa2303c05907373219"
+    },
+    {
+      "path": "artifacts/us_equity/p4/relation_claim_links.jsonl",
+      "sha256": "043524c8fd1b510c8d0f8c7365c7979cdd38ec4a2c9d70f8d0b5e10afa5b49d7"
+    },
+    {
+      "path": "artifacts/us_equity/p4/context_provenance.jsonl",
+      "sha256": "3c82efa32b4d8d5b815ca0afb984b90cc21a45843c0036912a70b7cfa78478d4"
+    },
+    {
+      "path": "artifacts/us_equity/p4/evidence_map.jsonl",
+      "sha256": "6114c34d4d919648757c94818cba4ee75a5091a9bdabba1f5e96c96d7a8dc065"
+    },
+    {
+      "path": "artifacts/us_equity/p4/package_manifest.json",
+      "sha256": "f288231d8deac93f84672e63d7e2eb34474b1a7840e9dfc0df587de3fc29bcf9"
+    },
+    {
+      "path": "artifacts/us_equity/p4/input_snapshot.json",
+      "sha256": "74714ad793557a0d47aa67c72bc7fab3085ccc0b5618c776437fe65a2c8948ba"
+    },
+    {
+      "path": "artifacts/us_equity/p4/handoff_p4.md",
+      "sha256": "43a7fb88d905b09de5f8c091a6546195e1f9eb00bdfe64bc438708be4b32fc0a"
+    },
+    {
+      "path": "artifacts/us_equity/p3/package_manifest.json",
+      "sha256": "c4c2442b84321225a38de9a56396d88f6e94655f81cf32197c9309dc1a66583b"
+    },
+    {
+      "path": "artifacts/us_equity/p3/split_manifest.csv",
+      "sha256": "0ad8bb4da4f19898719a1600df12534c98eec2f2cc3fdad2e2107e0bb2d6f5a8"
+    },
+    {
+      "path": "artifacts/us_equity/p3/exposure_manifest.csv",
+      "sha256": "0f259ebcab3c4c8f4ac357332e5c3b26280a0659a1ded1b9b9ed356550d853c9"
+    },
+    {
+      "path": "artifacts/us_equity/p0/available_20261005/source_conditions.md",
+      "sha256": "fb562c431460433b3bd1b1d4effb11bfc5b8b00a96ad66ef293facb7d2f5532a"
+    },
+    {
+      "path": "artifacts/us_equity/p0/available_20261005/source_registry.csv",
+      "sha256": "39b43e07bd4f90ef8ef93416bcd54e53a8d8bf361bd80d81311f53f29312234b"
+    },
+    {
+      "path": "artifacts/us_equity/p0/available_20261005/document_manifest_v0_3.csv",
+      "sha256": "a4d2ffd35db473a1e88a0dac5d470328801212f0b63cffbc13e5ba89ad2d4915"
+    },
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_resume_013/stages/compare/attempt_001/result/run_manifest.json",
+      "sha256": "5a89d37e72a389b4f8628e63e7fe2b2341ed70243f9300b1188aaff286d5fe56"
+    },
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_resume_013/stages/compare/attempt_001/result/change_records.jsonl",
+      "sha256": "25d683eb6c6372860940ff08002592c5c4ea66c1ff5d6f22d30a193327f26ae3"
+    }
+  ],
+  "candidate_count": 39,
+  "numeric_count": 33,
+  "relation_count": 6,
+  "documents": 2,
+  "families": 2,
+  "human_gold": 0,
+  "independent_test": 0,
+  "reserved_body_read": false,
+  "legacy_inputs": [],
+  "rights_basis": "existing narrow factual reference; no new source collection or prose export",
+  "rights_checked_date": "2026-10-05",
+  "new_source_requests": 0
+}

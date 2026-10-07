@@ -1,0 +1,12 @@
+{
+  "schema_version": "p08-feedback-snapshot-0.1",
+  "revision": 0,
+  "journal_hash": "ce0a49bd7b31281a5ffe22fa955d3805a5b1a52ce95d051b668ad0601252764f",
+  "events": [],
+  "compatible_source_runs": [],
+  "conflicts": [],
+  "resolutions": [],
+  "original_predictions_preserved": true,
+  "human_gold": 0,
+  "shared_auto_save": false
+}

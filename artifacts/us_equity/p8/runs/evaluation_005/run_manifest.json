@@ -1,0 +1,95 @@
+{
+  "phase_id": "P09",
+  "run_id": "evaluation_005",
+  "protocol_version": "development-evaluation-0.1.0",
+  "inputs": [
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_012/run_manifest.json",
+      "sha256": "4544d05e03b4c43ca8f0d1e79ed58c85ed526c8813e678cc1961447852bf506a"
+    },
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_012/review_cards.jsonl",
+      "sha256": "fcc8f21119d1eefc30d12844c8f8b27a1251493bc831976ab5ef785caf81e581"
+    },
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_012/resilience_tests.json",
+      "sha256": "812a899123eaf11334987310b676309a63136c575fd2c9ba5a68cb8a07acc729"
+    },
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_012/feedback_snapshot.json",
+      "sha256": "002bac155fc0094e3775bc0659c7f4214014cc450efebb728f57f3d4dde6ef29"
+    },
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_012/pipeline_state.json",
+      "sha256": "e9284bc2d746d92c5834606305e8939dc82e86523f9d9109fe0cdf7265ab2b00"
+    },
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_resume_013/run_manifest.json",
+      "sha256": "45c9466cb0bbc391171857a947c7f81c9e917f99991ea7bada405fe775e31ef4"
+    },
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_012/stages/compare/attempt_001/result/run_manifest.json",
+      "sha256": "25bc98ac8887b096bc7696e43dab24667dd1657495ac53e03cbb811fcccb6045"
+    },
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_012/stages/review/attempt_001/result/run_manifest.json",
+      "sha256": "f5a53b3323a25dc5bbd93dc8729995d2e0c4d37a592b26b41e0b5a8ad0930c75"
+    },
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_012/stages/extract/attempt_001/replay/comparison_manifest.json",
+      "sha256": "879365b511d6ee2870404a8d6a57209f6bd9706636379d253395f868f468a6e8"
+    },
+    {
+      "path": "artifacts/us_equity/p8/runs/evaluation_005/protocol.json",
+      "sha256": "640a3f68eb6596c1ece4ed2be292faf6cb684f7af83ddff68230f9352a57b39a"
+    }
+  ],
+  "code_hashes": {
+    "scripts/p09_build_report.py": "64c6a64402124749b2f423a26564d862594aa18fcb9c89f5874b2035698e148a",
+    "scripts/p09_common.py": "f624996d3373440fc390b9b62c6bac4f275079b6f1655eab105cdc9e4ad4fbeb",
+    "scripts/p09_run_evaluation.py": "44f8ba2a3c5db4fee36186ec302b6ca4b88e22dbf67f41fc9e29acc33fba1d56",
+    "scripts/p09_test_evaluation.py": "1c3955237b225c62aecf3a50382e9f5f0955cdd21b27c3aef0506bf5f05e8ccb",
+    "scripts/p09_verify_package.py": "46e724dac8cc2e5cf47c9980ebf0db963bf11669e3ef4f2067d0c90c0fb7beaa"
+  },
+  "output_hashes": {
+    "cost_latency_report.md": "2ecacdbd000a140decffbdaebb5b6cb29e644384b7bc9120a30241ea12439869",
+    "demo_manifest.json": "70af82f957dd161173fde9bf49f82616a6103d69f557cf5d93f29cf73714353e",
+    "engineering_validation.json": "484b82651e13ffdf45119fee1a41154b8e70aaf18c4f03c9a437625339d1b704",
+    "evaluation_gate_tests.json": "e5fe887533f6f68a05ec5c8b731e8d96a334803bb2d52f656fd1a00b6756d219",
+    "evaluation_protocol.md": "681195940e324e505c2dfbd31ad652a26e0e18403cb8766c3bf533f6526ecaab",
+    "evaluation_readiness.json": "54a826ed0055e7728fd8f31deae24ad09ccc3290866dee83705f6c81468103d9",
+    "evaluation_results.json": "134b2ef6aeb7231ab504e9f75d043d6e98f803eef6ac4830cd125e67263a6caf",
+    "failure_cases.jsonl": "497eee0cb3f90f5773e0263e9ea3da9dd9143250b25639cc6027114a2451a7f7",
+    "failure_cases.md": "1c98dab705f40eadce4d9fd3f7c17582324427e1e3829406334cfd2e57e715f3",
+    "final_report.md": "8c7a5d65b8c798e32e85605d73dd121faac1dcf04d37f5360c3fd2985a46fa70",
+    "frozen_run_manifest.json": "2fe5d1735d72b05b08ec420a24874fbefd0e2913b265b661d93d394362242dd7",
+    "learning_cases.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "project_closeout.md": "54f8a8ae09bf222e0301abe2ba2020c241c7f3ba2056d9d35db85cbf3a19f8dd",
+    "protocol.json": "640a3f68eb6596c1ece4ed2be292faf6cb684f7af83ddff68230f9352a57b39a",
+    "report_tables.json": "134b2ef6aeb7231ab504e9f75d043d6e98f803eef6ac4830cd125e67263a6caf",
+    "reproducibility.md": "8364605d1c9015083d96bd2377de2e8b73411d77ae79dc7facf8ba6a429c4950",
+    "retrieval_development_comparison.jsonl": "ed6ead0e5aafb9c079923efd9da2f0643b472f5cc93eb21ef62ee6152cf37cc1",
+    "review_sessions.csv": "90f1c0b41856bc7013d2902dcda5a910f42e4f2459f2e64318e18663685f3228",
+    "S0_records.jsonl": "4bfcb3facaa953985082c841c01a4e729498208e1adee46d061b254547ac6264",
+    "S1_records.jsonl": "302b4f607856135e26c7d10e6bfbdf3b6eb72df14111e6b157919a4b9bf0e505",
+    "S3_records.jsonl": "fcc8f21119d1eefc30d12844c8f8b27a1251493bc831976ab5ef785caf81e581",
+    "split_audit_final.md": "300306a31e5448ce67089fa613a91d0a1cddf95172e025bcef3882170a087f08",
+    "study_protocol.md": "9b4e24c36798291b791cff12cca2bbfd753bd6ef04455dcc4af76e3f87805fde",
+    "synthetic_tests.json": "812a899123eaf11334987310b676309a63136c575fd2c9ba5a68cb8a07acc729",
+    "system_comparison.csv": "2fdf937a51089a97741343bbd1fadaeb393eccc7a1ceda7de379021fc748531f",
+    "uncertainty_analysis.md": "cdd4359e524e325029cdaa31eb519d19bcb5920fdad6c4fc3bf768d424392ed2"
+  },
+  "formal_benchmark_complete": false,
+  "development_status": "development_validation_ready",
+  "research_status": "not_evaluated",
+  "completed_at": "2026-10-07T04:54:27.873042+00:00",
+  "environment": {
+    "python": "3.13.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 189 Stepping 1, GenuineIntel",
+    "cpu_count": 8,
+    "memory_peak_bytes": null,
+    "network_collection_calls": 0,
+    "llm_calls": 0
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "schema_version": "p09-results-0.1",
+  "phase_id": "P09",
+  "run_id": "evaluation_005",
+  "source_p08_run": "integration_012",
+  "protocol_version": "development-evaluation-0.1.0",
+  "summary": {
+    "documents": 2,
+    "families": 2,
+    "candidates": 39,
+    "numeric_candidates": 33,
+    "relation_candidates": 6,
+    "cards": 33,
+    "human_gold": 0,
+    "independent_test": 0,
+    "feedback_events": 0,
+    "actual_participants": 0,
+    "qrels": 0
+  },
+  "systems": [
+    {
+      "system": "S0",
+      "status": "executed_development",
+      "records": 39,
+      "covered_candidates": 39,
+      "documents": 2,
+      "families": 2,
+      "materialization_seconds": 2.2200008970685303e-05,
+      "warm_seconds": 1.030000566970557e-05,
+      "unit": "candidate",
+      "reason": "exposed_development_not_independent"
+    },
+    {
+      "system": "S1",
+      "status": "executed_development",
+      "records": 39,
+      "covered_candidates": 39,
+      "documents": 2,
+      "families": 2,
+      "materialization_seconds": 2.720000338740647e-05,
+      "warm_seconds": 1.0399991879239678e-05,
+      "unit": "candidate",
+      "reason": "exposed_development_not_independent"
+    },
+    {
+      "system": "S3",
+      "status": "executed_development",
+      "records": 33,
+      "covered_candidates": 39,
+      "documents": 2,
+      "families": 2,
+      "materialization_seconds": 2.800006768666208e-06,
+      "warm_seconds": 2.7999922167509794e-06,
+      "unit": "card",
+      "reason": "exposed_development_not_independent"
+    },
+    {
+      "system": "S2",
+      "status": "not_evaluated",
+      "records": null,
+      "covered_candidates": null,
+      "documents": 2,
+      "families": 2,
+      "materialization_seconds": null,
+      "warm_seconds": null,
+      "unit": "not_applicable",
+      "reason": "independent_train_dev_human_labels_absent"
+    },
+    {
+      "system": "S4",
+      "status": "not_evaluated",
+      "records": null,
+      "covered_candidates": null,
+      "documents": 2,
+      "families": 2,
+      "materialization_seconds": null,
+      "warm_seconds": null,
+      "unit": "not_applicable",
+      "reason": "ai_external_transfer_rights_and_budget_not_established"
+    },
+    {
+      "system": "S5",
+      "status": "not_evaluated",
+      "records": null,
+      "covered_candidates": null,
+      "documents": 2,
+      "families": 2,
+      "materialization_seconds": null,
+      "warm_seconds": null,
+      "unit": "not_applicable",
+      "reason": "ai_external_transfer_rights_and_budget_not_established"
+    }
+  ],
+  "mode_counts": {
+    "current_review": {
+      "attempts": 42,
+      "computed": 15,
+      "calculation_attempts": 8,
+      "calculated": 8
+    },
+    "historical_public": {
+      "attempts": 42,
+      "computed": 3,
+      "calculation_attempts": 8,
+      "calculated": 0
+    },
+    "observed_live": {
+      "attempts": 42,
+      "computed": 0,
+      "calculation_attempts": 8,
+      "calculated": 0
+    }
+  },
+  "engineering_checks_passed": 12,
+  "engineering_checks_total": 12,
+  "synthetic_passed": 37,
+  "synthetic_total": 37,
+  "semantic_reproduction": true,
+  "reproduction_actor": "same_agent",
+  "colleague_reexecution": "not_performed",
+  "independent_metrics": [
+    {
+      "metric": "numeric_accuracy",
+      "value": null,
+      "numerator": null,
+      "denominator": 0,
+      "unit": "human_labeled_item",
+      "status": "not_evaluated",
+      "reason": "missing_independent_labels_qrels_or_sessions"
+    },
+    {
+      "metric": "relation_accuracy",
+      "value": null,
+      "numerator": null,
+      "denominator": 0,
+      "unit": "human_labeled_item",
+      "status": "not_evaluated",
+      "reason": "missing_independent_labels_qrels_or_sessions"
+    },
+    {
+      "metric": "retrieval_recall_at_k",
+      "value": null,
+      "numerator": null,
+      "denominator": 0,
+      "unit": "human_labeled_item",
+      "status": "not_evaluated",
+      "reason": "missing_independent_labels_qrels_or_sessions"
+    },
+    {
+      "metric": "change_accuracy",
+      "value": null,
+      "numerator": null,
+      "denominator": 0,
+      "unit": "human_labeled_item",
+      "status": "not_evaluated",
+      "reason": "missing_independent_labels_qrels_or_sessions"
+    },
+    {
+      "metric": "important_recall",
+      "value": null,
+      "numerator": null,
+      "denominator": 0,
+      "unit": "human_labeled_item",
+      "status": "not_evaluated",
+      "reason": "missing_independent_labels_qrels_or_sessions"
+    },
+    {
+      "metric": "ndcg",
+      "value": null,
+      "numerator": null,
+      "denominator": 0,
+      "unit": "human_labeled_item",
+      "status": "not_evaluated",
+      "reason": "missing_independent_labels_qrels_or_sessions"
+    },
+    {
+      "metric": "human_time_saved",
+      "value": null,
+      "numerator": null,
+      "denominator": 0,
+      "unit": "human_session",
+      "status": "not_evaluated",
+      "reason": "missing_independent_labels_qrels_or_sessions"
+    }
+  ],
+  "formal_benchmark_complete": false,
+  "research_status": "not_evaluated",
+  "external_calls": 0,
+  "stage_wall_seconds": 3.0668479000014486,
+  "cost": {
+    "observed_operating_cost": null,
+    "cost_per_1000_documents": null,
+    "currency": null,
+    "denominator_documents": 2,
+    "reason": "not_measured"
+  },
+  "withheld_change_count": 108,
+  "withheld_calculation_count": 16,
+  "card_failures": 0,
+  "retrieval_queries": 234,
+  "paired_query_groups": 117,
+  "exact_sparse_selection_agreement": 117,
+  "retrieval_performance_status": "not_evaluated_no_qrels",
+  "ci": null,
+  "p_value": null,
+  "change_computed_breakdown": {
+    "yoy": 12,
+    "within_release_comparison": 3
+  }
+}

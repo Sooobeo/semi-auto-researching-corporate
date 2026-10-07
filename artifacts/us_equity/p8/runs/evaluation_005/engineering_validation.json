@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "p08_verified": true,
+    "reproduction_verified": true,
+    "S0_same_universe": true,
+    "S1_same_universe": true,
+    "S3_same_universe": true,
+    "semantic_reproduction": true,
+    "synthetic_tests": true,
+    "evaluation_gate_counterexamples": true,
+    "regression_no_field_errors": true,
+    "p04_frozen_package": true,
+    "p05_frozen_package": true,
+    "no_computation_promotes_human_review": true
+  },
+  "upstream": {
+    "p04": {
+      "exit_code": 0,
+      "status": "passed"
+    },
+    "p05": {
+      "exit_code": 0,
+      "status": "passed"
+    }
+  },
+  "status": "passed"
+}

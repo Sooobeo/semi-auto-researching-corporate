@@ -1,0 +1,177 @@
+{
+  "source_path": "artifacts/us_equity/p2/applied_002/comparability_results.jsonl",
+  "source_sha256": "ca2418b0874053b5a7cd0b3dc87856094eb31c48493b2002015e18f5fa307644",
+  "rows": [
+    {
+      "pair_id": "YOY-operating_income-Q4",
+      "change_id": "CH-260e950aa6458462bc8baf0a",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "SEG-OLD-TO-NEW-US-MSFT-SEG-MPC",
+      "change_id": "CH-0f3cda55dbb751296f39ffc0",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "YOY-revenue-FY",
+      "change_id": "CH-28902c66a3c9f02e84b15022",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "YOY-cfo-FY",
+      "change_id": "CH-957a507459607e4227455a40",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "YOY-net_income-FY",
+      "change_id": "CH-cd73b784385be26b5f35ab4c",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "SEG-OLD-TO-REVISED-PRIOR-US-MSFT-SEG-MPC",
+      "change_id": "CH-6c2b30d5f6fb6f6b0a22d8c9",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "YOY-positive_cash_capex-FY",
+      "change_id": "CH-58d99857ad4c3c5d9d3814a7",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "YOY-cash_and_equivalents-instant",
+      "change_id": "CH-44032f68f85c82f27b7c9ded",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "YOY-revenue-Q4",
+      "change_id": "CH-0d9189fc88ecdfb1665b1976",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "YOY-cfo-Q4",
+      "change_id": "CH-d9086a77818c2aa2af81a420",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "YOY-net_income-Q4",
+      "change_id": "CH-55d19f568bed9a04f6df999a",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "SEG-OLD-TO-NEW-US-MSFT-SEG-IC",
+      "change_id": "CH-4bb71e7813c8948b0625f528",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "SEG-OLD-TO-REVISED-PRIOR-US-MSFT-SEG-IC",
+      "change_id": "CH-d44d1eb2ab5e000a3de4bf30",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "YOY-positive_cash_capex-Q4",
+      "change_id": "CH-05985ac4e6abfff45644d4e5",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "YOY-operating_income-FY",
+      "change_id": "CH-d7bb823582ace680a68d8a58",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "SEG-OLD-TO-NEW-US-MSFT-SEG-PBP",
+      "change_id": "CH-a5dd9fbf4d95eb109cc74a3a",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "YOY-total_assets-instant",
+      "change_id": "CH-ddf5209567235623ec2000f1",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "SEG-OLD-TO-REVISED-PRIOR-US-MSFT-SEG-PBP",
+      "change_id": "CH-c4ec25e08f6cb030a2226285",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "SEG-ALIGNED-PRESENTATION-US-MSFT-SEG-MPC",
+      "change_id": "CH-5904319f2b16ae29866ec728",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "SEG-ALIGNED-PRESENTATION-US-MSFT-SEG-IC",
+      "change_id": "CH-ed0f0c9ad3c559225b6b2998",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    },
+    {
+      "pair_id": "SEG-ALIGNED-PRESENTATION-US-MSFT-SEG-PBP",
+      "change_id": "CH-013c792bacb5da78eb94c70e",
+      "decision_match": true,
+      "delta_match": true,
+      "relative_delta_match": true,
+      "development_regression_only": true
+    }
+  ],
+  "matched": 21,
+  "total": 21,
+  "independent_evaluation_count": 0
+}

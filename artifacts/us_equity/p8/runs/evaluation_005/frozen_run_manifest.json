@@ -1,0 +1,74 @@
+{
+  "frozen_at": "2026-10-07T04:54:25.813504+00:00",
+  "protocol_sha256": "640a3f68eb6596c1ece4ed2be292faf6cb684f7af83ddff68230f9352a57b39a",
+  "inputs": [
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_012/run_manifest.json",
+      "sha256": "4544d05e03b4c43ca8f0d1e79ed58c85ed526c8813e678cc1961447852bf506a"
+    },
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_012/review_cards.jsonl",
+      "sha256": "fcc8f21119d1eefc30d12844c8f8b27a1251493bc831976ab5ef785caf81e581"
+    },
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_012/resilience_tests.json",
+      "sha256": "812a899123eaf11334987310b676309a63136c575fd2c9ba5a68cb8a07acc729"
+    },
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_012/feedback_snapshot.json",
+      "sha256": "002bac155fc0094e3775bc0659c7f4214014cc450efebb728f57f3d4dde6ef29"
+    },
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_012/pipeline_state.json",
+      "sha256": "e9284bc2d746d92c5834606305e8939dc82e86523f9d9109fe0cdf7265ab2b00"
+    },
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_resume_013/run_manifest.json",
+      "sha256": "45c9466cb0bbc391171857a947c7f81c9e917f99991ea7bada405fe775e31ef4"
+    },
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_012/stages/compare/attempt_001/result/run_manifest.json",
+      "sha256": "25bc98ac8887b096bc7696e43dab24667dd1657495ac53e03cbb811fcccb6045"
+    },
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_012/stages/review/attempt_001/result/run_manifest.json",
+      "sha256": "f5a53b3323a25dc5bbd93dc8729995d2e0c4d37a592b26b41e0b5a8ad0930c75"
+    },
+    {
+      "path": "artifacts/us_equity/p7/runs/integration_012/stages/extract/attempt_001/replay/comparison_manifest.json",
+      "sha256": "879365b511d6ee2870404a8d6a57209f6bd9706636379d253395f868f468a6e8"
+    },
+    {
+      "path": "artifacts/us_equity/p8/runs/evaluation_005/protocol.json",
+      "sha256": "640a3f68eb6596c1ece4ed2be292faf6cb684f7af83ddff68230f9352a57b39a"
+    }
+  ],
+  "code_hashes": {
+    "scripts/p09_build_report.py": "64c6a64402124749b2f423a26564d862594aa18fcb9c89f5874b2035698e148a",
+    "scripts/p09_common.py": "f624996d3373440fc390b9b62c6bac4f275079b6f1655eab105cdc9e4ad4fbeb",
+    "scripts/p09_run_evaluation.py": "44f8ba2a3c5db4fee36186ec302b6ca4b88e22dbf67f41fc9e29acc33fba1d56",
+    "scripts/p09_test_evaluation.py": "1c3955237b225c62aecf3a50382e9f5f0955cdd21b27c3aef0506bf5f05e8ccb",
+    "scripts/p09_verify_package.py": "46e724dac8cc2e5cf47c9980ebf0db963bf11669e3ef4f2067d0c90c0fb7beaa"
+  },
+  "p08_code_hashes": {
+    "scripts/p08_cards.py": "9e132581824bc2991125fdac3cc248c64342ba1197012a3d5c93c9dbe890716f",
+    "scripts/p08_common.py": "8064617a2e6e7c697edf17b1e9f1f0d1b931d064ddb2679ab55c6cded907fe46",
+    "scripts/p08_feedback.py": "89792a8756b1077f03bffc1f7cbbcc85b2a7e48103be04b3119dd0c29d228ef9",
+    "scripts/p08_import_feedback.py": "8f5065abbc91c6977e54f6c57dadc9a1b437e117cd0bf8ecfbfe7090ab6b7112",
+    "scripts/p08_run.py": "711cd05ce2eee0cac635f6d045a9529a2a066652d51cbc54924b51cafe0823bb",
+    "scripts/p08_test_integration.py": "4d801b453685666b7d80824d0849d366d9ff0038781a92707d32899a30747f9c",
+    "scripts/p08_verify_package.py": "acfc06f7ccc85f3f3f9ee44364195fba08169b0c283c61cb2432df69d1105b4b",
+    "web/p05/phase_snapshot.py": "d733b5d935d8f6b6cb3b169700f992b717ef9984d6036d951dfcd67dd24fe428",
+    "web/p05/integration_snapshot.py": "4b82ea38944a9b4adc2607ca1a605fbcf678538e1ffcd545b36f307342b417df",
+    "web/p05/server.py": "95d358116af61cc1db12849747bf00b7629dd78e65d12f11df9885a62ed1fb94"
+  },
+  "site_at_protocol": {
+    "version_number": 3,
+    "snapshot_sha256": "2efd7cafeb4e704274d941f62293707e945f5f84e5b1342c2b5ce8b73e69bb37"
+  },
+  "systems": [
+    "S0",
+    "S1",
+    "S3"
+  ]
+}

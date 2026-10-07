@@ -1,0 +1,127 @@
+{
+  "cases": [
+    {
+      "name": "idempotent_reimport",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "two_writer_conflict_preserved",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "owner_resolution_history",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "same_card_version_cross_run_conflict",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "rerun_preserves_compatible_feedback",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "changed_card_version_does_not_inherit_reviews",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "unknown_card",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "wrong_run",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "stale_version",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "forged_before",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "script_in_decimal",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "untrusted_actor",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "field_allowlist",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "evidence_reference",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "same_key_other_value",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "gold_promotion",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "journal_reload_persistent",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "predictions_never_overwritten",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "no_gold_or_training",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "oversize_rejected",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "single_writer_lock",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "zero_cards_distinct_from_success",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "tampered_card_detected",
+      "passed": true,
+      "kind": "synthetic"
+    },
+    {
+      "name": "empty_universe_valid",
+      "passed": true,
+      "kind": "synthetic"
+    }
+  ],
+  "passed": 24,
+  "total": 24,
+  "human_participants": 0
+}

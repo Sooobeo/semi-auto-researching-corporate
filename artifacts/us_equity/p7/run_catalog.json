@@ -1,0 +1,135 @@
+[
+  {
+    "run_id": "integration_004",
+    "recorded_status": "succeeded",
+    "active": false,
+    "purpose": "development debugging or fault/reproduction test",
+    "manifest_present": true
+  },
+  {
+    "run_id": "integration_006",
+    "recorded_status": "succeeded",
+    "active": false,
+    "purpose": "development debugging or fault/reproduction test",
+    "manifest_present": true
+  },
+  {
+    "run_id": "integration_008",
+    "recorded_status": "succeeded",
+    "active": false,
+    "purpose": "development debugging or fault/reproduction test",
+    "manifest_present": true
+  },
+  {
+    "run_id": "integration_010",
+    "recorded_status": "succeeded",
+    "active": false,
+    "purpose": "development debugging or fault/reproduction test",
+    "manifest_present": true
+  },
+  {
+    "run_id": "integration_012",
+    "recorded_status": "succeeded",
+    "active": true,
+    "purpose": "current verified development run",
+    "manifest_present": true
+  },
+  {
+    "run_id": "integration_debug_001",
+    "recorded_status": "failed",
+    "active": false,
+    "purpose": "development debugging or fault/reproduction test",
+    "manifest_present": false
+  },
+  {
+    "run_id": "integration_debug_002",
+    "recorded_status": "succeeded",
+    "active": false,
+    "purpose": "development debugging or fault/reproduction test",
+    "manifest_present": true
+  },
+  {
+    "run_id": "integration_fault_debug_003",
+    "recorded_status": "succeeded",
+    "active": false,
+    "purpose": "development debugging or fault/reproduction test",
+    "manifest_present": true
+  },
+  {
+    "run_id": "integration_resume_005",
+    "recorded_status": "failed",
+    "active": false,
+    "purpose": "development debugging or fault/reproduction test",
+    "manifest_present": false
+  },
+  {
+    "run_id": "integration_resume_007",
+    "recorded_status": "succeeded",
+    "active": false,
+    "purpose": "development debugging or fault/reproduction test",
+    "manifest_present": true
+  },
+  {
+    "run_id": "integration_resume_007_deadline",
+    "recorded_status": "failed",
+    "active": false,
+    "purpose": "development debugging or fault/reproduction test",
+    "manifest_present": false
+  },
+  {
+    "run_id": "integration_resume_009",
+    "recorded_status": "succeeded",
+    "active": false,
+    "purpose": "development debugging or fault/reproduction test",
+    "manifest_present": true
+  },
+  {
+    "run_id": "integration_resume_009_deadline",
+    "recorded_status": "failed",
+    "active": false,
+    "purpose": "development debugging or fault/reproduction test",
+    "manifest_present": false
+  },
+  {
+    "run_id": "integration_resume_011",
+    "recorded_status": "succeeded",
+    "active": false,
+    "purpose": "development debugging or fault/reproduction test",
+    "manifest_present": true
+  },
+  {
+    "run_id": "integration_resume_011_deadline",
+    "recorded_status": "failed",
+    "active": false,
+    "purpose": "development debugging or fault/reproduction test",
+    "manifest_present": false
+  },
+  {
+    "run_id": "integration_resume_013",
+    "recorded_status": "succeeded",
+    "active": false,
+    "purpose": "development debugging or fault/reproduction test",
+    "manifest_present": true
+  },
+  {
+    "run_id": "integration_resume_013_deadline",
+    "recorded_status": "failed",
+    "active": false,
+    "purpose": "development debugging or fault/reproduction test",
+    "manifest_present": false
+  },
+  {
+    "run_id": "web_20261007_044659_40b095a1",
+    "recorded_status": "succeeded",
+    "active": false,
+    "purpose": "development debugging or fault/reproduction test",
+    "manifest_present": true
+  },
+  {
+    "run_id": "web_20261007_045501_6c11c4bb",
+    "recorded_status": "succeeded",
+    "active": false,
+    "purpose": "development debugging or fault/reproduction test",
+    "manifest_present": true
+  }
+]

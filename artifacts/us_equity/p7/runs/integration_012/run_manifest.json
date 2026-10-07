@@ -1,0 +1,67 @@
+{
+  "phase_id": "P08",
+  "run_id": "integration_012",
+  "schema_version": "p08-run-0.1",
+  "policy_version": "integration-0.1.0",
+  "status": "development_ready",
+  "research_status": "not_evaluated",
+  "formal_benchmark_complete": false,
+  "semantic_hash": "f400ffd4bd83836b67e7bd6e73bdbbde11e9d9a54e9a8345fae9c0fa3e5363f9",
+  "source_run_refs": {
+    "source_run": "m0_004",
+    "p06_run": "artifacts/us_equity/p5/runs/review_change_003",
+    "p07_run": "artifacts/us_equity/p6/runs/change_002"
+  },
+  "input_snapshot_sha256": "d212faa671357b06da1f5d7c41f050523ec50f8995b2e559fd6eb553dd0abbfc",
+  "code_hashes": {
+    "scripts/p08_cards.py": "9e132581824bc2991125fdac3cc248c64342ba1197012a3d5c93c9dbe890716f",
+    "scripts/p08_common.py": "8064617a2e6e7c697edf17b1e9f1f0d1b931d064ddb2679ab55c6cded907fe46",
+    "scripts/p08_feedback.py": "89792a8756b1077f03bffc1f7cbbcc85b2a7e48103be04b3119dd0c29d228ef9",
+    "scripts/p08_import_feedback.py": "8f5065abbc91c6977e54f6c57dadc9a1b437e117cd0bf8ecfbfe7090ab6b7112",
+    "scripts/p08_run.py": "711cd05ce2eee0cac635f6d045a9529a2a066652d51cbc54924b51cafe0823bb",
+    "scripts/p08_test_integration.py": "4d801b453685666b7d80824d0849d366d9ff0038781a92707d32899a30747f9c",
+    "scripts/p08_verify_package.py": "acfc06f7ccc85f3f3f9ee44364195fba08169b0c283c61cb2432df69d1105b4b",
+    "web/p05/phase_snapshot.py": "d733b5d935d8f6b6cb3b169700f992b717ef9984d6036d951dfcd67dd24fe428",
+    "web/p05/integration_snapshot.py": "4b82ea38944a9b4adc2607ca1a605fbcf678538e1ffcd545b36f307342b417df",
+    "web/p05/server.py": "95d358116af61cc1db12849747bf00b7629dd78e65d12f11df9885a62ed1fb94"
+  },
+  "output_hashes": {
+    "review_cards.jsonl": "fcc8f21119d1eefc30d12844c8f8b27a1251493bc831976ab5ef785caf81e581",
+    "candidate_card_links.jsonl": "683a4f3cf362408de6adeebef71231adf3135bb34fa404d2a7985747bb0788f2",
+    "review_card_schema.json": "a91b98a5bed6d4d1ab0c378fd1b254765afadc0c1363cb2802c1634d76380e66",
+    "feedback_snapshot.json": "002bac155fc0094e3775bc0659c7f4214014cc450efebb728f57f3d4dde6ef29",
+    "validation_report.json": "6b4fcc55074d779a93083a12acc76be3b7097affc6df0024595b308ae5925547",
+    "failed_items.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "active_learning_queue.csv": "92723fd5053561e806f63770e50f64c9b713c68217809701bdade5f199abd39d",
+    "analyst_memos.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run_config.json": "accbe30c5d36e6febdc5254b819b28fabeb24d6720a21624c0df7c7c652a6d33",
+    "cost_report.csv": "3dde3401117290cb43bea00222432d24969d0eae08237026a1b76aa1f50f60e4",
+    "synthetic_tests.json": "d93e6ecb52e0caf6d406c3512ba639e80b4a999f552c12a490461d3e02f5d427"
+  },
+  "summary": {
+    "documents": 2,
+    "families": 2,
+    "candidates": 39,
+    "numeric_candidates": 33,
+    "relation_candidates": 6,
+    "cards": 33,
+    "human_gold": 0,
+    "independent_test": 0,
+    "feedback_events": 0
+  },
+  "environment": {
+    "python": "3.13.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 189 Stepping 1, GenuineIntel",
+    "logical_cpu_count": 8,
+    "hardware_cost": null,
+    "memory_peak_bytes": null
+  },
+  "pipeline_elapsed_seconds": 4.647449600000982,
+  "external_calls": 0,
+  "new_source_requests": 0,
+  "api_cost": null,
+  "operating_cost": null,
+  "cost_reason": "not_measured",
+  "completed_at": "2026-10-07T04:52:41.948943+00:00"
+}

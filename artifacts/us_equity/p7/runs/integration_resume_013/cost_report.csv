@@ -1,0 +1,8 @@
+stage,attempt,status,elapsed_seconds,external_calls,operating_cost,cost_reason
+extract,1,succeeded,1.4823326000041561,0,NA,hardware_labor_energy_not_measured
+compare,1,succeeded,0.6438930000003893,0,NA,hardware_labor_energy_not_measured
+review,1,failed,0.0024181000044336542,0,NA,hardware_labor_energy_not_measured
+review,2,succeeded,0.5068427999940468,0,NA,hardware_labor_energy_not_measured
+cards,1,succeeded,0.4084635999897728,0,NA,hardware_labor_energy_not_measured
+feedback_snapshot,1,succeeded,0.04104430000006687,0,NA,hardware_labor_energy_not_measured
+validate,1,succeeded,0.30730400000174996,0,NA,hardware_labor_energy_not_measured

@@ -17,3 +17,33 @@ artifacts/us_equity/**/bodies/
 artifacts/us_equity/**/blocks.jsonl
 __pycache__/
 *.pyc
+
+# Local dependency environments.
+.venv/
+venv/
+node_modules/
+
+# P08/P09 operational feedback stays on the owner's machine.
+# Validated feedback snapshots in release runs remain versionable.
+/artifacts/us_equity/p7/feedback/
+
+# Keep local debug, repeated and browser-triggered runs out of commits.
+# Retain the verified release and its reproduction/deadline evidence.
+# When promoting a new release, explicitly add its run directories here.
+/artifacts/us_equity/p7/runs/*
+!/artifacts/us_equity/p7/runs/integration_012/
+!/artifacts/us_equity/p7/runs/integration_resume_013/
+!/artifacts/us_equity/p7/runs/integration_resume_013_deadline/
+/artifacts/us_equity/p8/runs/*
+!/artifacts/us_equity/p8/runs/evaluation_005/
+
+# Preserve the previous publication record without its repeated outputs.
+!/artifacts/us_equity/p7/runs/integration_010/
+/artifacts/us_equity/p7/runs/integration_010/*
+!/artifacts/us_equity/p7/runs/integration_010/site_update_manifest.json
+!/artifacts/us_equity/p8/runs/evaluation_003/
+/artifacts/us_equity/p8/runs/evaluation_003/*
+!/artifacts/us_equity/p8/runs/evaluation_003/site_update_manifest.json
+
+# Browser test downloads are local QA material, not release dependencies.
+/artifacts/us_equity/p7/runs/*/browser_export_synthetic.json

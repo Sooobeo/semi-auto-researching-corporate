@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "unique_cards": true,
+    "every_candidate_once": true,
+    "candidate_status_preserved": true,
+    "unknown_event_ids_preserved": true,
+    "version_integrity": true,
+    "change_refs_resolve": true,
+    "withheld_null": true,
+    "calculation_refs_resolve": true,
+    "decimal_strings": true,
+    "schema": true,
+    "stage_conservation": true
+  },
+  "status": "passed"
+}

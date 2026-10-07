@@ -1,0 +1,18 @@
+{
+  "run_id": "evaluation_005",
+  "run_dir": "artifacts/us_equity/p8/runs/evaluation_005",
+  "status": "development_ready",
+  "research_status": "not_evaluated",
+  "site_status": "published",
+  "human_gold": 0,
+  "independent_test": 0,
+  "formal_benchmark_complete": false,
+  "reproduction_run": null,
+  "previous_site_version_number": 3,
+  "site_version_number": 4,
+  "site_version_id": "appgprj_6ac4af31b39c8191b7d3d8876d313876~appgver_e7e514177a3c8191bb6e84582a350084",
+  "deployment_id": "appgdep_6ac5d176ea3c81919b9028e51420f2eb",
+  "site_url": "https://corporate-research-p05.sooobeo.chatgpt.site",
+  "deployed_at": "2026-10-07T04:58:44.940896+00:00",
+  "site_update_manifest": "artifacts/us_equity/p8/runs/evaluation_005/site_update_manifest.json"
+}

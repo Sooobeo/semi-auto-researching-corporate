@@ -1,0 +1,17 @@
+{
+  "phase_id": "P09",
+  "pipeline_run_id": "evaluation_003",
+  "project_id": "appgprj_6ac4af31b39c8191b7d3d8876d313876",
+  "site_url": "https://corporate-research-p05.sooobeo.chatgpt.site",
+  "site_version_number": 3,
+  "site_version_id": "appgprj_6ac4af31b39c8191b7d3d8876d313876~appgver_1130773977148191b090fe8aa2c5f144",
+  "deployment_id": "appgdep_6ac5cfb07be08191bc78bac6d70dabcc",
+  "deployment_status": "succeeded",
+  "deployed_at": "2026-10-07T04:51:09.983055+00:00",
+  "site_source_commit": "a0c1025c6dd2d69611dc825e444d94a524db08c4",
+  "snapshot_sha256": "68223fee8097112f72b9e5043166a3fe5d2ef5edfdb2aa61ea3aff57eba05cd6",
+  "snapshot_schema_version": "p08-p09-site-0.1",
+  "access_change_performed": false,
+  "publication_error": null,
+  "note": "Publication history; superseded after cross-run feedback improvement"
+}

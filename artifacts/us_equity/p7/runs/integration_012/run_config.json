@@ -1,0 +1,12 @@
+{
+  "schema_version": "p08-config-0.1",
+  "source_run": "m0_004",
+  "p06_run": "artifacts/us_equity/p5/runs/review_change_003",
+  "p07_run": "artifacts/us_equity/p6/runs/change_002",
+  "cutoff": "2026-10-06",
+  "cutoff_mode": "all",
+  "feedback_source_run": null,
+  "stage_timeout_seconds": 120,
+  "feedback_store": "artifacts/us_equity/p7/feedback",
+  "rights_basis": "existing narrow factual reference; no new collection or prose export"
+}

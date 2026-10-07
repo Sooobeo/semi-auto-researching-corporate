@@ -1,0 +1,12 @@
+{
+  "mode_counts": {
+    "current_review": 42,
+    "historical_public": 42,
+    "observed_live": 42
+  },
+  "computed_counts": {
+    "current_review": 15,
+    "historical_public": 3
+  },
+  "calculations": 24
+}

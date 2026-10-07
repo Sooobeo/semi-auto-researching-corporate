@@ -1,0 +1,11 @@
+{
+  "formal_benchmark_complete": false,
+  "independent_ready": false,
+  "independent_status": "blocked_missing_data",
+  "human_study_status": "not_performed",
+  "human_gold": 0,
+  "qrels": 0,
+  "actual_participants": 0,
+  "exposure": "adaptation",
+  "families": 2
+}

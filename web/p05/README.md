@@ -1,5 +1,20 @@
 # P05 웹 화면
 
+## P08·P09 현재 구현 — 2026-10-07
+
+통합 카드·실행 현황·파일 기반 검토 이력·비교 검증/평가를 추가했습니다. 현재 게시 대상은 P08 `integration_012`(후보39→카드33), P09 `evaluation_005`입니다. 실제 게시 버전/상태는 해당 run의 site_update_manifest.json에 기록합니다. [실제 운영 명령](../../artifacts/us_equity/p7/operator_guide.md)을 참조하세요.
+
+같은 로컬 서버의 ‘내 PC 통합 실행’은 P05 추출/위치 검증→P07→P06→카드→feedback snapshot→검증을 실행합니다. 검토 초안은 이 기기에만 저장되며 파일로 내보내고 소유자가 로컬에서 검증해 가져온 뒤 새 결과를 재게시합니다. 정적 공유 화면은 PC 원격 실행·자동 공동 저장을 하지 않습니다. 원래 후보는 보존하고 충돌/자체 신고 actor·시각/학습 제외를 명시합니다.
+
+P09는 S0/S1/S3의 같은 개발 입력 비교, 공학 검사12/12·합성/장애 반례37/37, 전체 보류/미계산124 결과를 보여줍니다. 독립 정확도·중요성·검색 Recall·사람 사용성·검토시간 절감은 미평가입니다. 사람 gold·qrels·독립 test·사람 세션0, 전체 비용·1000문서 비용·메모리 peak 미측정입니다. 기존 P05/P06/P07 결과 조회는 유지합니다.
+
+```powershell
+python web/p05/integration_snapshot.py --p08-run artifacts/us_equity/p7/runs/integration_012 --p09-run artifacts/us_equity/p8/runs/evaluation_005
+node web/p05/verify-integration.mjs
+```
+
+아래는 이전 단계의 운영 이력입니다. 상단의 통합 기능과 함께 사용할 수 있습니다.
+
 팀원용 공유 화면과 내 PC 실행 화면은 같은 HTML/CSS/JavaScript를 사용합니다. 별도 데이터베이스나 모델 설치가 필요 없습니다. 기존 P05 동결 코드·자료는 수정하지 않습니다.
 
 ## 내 PC에서 열기

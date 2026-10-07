@@ -1,5 +1,7 @@
 # P09 · Phase 8 실행 설계 — 무엇이 검증됐고 실제로 도움이 되는지 평가하기
 
+> 실제 실행 2026-10-07: `evaluation_005`의 사전 고정 개발 protocol에 따라 S0/S1/S3·회귀·재현·보류 사례를 비교하고 같은 사이트 버전 4에 게시했습니다. 공학 검사 12/12, 합성·장애·평가 조건 검사 37/37이 통과했습니다. 사람 gold·독립 test·qrels·사람 세션 0, 동료 재실행 미실행이므로 정식 성능·사용성은 `not_evaluated`입니다. S2/S4/S5도 미실행입니다. [실행 결과](../artifacts/us_equity/p8/execution_briefing.md) · [최종 개발 보고](../artifacts/us_equity/p8/runs/evaluation_005/final_report.md).
+
 > 작성일 2026-10-06 / v0.1 / 상태: 실행 전. 현재 자료에서 수행할 개발 검증과 추가 자료·사람이 필요한 독립 평가를 구분한다. 비교 성능·시간 절감·투자 성과가 이미 확인됐다는 기록이 아니다.
 
 [전체 로드맵](P06_P09_execution_roadmap.md) · [P09 연구 설계](P09_phase8_comparative_evaluation.md) · [공통 규약](DATA_CONTRACTS.md) · [공통 목표](GOALS_AND_RESEARCH_WORKFLOW.md) · [사이트 업데이트 계약](SITE_PHASE_UPDATE_CONTRACT.md)

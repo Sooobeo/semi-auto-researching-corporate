@@ -1,0 +1,6 @@
+{
+  "fresh_extraction_matches_frozen": true,
+  "adapter": "verified P05 candidate store; stable source IDs after semantic replay match",
+  "candidates": 39,
+  "source_run": "m0_004"
+}

@@ -100,6 +100,6 @@
     options('review-date',d.facts.map(r=>r.published_date),v=>v);options('review-scope',d.facts.map(r=>r.normalized.scope_id),v=>scopes[v]||v);
     options('review-metric',d.facts.map(r=>r.normalized.metric_id||r.normalized.relation_type),v=>metrics[v]||'사업부 보고 관계');options('review-reason',d.review.map(r=>r.reason_group),v=>groups[v]);
     options('change-scope',d.facts.map(r=>r.normalized.scope_id),v=>scopes[v]||v);
-    renderReview();renderChanges();renderCalculations();switchView('review');
+    renderReview();renderChanges();renderCalculations();switchView(state.view);
   }).catch(error=>notice(error.message,true));
 })();

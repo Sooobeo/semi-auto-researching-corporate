@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "change_id",
+    "new_record_id",
+    "prior_record_id",
+    "compatibility",
+    "status",
+    "delta",
+    "relative_delta",
+    "evidence_refs",
+    "cutoff_mode"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "computed",
+        "withheld"
+      ]
+    },
+    "cutoff_mode": {
+      "enum": [
+        "current_review",
+        "historical_public",
+        "observed_live"
+      ]
+    },
+    "delta": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "relative_delta": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "review_readiness": {
+      "const": "needs_review"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "withheld"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "delta": {
+            "type": "null"
+          },
+          "relative_delta": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  ]
+}

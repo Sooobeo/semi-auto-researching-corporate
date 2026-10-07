@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-07T04:57:00.819524+00:00",
+  "surface": "local Chrome; published page was not fetched for deployment verification",
+  "status": "passed_selected_flows",
+  "agent_qa": true,
+  "human_participants": 0,
+  "team_member_access": "not_verified",
+  "source_p08_run": "integration_012",
+  "source_p09_run": "evaluation_005",
+  "checks": {
+    "card_list_and_detail": true,
+    "date_scope_filter": true,
+    "empty_filter_message": true,
+    "same_release_comparison_preserved": true,
+    "original_locations_available": true,
+    "draft_persists_reload": true,
+    "file_download_exists_and_structured": true,
+    "drafts_cleared_after_agent_test": true,
+    "evaluation_37_of_37_visible": true,
+    "calculation_failures_filter_16": true,
+    "desktop_no_page_overflow": true,
+    "390px_no_page_overflow": true,
+    "desktop_and_mobile_visual_inspection": true,
+    "viewport_restored": true
+  },
+  "download_callback": "timed_out; actual local file read and validated",
+  "automated_feedback_import": "temporary journal tests only; real human feedback0",
+  "usability_study": "not_performed"
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "generated_at",
+    "P08",
+    "P09",
+    "sharing"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "p08-p09-site-0.1"
+    },
+    "P08": {
+      "type": "object",
+      "required": [
+        "run_id",
+        "summary",
+        "cards",
+        "pipeline",
+        "feedback"
+      ]
+    },
+    "P09": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "sharing": {
+      "type": "object",
+      "properties": {
+        "source_prose_included": {
+          "const": false
+        },
+        "private_paths_included": {
+          "const": false
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "run_id": "p08-replay",
+  "started_at": "2026-10-07T04:52:42.904774+00:00",
+  "completed_at": "2026-10-07T04:52:43.502720+00:00",
+  "input_count": 39,
+  "candidate_count": 39,
+  "terminal_results": 39,
+  "status_counts": {
+    "predicted": 39
+  },
+  "attempts": 39,
+  "external_calls": 0,
+  "network_disabled": true,
+  "reference_read_at": null,
+  "reference_access": "not_read_by_extractor",
+  "inference_file_reads": [],
+  "blocked_accesses": [],
+  "input_mode": "preselected_cells",
+  "exposure": "adaptation",
+  "human_gold": 0,
+  "independent_evaluation": "not_evaluated",
+  "code_sha256": {
+    "scripts/p05_common.py": "fbc7651510bf82225a1c6442b31d61fb8c02f6bba3f3cba7397ce089a647d719",
+    "scripts/p05_compare_reference.py": "ac5d8d2dc0d863751dbe8450fc5d1ce4a6a9dfa2c70291eaa6327ea2954de470",
+    "scripts/p05_contracts.py": "cb69a466daf27cd90a8404e8e5029e9858da735d049bcf14b2c2cc5a91b80ef7",
+    "scripts/p05_finalize.py": "0d8d6476934afe42f45e7e336dbf99a7ce1807e8a53a1d403bda2af1c1a9386d",
+    "scripts/p05_input_validation.py": "a172610b8ca50190d381eb6365a593a9dd0b5bdc49ae0ce8158c289773349d50",
+    "scripts/p05_prepare_inputs.py": "08cef5c8e724f3ccb84697c048683e6c1a7c76614d93c916826a7d13c568d27b",
+    "scripts/p05_rule_baseline.py": "9601378b4550acfa452dba57eed6e8a77f7f5b7521e3c402d6b13cad406dc6ce",
+    "scripts/p05_test_baseline.py": "2e1174816cb42567257d9f7f499e99e7fdaee76fb469198eb8da47fe83d9606a",
+    "scripts/p05_test_evaluation.py": "2242dde81d71611c92126baf35bcb37adabab63d0e9f35f78af46b0a6ac82b44",
+    "scripts/p05_validate_predictions.py": "b5cd66f31831a6773c288e1b933f6ec8724c612f8141b17b4049c8ecce0254f5",
+    "scripts/p05_verify_package.py": "a65219e19d7df5c58f01e2e8244fa8a760f9ffd5704e6dadcaddb3fcdca0e91e"
+  },
+  "input_schema_registry_dependency_hashes": {
+    "artifacts/us_equity/p4/rules_v0_1.json": "9ae734956cf5b2f5006ccf829e7684cd2037e22e087c1adbd22fef6dc65c0c8c",
+    "artifacts/us_equity/p4/input_schema.json": "c97d69f07b2b45eaeb06c1ecf289e1a6e940a467cf319eb4bc76b2fb5605311a",
+    "artifacts/us_equity/p4/prediction_schema.json": "d150ade6d4c239cee7f0a3173528c34d3f0addacb7aa895cd093f22119856bb5",
+    "artifacts/us_equity/p4/extractor_inputs.jsonl": "c72d389334ecb43c0e9c0b78c31e42e09166e3e6f7e793f8ca50a0e99396f194",
+    "artifacts/us_equity/p4/requirements.lock": "25ec68bc28610e251f9f6da05a9eac1b895129af8e646a143ca5ed9287946eb2",
+    "artifacts/us_equity/p4/environment_manifest.json": "4c1529181ff9312c72f53e0f352e54e015267b0efa7226a890d4d72d32b8025e"
+  },
+  "output_hashes": {
+    "artifacts/us_equity/p7/runs/integration_resume_013/stages/extract/attempt_001/replay/predictions.jsonl": "23fc9436d7b95a2ea699c212e0e19c1b9b4c458c5e89279276a83bac8c461771",
+    "artifacts/us_equity/p7/runs/integration_resume_013/stages/extract/attempt_001/replay/input_results.jsonl": "7f7fcb5a2b308414e1a3c94f7e2e05b0964180e4afdb37cad0583e21d166a9ae",
+    "artifacts/us_equity/p7/runs/integration_resume_013/stages/extract/attempt_001/replay/normalization_audit.jsonl": "b161c43a8fae0e0970bf4d58798cc47830c39658db7b7617e97dfd6c72b5b8ef"
+  },
+  "initialization_seconds": 0.18740970001090318,
+  "inference_seconds": 0.3895557999931043,
+  "total_seconds": 0.6505248000030406,
+  "cpu_seconds": 0.515625,
+  "peak_python_allocation_bytes": 255126,
+  "resource_limitations": "Python allocations only; OS peak RSS not measured",
+  "random_seed": null,
+  "seed_reason": "deterministic_no_random_generator"
+}

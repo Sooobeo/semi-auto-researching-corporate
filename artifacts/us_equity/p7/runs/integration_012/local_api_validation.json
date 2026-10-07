@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-07T04:55:08.426717+00:00",
+  "checks": {
+    "local_state": true,
+    "missing_token_rejected": true,
+    "cross_origin_rejected": true,
+    "untrusted_host_rejected": true,
+    "arbitrary_path_rejected": true,
+    "unknown_endpoint_rejected": true,
+    "large_request_rejected": true,
+    "actual_pipeline_started": true,
+    "actual_pipeline_completed": true,
+    "local_result_updated": true,
+    "candidate_denominator": true,
+    "p09_frozen_source_preserved": true
+  },
+  "status": "passed",
+  "local_replay_run": "web_20261007_045501_6c11c4bb",
+  "external_calls": 0,
+  "human_participants": 0,
+  "credentials_in_report": false
+}
